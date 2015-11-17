@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>975A64B7-1893-4D77-A0F9-543CE50FDF67</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8187b990-577d-cc43-a04c-7650a76522e1</key>
+		<string>https://Waqar.Ali@delta.ninealpha.com/svn/A1Authenticator</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>A1-Authenticator/A1-Authenticator.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8187b990-577d-cc43-a04c-7650a76522e1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8187b990-577d-cc43-a04c-7650a76522e1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8187b990-577d-cc43-a04c-7650a76522e1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>A1Authenticator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2B5DA86B1AE90A5B00C59DFE /* PireanSharedLibUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2B5DA86E1AE90A5B00C59DFE /* Build configuration list for PBXAggregateTarget "PireanSharedLibUniversal" */;
+			buildPhases = (
+				2B5DA86F1AE90A6500C59DFE /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = PireanSharedLibUniversal;
+			productName = PireanSharedLibUniversal;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2B08F7D91AEFD474009B6F53 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B08F7D81AEFD474009B6F53 /* libZXingWidget.a */; };
+		2B5DA8821AE90BA100C59DFE /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8751AE90BA100C59DFE /* NSObject+SBJSON.m */; };
+		2B5DA8831AE90BA100C59DFE /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8751AE90BA100C59DFE /* NSObject+SBJSON.m */; };
+		2B5DA8841AE90BA100C59DFE /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8771AE90BA100C59DFE /* NSString+SBJSON.m */; };
+		2B5DA8851AE90BA100C59DFE /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8771AE90BA100C59DFE /* NSString+SBJSON.m */; };
+		2B5DA8861AE90BA100C59DFE /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8791AE90BA100C59DFE /* SBJsonBase.m */; };
+		2B5DA8871AE90BA100C59DFE /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8791AE90BA100C59DFE /* SBJsonBase.m */; };
+		2B5DA8881AE90BA100C59DFE /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA87B1AE90BA100C59DFE /* SBJsonParser.m */; };
+		2B5DA8891AE90BA100C59DFE /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA87B1AE90BA100C59DFE /* SBJsonParser.m */; };
+		2B5DA88A1AE90BA100C59DFE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA87D1AE90BA100C59DFE /* SBJsonWriter.m */; };
+		2B5DA88B1AE90BA100C59DFE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA87D1AE90BA100C59DFE /* SBJsonWriter.m */; };
+		2B5DA88E1AE90BA100C59DFE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8811AE90BA100C59DFE /* Reachability.m */; };
+		2B5DA88F1AE90BA100C59DFE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8811AE90BA100C59DFE /* Reachability.m */; };
+		2B5DA8931AE90C5200C59DFE /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B5DA8901AE90C5200C59DFE /* SVProgressHUD.bundle */; };
+		2B5DA8941AE90C5200C59DFE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8921AE90C5200C59DFE /* SVProgressHUD.m */; };
+		2B5DA8951AE90C5200C59DFE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8921AE90C5200C59DFE /* SVProgressHUD.m */; };
+		2B5DA8971AE90DB200C59DFE /* JsonHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA87F1AE90BA100C59DFE /* JsonHttpService.m */; };
+		2BC745021AEE6A9D00EE6E83 /* AuthenticationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC745011AEE6A9D00EE6E83 /* AuthenticationHelper.m */; };
+		2BF184D01AE50D590073F4BB /* libPireanSharedLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF184C41AE50D590073F4BB /* libPireanSharedLib.a */; };
+		2BF184E91AE50FFB0073F4BB /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF184E01AE50FFB0073F4BB /* NSData+CommonCrypto.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2BF184EA1AE50FFB0073F4BB /* NSData+hexReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF184E21AE50FFB0073F4BB /* NSData+hexReturn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2BF184EB1AE50FFB0073F4BB /* NSString+hexWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF184E41AE50FFB0073F4BB /* NSString+hexWork.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2BF184EC1AE50FFB0073F4BB /* QRStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF184E61AE50FFB0073F4BB /* QRStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2BF184ED1AE50FFB0073F4BB /* ScanCodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF184E81AE50FFB0073F4BB /* ScanCodeHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2BF184EE1AE510260073F4BB /* ScanCodeHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184E71AE50FFB0073F4BB /* ScanCodeHelper.h */; };
+		2BF184FC1AE512AF0073F4BB /* AztecReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F11AE5127E0073F4BB /* AztecReader.h */; };
+		2BF184FD1AE512AF0073F4BB /* Decoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F21AE5127E0073F4BB /* Decoder.h */; };
+		2BF184FE1AE512AF0073F4BB /* DecoderDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F31AE5127E0073F4BB /* DecoderDelegate.h */; };
+		2BF184FF1AE512AF0073F4BB /* FormatReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F41AE5127E0073F4BB /* FormatReader.h */; };
+		2BF185001AE512AF0073F4BB /* OverlayView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F61AE5127E0073F4BB /* OverlayView.h */; };
+		2BF185011AE512AF0073F4BB /* ParsedResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F71AE5127E0073F4BB /* ParsedResult.h */; };
+		2BF185021AE512AF0073F4BB /* QRCodeReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F81AE5127E0073F4BB /* QRCodeReader.h */; };
+		2BF185031AE512AF0073F4BB /* ZXingWidgetController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F91AE5127E0073F4BB /* ZXingWidgetController.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BF184D11AE50D590073F4BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BF184BC1AE50D580073F4BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF184C31AE50D590073F4BB;
+			remoteInfo = PireanSharedLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BF184C21AE50D590073F4BB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				2BF184FC1AE512AF0073F4BB /* AztecReader.h in CopyFiles */,
+				2BF184FD1AE512AF0073F4BB /* Decoder.h in CopyFiles */,
+				2BF184FE1AE512AF0073F4BB /* DecoderDelegate.h in CopyFiles */,
+				2BF184FF1AE512AF0073F4BB /* FormatReader.h in CopyFiles */,
+				2BF185001AE512AF0073F4BB /* OverlayView.h in CopyFiles */,
+				2BF185011AE512AF0073F4BB /* ParsedResult.h in CopyFiles */,
+				2BF185021AE512AF0073F4BB /* QRCodeReader.h in CopyFiles */,
+				2BF185031AE512AF0073F4BB /* ZXingWidgetController.h in CopyFiles */,
+				2BF184EE1AE510260073F4BB /* ScanCodeHelper.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B08F7D81AEFD474009B6F53 /* libZXingWidget.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZXingWidget.a; sourceTree = "<group>"; };
+		2B5DA8731AE90BA100C59DFE /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		2B5DA8741AE90BA100C59DFE /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		2B5DA8751AE90BA100C59DFE /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		2B5DA8761AE90BA100C59DFE /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		2B5DA8771AE90BA100C59DFE /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		2B5DA8781AE90BA100C59DFE /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		2B5DA8791AE90BA100C59DFE /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		2B5DA87A1AE90BA100C59DFE /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		2B5DA87B1AE90BA100C59DFE /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		2B5DA87C1AE90BA100C59DFE /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		2B5DA87D1AE90BA100C59DFE /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		2B5DA87E1AE90BA100C59DFE /* JsonHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonHttpService.h; sourceTree = "<group>"; };
+		2B5DA87F1AE90BA100C59DFE /* JsonHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonHttpService.m; sourceTree = "<group>"; };
+		2B5DA8801AE90BA100C59DFE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		2B5DA8811AE90BA100C59DFE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		2B5DA8901AE90C5200C59DFE /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		2B5DA8911AE90C5200C59DFE /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		2B5DA8921AE90C5200C59DFE /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		2BC745001AEE6A9D00EE6E83 /* AuthenticationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationHelper.h; sourceTree = "<group>"; };
+		2BC745011AEE6A9D00EE6E83 /* AuthenticationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationHelper.m; sourceTree = "<group>"; };
+		2BF184C41AE50D590073F4BB /* libPireanSharedLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPireanSharedLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF184CF1AE50D590073F4BB /* PireanSharedLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PireanSharedLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF184D51AE50D590073F4BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF184DF1AE50FFB0073F4BB /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		2BF184E01AE50FFB0073F4BB /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		2BF184E11AE50FFB0073F4BB /* NSData+hexReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+hexReturn.h"; sourceTree = "<group>"; };
+		2BF184E21AE50FFB0073F4BB /* NSData+hexReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+hexReturn.m"; sourceTree = "<group>"; };
+		2BF184E31AE50FFB0073F4BB /* NSString+hexWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+hexWork.h"; sourceTree = "<group>"; };
+		2BF184E41AE50FFB0073F4BB /* NSString+hexWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+hexWork.m"; sourceTree = "<group>"; };
+		2BF184E51AE50FFB0073F4BB /* QRStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRStorage.h; sourceTree = "<group>"; };
+		2BF184E61AE50FFB0073F4BB /* QRStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRStorage.m; sourceTree = "<group>"; };
+		2BF184E71AE50FFB0073F4BB /* ScanCodeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanCodeHelper.h; sourceTree = "<group>"; };
+		2BF184E81AE50FFB0073F4BB /* ScanCodeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanCodeHelper.m; sourceTree = "<group>"; };
+		2BF184EF1AE5116A0073F4BB /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
+		2BF184F11AE5127E0073F4BB /* AztecReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AztecReader.h; sourceTree = "<group>"; };
+		2BF184F21AE5127E0073F4BB /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		2BF184F31AE5127E0073F4BB /* DecoderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoderDelegate.h; sourceTree = "<group>"; };
+		2BF184F41AE5127E0073F4BB /* FormatReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatReader.h; sourceTree = "<group>"; };
+		2BF184F61AE5127E0073F4BB /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		2BF184F71AE5127E0073F4BB /* ParsedResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsedResult.h; sourceTree = "<group>"; };
+		2BF184F81AE5127E0073F4BB /* QRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReader.h; sourceTree = "<group>"; };
+		2BF184F91AE5127E0073F4BB /* ZXingWidgetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXingWidgetController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BF184C11AE50D590073F4BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B08F7D91AEFD474009B6F53 /* libZXingWidget.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF184CC1AE50D590073F4BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF184D01AE50D590073F4BB /* libPireanSharedLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B5DA8711AE90BA000C59DFE /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				2B5DA8721AE90BA100C59DFE /* JSON */,
+				2B5DA87E1AE90BA100C59DFE /* JsonHttpService.h */,
+				2B5DA87F1AE90BA100C59DFE /* JsonHttpService.m */,
+				2B5DA8801AE90BA100C59DFE /* Reachability.h */,
+				2B5DA8811AE90BA100C59DFE /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		2B5DA8721AE90BA100C59DFE /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2BC745001AEE6A9D00EE6E83 /* AuthenticationHelper.h */,
+				2BC745011AEE6A9D00EE6E83 /* AuthenticationHelper.m */,
+				2B5DA8731AE90BA100C59DFE /* JSON.h */,
+				2B5DA8741AE90BA100C59DFE /* NSObject+SBJSON.h */,
+				2B5DA8751AE90BA100C59DFE /* NSObject+SBJSON.m */,
+				2B5DA8761AE90BA100C59DFE /* NSString+SBJSON.h */,
+				2B5DA8771AE90BA100C59DFE /* NSString+SBJSON.m */,
+				2B5DA8781AE90BA100C59DFE /* SBJsonBase.h */,
+				2B5DA8791AE90BA100C59DFE /* SBJsonBase.m */,
+				2B5DA87A1AE90BA100C59DFE /* SBJsonParser.h */,
+				2B5DA87B1AE90BA100C59DFE /* SBJsonParser.m */,
+				2B5DA87C1AE90BA100C59DFE /* SBJsonWriter.h */,
+				2B5DA87D1AE90BA100C59DFE /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		2B5DA8961AE90C5900C59DFE /* SVProgress */ = {
+			isa = PBXGroup;
+			children = (
+				2B5DA8901AE90C5200C59DFE /* SVProgressHUD.bundle */,
+				2B5DA8911AE90C5200C59DFE /* SVProgressHUD.h */,
+				2B5DA8921AE90C5200C59DFE /* SVProgressHUD.m */,
+			);
+			name = SVProgress;
+			sourceTree = "<group>";
+		};
+		2BF184BB1AE50D580073F4BB = {
+			isa = PBXGroup;
+			children = (
+				2BF184C61AE50D590073F4BB /* PireanSharedLib */,
+				2BF184D31AE50D590073F4BB /* PireanSharedLibTests */,
+				2BF184C51AE50D590073F4BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BF184C51AE50D590073F4BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BF184C41AE50D590073F4BB /* libPireanSharedLib.a */,
+				2BF184CF1AE50D590073F4BB /* PireanSharedLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BF184C61AE50D590073F4BB /* PireanSharedLib */ = {
+			isa = PBXGroup;
+			children = (
+				2B5DA8961AE90C5900C59DFE /* SVProgress */,
+				2B5DA8711AE90BA000C59DFE /* Reachability */,
+				2BF184F01AE5127E0073F4BB /* ZXingWidget */,
+				2BF184EF1AE5116A0073F4BB /* AppSettings.h */,
+				2BF184DF1AE50FFB0073F4BB /* NSData+CommonCrypto.h */,
+				2BF184E01AE50FFB0073F4BB /* NSData+CommonCrypto.m */,
+				2BF184E11AE50FFB0073F4BB /* NSData+hexReturn.h */,
+				2BF184E21AE50FFB0073F4BB /* NSData+hexReturn.m */,
+				2BF184E31AE50FFB0073F4BB /* NSString+hexWork.h */,
+				2BF184E41AE50FFB0073F4BB /* NSString+hexWork.m */,
+				2BF184E51AE50FFB0073F4BB /* QRStorage.h */,
+				2BF184E61AE50FFB0073F4BB /* QRStorage.m */,
+				2BF184E71AE50FFB0073F4BB /* ScanCodeHelper.h */,
+				2BF184E81AE50FFB0073F4BB /* ScanCodeHelper.m */,
+			);
+			path = PireanSharedLib;
+			sourceTree = "<group>";
+		};
+		2BF184D31AE50D590073F4BB /* PireanSharedLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF184D41AE50D590073F4BB /* Supporting Files */,
+			);
+			path = PireanSharedLibTests;
+			sourceTree = "<group>";
+		};
+		2BF184D41AE50D590073F4BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BF184D51AE50D590073F4BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BF184F01AE5127E0073F4BB /* ZXingWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2B08F7D81AEFD474009B6F53 /* libZXingWidget.a */,
+				2BF184F11AE5127E0073F4BB /* AztecReader.h */,
+				2BF184F21AE5127E0073F4BB /* Decoder.h */,
+				2BF184F31AE5127E0073F4BB /* DecoderDelegate.h */,
+				2BF184F41AE5127E0073F4BB /* FormatReader.h */,
+				2BF184F61AE5127E0073F4BB /* OverlayView.h */,
+				2BF184F71AE5127E0073F4BB /* ParsedResult.h */,
+				2BF184F81AE5127E0073F4BB /* QRCodeReader.h */,
+				2BF184F91AE5127E0073F4BB /* ZXingWidgetController.h */,
+			);
+			path = ZXingWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BF184C31AE50D590073F4BB /* PireanSharedLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF184D81AE50D590073F4BB /* Build configuration list for PBXNativeTarget "PireanSharedLib" */;
+			buildPhases = (
+				2BF184C01AE50D590073F4BB /* Sources */,
+				2BF184C11AE50D590073F4BB /* Frameworks */,
+				2BF184C21AE50D590073F4BB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PireanSharedLib;
+			productName = PireanSharedLib;
+			productReference = 2BF184C41AE50D590073F4BB /* libPireanSharedLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2BF184CE1AE50D590073F4BB /* PireanSharedLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF184DB1AE50D590073F4BB /* Build configuration list for PBXNativeTarget "PireanSharedLibTests" */;
+			buildPhases = (
+				2BF184CB1AE50D590073F4BB /* Sources */,
+				2BF184CC1AE50D590073F4BB /* Frameworks */,
+				2BF184CD1AE50D590073F4BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF184D21AE50D590073F4BB /* PBXTargetDependency */,
+			);
+			name = PireanSharedLibTests;
+			productName = PireanSharedLibTests;
+			productReference = 2BF184CF1AE50D590073F4BB /* PireanSharedLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BF184BC1AE50D580073F4BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Pirean LTD";
+				TargetAttributes = {
+					2B5DA86B1AE90A5B00C59DFE = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2BF184C31AE50D590073F4BB = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2BF184CE1AE50D590073F4BB = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 2BF184BF1AE50D580073F4BB /* Build configuration list for PBXProject "PireanSharedLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2BF184BB1AE50D580073F4BB;
+			productRefGroup = 2BF184C51AE50D590073F4BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BF184C31AE50D590073F4BB /* PireanSharedLib */,
+				2BF184CE1AE50D590073F4BB /* PireanSharedLibTests */,
+				2B5DA86B1AE90A5B00C59DFE /* PireanSharedLibUniversal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BF184CD1AE50D590073F4BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B5DA8931AE90C5200C59DFE /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B5DA86F1AE90A6500C59DFE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target ImageFilters ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target ImageFilters -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 x86_64 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BF184C01AE50D590073F4BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF184EA1AE50FFB0073F4BB /* NSData+hexReturn.m in Sources */,
+				2B5DA88A1AE90BA100C59DFE /* SBJsonWriter.m in Sources */,
+				2B5DA8971AE90DB200C59DFE /* JsonHttpService.m in Sources */,
+				2B5DA8861AE90BA100C59DFE /* SBJsonBase.m in Sources */,
+				2BF184EB1AE50FFB0073F4BB /* NSString+hexWork.m in Sources */,
+				2BF184EC1AE50FFB0073F4BB /* QRStorage.m in Sources */,
+				2BF184E91AE50FFB0073F4BB /* NSData+CommonCrypto.m in Sources */,
+				2BC745021AEE6A9D00EE6E83 /* AuthenticationHelper.m in Sources */,
+				2B5DA8821AE90BA100C59DFE /* NSObject+SBJSON.m in Sources */,
+				2B5DA8881AE90BA100C59DFE /* SBJsonParser.m in Sources */,
+				2B5DA8941AE90C5200C59DFE /* SVProgressHUD.m in Sources */,
+				2B5DA8841AE90BA100C59DFE /* NSString+SBJSON.m in Sources */,
+				2B5DA88E1AE90BA100C59DFE /* Reachability.m in Sources */,
+				2BF184ED1AE50FFB0073F4BB /* ScanCodeHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF184CB1AE50D590073F4BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B5DA8851AE90BA100C59DFE /* NSString+SBJSON.m in Sources */,
+				2B5DA8951AE90C5200C59DFE /* SVProgressHUD.m in Sources */,
+				2B5DA88B1AE90BA100C59DFE /* SBJsonWriter.m in Sources */,
+				2B5DA8891AE90BA100C59DFE /* SBJsonParser.m in Sources */,
+				2B5DA88F1AE90BA100C59DFE /* Reachability.m in Sources */,
+				2B5DA8871AE90BA100C59DFE /* SBJsonBase.m in Sources */,
+				2B5DA8831AE90BA100C59DFE /* NSObject+SBJSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BF184D21AE50D590073F4BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF184C31AE50D590073F4BB /* PireanSharedLib */;
+			targetProxy = 2BF184D11AE50D590073F4BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B5DA86C1AE90A5B00C59DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2B5DA86D1AE90A5B00C59DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2BF184D61AE50D590073F4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2BF184D71AE50D590073F4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BF184D91AE50D590073F4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PireanSharedLib/ZXingWidget",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eda1dca5-6410-415c-a938-86dc7865fd4e";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2BF184DA1AE50D590073F4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PireanSharedLib/ZXingWidget",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eda1dca5-6410-415c-a938-86dc7865fd4e";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2BF184DC1AE50D590073F4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PireanSharedLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PireanSharedLib/ZXingWidget",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eda1dca5-6410-415c-a938-86dc7865fd4e";
+			};
+			name = Debug;
+		};
+		2BF184DD1AE50D590073F4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PireanSharedLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PireanSharedLib/ZXingWidget",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eda1dca5-6410-415c-a938-86dc7865fd4e";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B5DA86E1AE90A5B00C59DFE /* Build configuration list for PBXAggregateTarget "PireanSharedLibUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B5DA86C1AE90A5B00C59DFE /* Debug */,
+				2B5DA86D1AE90A5B00C59DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF184BF1AE50D580073F4BB /* Build configuration list for PBXProject "PireanSharedLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF184D61AE50D590073F4BB /* Debug */,
+				2BF184D71AE50D590073F4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF184D81AE50D590073F4BB /* Build configuration list for PBXNativeTarget "PireanSharedLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF184D91AE50D590073F4BB /* Debug */,
+				2BF184DA1AE50D590073F4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF184DB1AE50D590073F4BB /* Build configuration list for PBXNativeTarget "PireanSharedLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF184DC1AE50D590073F4BB /* Debug */,
+				2BF184DD1AE50D590073F4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BF184BC1AE50D580073F4BB /* Project object */;
+}
