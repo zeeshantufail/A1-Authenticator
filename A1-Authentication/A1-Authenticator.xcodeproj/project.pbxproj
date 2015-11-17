@@ -396,7 +396,13 @@
 		474313A41BE78A3A0021CF58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474313A31BE78A3A0021CF58 /* Images.xcassets */; };
 		474313A71BE78A3A0021CF58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474313A51BE78A3A0021CF58 /* LaunchScreen.xib */; };
 		474313B31BE78A3A0021CF58 /* A1_AuthenticatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 474313B21BE78A3A0021CF58 /* A1_AuthenticatorTests.m */; };
-		474F1BDB1BFB510E00D5B569 /* A1.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BDA1BFB510E00D5B569 /* A1.png */; };
+		474F1BE01BFB5CF100D5B569 /* QRDoesn’tScan.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BDF1BFB5CF100D5B569 /* QRDoesn’tScan.png */; };
+		474F1BE61BFB5CFB00D5B569 /* QRDoesn’tScan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BE51BFB5CFB00D5B569 /* QRDoesn’tScan@2x.png */; };
+		474F1BE81BFB5D0400D5B569 /* QRDoesn’tScan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BE71BFB5D0400D5B569 /* QRDoesn’tScan@3x.png */; };
+		474F1BF01BFB64F600D5B569 /* SetPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BEF1BFB64F600D5B569 /* SetPin.png */; };
+		474F1BF21BFB650300D5B569 /* SetPin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BF11BFB650300D5B569 /* SetPin@2x.png */; };
+		474F1BF41BFB651400D5B569 /* SetPin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BF31BFB651400D5B569 /* SetPin@3x.png */; };
+		474F1BF61BFB669500D5B569 /* A1.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BF51BFB669500D5B569 /* A1.png */; };
 		477498F01BE78D8F00026C01 /* WelcomeAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477498EF1BE78D8F00026C01 /* WelcomeAppViewController.m */; };
 		477498FF1BE7949800026C01 /* begin1.png in Resources */ = {isa = PBXBuildFile; fileRef = 477498FD1BE7949800026C01 /* begin1.png */; };
 		477499001BE7949800026C01 /* begin1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 477498FE1BE7949800026C01 /* begin1@2x.png */; };
@@ -938,7 +944,13 @@
 		474313AC1BE78A3A0021CF58 /* A1-AuthenticatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A1-AuthenticatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		474313B11BE78A3A0021CF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		474313B21BE78A3A0021CF58 /* A1_AuthenticatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A1_AuthenticatorTests.m; sourceTree = "<group>"; };
-		474F1BDA1BFB510E00D5B569 /* A1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1.png; sourceTree = "<group>"; };
+		474F1BDF1BFB5CF100D5B569 /* QRDoesn’tScan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRDoesn’tScan.png"; sourceTree = "<group>"; };
+		474F1BE51BFB5CFB00D5B569 /* QRDoesn’tScan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRDoesn’tScan@2x.png"; sourceTree = "<group>"; };
+		474F1BE71BFB5D0400D5B569 /* QRDoesn’tScan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRDoesn’tScan@3x.png"; sourceTree = "<group>"; };
+		474F1BEF1BFB64F600D5B569 /* SetPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SetPin.png; sourceTree = "<group>"; };
+		474F1BF11BFB650300D5B569 /* SetPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SetPin@2x.png"; sourceTree = "<group>"; };
+		474F1BF31BFB651400D5B569 /* SetPin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SetPin@3x.png"; sourceTree = "<group>"; };
+		474F1BF51BFB669500D5B569 /* A1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1.png; sourceTree = "<group>"; };
 		477498EE1BE78D8F00026C01 /* WelcomeAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeAppViewController.h; path = ViewControllers/WelcomeAppViewController/WelcomeAppViewController.h; sourceTree = "<group>"; };
 		477498EF1BE78D8F00026C01 /* WelcomeAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeAppViewController.m; path = ViewControllers/WelcomeAppViewController/WelcomeAppViewController.m; sourceTree = "<group>"; };
 		477498FD1BE7949800026C01 /* begin1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = begin1.png; sourceTree = "<group>"; };
@@ -1058,6 +1070,12 @@
 				47D2CA241BFA16A100C1D89F /* begin.png */,
 				47D2CA201BFA168B00C1D89F /* begin@2x.png */,
 				47D2CA221BFA169400C1D89F /* begin@3x.png */,
+				474F1BDF1BFB5CF100D5B569 /* QRDoesn’tScan.png */,
+				474F1BE51BFB5CFB00D5B569 /* QRDoesn’tScan@2x.png */,
+				474F1BE71BFB5D0400D5B569 /* QRDoesn’tScan@3x.png */,
+				474F1BEF1BFB64F600D5B569 /* SetPin.png */,
+				474F1BF11BFB650300D5B569 /* SetPin@2x.png */,
+				474F1BF31BFB651400D5B569 /* SetPin@3x.png */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -1924,7 +1942,7 @@
 		477498F21BE78E5300026C01 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				474F1BDA1BFB510E00D5B569 /* A1.png */,
+				474F1BF51BFB669500D5B569 /* A1.png */,
 				4729E07D1BF1F76C00627DA8 /* Animations */,
 				471D007E1BEB5BE3003BC1C6 /* Splash */,
 				47119CEA1BE9E5FB00876684 /* General */,
@@ -2178,6 +2196,7 @@
 				4729E1A81BF1F8D200627DA8 /* PIN_Anim_Positive014.png in Resources */,
 				47119D111BEA3EC400876684 /* CameraOverlayViewController.xib in Resources */,
 				473698701BF371EF00A0855B /* GTMFadeTruncatingLabelTest1.6.png in Resources */,
+				474F1BF01BFB64F600D5B569 /* SetPin.png in Resources */,
 				4729E1C81BF1F8D200627DA8 /* PIN_Anim_Positive046.png in Resources */,
 				4736971D1BF35CF500A0855B /* Authenticator_Logo_1.png in Resources */,
 				471D00801BEB5BF6003BC1C6 /* LoadingScreen_iphone6.png in Resources */,
@@ -2197,6 +2216,7 @@
 				471C75ED1BF0AE7200F9907E /* Pirean_Settings_Logo@2x.png in Resources */,
 				473698791BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.6.png in Resources */,
 				4729E1DD1BF1F8D200627DA8 /* PIN_Anim_Positive067.png in Resources */,
+				474F1BE01BFB5CF100D5B569 /* QRDoesn’tScan.png in Resources */,
 				473698C71BF371EF00A0855B /* OTPTableViewCell.xib in Resources */,
 				473698751BF371EF00A0855B /* GTMFadeTruncatingLabelTest3.5.png in Resources */,
 				4729E1CA1BF1F8D200627DA8 /* PIN_Anim_Positive048.png in Resources */,
@@ -2324,7 +2344,6 @@
 				4729E1AA1BF1F8D200627DA8 /* PIN_Anim_Positive016.png in Resources */,
 				4729E1541BF1F8D200627DA8 /* PIN_Anim_Negative030.png in Resources */,
 				4736975B1BF3687F00A0855B /* GREY PANEL_00023.png in Resources */,
-				474F1BDB1BFB510E00D5B569 /* A1.png in Resources */,
 				4729E1B21BF1F8D200627DA8 /* PIN_Anim_Positive024.png in Resources */,
 				4729E14A1BF1F8D200627DA8 /* PIN_Anim_Negative020.png in Resources */,
 				471C75E21BF0AE3900F9907E /* QR_Icon_OFF@2x.png in Resources */,
@@ -2384,6 +2403,7 @@
 				4729E1371BF1F8D200627DA8 /* PIN_Anim_Negative001.png in Resources */,
 				4729E15D1BF1F8D200627DA8 /* PIN_Anim_Negative039.png in Resources */,
 				474313A41BE78A3A0021CF58 /* Images.xcassets in Resources */,
+				474F1BE61BFB5CFB00D5B569 /* QRDoesn’tScan@2x.png in Resources */,
 				473698B91BF371EF00A0855B /* GTMUnitTestingTestApp.10.6.gtmUTState in Resources */,
 				4729E1481BF1F8D200627DA8 /* PIN_Anim_Negative018.png in Resources */,
 				4736987D1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.png in Resources */,
@@ -2391,6 +2411,7 @@
 				473698AF1BF371EF00A0855B /* ReadMe_iossim.txt in Resources */,
 				4729E18F1BF1F8D200627DA8 /* PIN_Anim_Negative089.png in Resources */,
 				473698741BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.png in Resources */,
+				474F1BF41BFB651400D5B569 /* SetPin@3x.png in Resources */,
 				4729E16A1BF1F8D200627DA8 /* PIN_Anim_Negative052.png in Resources */,
 				473698B61BF371EF00A0855B /* GTMUnitTestingImage.gtmUTState in Resources */,
 				4729E1CF1BF1F8D200627DA8 /* PIN_Anim_Positive053.png in Resources */,
@@ -2433,6 +2454,7 @@
 				473698BD1BF371EF00A0855B /* GTMUnitTestingWindow.10.5.6.tiff in Resources */,
 				471D007D1BEB37C1003BC1C6 /* scanBox.png in Resources */,
 				4729E15E1BF1F8D200627DA8 /* PIN_Anim_Negative040.png in Resources */,
+				474F1BF61BFB669500D5B569 /* A1.png in Resources */,
 				4729E1B81BF1F8D200627DA8 /* PIN_Anim_Positive030.png in Resources */,
 				473698761BF371EF00A0855B /* GTMFadeTruncatingLabelTest3.6.png in Resources */,
 				4729E1BF1BF1F8D200627DA8 /* PIN_Anim_Positive037.png in Resources */,
@@ -2463,11 +2485,13 @@
 				4729E1D91BF1F8D200627DA8 /* PIN_Anim_Positive063.png in Resources */,
 				473698911BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_60x40_noclip.png in Resources */,
 				4729E1DF1BF1F8D200627DA8 /* PIN_Anim_Positive069.png in Resources */,
+				474F1BE81BFB5D0400D5B569 /* QRDoesn’tScan@3x.png in Resources */,
 				4729E13F1BF1F8D200627DA8 /* PIN_Anim_Negative009.png in Resources */,
 				473697271BF35CF500A0855B /* Authenticator_Logo_11.png in Resources */,
 				4729E1411BF1F8D200627DA8 /* PIN_Anim_Negative011.png in Resources */,
 				4729E1491BF1F8D200627DA8 /* PIN_Anim_Negative019.png in Resources */,
 				4729E1B31BF1F8D200627DA8 /* PIN_Anim_Positive025.png in Resources */,
+				474F1BF21BFB650300D5B569 /* SetPin@2x.png in Resources */,
 				4729E15C1BF1F8D200627DA8 /* PIN_Anim_Negative038.png in Resources */,
 				4729E1D21BF1F8D200627DA8 /* PIN_Anim_Positive056.png in Resources */,
 				4729E1A01BF1F8D200627DA8 /* PIN_Anim_Positive006.png in Resources */,
