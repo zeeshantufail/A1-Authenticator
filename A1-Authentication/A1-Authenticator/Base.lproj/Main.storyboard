@@ -77,15 +77,15 @@
                                         <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ribbon.png" id="SpI-lW-N0z">
+                                        <rect key="frame" x="11" y="0.0" width="43" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                    </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ribbon.png" id="SpI-lW-N0z">
-                                <rect key="frame" x="13" y="0.0" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="*You can switch your authentication type at any time in app settings." textAlignment="center" id="9a8-Om-kST">
                                 <rect key="frame" x="56" y="493" width="211" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -135,7 +135,7 @@
                                                 <animations/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ribbon.png" id="hJ4-EH-MHM">
-                                                <rect key="frame" x="13" y="0.0" width="45" height="45"/>
+                                                <rect key="frame" x="11" y="0.0" width="43" height="42"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                             </imageView>
@@ -873,10 +873,10 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="blc-dl-RhZ">
-                                        <rect key="frame" x="72" y="397" width="168" height="36"/>
+                                        <rect key="frame" x="84" y="396" width="147" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
-                                        <state key="normal" title="QR Doesn't Scan"/>
+                                        <state key="normal" image="QRDoesn’tScan.png"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yXN-TS-c6V">
                                         <rect key="frame" x="8" y="533" width="27" height="27"/>
@@ -889,11 +889,6 @@
                                             <action selector="crossButtonAction:" destination="3ks-UC-zvU" eventType="touchUpInside" id="Rkd-a9-0BR"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A1.png" id="Xh4-Vm-EVn">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                    </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -2057,7 +2052,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0QA-dO-Tdd">
-                                        <rect key="frame" x="13" y="0.0" width="45" height="45"/>
+                                        <rect key="frame" x="11" y="0.0" width="43" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <state key="normal" backgroundImage="Ribbon.png"/>
@@ -2295,7 +2290,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Rhg-9n-5B3">
-                                        <rect key="frame" x="78" y="216" width="156" height="156"/>
+                                        <rect key="frame" x="80" y="217" width="153" height="153"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                     </imageView>
@@ -2318,11 +2313,6 @@
                                             <action selector="crossButtonAction:" destination="jfs-Un-Yt1" eventType="touchUpInside" id="wkv-kc-DGl"/>
                                         </connections>
                                     </button>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="UhO-YI-fjh">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                    </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -2343,7 +2333,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="A1.png" width="640" height="1136"/>
         <image name="Authenticator_Help_Icon.png" width="45" height="45"/>
         <image name="Authenticator_Logo_0.png" width="750" height="1334"/>
         <image name="Back_Arrow_OFF.png" width="45" height="45"/>
@@ -2355,6 +2344,7 @@
         <image name="Notification_Help_Icon.png" width="90" height="66"/>
         <image name="PIN_Icon_ON.png" width="40" height="40"/>
         <image name="Pirean_Settings_Logo.png" width="105" height="30"/>
+        <image name="QRDoesn’tScan.png" width="296" height="71"/>
         <image name="QR_Help_Icon.png" width="36" height="36"/>
         <image name="QR_Icon_ON.png" width="40" height="40"/>
         <image name="ResetMyApp.png" width="291" height="65"/>
