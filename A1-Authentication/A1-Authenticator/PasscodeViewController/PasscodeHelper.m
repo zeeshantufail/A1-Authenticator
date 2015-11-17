@@ -113,16 +113,48 @@
 }
 
 -(void)authenticationCanceled{
-//    if (self.passcodeScreenState.screenType == 0 || ) {
-//
-//    }
-    if (self.passcodeScreenState.screenType == 4) {
+    
+    switch (self.passcodeScreenState.screenType) {
+        case 0:
+            
+            [_keyboardViewController.navigationController popViewControllerAnimated:YES];
+
+            break;
+            
+        case 1:
+            
+            break;
+            
+        case 2:
+            
+            break;
+            
+        case 3:
+            
+            break;
+        case 4:
+            
+            [_keyboardViewController.view removeFromSuperview];
+            [_keyboardViewController removeFromParentViewController];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+-(BOOL)passcodeDismissOnSuccess:(NSString *)passcode{
+    if (self.passCode.length > 0 && [self.passCode isEqualToString:passcode]) {
+        self.passcodeScreenState.dismiss = true;
+        [_keyboardViewController runPositiveAnime];
+        [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
         
-        [_keyboardViewController.view removeFromSuperview];
-        [_keyboardViewController removeFromParentViewController];
+        
+        //                    [[AppSettings sharedAppSettings] setAppPin:passcode]; //todo
+        return YES;
     }
     else{
-        [_keyboardViewController.navigationController popViewControllerAnimated:YES];
+        return NO;
     }
 }
 
@@ -137,15 +169,8 @@
                 [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
             }
             else{
-                if (self.passCode.length > 0 && [self.passCode isEqualToString:passcode]) {
-                    self.passcodeScreenState.dismiss = true;
-                    [_keyboardViewController runPositiveAnime];
-                    [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
-                    
-                    
-//                    [[AppSettings sharedAppSettings] setAppPin:passcode]; //todo
-                }
-                else{
+                if(![self passcodeDismissOnSuccess:passcode])
+                {
                     self.passcodeScreenState.screenNumber = 0;
                     [_keyboardViewController runNegativeAnime];
                     [_keyboardViewController.errorLabel setHidden:NO];
@@ -154,6 +179,66 @@
             }
             break;
             
+            
+        case 1:
+            if(![self passcodeDismissOnSuccess:passcode])
+            {
+                self.passcodeScreenState.screenNumber = 0;
+                [_keyboardViewController runNegativeAnime];
+                [_keyboardViewController.errorLabel setHidden:NO];
+                [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
+            }
+            break;
+            
+        case 2:
+            if (self.passcodeScreenState.screenNumber == 0) {
+                if( [[AppSettings sharedAppSettings] checkPin:passcode] )
+                {
+                    self.passcodeScreenState.screenNumber = 1;
+                    [_keyboardViewController runPositiveAnime];
+                    [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
+                }
+                
+            }
+            else if(self.passcodeScreenState.screenNumber == 1){
+                self.passCode = passcode;
+                self.passcodeScreenState.screenNumber = 2;
+                [_keyboardViewController runPositiveAnime];
+                
+                [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
+            }
+            
+            else{
+                if(![self passcodeDismissOnSuccess:passcode])
+                {
+                    self.passcodeScreenState.screenNumber = 1;
+                    [_keyboardViewController runNegativeAnime];
+                    [_keyboardViewController.errorLabel setHidden:NO];
+                    [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
+                }
+            }
+            break;
+            
+        case 3:
+            if (self.passcodeScreenState.screenNumber == 0) {
+                self.passCode = passcode;
+                self.passcodeScreenState.screenNumber = 1;
+                [_keyboardViewController runPositiveAnime];
+                
+                [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
+            }
+            else{
+                if(![self passcodeDismissOnSuccess:passcode])
+                {
+                    self.passcodeScreenState.screenNumber = 0;
+                    [_keyboardViewController runNegativeAnime];
+                    [_keyboardViewController.errorLabel setHidden:NO];
+                    [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
+                }
+            }
+            break;
+            
+            break;
         default:
             break;
     }
@@ -172,6 +257,13 @@
                 if (self.passcodeScreenState.screenNumber == 1) {
                     [keyBoardController performSegueWithIdentifier: @"homeViewSegue" sender: self];
                 }
+                break;
+            case 1:
+                
+                break;
+            case 2:
+                break;
+            case 3:
                 break;
             case 4:
                 [keyBoardController performSegueWithIdentifier: @"homeViewSegue" sender: self];

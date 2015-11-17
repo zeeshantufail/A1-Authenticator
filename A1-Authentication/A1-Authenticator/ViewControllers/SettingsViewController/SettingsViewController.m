@@ -16,6 +16,8 @@
 #import "ResetAppViewController.h"
 #import "HelpViewController.h"
 #import "AboutViewController.h"
+#import "KeyboardViewController.h"
+#import "PasscodeHelper.h"
 
 @interface SettingsViewController ()
 
@@ -154,5 +156,20 @@
     }
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([[segue identifier] isEqualToString:@"setPinScreenThroughSettingSegue"])
+    {
+        //[[segue destinationViewController] setDelegate:self];
+        KeyboardViewController *kbc = (KeyboardViewController *)[segue destinationViewController];
+        PasscodeHelper *pc = [[PasscodeHelper alloc] init];
+        [pc loadContent];
+        pc.passcodeScreenState.screenNumber = 0;
+        pc.passcodeScreenState.screenType = 3;
+        pc.passcodeScreenState.error = false;
+        
+        kbc.passcodeHelper = pc;
+    }
+}
 
 @end

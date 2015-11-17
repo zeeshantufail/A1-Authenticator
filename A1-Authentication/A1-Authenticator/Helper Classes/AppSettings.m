@@ -37,6 +37,13 @@ static AppSettings *appSettings;
     
     [[NSUserDefaults standardUserDefaults] setValue:hashData forKey:@"Pin"];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
+//    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+//    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+//    [archiver encodeObject:pin forKey:PinKey];
+//    [archiver finishEncoding];
+//    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"Pin"];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (BOOL)checkPin:(NSString*)pin {
