@@ -18,6 +18,7 @@
 #import "AboutViewController.h"
 #import "KeyboardViewController.h"
 #import "PasscodeHelper.h"
+#import "AppSettings.h"
 
 @interface SettingsViewController ()
 
@@ -154,6 +155,10 @@
         AboutViewController *aboutViewController = [storyboard instantiateViewControllerWithIdentifier:@"AboutViewController"];
         [self.revealViewController pushFrontViewController:aboutViewController animated:YES];
     }
+}
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    return !([identifier isEqualToString:@"setPinScreenThroughSettingSegue"] && [[AppSettings sharedAppSettings] appPinState]);
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

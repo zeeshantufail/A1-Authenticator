@@ -13,7 +13,6 @@
 #import "AppSettings.h"
 #import "SetPinViewController.h"
 #import "PasscodeHelper.h"
-#import "SWRevealViewController.h"
 
 @interface KeyboardViewController ()
 {

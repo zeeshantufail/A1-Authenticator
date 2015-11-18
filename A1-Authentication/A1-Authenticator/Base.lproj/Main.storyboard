@@ -2241,7 +2241,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0pl-b0-bWh">
-                                        <rect key="frame" x="10" y="532" width="27" height="29"/>
+                                        <rect key="frame" x="11" y="532" width="27" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <state key="normal" image="X_OFF.png"/>
