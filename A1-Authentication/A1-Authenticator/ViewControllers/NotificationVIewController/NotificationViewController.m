@@ -8,6 +8,7 @@
 
 #import "NotificationViewController.h"
 #import "NotificationCustomCell.h"
+#import "SWRevealViewController.h"
 
 @interface NotificationViewController ()
 {
@@ -131,11 +132,10 @@
         [UIView animateWithDuration: 0.5 animations:^{
             cell.cellMainView.center = CGPointMake(cell.cellMainView.center.x - 164, cell.cellMainView.center.y);
         }];
-        //[cell.cellMainView updateConstraints];
+
         [cell setNeedsLayout];
         
         [cellsOnLeftSide addObject:indexPath];
-        NSLog(@"indexPath: %@",indexPath);
     }
 }
 
@@ -146,14 +146,12 @@
     
     NotificationCustomCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     
-    NSLog(@"%f",cell.cellMainView.frame.origin.x);
-    
     if (cell.cellMainView.frame.origin.x == -200)
     {
         [UIView animateWithDuration: 0.5 animations:^{
             cell.cellMainView.center = CGPointMake(cell.cellMainView.center.x + 164, cell.cellMainView.center.y);
         }];
-        //[cell.cellMainView updateConstraints];
+        
         [cell setNeedsLayout];
         
         [cellsOnLeftSide removeObject:indexPath];
@@ -169,7 +167,6 @@
             cell.cellMainView.center = CGPointMake(cell.cellMainView.center.x - 164, cell.cellMainView.center.y);
         }
     }
-    
     if (editCells)
     {
         if (cell.cellMainView.frame.origin.x == -36)
@@ -177,22 +174,12 @@
             [UIView animateWithDuration: 0.1 animations:^{
                 cell.cellMainView.center = CGPointMake(cell.cellMainView.center.x + 36, cell.cellMainView.center.y);
             }];
-            
-            //cell.cellMainViewLeadingConstraint.constant = -8.0;
-            //cell.cellMainViewTrailingConstraint.constant = -52.0;
-            //[cell.cellMainView updateConstraints];
-            //[cell setNeedsLayout];
         }
         if (cell.cellMainView.frame.origin.x == -200)
         {
             [UIView animateWithDuration: 0.1 animations:^{
                 cell.cellMainView.center = CGPointMake(cell.cellMainView.center.x + 164 + 36, cell.cellMainView.center.y);
             }];
-            
-            //cell.cellMainViewLeadingConstraint.constant = -8.0;
-            //cell.cellMainViewTrailingConstraint.constant = -52.0;
-            //[cell.cellMainView updateConstraints];
-            //[cell setNeedsLayout];
         }
     }
     if (goBackCells)
@@ -203,18 +190,15 @@
                 cell.cellMainView.center = CGPointMake(cell.cellMainView.center.x - 36, cell.cellMainView.center.y);
             }];
         }
-        
-        //cell.cellMainViewLeadingConstraint.constant = -44.0;
-        //cell.cellMainViewTrailingConstraint.constant = -8.0;
-        //[cell.cellMainView updateConstraints];
-        //[cell setNeedsLayout];
     }
-    
-    //[cell.cellMainView updateConstraints];
-    //[cell setNeedsLayout];
 }
 
 bool editCells = false;
+
+- (IBAction)settingsBtnPressed:(id)sender
+{
+    [self.revealViewController revealToggle:sender];
+}
 
 - (IBAction)editBtnPressed:(id)sender
 {

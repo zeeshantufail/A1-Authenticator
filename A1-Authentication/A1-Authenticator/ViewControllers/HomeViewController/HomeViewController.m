@@ -48,9 +48,15 @@
     
     [self.designationLabel setHidden:YES];
     
+    [self.messageBtn setHidden:YES];
+    
     //[self.designationLabel setAlpha:0];
     
     [self performSelector:@selector(animateProfileImage) withObject:self afterDelay:0.9 ];
+    
+    [self performSelector:@selector(animateMessageBtn) withObject:self afterDelay:1.5 ];
+    
+    [self performSelector:@selector(showMessageBtn) withObject:self afterDelay:2.0 ];
 }
 
 -(void)animateUpperColorView
@@ -124,6 +130,32 @@
                    });
 }
 
+-(void)animateMessageBtn
+{
+    self.messageImageView.image = [UIImage imageNamed:@"Message_0021.png"];
+    
+    NSMutableArray *animationArray = [[NSMutableArray alloc] init];
+    
+    for (int i=1 ; i<=21 ; i++)
+    {
+        [animationArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"Message_%.4d.png",i]]];
+    }
+
+    self.messageImageView.animationImages=animationArray;
+    self.messageImageView.animationDuration= 1.0;
+    self.messageImageView.animationRepeatCount = 1;
+    [self.messageImageView startAnimating];
+}
+
+-(void)showMessageBtn
+{
+    [UIView transitionWithView:self.messageBtn duration:1.0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^(void){
+        
+        [self.messageBtn setHidden:NO];
+        
+    } completion:nil];
+}
+
 -(void)showDesignationLabel
 {
     [UIView transitionWithView:self.designationLabel duration:1.0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^(void){
@@ -131,6 +163,9 @@
         [self.designationLabel setHidden:NO];
         
     } completion:nil];
+}
+
+- (IBAction)messageBtnPressed:(id)sender {
 }
 
 - (IBAction)settingsBtnPressed:(id)sender

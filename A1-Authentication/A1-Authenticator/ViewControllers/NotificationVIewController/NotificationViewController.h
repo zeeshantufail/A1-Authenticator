@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton    * backBtn;
 @property (weak, nonatomic) IBOutlet UIButton    * editBtn;
 
+- (IBAction)settingsBtnPressed:(id)sender;
 
 - (IBAction)editBtnPressed:(id)sender;
 - (IBAction)backBtnPressed:(id)sender;

@@ -17,6 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    SWRevealViewController *viewController = (SWRevealViewController *)[storyboard instantiateViewControllerWithIdentifier:@"mainStoryboard"];
+//    self.window.rootViewController = viewController;
+    
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    RegistrationViewController *rvc = [storyboard instantiateViewControllerWithIdentifier:@"registerationStoryboard"];
+//    UINavigationController *navigationController=[[UINavigationController alloc] initWithRootViewController:rvc];
+//    self.window.rootViewController = navigationController;
+    
     [application setStatusBarHidden:YES];
     return YES;
 }

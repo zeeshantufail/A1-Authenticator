@@ -12,10 +12,13 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView * upperColorImageView;
 @property (weak, nonatomic) IBOutlet UIImageView * profileImageView;
+@property (weak, nonatomic) IBOutlet UIImageView * messageImageView;
+@property (weak, nonatomic) IBOutlet UIButton    * messageBtn;
 @property (weak, nonatomic) IBOutlet UIButton    * settingsBtn;
 @property (weak, nonatomic) IBOutlet UILabel     * nameLbl;
 @property (weak, nonatomic) IBOutlet UILabel     * designationLabel;
 
+- (IBAction)messageBtnPressed:(id)sender;
 - (IBAction)settingsBtnPressed:(id)sender;
 
 @end
