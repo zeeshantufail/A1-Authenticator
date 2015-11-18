@@ -254,6 +254,9 @@ static AppSettings *appSettings;
     [self setApplicationLanguage:0];
     [self setAppUserFirstName:@""];
     [self setAppUserLastName:@""];
+    [self setAppPin:@"****"];
+    
+    
     NSString *filePath = [self dataFilePath];
     if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
         [[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];

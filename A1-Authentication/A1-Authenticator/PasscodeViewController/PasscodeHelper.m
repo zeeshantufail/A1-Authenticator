@@ -145,6 +145,8 @@
             [_keyboardViewController.view removeFromSuperview];
             [_keyboardViewController removeFromParentViewController];
             break;
+        case 5:
+            break;
             
         default:
             break;
@@ -158,7 +160,6 @@
         self.passcodeScreenState.dismiss = true;
         [_keyboardViewController runPositiveAnime];
         [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
-        [[AppSettings sharedAppSettings] setAppPinState:YES];
         [[AppSettings sharedAppSettings] setAppPin:passcode]; //todo
         return YES;
     }
@@ -279,9 +280,13 @@
 }
 
 -(void)resetPinScreen{
-    self.passcodeScreenState.screenNumber = 0;
-    self.passcodeScreenState.dismiss = false;
-    [self updatePINScreen:_keyboardViewController];
+    if (self.passcodeScreenState.screenType != 4 && self.passcodeScreenState.screenType != 5) {
+        self.passcodeScreenState.screenNumber = 0;
+        self.passcodeScreenState.dismiss = false;
+        [_keyboardViewController.buttonCancel setHidden:NO];
+        [_keyboardViewController.settingsBtnOutlet setUserInteractionEnabled:YES];
+        [self updatePINScreen:_keyboardViewController];
+    }
 }
 
 -(void)updatePINScreen:(KeyboardViewController *)keyBoardController{
@@ -289,45 +294,78 @@
     if (self.passcodeScreenState.dismiss) {
         switch (self.passcodeScreenState.screenType) {
             case 0:
-                if (self.passcodeScreenState.screenNumber == 1) {
-                    [keyBoardController performSegueWithIdentifier: @"homeViewSegue" sender: self];
-                }
+                [keyBoardController performSegueWithIdentifier: @"homeViewSegue" sender: self];
+//                [[AppSettings sharedAppSettings] setAppActivationState:YES];
+                [[AppSettings sharedAppSettings] setAppPinState:YES];
+                [[AppSettings sharedAppSettings] setAppTouchID:NO];
+                self.passcodeScreenState.screenType = -1;
+                
                 break;
             case 1:
-                
+//                [_keyboardViewController.navigationController dismissViewControllerAnimated:YES completion:nil];
+                [_keyboardViewController.navigationController dismissViewControllerAnimated:YES completion:nil];
                 break;
             case 2:
                 [self authenticationCanceled]; //dismiss view on success
+                [[AppSettings sharedAppSettings] setAppPinState:YES];
+                [[AppSettings sharedAppSettings] setAppTouchID:NO];
                 break;
             case 3:
                 [self authenticationCanceled];// dissmiss view on success
                 break;
             case 4:
                 [keyBoardController performSegueWithIdentifier: @"homeViewSegue" sender: self];
+                [[AppSettings sharedAppSettings] setAppPinState:NO];
+                [[AppSettings sharedAppSettings] setAppTouchID:YES];
+                self.passcodeScreenState.screenType = -1;
+                break;
+            case 5:
+                [_keyboardViewController dismissViewControllerAnimated:YES completion:nil];
+//                [[[_keyboardViewController presentingViewController] navigationController] dismissViewControllerAnimated:YES completion:nil];
                 break;
             default:
                 break;
         }
         
-        [self resetPinScreen];
+        if (self.passcodeScreenState.screenType != 1) {//unused object
+            [self resetPinScreen];
+        }
+        
     }
     
-    MessageContent *mc = screenState[self.passcodeScreenState.screenType][self.passcodeScreenState.screenNumber];
     
-    keyBoardController.headerLabel.text = mc.headerText;
-    keyBoardController.subHeaderLabel.text = mc.subHeaderText;
-    keyBoardController.errorLabel.text = mc.errorText;
-    [keyBoardController.errorLabel setHidden:YES];
-    [keyBoardController clearAlldata];
+    if (self.passcodeScreenState.screenType != 4 && self.passcodeScreenState.screenType != 5) {
+        
+        MessageContent *mc = screenState[self.passcodeScreenState.screenType][self.passcodeScreenState.screenNumber];
+        
+        keyBoardController.headerLabel.text = mc.headerText;
+        keyBoardController.subHeaderLabel.text = mc.subHeaderText;
+        keyBoardController.errorLabel.text = mc.errorText;
+        [keyBoardController.errorLabel setHidden:YES];
+        [keyBoardController clearAlldata];
+        
+    }
     
     
     if (self.passcodeScreenState.screenType == 4 && self.passcodeScreenState.screenNumber == 0) {
         [[keyBoardController keyPadView] setHidden:YES];
         self.passcodeScreenState.screenNumber = 1;
         TouchIDAuthentication * tia = [[TouchIDAuthentication alloc] init];
-        [tia setUpAuthenticationWithMessageString:@"Place your finger on home button to scan for Touch ID" andFallbackTitle:@""];
+        [tia setUpAuthenticationWithMessageString:@"Place your finger on home button to confirm for Touch ID" andFallbackTitle:@""];
         tia.delegate = self;
         
+    }
+    else if (self.passcodeScreenState.screenType == 5 && self.passcodeScreenState.screenNumber == 0) {
+        [[keyBoardController keyPadView] setHidden:YES];
+        self.passcodeScreenState.screenNumber = 1;
+        TouchIDAuthentication * tia = [[TouchIDAuthentication alloc] init];
+        [tia setUpAuthenticationWithMessageString:@"Place your finger on home button to authenticate for Touch ID" andFallbackTitle:@""];
+        tia.delegate = self;
+        
+    }
+    else if(self.passcodeScreenState.screenType == 1){
+        [_keyboardViewController.buttonCancel setHidden:YES];
+        [_keyboardViewController.settingsBtnOutlet setUserInteractionEnabled:NO];
     }
 }
 
@@ -352,6 +390,12 @@
 }
 
 -(void)applicationDidBecameActive{
+    
+    if (self.passcodeScreenState.dismiss) {
+        [self updatePINScreen:_keyboardViewController];
+        return;
+    }
+    
     switch (self.passcodeScreenState.screenType) {
         case 4:
             if (self.passcodeScreenState.screenNumber != 2) {
@@ -361,6 +405,16 @@
             {
                 [self authenticationCanceled];
             }
+            break;
+        case 5:
+            if (self.passcodeScreenState.screenNumber == 2) {
+                [self authenticationCanceled];
+            }
+            else{
+                self.passcodeScreenState.screenNumber = 0;
+                [self updatePINScreen:_keyboardViewController];
+            }
+            
             break;
             
         default:

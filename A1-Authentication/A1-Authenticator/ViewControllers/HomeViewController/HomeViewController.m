@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "SWRevealViewController.h"
+#import "AppSettings.h"
 
 
 @interface HomeViewController ()
@@ -22,6 +23,15 @@
     
     [self addTapGesture];
     [self performAnimations];
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    if (![[AppSettings sharedAppSettings] appActivationState]) {
+        [[AppSettings sharedAppSettings] setAppActivationState:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning
