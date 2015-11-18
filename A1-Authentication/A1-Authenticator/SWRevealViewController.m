@@ -27,6 +27,8 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "SWRevealViewController.h"
+#import "KeyboardViewController.h"
+#import "PasscodeHelper.h"
 
 
 #pragma mark - StatusBar Helper Function
@@ -699,8 +701,12 @@ const int FrontViewPositionNone = 0xff;
     // Do not call super, to prevent the apis from unfruitful looking for inexistent xibs!
     //[super loadView];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive) name:@"applicationWillResignActive" object:nil];
+    [self presentEnterPINScreen];
     // load any defined front/rear controllers from the storyboard before
     [self loadStoryboardControllers];
+    
+    
     
     // This is what Apple used to tell us to set as the initial frame, which is of course totally irrelevant
     // with view controller containment patterns, let's leave it for the sake of it!
@@ -736,6 +742,35 @@ const int FrontViewPositionNone = 0xff;
     [self _setFrontViewPosition:initialPosition withDuration:0.0];
 }
 
+-(void)applicationWillResignActive{
+    [self presentEnterPINScreen];
+}
+
+-(void)presentEnterPINScreen{
+    UINavigationController * nc = (UINavigationController *)[self presentedViewController];
+    if (!nc) {
+        [self performSegueWithIdentifier:@"enterPasscodeSegue" sender:self];
+    }
+    
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+   if ([[segue identifier] isEqualToString:@"enterPasscodeSegue"])
+    {
+        //[[segue destinationViewController] setDelegate:self];
+        UINavigationController * navC = (UINavigationController *)[segue destinationViewController];
+        KeyboardViewController *kbc = (KeyboardViewController *)[navC topViewController];
+        PasscodeHelper *pc = [[PasscodeHelper alloc] init];
+        [pc loadContent];
+        pc.passcodeScreenState.screenNumber = 0;
+        pc.passcodeScreenState.screenType = 1;
+        pc.passcodeScreenState.error = false;
+        
+        kbc.passcodeHelper = pc;
+    }
+}
 
 - (void)viewDidAppear:(BOOL)animated
 {

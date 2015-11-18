@@ -55,7 +55,6 @@
 //    }
     
     [self.passcodeHelper updatePINScreen:self];
-    
 }
 
 -(void)viewDidAppear:(BOOL)animated{

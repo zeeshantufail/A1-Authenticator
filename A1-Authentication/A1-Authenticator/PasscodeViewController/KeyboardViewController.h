@@ -24,6 +24,7 @@
     IBOutlet UIImageView *dotsView;
 }
 
+@property (weak, nonatomic) IBOutlet UIButton *settingsBtnOutlet;
 @property (nonatomic) PasscodeHelper * passcodeHelper;
 @property (weak, nonatomic) IBOutlet UITextView *errorLabel;
 @property (weak, nonatomic) IBOutlet UILabel *headerLabel;

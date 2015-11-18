@@ -24,6 +24,13 @@
     [self performAnimations];
 }
 
+-(void)viewDidDisappear:(BOOL)animated{
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

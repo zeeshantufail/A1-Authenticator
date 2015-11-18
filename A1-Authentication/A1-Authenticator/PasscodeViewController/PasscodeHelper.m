@@ -158,7 +158,6 @@
         self.passcodeScreenState.dismiss = true;
         [_keyboardViewController runPositiveAnime];
         [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
-        [[AppSettings sharedAppSettings] setAppPinState:YES];
         [[AppSettings sharedAppSettings] setAppPin:passcode]; //todo
         return YES;
     }
@@ -281,6 +280,8 @@
 -(void)resetPinScreen{
     self.passcodeScreenState.screenNumber = 0;
     self.passcodeScreenState.dismiss = false;
+    [_keyboardViewController.buttonCancel setHidden:NO];
+    [_keyboardViewController.settingsBtnOutlet setUserInteractionEnabled:YES];
     [self updatePINScreen:_keyboardViewController];
 }
 
@@ -289,21 +290,27 @@
     if (self.passcodeScreenState.dismiss) {
         switch (self.passcodeScreenState.screenType) {
             case 0:
-                if (self.passcodeScreenState.screenNumber == 1) {
-                    [keyBoardController performSegueWithIdentifier: @"homeViewSegue" sender: self];
-                }
+                [keyBoardController performSegueWithIdentifier: @"homeViewSegue" sender: self];
+                [[AppSettings sharedAppSettings] setAppActivationState:YES];
+                [[AppSettings sharedAppSettings] setAppPinState:YES];
+                [[AppSettings sharedAppSettings] setAppTouchID:NO];
                 break;
             case 1:
-                
+                [_keyboardViewController.navigationController dismissViewControllerAnimated:YES completion:nil];
                 break;
             case 2:
                 [self authenticationCanceled]; //dismiss view on success
+                [[AppSettings sharedAppSettings] setAppPinState:YES];
+                [[AppSettings sharedAppSettings] setAppTouchID:NO];
                 break;
             case 3:
                 [self authenticationCanceled];// dissmiss view on success
                 break;
             case 4:
                 [keyBoardController performSegueWithIdentifier: @"homeViewSegue" sender: self];
+                [[AppSettings sharedAppSettings] setAppActivationState:YES];
+                [[AppSettings sharedAppSettings] setAppPinState:NO];
+                [[AppSettings sharedAppSettings] setAppTouchID:YES];
                 break;
             default:
                 break;
@@ -328,6 +335,10 @@
         [tia setUpAuthenticationWithMessageString:@"Place your finger on home button to scan for Touch ID" andFallbackTitle:@""];
         tia.delegate = self;
         
+    }
+    else if(self.passcodeScreenState.screenType == 1){
+        [_keyboardViewController.buttonCancel setHidden:YES];
+        [_keyboardViewController.settingsBtnOutlet setUserInteractionEnabled:NO];
     }
 }
 
