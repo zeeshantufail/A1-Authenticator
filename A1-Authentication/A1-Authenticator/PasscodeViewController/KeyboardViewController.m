@@ -174,8 +174,8 @@
 }
 
 - (IBAction)settingBtnPressed:(id)sender {
-    
-    [self.revealViewController revealToggle:sender];
+    [self.passcodeHelper authenticationCanceled];
+//    [self.revealViewController revealToggle:sender];
 }
 
 - (IBAction)keyPressed:(id)sender{
@@ -245,11 +245,15 @@
     [deleteButtonOutlet setEnabled:YES];
     if(!dotsView.image)
     {
-    [dotsView setImage:[UIImage imageNamed:@"startCircleImage.png"] ];
-    dotsView.alpha = 0;
-    [UIView animateWithDuration:0.5 animations:^(void){
-        dotsView.alpha = 1;
-    }];
+        [dotsView setImage:[UIImage imageNamed:@"startCircleImage.png"] ];
+        dotsView.alpha = 0;
+        [UIView animateWithDuration:0.5 animations:^(void){
+            dotsView.alpha = 1;
+        }];
+    }
+    else{
+        
+        [dotsView setImage:[UIImage imageNamed:@"startCircleImage.png"] ];
     }
     [self.keyPadView setUserInteractionEnabled:YES];
     //[self testAnime];

@@ -149,6 +149,8 @@
         default:
             break;
     }
+    
+    [self resetPinScreen];
 }
 
 -(BOOL)passcodeDismissOnSuccess:(NSString *)passcode{
