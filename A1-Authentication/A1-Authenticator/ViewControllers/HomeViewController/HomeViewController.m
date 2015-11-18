@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "SWRevealViewController.h"
+#import "AppSettings.h"
 
 
 @interface HomeViewController ()
@@ -28,7 +29,9 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    
+    if (![[AppSettings sharedAppSettings] appActivationState]) {
+        [[AppSettings sharedAppSettings] setAppActivationState:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning

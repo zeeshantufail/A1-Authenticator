@@ -29,6 +29,7 @@
 #import "SWRevealViewController.h"
 #import "KeyboardViewController.h"
 #import "PasscodeHelper.h"
+#import "AppSettings.h"
 
 
 #pragma mark - StatusBar Helper Function
@@ -747,9 +748,39 @@ const int FrontViewPositionNone = 0xff;
 }
 
 -(void)presentEnterPINScreen{
-    UINavigationController * nc = (UINavigationController *)[self presentedViewController];
-    if (!nc) {
-        [self performSegueWithIdentifier:@"enterPasscodeSegue" sender:self];
+    
+    if (![[AppSettings sharedAppSettings] appActivationState]) {//todo
+        return;
+    }
+    
+    UIViewController * vc = (UIViewController *)[self presentedViewController];
+    if (!vc) {
+        if ([[AppSettings sharedAppSettings] appTouchID]) {
+            [self performSegueWithIdentifier:@"enterTouchIdSegue" sender:self];
+        }
+        else{
+            [self performSegueWithIdentifier:@"enterPasscodeSegue" sender:self];
+        }
+    }
+    else{
+        KeyboardViewController *kbc;
+        if ([vc isKindOfClass:[KeyboardViewController class]]) {
+             kbc = (KeyboardViewController *)vc;
+        }
+        else if([vc isKindOfClass:[UINavigationController class]])
+        {
+            UINavigationController *nc = (UINavigationController *)vc;
+            kbc = (KeyboardViewController *)[nc topViewController];
+            
+        }
+        if (kbc.passcodeHelper.passcodeScreenState.screenType == 5) {
+            kbc.passcodeHelper.passcodeScreenState.screenNumber = 3;
+        }
+        else{
+            [kbc.passcodeHelper resetPinScreen];
+        }
+        
+        
     }
     
 }
@@ -757,7 +788,7 @@ const int FrontViewPositionNone = 0xff;
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-   if ([[segue identifier] isEqualToString:@"enterPasscodeSegue"])
+    if ([[segue identifier] isEqualToString:@"enterPasscodeSegue"])
     {
         //[[segue destinationViewController] setDelegate:self];
         UINavigationController * navC = (UINavigationController *)[segue destinationViewController];
@@ -766,6 +797,19 @@ const int FrontViewPositionNone = 0xff;
         [pc loadContent];
         pc.passcodeScreenState.screenNumber = 0;
         pc.passcodeScreenState.screenType = 1;
+        pc.passcodeScreenState.error = false;
+        
+        kbc.passcodeHelper = pc;
+    }
+    if ([[segue identifier] isEqualToString:@"enterTouchIdSegue"])
+    {
+        //[[segue destinationViewController] setDelegate:self];
+//        UINavigationController * navC = (UINavigationController *)[segue destinationViewController];
+        KeyboardViewController *kbc = (KeyboardViewController *)[segue destinationViewController];
+        PasscodeHelper *pc = [[PasscodeHelper alloc] init];
+        [pc loadContent];
+        pc.passcodeScreenState.screenNumber = 3;
+        pc.passcodeScreenState.screenType = 5;
         pc.passcodeScreenState.error = false;
         
         kbc.passcodeHelper = pc;

@@ -41,4 +41,5 @@
 -(void)resetWrongPinEnteredCount;
 -(void)updatePINScreen:(KeyboardViewController *)keyBoardController;
 -(void)authenticationCanceled;
+-(void)resetPinScreen;
 @end

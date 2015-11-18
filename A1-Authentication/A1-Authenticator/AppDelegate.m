@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppSettings.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    if ([[AppSettings sharedAppSettings] appActivationState]) {
+//        [[AppSettings sharedAppSettings] setAppActivationState:NO];
+        //RTUNavigation
+    }
+    else{
+        //FTUNavigation
+    }
     
     [application setStatusBarHidden:YES];
     return YES;

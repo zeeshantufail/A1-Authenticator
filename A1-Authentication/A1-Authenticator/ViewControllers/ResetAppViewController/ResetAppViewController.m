@@ -8,6 +8,7 @@
 
 #import "ResetAppViewController.h"
 #import "SWRevealViewController.h"
+#import "AppSettings.h"
 
 @interface ResetAppViewController ()
 
@@ -40,4 +41,23 @@
     [self.revealViewController revealToggle:sender];
 }
 
+- (IBAction)resetButtonAction:(id)sender {
+    
+    
+    [[AppSettings sharedAppSettings] resetApplication];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [self performSelector:@selector(exitApp) withObject:nil afterDelay:0.5];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    //    if (buttonIndex == 1) {
+    //        [[AppSettings sharedAppSettings] resetApplication];
+    //        [[NSUserDefaults standardUserDefaults] synchronize];
+    //        [self performSelector:@selector(exitApp) withObject:nil afterDelay:0.5];
+    //    }
+}
+
+-(void)exitApp{
+    exit(0);
+}
 @end

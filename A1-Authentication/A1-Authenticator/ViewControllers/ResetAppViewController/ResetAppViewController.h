@@ -11,5 +11,6 @@
 @interface ResetAppViewController : UIViewController
 
 - (IBAction)settingsBtnPressed:(id)sender;
+- (IBAction)resetButtonAction:(id)sender;
 
 @end
