@@ -219,41 +219,33 @@ int numberOfPages = 3;
         
         UIView *textContainer = [[UIView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, screenWidth,self.scrollView.frame.size.height)];
         
-        //h1 label
-        
-//        h1 = [[UILabel alloc] initWithFrame:CGRectMake(textContainer.frame.size.width - (screenWidth)+50 , 50, 225, 50)];
-//        h2 = [[UILabel alloc] initWithFrame:CGRectMake(textContainer.frame.size.width - (screenWidth)+50 , 110, 225, 61)];
-        h1 = [[UILabel alloc] initWithFrame:CGRectMake(0 , 50, 225, 50)];
-        h2 = [[UILabel alloc] initWithFrame:CGRectMake(0 , 110, 225, 61)];
-        
         if ([AppHelper isIphone5])
         {
-            h1 = [[UILabel alloc] initWithFrame:CGRectMake(50 , 50, 225, 50)];
-            h2 = [[UILabel alloc] initWithFrame:CGRectMake(50 , 100, 225, 61)];
+            h1 = [[UILabel alloc] initWithFrame:CGRectMake(0 , 0, 320, 48)];
+            h2 = [[UILabel alloc] initWithFrame:CGRectMake(0 , 46, 320, 60)];
             
-            [h1 setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:18]];
-            [h2 setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:13]];
+            [h1 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:18]];
+            [h2 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:12]];
         }
         if ([AppHelper isIphone6])
         {
             h1 = [[UILabel alloc] initWithFrame:CGRectMake(70 , 50, 225, 60)];
             h2 = [[UILabel alloc] initWithFrame:CGRectMake(70 , 100, 225, 71)];
             
-            [h1 setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:20]];
-            [h2 setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:15]];
+            [h1 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:20]];
+            [h2 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15]];
         }
         
-        h1.numberOfLines = 0;
-        h1.textAlignment = NSTextAlignmentCenter;  //NSTextAlignmentRight
+        h1.numberOfLines = 2;
+        h1.textAlignment = NSTextAlignmentCenter;
         h1.textColor = [UIColor colorWithRed:0.184 green:0.184 blue:0.184 alpha:1];
         h1.backgroundColor=[UIColor clearColor];
         
-        //h2 label
-        
-        h2.numberOfLines = 4;
+        h2.numberOfLines = 3;
         h2.textAlignment = NSTextAlignmentCenter;
         h2.textColor = [UIColor colorWithRed:0.184 green:0.184 blue:0.184 alpha:0.8];
         h2.backgroundColor=[UIColor clearColor];
+        
         NSString *labelHeadingText;
         NSString *labelSubHeadingText;
         NSMutableAttributedString *attributedString;
@@ -274,7 +266,7 @@ int numberOfPages = 3;
                 [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [labelHeadingText length])];
                 h1.attributedText = attributedString ;
 
-                labelSubHeadingText = @"Log in to all of your secured\n web apps quickly and securely";
+                labelSubHeadingText = @"Log in to all of your secured web\n apps quickly and securely";
                 
                 attributedString2 = [[NSMutableAttributedString alloc] initWithString:labelSubHeadingText];
                 paragraphStyle2 = [[NSMutableParagraphStyle alloc] init];
@@ -288,18 +280,14 @@ int numberOfPages = 3;
 
                 if ([AppHelper isIphone5])
                 {
-                    h1.frame = CGRectMake(75, 50, 180, 50);
-                    h2.frame = CGRectMake(50, 100, 225, 71 );
+                    h1.frame = CGRectMake(0, 0, 320, 48);
+                    h2.frame = CGRectMake(0, 55, 320, 60 );
                 }
                 if ([AppHelper isIphone6])
                 {
                     h1.frame = CGRectMake(70, 50, 225, 60);
                     h2.frame = CGRectMake(0, 110, screenWidth, 71 );
                 }
-//                h1.frame = CGRectMake(textContainer.frame.size.width - (screenWidth)+75, 50, 180, 50);
-//                h2.frame = CGRectMake(textContainer.frame.size.width - (screenWidth)+50, 110, 225, 71 );
-                
-
                 
                 labelHeadingText = @"Your apps, your choice\nof security";
                 attributedString = [[NSMutableAttributedString alloc] initWithString:labelHeadingText];
@@ -319,14 +307,11 @@ int numberOfPages = 3;
                 
                 break;
             case 2:
-
-//                h1.frame = CGRectMake(textContainer.frame.size.width -(screenWidth)+60, 0+50, screenWidth, 50); //228
-//                h2.frame =  CGRectMake(textContainer.frame.size.width -(screenWidth)+35, 60+40, screenWidth, 91); //250
                 
                 if ([AppHelper isIphone5])
                 {
-                    h1.frame = CGRectMake(33, 50, 250, 50);
-                    h2.frame = CGRectMake(27, 90, 270, 91 );
+                    h1.frame = CGRectMake(0, 0, 320, 48);
+                    h2.frame = CGRectMake(0, 55, 320, 60 );
                 }
                 if ([AppHelper isIphone6])
                 {
@@ -334,11 +319,7 @@ int numberOfPages = 3;
                     h2.frame = CGRectMake(0, 100, screenWidth, 91 );
                 }
                 
-//                h1.frame = CGRectMake(0, 50, screenWidth, 50); //228
-//                h2.frame =  CGRectMake(0, 100, screenWidth, 91); //250
-                
-                
-                labelHeadingText = @"To get started just link to your\n Access: One account";
+                labelHeadingText = @"To get started, just link\n to your Access: One account";
 
                 attributedString = [[NSMutableAttributedString alloc] initWithString:labelHeadingText];
                 paragraphStyle = [[NSMutableParagraphStyle alloc] init];
@@ -347,7 +328,8 @@ int numberOfPages = 3;
                 [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [labelHeadingText length])];
                 h1.attributedText = attributedString ;
                 
-                labelSubHeadingText = @"Log in to Access: One\n on your computer and the instructions\n you’ve been given to link your authenticator";
+                labelSubHeadingText = @"Log in to Access: One on your computer\n and follow the instructions you’ve been\n given to link your authenticator";
+                
                 attributedString2 = [[NSMutableAttributedString alloc] initWithString:labelSubHeadingText];
                 paragraphStyle2 = [[NSMutableParagraphStyle alloc] init];
                 [paragraphStyle2 setLineSpacing:5];
