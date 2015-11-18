@@ -711,7 +711,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="g0m-TY-1g1">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ribbon.png" id="fUF-mh-MwE">
@@ -724,7 +724,7 @@
                                         <color key="backgroundColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage.png" id="omG-6x-VyL">
-                                        <rect key="frame" x="93" y="63" width="135" height="135"/>
+                                        <rect key="frame" x="95" y="43" width="133" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                     </imageView>
@@ -758,20 +758,20 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ribbon.png" id="LUW-rI-UAd">
-                                                <rect key="frame" x="13" y="0.0" width="52" height="52"/>
+                                                <rect key="frame" x="11" y="0.0" width="43" height="42"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Passcode Set-Up" textAlignment="center" id="f0C-fD-EV7">
-                                                <rect key="frame" x="66" y="78" width="189" height="40"/>
+                                                <rect key="frame" x="66" y="77" width="189" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Please enter your authenticator details" textAlignment="center" id="TLr-Vx-cUG">
-                                                <rect key="frame" x="66" y="124" width="189" height="59"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Please enter your Authenticator details" textAlignment="center" id="TLr-Vx-cUG">
+                                                <rect key="frame" x="66" y="115" width="189" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
@@ -779,7 +779,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your User ID" textAlignment="center" minimumFontSize="17" id="yee-Xt-0QX">
-                                                <rect key="frame" x="60" y="231" width="200" height="32"/>
+                                                <rect key="frame" x="60" y="221" width="200" height="28"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
@@ -787,13 +787,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" id="JoZ-1Z-fuI">
-                                                <rect key="frame" x="60" y="259" width="200" height="2"/>
+                                                <rect key="frame" x="70" y="253" width="180" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Secure ID" textAlignment="center" minimumFontSize="17" id="AxO-Fj-Dn6">
-                                                <rect key="frame" x="60" y="295" width="200" height="32"/>
+                                                <rect key="frame" x="60" y="288" width="200" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
@@ -801,19 +801,19 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" id="Gri-Qa-paZ">
-                                                <rect key="frame" x="60" y="323" width="200" height="2"/>
+                                                <rect key="frame" x="70" y="314" width="180" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="03l-IW-gxD">
-                                                <rect key="frame" x="106" y="400" width="108" height="32"/>
+                                                <rect key="frame" x="87" y="399" width="145" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
-                                                <state key="normal" title="Submit"/>
+                                                <state key="normal" image="Submit.png"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GuT-40-P66">
-                                                <rect key="frame" x="8" y="533" width="27" height="27"/>
+                                                <rect key="frame" x="10" y="534" width="27" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <state key="normal" image="X_OFF.png"/>
@@ -1011,7 +1011,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Access: One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EBy-Xc-78F">
-                                        <rect key="frame" x="59" y="107" width="201" height="28"/>
+                                        <rect key="frame" x="60" y="107" width="201" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
@@ -1019,7 +1019,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Welcome to Orchestrated Access Management" textAlignment="center" id="DKF-37-n9r">
-                                        <rect key="frame" x="57" y="143" width="205" height="49"/>
+                                        <rect key="frame" x="58" y="143" width="205" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1027,7 +1027,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" id="wzB-Id-vg9">
-                                        <rect key="frame" x="62" y="203" width="194" height="86"/>
+                                        <rect key="frame" x="63" y="203" width="194" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <string key="text">Securing Web Systems and introducing Single Sign-on, Federated Identity Management, User provisioning and Strong Authentication, Access: One allows organization to quickly extent their existing IAM infrastructure to support Cloud and mobile access.</string>
@@ -1036,7 +1036,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="To find out more, visit www.pirean.com or contact your Pirean representative." textAlignment="center" id="uxb-fH-w29">
-                                        <rect key="frame" x="77" y="280" width="164" height="39"/>
+                                        <rect key="frame" x="78" y="280" width="164" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2370,6 +2370,7 @@
         <image name="SecurePIN_OFF.png" width="316" height="102"/>
         <image name="SecurePIN_ON.png" width="316" height="102"/>
         <image name="SetPin.png" width="294" height="66"/>
+        <image name="Submit.png" width="230" height="49"/>
         <image name="TOTP_Help_Icon.png" width="36" height="36"/>
         <image name="TOTP_Icon_OFF.png" width="40" height="40"/>
         <image name="TOUCH_Icon_OFF.png" width="40" height="40"/>

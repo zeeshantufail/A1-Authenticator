@@ -419,6 +419,9 @@
 		47D2CA211BFA168B00C1D89F /* begin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2CA201BFA168B00C1D89F /* begin@2x.png */; };
 		47D2CA231BFA169400C1D89F /* begin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2CA221BFA169400C1D89F /* begin@3x.png */; };
 		47D2CA251BFA16A100C1D89F /* begin.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2CA241BFA16A100C1D89F /* begin.png */; };
+		47E0CE941BFC5A1700AC390B /* Submit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CE931BFC5A1700AC390B /* Submit@3x.png */; };
+		47E0CE961BFC5A2000AC390B /* Submit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CE951BFC5A2000AC390B /* Submit@2x.png */; };
+		47E0CE981BFC5A2A00AC390B /* Submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CE971BFC5A2A00AC390B /* Submit.png */; };
 		47E90E341BEC969000402A5B /* Back_Arrow_OFF@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E90E321BEC969000402A5B /* Back_Arrow_OFF@2x.png */; };
 		47E90E351BEC969000402A5B /* Back_Arrow_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E90E331BEC969000402A5B /* Back_Arrow_ON@2x.png */; };
 		47E90E391BEC9A5D00402A5B /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E90E381BEC9A5D00402A5B /* NotificationViewController.m */; };
@@ -973,6 +976,9 @@
 		47D2CA201BFA168B00C1D89F /* begin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "begin@2x.png"; sourceTree = "<group>"; };
 		47D2CA221BFA169400C1D89F /* begin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "begin@3x.png"; sourceTree = "<group>"; };
 		47D2CA241BFA16A100C1D89F /* begin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = begin.png; sourceTree = "<group>"; };
+		47E0CE931BFC5A1700AC390B /* Submit@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit@3x.png"; sourceTree = "<group>"; };
+		47E0CE951BFC5A2000AC390B /* Submit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit@2x.png"; sourceTree = "<group>"; };
+		47E0CE971BFC5A2A00AC390B /* Submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Submit.png; sourceTree = "<group>"; };
 		47E90E321BEC969000402A5B /* Back_Arrow_OFF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Arrow_OFF@2x.png"; sourceTree = "<group>"; };
 		47E90E331BEC969000402A5B /* Back_Arrow_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Arrow_ON@2x.png"; sourceTree = "<group>"; };
 		47E90E371BEC9A5D00402A5B /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationViewController.h; path = ViewControllers/NotificationVIewController/NotificationViewController.h; sourceTree = "<group>"; };
@@ -1074,6 +1080,9 @@
 				474F1BEF1BFB64F600D5B569 /* SetPin.png */,
 				474F1BF11BFB650300D5B569 /* SetPin@2x.png */,
 				474F1BF31BFB651400D5B569 /* SetPin@3x.png */,
+				47E0CE971BFC5A2A00AC390B /* Submit.png */,
+				47E0CE951BFC5A2000AC390B /* Submit@2x.png */,
+				47E0CE931BFC5A1700AC390B /* Submit@3x.png */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -2203,6 +2212,7 @@
 				4729E1BD1BF1F8D200627DA8 /* PIN_Anim_Positive035.png in Resources */,
 				4729E1DB1BF1F8D200627DA8 /* PIN_Anim_Positive065.png in Resources */,
 				4729E1C51BF1F8D200627DA8 /* PIN_Anim_Positive043.png in Resources */,
+				47E0CE981BFC5A2A00AC390B /* Submit.png in Resources */,
 				4729E1D01BF1F8D200627DA8 /* PIN_Anim_Positive054.png in Resources */,
 				473697571BF3687F00A0855B /* GREY PANEL_00019.png in Resources */,
 				4729E1BC1BF1F8D200627DA8 /* PIN_Anim_Positive034.png in Resources */,
@@ -2399,12 +2409,14 @@
 				4729E1DE1BF1F8D200627DA8 /* PIN_Anim_Positive068.png in Resources */,
 				4729E1371BF1F8D200627DA8 /* PIN_Anim_Negative001.png in Resources */,
 				4729E15D1BF1F8D200627DA8 /* PIN_Anim_Negative039.png in Resources */,
+				47E0CE941BFC5A1700AC390B /* Submit@3x.png in Resources */,
 				474313A41BE78A3A0021CF58 /* Images.xcassets in Resources */,
 				474F1BE61BFB5CFB00D5B569 /* QRDoesn’tScan@2x.png in Resources */,
 				473698B91BF371EF00A0855B /* GTMUnitTestingTestApp.10.6.gtmUTState in Resources */,
 				4729E1481BF1F8D200627DA8 /* PIN_Anim_Negative018.png in Resources */,
 				4736987D1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.png in Resources */,
 				4729E17B1BF1F8D200627DA8 /* PIN_Anim_Negative069.png in Resources */,
+				47E0CE961BFC5A2000AC390B /* Submit@2x.png in Resources */,
 				473698AF1BF371EF00A0855B /* ReadMe_iossim.txt in Resources */,
 				4729E18F1BF1F8D200627DA8 /* PIN_Anim_Negative089.png in Resources */,
 				473698741BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.png in Resources */,
