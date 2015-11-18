@@ -173,6 +173,11 @@
     [self.passcodeHelper authenticationCanceled];
 }
 
+- (IBAction)settingBtnPressed:(id)sender {
+    
+    [self.revealViewController revealToggle:sender];
+}
+
 - (IBAction)keyPressed:(id)sender{
     UIButton *b = (UIButton *)sender;
     [UIView animateWithDuration:0.1

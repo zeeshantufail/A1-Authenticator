@@ -18,6 +18,7 @@
 #import "AboutViewController.h"
 #import "KeyboardViewController.h"
 #import "PasscodeHelper.h"
+#import "AppSettings.h"
 
 @interface SettingsViewController ()
 
@@ -156,9 +157,25 @@
     }
 }
 
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    return !([identifier isEqualToString:@"setPinScreenThroughSettingSegue"] && [[AppSettings sharedAppSettings] appPinState]);
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     if ([[segue identifier] isEqualToString:@"setPinScreenThroughSettingSegue"])
+    {
+        //[[segue destinationViewController] setDelegate:self];
+        KeyboardViewController *kbc = (KeyboardViewController *)[segue destinationViewController];
+        PasscodeHelper *pc = [[PasscodeHelper alloc] init];
+        [pc loadContent];
+        pc.passcodeScreenState.screenNumber = 0;
+        pc.passcodeScreenState.screenType = 2;
+        pc.passcodeScreenState.error = false;
+        
+        kbc.passcodeHelper = pc;
+    }
+    else  if ([[segue identifier] isEqualToString:@"changePinScreenSegue"])
     {
         //[[segue destinationViewController] setDelegate:self];
         KeyboardViewController *kbc = (KeyboardViewController *)[segue destinationViewController];

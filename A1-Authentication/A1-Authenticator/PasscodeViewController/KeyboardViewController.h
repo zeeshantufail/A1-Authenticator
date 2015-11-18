@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SWRevealViewController.h"
 
 
 @protocol KeyboardViewControllerDelegate <NSObject>
@@ -34,6 +35,7 @@
 @property (retain, nonatomic) IBOutlet UIView *keypadAndCirclesContainer;
 - (IBAction)buttonCancelAction:(id)sender;
 @property (retain, nonatomic) IBOutlet UIButton *buttonCancel;
+- (IBAction)settingBtnPressed:(id)sender;
 
 - (IBAction)keyPressed:(id)sender;
 - (IBAction)buttonTouchDown:(id)sender;

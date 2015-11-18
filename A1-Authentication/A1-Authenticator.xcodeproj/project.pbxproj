@@ -15,6 +15,21 @@
 		2B92E3C51BF637AA003CF4A1 /* cameraOverlay 4.7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C11BF637AA003CF4A1 /* cameraOverlay 4.7.png */; };
 		2B92E3C61BF637AA003CF4A1 /* cameraOverlay 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C21BF637AA003CF4A1 /* cameraOverlay 4.png */; };
 		2B92E3C71BF637AA003CF4A1 /* cameraOverlay 5.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */; };
+		2BF94A961BFC5EA600C8C0A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */; };
+		2BF94A991BFC5ED100C8C0A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */; };
+		2BF94A9C1BFC5F0C00C8C0A8 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */; };
+		2BF94A9D1BFC5F0C00C8C0A8 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A9B1BFC5F0C00C8C0A8 /* AddressBookUI.framework */; };
+		2BF94A9F1BFC5F1400C8C0A8 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A9E1BFC5F1400C8C0A8 /* LocalAuthentication.framework */; };
+		2BF94AA11BFC5F1E00C8C0A8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AA01BFC5F1E00C8C0A8 /* AudioToolbox.framework */; };
+		2BF94AA31BFC5F2700C8C0A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AA21BFC5F2700C8C0A8 /* SystemConfiguration.framework */; };
+		2BF94AA51BFC5F2D00C8C0A8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AA41BFC5F2D00C8C0A8 /* CoreData.framework */; };
+		2BF94AA71BFC5F3400C8C0A8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AA61BFC5F3400C8C0A8 /* MediaPlayer.framework */; };
+		2BF94AA91BFC5F5000C8C0A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AA81BFC5F5000C8C0A8 /* QuartzCore.framework */; };
+		2BF94AAB1BFC5F5800C8C0A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AAA1BFC5F5800C8C0A8 /* UIKit.framework */; };
+		2BF94AAD1BFC5F6D00C8C0A8 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AAC1BFC5F6D00C8C0A8 /* libiconv.tbd */; };
+		2BF94AAF1BFC5F7400C8C0A8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AAE1BFC5F7400C8C0A8 /* AVFoundation.framework */; };
+		2BF94AB11BFC5F7F00C8C0A8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AB01BFC5F7F00C8C0A8 /* CoreVideo.framework */; };
+		2BF94AB31BFC5F8400C8C0A8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AB21BFC5F8400C8C0A8 /* CoreMedia.framework */; };
 		47064A331BF47027004B2E42 /* QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47064A321BF47027004B2E42 /* QRCodeScanViewController.m */; };
 		470E69751BF4794100D6A091 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 470E69701BF4794100D6A091 /* AppInfo.m */; };
 		470E69761BF4794100D6A091 /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 470E69721BF4794100D6A091 /* AppSettings.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -504,6 +519,21 @@
 		2B92E3C11BF637AA003CF4A1 /* cameraOverlay 4.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 4.7.png"; sourceTree = "<group>"; };
 		2B92E3C21BF637AA003CF4A1 /* cameraOverlay 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 4.png"; sourceTree = "<group>"; };
 		2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 5.5.png"; sourceTree = "<group>"; };
+		2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		2BF94A9B1BFC5F0C00C8C0A8 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		2BF94A9E1BFC5F1400C8C0A8 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		2BF94AA01BFC5F1E00C8C0A8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2BF94AA21BFC5F2700C8C0A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2BF94AA41BFC5F2D00C8C0A8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2BF94AA61BFC5F3400C8C0A8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2BF94AA81BFC5F5000C8C0A8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2BF94AAA1BFC5F5800C8C0A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2BF94AAC1BFC5F6D00C8C0A8 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		2BF94AAE1BFC5F7400C8C0A8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2BF94AB01BFC5F7F00C8C0A8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		2BF94AB21BFC5F8400C8C0A8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		47064A311BF47027004B2E42 /* QRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScanViewController.h; sourceTree = "<group>"; };
 		47064A321BF47027004B2E42 /* QRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanViewController.m; sourceTree = "<group>"; };
 		470E696F1BF4794100D6A091 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppInfo.h; path = "Helper Classes/AppInfo.h"; sourceTree = "<group>"; };
@@ -997,8 +1027,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				473698CE1BF376F800A0855B /* libGravatarImageIOS.a in Frameworks */,
 				473698CF1BF376F800A0855B /* libPireanSharedLib.a in Frameworks */,
+				2BF94AB31BFC5F8400C8C0A8 /* CoreMedia.framework in Frameworks */,
+				2BF94AB11BFC5F7F00C8C0A8 /* CoreVideo.framework in Frameworks */,
+				2BF94AAF1BFC5F7400C8C0A8 /* AVFoundation.framework in Frameworks */,
+				2BF94AAD1BFC5F6D00C8C0A8 /* libiconv.tbd in Frameworks */,
+				2BF94A961BFC5EA600C8C0A8 /* CoreGraphics.framework in Frameworks */,
+				2BF94AAB1BFC5F5800C8C0A8 /* UIKit.framework in Frameworks */,
+				2BF94AA91BFC5F5000C8C0A8 /* QuartzCore.framework in Frameworks */,
+				2BF94AA71BFC5F3400C8C0A8 /* MediaPlayer.framework in Frameworks */,
+				2BF94AA51BFC5F2D00C8C0A8 /* CoreData.framework in Frameworks */,
+				2BF94AA31BFC5F2700C8C0A8 /* SystemConfiguration.framework in Frameworks */,
+				2BF94AA11BFC5F1E00C8C0A8 /* AudioToolbox.framework in Frameworks */,
+				2BF94A9F1BFC5F1400C8C0A8 /* LocalAuthentication.framework in Frameworks */,
+				2BF94A9C1BFC5F0C00C8C0A8 /* AddressBook.framework in Frameworks */,
+				2BF94A9D1BFC5F0C00C8C0A8 /* AddressBookUI.framework in Frameworks */,
+				2BF94A991BFC5ED100C8C0A8 /* Foundation.framework in Frameworks */,
+				473698CE1BF376F800A0855B /* libGravatarImageIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1025,6 +1070,28 @@
 				2B92E3BB1BF62C51003CF4A1 /* SetPinViewController.m */,
 			);
 			path = PasscodeViewController;
+			sourceTree = "<group>";
+		};
+		2BF94A971BFC5EAF00C8C0A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BF94AB21BFC5F8400C8C0A8 /* CoreMedia.framework */,
+				2BF94AB01BFC5F7F00C8C0A8 /* CoreVideo.framework */,
+				2BF94AAE1BFC5F7400C8C0A8 /* AVFoundation.framework */,
+				2BF94AAC1BFC5F6D00C8C0A8 /* libiconv.tbd */,
+				2BF94AAA1BFC5F5800C8C0A8 /* UIKit.framework */,
+				2BF94AA81BFC5F5000C8C0A8 /* QuartzCore.framework */,
+				2BF94AA61BFC5F3400C8C0A8 /* MediaPlayer.framework */,
+				2BF94AA41BFC5F2D00C8C0A8 /* CoreData.framework */,
+				2BF94AA21BFC5F2700C8C0A8 /* SystemConfiguration.framework */,
+				2BF94AA01BFC5F1E00C8C0A8 /* AudioToolbox.framework */,
+				2BF94A9E1BFC5F1400C8C0A8 /* LocalAuthentication.framework */,
+				2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */,
+				2BF94A9B1BFC5F0C00C8C0A8 /* AddressBookUI.framework */,
+				2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */,
+				2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		47064A301BF47027004B2E42 /* QRCodeScanViewController */ = {
@@ -1826,6 +1893,7 @@
 		474313871BE78A3A0021CF58 = {
 			isa = PBXGroup;
 			children = (
+				2BF94A971BFC5EAF00C8C0A8 /* Frameworks */,
 				4736975F1BF370C500A0855B /* PireanSharedLib.xcodeproj */,
 				473697771BF371EE00A0855B /* GoogleAuthentication */,
 				473697691BF3716100A0855B /* Gravatar */,
@@ -2748,9 +2816,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "A1-Authenticator/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -2758,6 +2831,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Gravatar/GravatarImageDemo/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/PireanSharedLib/PireanSharedLib/ZXingWidget",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -2769,9 +2847,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "A1-Authenticator/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -2779,6 +2862,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Gravatar/GravatarImageDemo/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/PireanSharedLib/PireanSharedLib/ZXingWidget",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
