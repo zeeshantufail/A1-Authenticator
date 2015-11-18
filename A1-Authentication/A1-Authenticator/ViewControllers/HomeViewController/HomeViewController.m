@@ -162,6 +162,7 @@
     [UIView transitionWithView:self.messageBtn duration:1.0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^(void){
         
         [self.messageBtn setHidden:NO];
+        self.messageBtn.transform = CGAffineTransformMakeScale(1.2, 1.2);
         
     } completion:nil];
 }
