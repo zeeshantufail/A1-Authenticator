@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Rea-Ef-ctr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Rea-Ef-ctr">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--Begin View Controller-->
@@ -142,7 +142,7 @@
                                         </subviews>
                                         <animations/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n0y-AJ-rBl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mei Andrews" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n0y-AJ-rBl">
                                         <rect key="frame" x="50" y="182" width="220" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
@@ -937,24 +937,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Pressing 'Rest My App' will wipe you settings." textAlignment="center" id="UBB-fw-v4g">
-                                        <rect key="frame" x="57" y="162" width="206" height="54"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="You will then be taken through the set-up process again." textAlignment="center" id="Vkd-by-5R4">
-                                        <rect key="frame" x="53" y="224" width="214" height="57"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qfU-da-nCP">
-                                        <rect key="frame" x="13" y="0.0" width="45" height="45"/>
+                                        <rect key="frame" x="11" y="0.0" width="43" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <state key="normal" backgroundImage="Ribbon.png"/>
@@ -963,15 +947,31 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Are you sure you want to reset?" textAlignment="center" id="EpG-c7-nRF">
-                                        <rect key="frame" x="71" y="92" width="178" height="62"/>
+                                        <rect key="frame" x="71" y="82" width="178" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Pressing 'Reset My App' will wipe you settings." textAlignment="center" id="UBB-fw-v4g">
+                                        <rect key="frame" x="57" y="145" width="206" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="You will then be taken through the set-up process again." textAlignment="center" id="Vkd-by-5R4">
+                                        <rect key="frame" x="53" y="200" width="214" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dZi-q2-ZrL">
-                                        <rect key="frame" x="80" y="499" width="160" height="38"/>
+                                        <rect key="frame" x="85" y="513" width="147" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <state key="normal" image="ResetMyApp.png"/>
@@ -1002,7 +1002,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bxp-nA-yIS">
-                                        <rect key="frame" x="13" y="0.0" width="45" height="45"/>
+                                        <rect key="frame" x="11" y="0.0" width="43" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <state key="normal" backgroundImage="Ribbon.png"/>
@@ -1010,8 +1010,16 @@
                                             <action selector="settingsBtnPressed:" destination="vfS-fJ-ckz" eventType="touchUpInside" id="YrN-TO-WMt"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Access: One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EBy-Xc-78F">
+                                        <rect key="frame" x="59" y="107" width="201" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Welcome to Orchestrated Access Management" textAlignment="center" id="DKF-37-n9r">
-                                        <rect key="frame" x="58" y="125" width="205" height="52"/>
+                                        <rect key="frame" x="57" y="143" width="205" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1019,44 +1027,36 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" id="wzB-Id-vg9">
-                                        <rect key="frame" x="54" y="185" width="212" height="91"/>
+                                        <rect key="frame" x="62" y="203" width="194" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <string key="text">Securing Web Systems and introducing Single Sign-on, Federated Identity Management, User provisioning and Strong Authentication, Access: One allows organization to quickly extent their existing IAM infrastructure to support Cloud and mobile access.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="9"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="To find out more, visit www.pirean.com or contact your Pirean representative." textAlignment="center" id="uxb-fH-w29">
-                                        <rect key="frame" x="67" y="270" width="187" height="42"/>
+                                        <rect key="frame" x="77" y="280" width="164" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="9"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Access: One - Authenticator (version 1.0.0)" textAlignment="center" id="A9h-oZ-GUL">
-                                        <rect key="frame" x="89" y="305" width="142" height="38"/>
+                                        <rect key="frame" x="89" y="313" width="142" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="9"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Access: One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EBy-Xc-78F">
-                                        <rect key="frame" x="60" y="92" width="201" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Copyright 2015 Pirean Limited. All rights reserved." textAlignment="center" id="EaB-1i-mbf">
-                                        <rect key="frame" x="82" y="340" width="156" height="41"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="© Copyright 2015 Pirean Limited. All rights reserved." textAlignment="center" id="EaB-1i-mbf">
+                                        <rect key="frame" x="90" y="347" width="140" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="9"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -1925,16 +1925,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="jBV-cj-XRx">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DDU-VA-N44">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JjB-93-NAw">
-                                                <rect key="frame" x="13" y="0.0" width="45" height="45"/>
+                                                <rect key="frame" x="11" y="0.0" width="43" height="42"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <state key="normal" backgroundImage="Ribbon.png"/>
@@ -1946,7 +1946,7 @@
                                         <animations/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home to be implemented" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zOR-KG-21Z">
-                                        <rect key="frame" x="50" y="230" width="220" height="24"/>
+                                        <rect key="frame" x="50" y="182" width="220" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
@@ -1960,7 +1960,7 @@
                                         <state key="normal" title="Scan A New QR"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press logo button for setting view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GB1-UE-sxW">
-                                        <rect key="frame" x="31" y="254" width="260" height="52"/>
+                                        <rect key="frame" x="31" y="205" width="265" height="23"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
@@ -1968,7 +1968,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage.png" id="MEf-os-Otg">
-                                        <rect key="frame" x="93" y="63" width="135" height="135"/>
+                                        <rect key="frame" x="95" y="43" width="133" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                     </imageView>
@@ -2042,19 +2042,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0pl-b0-bWh">
-                                        <rect key="frame" x="8" y="533" width="27" height="27"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0QA-dO-Tdd">
+                                        <rect key="frame" x="11" y="0.0" width="43" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
-                                        <state key="normal" image="X_OFF.png"/>
-                                        <state key="selected" image="X_OFF.png"/>
-                                        <state key="highlighted" image="X_OFF.png"/>
-                                        <connections>
-                                            <action selector="buttonCancelAction:" destination="QzI-oG-Irs" eventType="touchUpInside" id="ljg-h9-fgC"/>
-                                        </connections>
+                                        <state key="normal" backgroundImage="Ribbon.png"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4AX-bu-r6P">
-                                        <rect key="frame" x="50" y="60" width="220" height="32"/>
+                                        <rect key="frame" x="77" y="56" width="166" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
@@ -2062,47 +2057,27 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Confirm your 4 digit PIN" textAlignment="center" id="v1n-5c-bop">
-                                        <rect key="frame" x="40" y="89" width="240" height="35"/>
+                                        <rect key="frame" x="65" y="83" width="189" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0QA-dO-Tdd">
-                                        <rect key="frame" x="11" y="0.0" width="43" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <state key="normal" backgroundImage="Ribbon.png"/>
-                                    </button>
                                     <view contentMode="scaleToFill" id="lb0-dj-adH" userLabel="KeyPadView">
-                                        <rect key="frame" x="0.0" y="126" width="320" height="355"/>
+                                        <rect key="frame" x="0.0" y="121" width="320" height="380"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startCircleImage.png" id="rjM-bc-YwY">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                                                <rect key="frame" x="-19" y="1" width="360" height="70"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                             </imageView>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zry-p0-isg">
-                                                <rect key="frame" x="211" y="234" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
-                                                <state key="normal" title="9">
-                                                    <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonTouchDown:" destination="QzI-oG-Irs" eventType="touchDown" id="wec-t2-7IL"/>
-                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="BRO-Mt-m5B"/>
-                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="Zp3-lC-hUC"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9dB-I9-vSP">
-                                                <rect key="frame" x="59" y="96" width="52" height="52"/>
+                                                <rect key="frame" x="51" y="98" width="54" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -2112,67 +2087,11 @@
                                                     <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="n0u-qN-tKd"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lWf-9y-12e">
-                                                <rect key="frame" x="135" y="303" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
-                                                <state key="normal" title="0">
-                                                    <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonTouchDown:" destination="QzI-oG-Irs" eventType="touchDown" id="ugj-Lh-7PC"/>
-                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="ChA-MM-ZFZ"/>
-                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="Z1a-4C-2hh"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1LZ-s8-aPk">
-                                                <rect key="frame" x="211" y="165" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
-                                                <state key="normal" title="6">
-                                                    <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonTouchDown:" destination="QzI-oG-Irs" eventType="touchDown" id="HZv-al-OKl"/>
-                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="AvL-Sj-kFf"/>
-                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="kRT-HA-lGU"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Ux-yh-GMo">
-                                                <rect key="frame" x="59" y="234" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
-                                                <state key="normal" title="7">
-                                                    <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonTouchDown:" destination="QzI-oG-Irs" eventType="touchDown" id="Llx-ZG-ANb"/>
-                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="5ap-7O-ic3"/>
-                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="o0J-sS-B6A"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r0Q-hR-hOe">
-                                                <rect key="frame" x="211" y="96" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
-                                                <state key="normal" title="3">
-                                                    <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonTouchDown:" destination="QzI-oG-Irs" eventType="touchDown" id="cZm-3a-ypL"/>
-                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="QYE-ih-vJH"/>
-                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="a1G-kd-9BA"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6HV-gl-PFd">
-                                                <rect key="frame" x="135" y="96" width="52" height="52"/>
+                                                <rect key="frame" x="134" y="94" width="52" height="53"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -2182,11 +2101,25 @@
                                                     <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="3Tq-hS-anm"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="s6B-HJ-s5B">
-                                                <rect key="frame" x="59" y="165" width="52" height="52"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r0Q-hR-hOe">
+                                                <rect key="frame" x="218" y="94" width="52" height="55"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="QzI-oG-Irs" eventType="touchDown" id="cZm-3a-ypL"/>
+                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="QYE-ih-vJH"/>
+                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="a1G-kd-9BA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="s6B-HJ-s5B">
+                                                <rect key="frame" x="52" y="175" width="52" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -2197,10 +2130,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="urv-BD-fQs">
-                                                <rect key="frame" x="135" y="165" width="52" height="52"/>
+                                                <rect key="frame" x="134" y="175" width="52" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -2210,11 +2143,39 @@
                                                     <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="kby-pr-cfW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u6b-UJ-Rye">
-                                                <rect key="frame" x="135" y="234" width="52" height="52"/>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1LZ-s8-aPk">
+                                                <rect key="frame" x="218" y="175" width="52" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="QzI-oG-Irs" eventType="touchDown" id="HZv-al-OKl"/>
+                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="AvL-Sj-kFf"/>
+                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="kRT-HA-lGU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Ux-yh-GMo">
+                                                <rect key="frame" x="52" y="252" width="52" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="QzI-oG-Irs" eventType="touchDown" id="Llx-ZG-ANb"/>
+                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="5ap-7O-ic3"/>
+                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="o0J-sS-B6A"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u6b-UJ-Rye">
+                                                <rect key="frame" x="134" y="252" width="52" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -2224,8 +2185,36 @@
                                                     <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="sfu-p4-iQQ"/>
                                                 </connections>
                                             </button>
-                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Confirm your 4 digit PIN" textAlignment="center" id="gks-h7-xLW">
-                                                <rect key="frame" x="41" y="56" width="239" height="32"/>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zry-p0-isg">
+                                                <rect key="frame" x="218" y="250" width="52" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="QzI-oG-Irs" eventType="touchDown" id="wec-t2-7IL"/>
+                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="BRO-Mt-m5B"/>
+                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="Zp3-lC-hUC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lWf-9y-12e">
+                                                <rect key="frame" x="134" y="332" width="52" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="QzI-oG-Irs" eventType="touchDown" id="ugj-Lh-7PC"/>
+                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="ChA-MM-ZFZ"/>
+                                                    <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="Z1a-4C-2hh"/>
+                                                </connections>
+                                            </button>
+                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="PINs don't match, please try again." textAlignment="center" id="gks-h7-xLW">
+                                                <rect key="frame" x="40" y="60" width="239" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="textColor" red="1" green="0.71764705882352942" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2237,7 +2226,7 @@
                                         <color key="backgroundColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="08x-7F-hMC">
-                                        <rect key="frame" x="126" y="528" width="68" height="32"/>
+                                        <rect key="frame" x="125" y="531" width="68" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
@@ -2246,6 +2235,17 @@
                                         </state>
                                         <connections>
                                             <action selector="deletePressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="Lht-we-Kin"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0pl-b0-bWh">
+                                        <rect key="frame" x="10" y="532" width="27" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <state key="normal" image="X_OFF.png"/>
+                                        <state key="selected" image="X_OFF.png"/>
+                                        <state key="highlighted" image="X_OFF.png"/>
+                                        <connections>
+                                            <action selector="buttonCancelAction:" destination="QzI-oG-Irs" eventType="touchUpInside" id="ljg-h9-fgC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2269,7 +2269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMv-0S-awp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="-1151"/>
+            <point key="canvasLocation" x="-244" y="-1127"/>
         </scene>
         <!--Code Scan View Controller-->
         <scene sceneID="lyB-mp-rmA">
@@ -2388,6 +2388,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pV5-Bb-PJu"/>
-        <segue reference="cPw-8j-iVY"/>
+        <segue reference="y9Y-uB-mw9"/>
     </inferredMetricsTieBreakers>
 </document>
