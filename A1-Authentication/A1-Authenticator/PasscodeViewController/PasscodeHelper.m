@@ -29,6 +29,16 @@
     
     self.passcodeScreenState = [[PasscodeScreenState alloc] init];
     
+    /*
+     Loading pin messages
+     0: Set your pin from welcome screen
+     1: Enter your pin
+     2: Set your pin from setting screen
+     3: Change your pin
+     4: Set Touch ID
+     5: Enter Touch ID
+     */
+    
     MessageContent * mc = [[MessageContent alloc] init];
     //Set your pin from welcome screen
     mc.headerText = @"Set your PIN";
@@ -62,24 +72,23 @@
     screenState[2][0] = mc;
     
     mc = [[MessageContent alloc] init];
-    //Set your pin from settings screen
-    mc.headerText = @"Set your PIN";
-    mc.subHeaderText = @"Please enter a 4 digit PIN";
-    mc.errorText = @"";
-    
-    screenState[2][1] = mc;
-    
-    mc = [[MessageContent alloc] init];
     //Set your pin confirm from settings screen
     mc.headerText = @"Set your PIN";
     mc.subHeaderText = @"Please confirm your PIN";
     mc.errorText = @"";
     
-    screenState[3][0] = mc;
+    screenState[2][1] = mc;
     
     mc = [[MessageContent alloc] init];
     //Change your pin from settings screen
     mc.headerText = @"Enter your old PIN";
+    mc.subHeaderText = @"Please enter a 4 digit PIN";
+    mc.errorText = @"Wrong Pin entered";
+    screenState[3][0] = mc;
+    
+    mc = [[MessageContent alloc] init];
+    //Change your pin from settings screen
+    mc.headerText = @"Enter your new PIN";
     mc.subHeaderText = @"Please enter a 4 digit PIN";
     mc.errorText = @"";
     
@@ -87,14 +96,14 @@
     
     mc = [[MessageContent alloc] init];
     //Change your pin from settings screen
-    mc.headerText = @"Set your new PIN";
-    mc.subHeaderText = @"Please enter a 4 digit PIN";
+    mc.headerText = @"Confirm your new PIN";
+    mc.subHeaderText = @"Enter your 4 digit PIN again";
     mc.errorText = @"";
     
     screenState[3][2] = mc;
     
     mc = [[MessageContent alloc] init];
-    //Change your pin from settings screen
+    //Set Touch ID from welcome screen
     mc.headerText = @"Touch ID";
     mc.subHeaderText = @"Please confirm your Touch ID";
     mc.errorText = @"";
@@ -102,7 +111,7 @@
     screenState[4][0] = mc;
     
     mc = [[MessageContent alloc] init];
-    //Change your pin from settings screen
+    //Authenticate with Touch ID
     mc.headerText = @"Touch ID";
     mc.subHeaderText = @"Please authenticate your Touch ID";
     mc.errorText = @"";
@@ -192,6 +201,26 @@
             
         case 2:
             if (self.passcodeScreenState.screenNumber == 0) {
+                self.passCode = passcode;
+                self.passcodeScreenState.screenNumber = 1;
+                [_keyboardViewController runPositiveAnime];
+                
+                [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
+            }
+            else{
+                if(![self passcodeDismissOnSuccess:passcode])
+                {
+                    self.passcodeScreenState.screenNumber = 0;
+                    [_keyboardViewController runNegativeAnime];
+                    [_keyboardViewController.errorLabel setHidden:NO];
+                    [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
+                }
+            }
+            break;
+            
+        case 3:
+            
+            if (self.passcodeScreenState.screenNumber == 0) {
                 if( [[AppSettings sharedAppSettings] checkPin:passcode] )
                 {
                     self.passcodeScreenState.screenNumber = 1;
@@ -217,26 +246,6 @@
                     [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
                 }
             }
-            break;
-            
-        case 3:
-            if (self.passcodeScreenState.screenNumber == 0) {
-                self.passCode = passcode;
-                self.passcodeScreenState.screenNumber = 1;
-                [_keyboardViewController runPositiveAnime];
-                
-                [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
-            }
-            else{
-                if(![self passcodeDismissOnSuccess:passcode])
-                {
-                    self.passcodeScreenState.screenNumber = 0;
-                    [_keyboardViewController runNegativeAnime];
-                    [_keyboardViewController.errorLabel setHidden:NO];
-                    [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
-                }
-            }
-            break;
             
             break;
         default:
