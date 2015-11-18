@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2B08F7D91AEFD474009B6F53 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B08F7D81AEFD474009B6F53 /* libZXingWidget.a */; };
 		2B5DA8821AE90BA100C59DFE /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8751AE90BA100C59DFE /* NSObject+SBJSON.m */; };
 		2B5DA8831AE90BA100C59DFE /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8751AE90BA100C59DFE /* NSObject+SBJSON.m */; };
 		2B5DA8841AE90BA100C59DFE /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA8771AE90BA100C59DFE /* NSString+SBJSON.m */; };
@@ -46,14 +45,6 @@
 		2BF184EC1AE50FFB0073F4BB /* QRStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF184E61AE50FFB0073F4BB /* QRStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2BF184ED1AE50FFB0073F4BB /* ScanCodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF184E81AE50FFB0073F4BB /* ScanCodeHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2BF184EE1AE510260073F4BB /* ScanCodeHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184E71AE50FFB0073F4BB /* ScanCodeHelper.h */; };
-		2BF184FC1AE512AF0073F4BB /* AztecReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F11AE5127E0073F4BB /* AztecReader.h */; };
-		2BF184FD1AE512AF0073F4BB /* Decoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F21AE5127E0073F4BB /* Decoder.h */; };
-		2BF184FE1AE512AF0073F4BB /* DecoderDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F31AE5127E0073F4BB /* DecoderDelegate.h */; };
-		2BF184FF1AE512AF0073F4BB /* FormatReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F41AE5127E0073F4BB /* FormatReader.h */; };
-		2BF185001AE512AF0073F4BB /* OverlayView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F61AE5127E0073F4BB /* OverlayView.h */; };
-		2BF185011AE512AF0073F4BB /* ParsedResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F71AE5127E0073F4BB /* ParsedResult.h */; };
-		2BF185021AE512AF0073F4BB /* QRCodeReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F81AE5127E0073F4BB /* QRCodeReader.h */; };
-		2BF185031AE512AF0073F4BB /* ZXingWidgetController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BF184F91AE5127E0073F4BB /* ZXingWidgetController.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,14 +64,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				2BF184FC1AE512AF0073F4BB /* AztecReader.h in CopyFiles */,
-				2BF184FD1AE512AF0073F4BB /* Decoder.h in CopyFiles */,
-				2BF184FE1AE512AF0073F4BB /* DecoderDelegate.h in CopyFiles */,
-				2BF184FF1AE512AF0073F4BB /* FormatReader.h in CopyFiles */,
-				2BF185001AE512AF0073F4BB /* OverlayView.h in CopyFiles */,
-				2BF185011AE512AF0073F4BB /* ParsedResult.h in CopyFiles */,
-				2BF185021AE512AF0073F4BB /* QRCodeReader.h in CopyFiles */,
-				2BF185031AE512AF0073F4BB /* ZXingWidgetController.h in CopyFiles */,
 				2BF184EE1AE510260073F4BB /* ScanCodeHelper.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +71,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B08F7D81AEFD474009B6F53 /* libZXingWidget.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZXingWidget.a; sourceTree = "<group>"; };
 		2B5DA8731AE90BA100C59DFE /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		2B5DA8741AE90BA100C59DFE /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		2B5DA8751AE90BA100C59DFE /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -123,14 +105,6 @@
 		2BF184E71AE50FFB0073F4BB /* ScanCodeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanCodeHelper.h; sourceTree = "<group>"; };
 		2BF184E81AE50FFB0073F4BB /* ScanCodeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanCodeHelper.m; sourceTree = "<group>"; };
 		2BF184EF1AE5116A0073F4BB /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
-		2BF184F11AE5127E0073F4BB /* AztecReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AztecReader.h; sourceTree = "<group>"; };
-		2BF184F21AE5127E0073F4BB /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
-		2BF184F31AE5127E0073F4BB /* DecoderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoderDelegate.h; sourceTree = "<group>"; };
-		2BF184F41AE5127E0073F4BB /* FormatReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatReader.h; sourceTree = "<group>"; };
-		2BF184F61AE5127E0073F4BB /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
-		2BF184F71AE5127E0073F4BB /* ParsedResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsedResult.h; sourceTree = "<group>"; };
-		2BF184F81AE5127E0073F4BB /* QRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReader.h; sourceTree = "<group>"; };
-		2BF184F91AE5127E0073F4BB /* ZXingWidgetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXingWidgetController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B08F7D91AEFD474009B6F53 /* libZXingWidget.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +191,6 @@
 			children = (
 				2B5DA8961AE90C5900C59DFE /* SVProgress */,
 				2B5DA8711AE90BA000C59DFE /* Reachability */,
-				2BF184F01AE5127E0073F4BB /* ZXingWidget */,
 				2BF184EF1AE5116A0073F4BB /* AppSettings.h */,
 				2BF184DF1AE50FFB0073F4BB /* NSData+CommonCrypto.h */,
 				2BF184E01AE50FFB0073F4BB /* NSData+CommonCrypto.m */,
@@ -248,22 +220,6 @@
 				2BF184D51AE50D590073F4BB /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2BF184F01AE5127E0073F4BB /* ZXingWidget */ = {
-			isa = PBXGroup;
-			children = (
-				2B08F7D81AEFD474009B6F53 /* libZXingWidget.a */,
-				2BF184F11AE5127E0073F4BB /* AztecReader.h */,
-				2BF184F21AE5127E0073F4BB /* Decoder.h */,
-				2BF184F31AE5127E0073F4BB /* DecoderDelegate.h */,
-				2BF184F41AE5127E0073F4BB /* FormatReader.h */,
-				2BF184F61AE5127E0073F4BB /* OverlayView.h */,
-				2BF184F71AE5127E0073F4BB /* ParsedResult.h */,
-				2BF184F81AE5127E0073F4BB /* QRCodeReader.h */,
-				2BF184F91AE5127E0073F4BB /* ZXingWidgetController.h */,
-			);
-			path = ZXingWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,11 +468,15 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "";
+				ENABLE_BITCODE = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PireanSharedLib/ZXingWidget",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "eda1dca5-6410-415c-a938-86dc7865fd4e";
 				SKIP_INSTALL = YES;
@@ -528,11 +488,15 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "";
+				ENABLE_BITCODE = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PireanSharedLib/ZXingWidget",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "eda1dca5-6410-415c-a938-86dc7865fd4e";
 				SKIP_INSTALL = YES;

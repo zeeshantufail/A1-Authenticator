@@ -13,6 +13,7 @@
 #import "AppSettings.h"
 #import "SetPinViewController.h"
 #import "PasscodeHelper.h"
+#import "SWRevealViewController.h"
 
 @interface KeyboardViewController ()
 {
@@ -171,6 +172,11 @@
 - (IBAction)buttonCancelAction:(id)sender {
 //    [[NSNotificationCenter defaultCenter] postNotificationName:@"setupPinScreenCancel" object:nil];
     [self.passcodeHelper authenticationCanceled];
+}
+
+- (IBAction)settingBtnPressed:(id)sender {
+    
+    [self.revealViewController revealToggle:sender];
 }
 
 - (IBAction)keyPressed:(id)sender{
