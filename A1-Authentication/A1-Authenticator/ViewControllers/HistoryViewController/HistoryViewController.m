@@ -51,7 +51,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 49.0f;
+    return 39.0f;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -64,7 +64,7 @@
         cell = [[[NSBundle mainBundle]loadNibNamed:@"HistoryCustomCell" owner:self options:nil] objectAtIndex:0];
     }
     
-    cell.image_View.layer.cornerRadius  = 17   ;
+    cell.image_View.layer.cornerRadius  = 14   ;
     cell.image_View.layer.masksToBounds = YES  ;
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;

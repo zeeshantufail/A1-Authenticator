@@ -365,7 +365,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRn-sj-7vK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-810" y="-200"/>
+            <point key="canvasLocation" x="-1134" y="-304"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="sOO-TJ-mP7">
@@ -633,7 +633,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6P-DL-kZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-828" y="-1104"/>
+            <point key="canvasLocation" x="-584" y="-320"/>
         </scene>
         <!--Welcome App View Controller-->
         <scene sceneID="zbi-v1-QEU">
@@ -711,7 +711,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="g0m-TY-1g1">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ribbon.png" id="fUF-mh-MwE">
@@ -724,7 +724,7 @@
                                         <color key="backgroundColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage.png" id="omG-6x-VyL">
-                                        <rect key="frame" x="93" y="63" width="135" height="135"/>
+                                        <rect key="frame" x="95" y="43" width="133" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                     </imageView>
@@ -758,20 +758,20 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ribbon.png" id="LUW-rI-UAd">
-                                                <rect key="frame" x="13" y="0.0" width="52" height="52"/>
+                                                <rect key="frame" x="11" y="0.0" width="43" height="42"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Passcode Set-Up" textAlignment="center" id="f0C-fD-EV7">
-                                                <rect key="frame" x="66" y="78" width="189" height="40"/>
+                                                <rect key="frame" x="66" y="77" width="189" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Please enter your authenticator details" textAlignment="center" id="TLr-Vx-cUG">
-                                                <rect key="frame" x="66" y="124" width="189" height="59"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Please enter your Authenticator details" textAlignment="center" id="TLr-Vx-cUG">
+                                                <rect key="frame" x="66" y="115" width="189" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
@@ -779,7 +779,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your User ID" textAlignment="center" minimumFontSize="17" id="yee-Xt-0QX">
-                                                <rect key="frame" x="60" y="231" width="200" height="32"/>
+                                                <rect key="frame" x="60" y="221" width="200" height="28"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
@@ -787,13 +787,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" id="JoZ-1Z-fuI">
-                                                <rect key="frame" x="60" y="259" width="200" height="2"/>
+                                                <rect key="frame" x="70" y="253" width="180" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Secure ID" textAlignment="center" minimumFontSize="17" id="AxO-Fj-Dn6">
-                                                <rect key="frame" x="60" y="295" width="200" height="32"/>
+                                                <rect key="frame" x="60" y="288" width="200" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
@@ -801,19 +801,19 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" id="Gri-Qa-paZ">
-                                                <rect key="frame" x="60" y="323" width="200" height="2"/>
+                                                <rect key="frame" x="70" y="314" width="180" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="03l-IW-gxD">
-                                                <rect key="frame" x="106" y="400" width="108" height="32"/>
+                                                <rect key="frame" x="87" y="399" width="145" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
-                                                <state key="normal" title="Submit"/>
+                                                <state key="normal" image="Submit.png"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GuT-40-P66">
-                                                <rect key="frame" x="8" y="533" width="27" height="27"/>
+                                                <rect key="frame" x="10" y="534" width="27" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <state key="normal" image="X_OFF.png"/>
@@ -1011,7 +1011,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Access: One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EBy-Xc-78F">
-                                        <rect key="frame" x="59" y="107" width="201" height="28"/>
+                                        <rect key="frame" x="60" y="107" width="201" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
@@ -1019,7 +1019,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Welcome to Orchestrated Access Management" textAlignment="center" id="DKF-37-n9r">
-                                        <rect key="frame" x="57" y="143" width="205" height="49"/>
+                                        <rect key="frame" x="58" y="143" width="205" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1027,7 +1027,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" id="wzB-Id-vg9">
-                                        <rect key="frame" x="62" y="203" width="194" height="86"/>
+                                        <rect key="frame" x="63" y="203" width="194" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <string key="text">Securing Web Systems and introducing Single Sign-on, Federated Identity Management, User provisioning and Strong Authentication, Access: One allows organization to quickly extent their existing IAM infrastructure to support Cloud and mobile access.</string>
@@ -1036,7 +1036,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="To find out more, visit www.pirean.com or contact your Pirean representative." textAlignment="center" id="uxb-fH-w29">
-                                        <rect key="frame" x="77" y="280" width="164" height="39"/>
+                                        <rect key="frame" x="78" y="280" width="164" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1284,11 +1284,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="wkJ-an-D5d" userLabel="UpperView">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mqc-Ou-iXN">
-                                                <rect key="frame" x="15" y="0.0" width="45" height="45"/>
+                                                <rect key="frame" x="11" y="0.0" width="43" height="42"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <state key="normal" backgroundImage="Ribbon.png"/>
@@ -1297,7 +1297,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audit History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3QR-JN-1i1">
-                                                <rect key="frame" x="84" y="53" width="153" height="20"/>
+                                                <rect key="frame" x="83" y="48" width="153" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
@@ -1308,61 +1308,41 @@
                                         <animations/>
                                         <color key="backgroundColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="gaI-fA-02B" userLabel="BottomView">
-                                        <rect key="frame" x="0.0" y="529" width="320" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MjH-wp-VQN">
-                                                <rect key="frame" x="78" y="10" width="164" height="22"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
-                                                <state key="normal" title="Clear Audit History">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="clearHistoryBtnPressed:" destination="YPo-Ca-XHq" eventType="touchUpInside" id="u9k-7E-sbt"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <animations/>
-                                        <color key="backgroundColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" id="V9i-zl-nsh">
-                                        <rect key="frame" x="0.0" y="87" width="320" height="442"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="39" sectionHeaderHeight="28" sectionFooterHeight="28" id="V9i-zl-nsh">
+                                        <rect key="frame" x="0.0" y="79" width="320" height="458"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" rowHeight="49" id="Uer-wc-iMX" customClass="HistoryCustomCell">
-                                                <rect key="frame" x="0.0" y="28" width="320" height="49"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" rowHeight="39" id="Uer-wc-iMX" customClass="HistoryCustomCell">
+                                                <rect key="frame" x="0.0" y="28" width="320" height="39"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uer-wc-iMX" id="zpf-Kq-6qD">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" id="DVN-gN-xpv">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageNotification.png" id="vQf-20-c0C">
-                                                                    <rect key="frame" x="12" y="6" width="35" height="35"/>
+                                                                    <rect key="frame" x="12" y="6" width="27" height="27"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <animations/>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/10/15 12:15:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XIJ-GN-eu6">
-                                                                    <rect key="frame" x="60" y="14" width="95" height="20"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03/11/15 11:22:22" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XIJ-GN-eu6">
+                                                                    <rect key="frame" x="47" y="8" width="95" height="24"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <animations/>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="9"/>
                                                                     <color key="textColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Application Launched" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1WR-8k-rzj">
-                                                                    <rect key="frame" x="158" y="14" width="127" height="20"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authentication Scan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1WR-8k-rzj">
+                                                                    <rect key="frame" x="144" y="8" width="139" height="24"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <animations/>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="9"/>
                                                                     <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1387,6 +1367,26 @@
                                             <outlet property="delegate" destination="YPo-Ca-XHq" id="h9A-w2-CMj"/>
                                         </connections>
                                     </tableView>
+                                    <view contentMode="scaleToFill" id="gaI-fA-02B" userLabel="BottomView">
+                                        <rect key="frame" x="0.0" y="537" width="320" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MjH-wp-VQN">
+                                                <rect key="frame" x="78" y="4" width="164" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                <state key="normal" title="Clear Audit History">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="clearHistoryBtnPressed:" destination="YPo-Ca-XHq" eventType="touchUpInside" id="u9k-7E-sbt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -1990,7 +1990,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bup-Z4-rM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-152" y="428"/>
+            <point key="canvasLocation" x="-584" y="412"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G19-oq-gPJ">
@@ -2272,7 +2272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMv-0S-awp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-244" y="-1127"/>
+            <point key="canvasLocation" x="292" y="-1071"/>
         </scene>
         <!--Code Scan View Controller-->
         <scene sceneID="lyB-mp-rmA">
@@ -2373,6 +2373,7 @@
         <image name="SecurePIN_OFF.png" width="316" height="102"/>
         <image name="SecurePIN_ON.png" width="316" height="102"/>
         <image name="SetPin.png" width="294" height="66"/>
+        <image name="Submit.png" width="230" height="49"/>
         <image name="TOTP_Help_Icon.png" width="36" height="36"/>
         <image name="TOTP_Icon_OFF.png" width="40" height="40"/>
         <image name="TOUCH_Icon_OFF.png" width="40" height="40"/>
@@ -2391,6 +2392,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pV5-Bb-PJu"/>
-        <segue reference="y9Y-uB-mw9"/>
+        <segue reference="cPw-8j-iVY"/>
     </inferredMetricsTieBreakers>
 </document>
