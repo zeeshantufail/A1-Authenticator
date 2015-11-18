@@ -437,7 +437,6 @@
 		47E0CE941BFC5A1700AC390B /* Submit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CE931BFC5A1700AC390B /* Submit@3x.png */; };
 		47E0CE961BFC5A2000AC390B /* Submit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CE951BFC5A2000AC390B /* Submit@2x.png */; };
 		47E0CE981BFC5A2A00AC390B /* Submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CE971BFC5A2A00AC390B /* Submit.png */; };
-		47E0CE9C1BFC698900AC390B /* A1.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CE9B1BFC698900AC390B /* A1.png */; };
 		47E90E341BEC969000402A5B /* Back_Arrow_OFF@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E90E321BEC969000402A5B /* Back_Arrow_OFF@2x.png */; };
 		47E90E351BEC969000402A5B /* Back_Arrow_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E90E331BEC969000402A5B /* Back_Arrow_ON@2x.png */; };
 		47E90E391BEC9A5D00402A5B /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E90E381BEC9A5D00402A5B /* NotificationViewController.m */; };
@@ -1010,7 +1009,6 @@
 		47E0CE931BFC5A1700AC390B /* Submit@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit@3x.png"; sourceTree = "<group>"; };
 		47E0CE951BFC5A2000AC390B /* Submit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit@2x.png"; sourceTree = "<group>"; };
 		47E0CE971BFC5A2A00AC390B /* Submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Submit.png; sourceTree = "<group>"; };
-		47E0CE9B1BFC698900AC390B /* A1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1.png; sourceTree = "<group>"; };
 		47E90E321BEC969000402A5B /* Back_Arrow_OFF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Arrow_OFF@2x.png"; sourceTree = "<group>"; };
 		47E90E331BEC969000402A5B /* Back_Arrow_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Arrow_ON@2x.png"; sourceTree = "<group>"; };
 		47E90E371BEC9A5D00402A5B /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationViewController.h; path = ViewControllers/NotificationVIewController/NotificationViewController.h; sourceTree = "<group>"; };
@@ -2019,7 +2017,6 @@
 		477498F21BE78E5300026C01 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				47E0CE9B1BFC698900AC390B /* A1.png */,
 				4729E07D1BF1F76C00627DA8 /* Animations */,
 				471D007E1BEB5BE3003BC1C6 /* Splash */,
 				47119CEA1BE9E5FB00876684 /* General */,
@@ -2405,7 +2402,6 @@
 				4729E1361BF1F8D200627DA8 /* PIN_Anim_Negative000.png in Resources */,
 				4729E1AD1BF1F8D200627DA8 /* PIN_Anim_Positive019.png in Resources */,
 				473698B51BF371EF00A0855B /* GTMUnitTestingImage.10.6.tiff in Resources */,
-				47E0CE9C1BFC698900AC390B /* A1.png in Resources */,
 				4736974B1BF3687F00A0855B /* GREY PANEL_00007.png in Resources */,
 				4736987A1BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.png in Resources */,
 				473698C21BF371EF00A0855B /* GTMUnitTestingWindow.gtmUTState in Resources */,
