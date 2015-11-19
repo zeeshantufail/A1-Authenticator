@@ -15,7 +15,7 @@
 		2B92E3C51BF637AA003CF4A1 /* cameraOverlay 4.7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C11BF637AA003CF4A1 /* cameraOverlay 4.7.png */; };
 		2B92E3C61BF637AA003CF4A1 /* cameraOverlay 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C21BF637AA003CF4A1 /* cameraOverlay 4.png */; };
 		2B92E3C71BF637AA003CF4A1 /* cameraOverlay 5.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */; };
-		2BC906EB1BFDC7BF009AF8E4 /* QRScanAtHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */; settings = {ASSET_TAGS = (); }; };
+		2BC906EB1BFDC7BF009AF8E4 /* QRScanAtHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */; };
 		2BF94A961BFC5EA600C8C0A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */; };
 		2BF94A991BFC5ED100C8C0A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */; };
 		2BF94A9C1BFC5F0C00C8C0A8 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */; };
@@ -418,6 +418,57 @@
 		477498FF1BE7949800026C01 /* begin1.png in Resources */ = {isa = PBXBuildFile; fileRef = 477498FD1BE7949800026C01 /* begin1.png */; };
 		477499001BE7949800026C01 /* begin1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 477498FE1BE7949800026C01 /* begin1@2x.png */; };
 		477499041BE7A2D900026C01 /* AppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 477499031BE7A2D900026C01 /* AppHelper.m */; };
+		478CD37A1BFE0961008774E0 /* Locked Animation_0001@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3611BFE0961008774E0 /* Locked Animation_0001@3x.png */; };
+		478CD37B1BFE0961008774E0 /* Locked Animation_0002@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3621BFE0961008774E0 /* Locked Animation_0002@3x.png */; };
+		478CD37C1BFE0961008774E0 /* Locked Animation_0003@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3631BFE0961008774E0 /* Locked Animation_0003@3x.png */; };
+		478CD37D1BFE0961008774E0 /* Locked Animation_0004@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3641BFE0961008774E0 /* Locked Animation_0004@3x.png */; };
+		478CD37E1BFE0961008774E0 /* Locked Animation_0005@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3651BFE0961008774E0 /* Locked Animation_0005@3x.png */; };
+		478CD37F1BFE0961008774E0 /* Locked Animation_0006@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3661BFE0961008774E0 /* Locked Animation_0006@3x.png */; };
+		478CD3801BFE0961008774E0 /* Locked Animation_0007@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3671BFE0961008774E0 /* Locked Animation_0007@3x.png */; };
+		478CD3811BFE0961008774E0 /* Locked Animation_0008@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3681BFE0961008774E0 /* Locked Animation_0008@3x.png */; };
+		478CD3821BFE0961008774E0 /* Locked Animation_0009@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3691BFE0961008774E0 /* Locked Animation_0009@3x.png */; };
+		478CD3831BFE0961008774E0 /* Locked Animation_0010@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD36A1BFE0961008774E0 /* Locked Animation_0010@3x.png */; };
+		478CD3841BFE0961008774E0 /* Locked Animation_0011@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD36B1BFE0961008774E0 /* Locked Animation_0011@3x.png */; };
+		478CD3851BFE0961008774E0 /* Locked Animation_0012@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD36C1BFE0961008774E0 /* Locked Animation_0012@3x.png */; };
+		478CD3861BFE0961008774E0 /* Locked Animation_0013@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD36D1BFE0961008774E0 /* Locked Animation_0013@3x.png */; };
+		478CD3871BFE0961008774E0 /* Locked Animation_0014@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD36E1BFE0961008774E0 /* Locked Animation_0014@3x.png */; };
+		478CD3881BFE0961008774E0 /* Locked Animation_0015@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD36F1BFE0961008774E0 /* Locked Animation_0015@3x.png */; };
+		478CD3891BFE0961008774E0 /* Locked Animation_0016@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3701BFE0961008774E0 /* Locked Animation_0016@3x.png */; };
+		478CD38A1BFE0961008774E0 /* Locked Animation_0017@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3711BFE0961008774E0 /* Locked Animation_0017@3x.png */; };
+		478CD38B1BFE0961008774E0 /* Locked Animation_0018@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3721BFE0961008774E0 /* Locked Animation_0018@3x.png */; };
+		478CD38C1BFE0961008774E0 /* Locked Animation_0019@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3731BFE0961008774E0 /* Locked Animation_0019@3x.png */; };
+		478CD38D1BFE0961008774E0 /* Locked Animation_0020@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3741BFE0961008774E0 /* Locked Animation_0020@3x.png */; };
+		478CD38E1BFE0961008774E0 /* Locked Animation_0021@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3751BFE0961008774E0 /* Locked Animation_0021@3x.png */; };
+		478CD38F1BFE0961008774E0 /* Locked Animation_0022@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3761BFE0961008774E0 /* Locked Animation_0022@3x.png */; };
+		478CD3901BFE0961008774E0 /* Locked Animation_0023@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3771BFE0961008774E0 /* Locked Animation_0023@3x.png */; };
+		478CD3911BFE0961008774E0 /* Locked Animation_0024@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3781BFE0961008774E0 /* Locked Animation_0024@3x.png */; };
+		478CD3921BFE0961008774E0 /* Locked Animation_0025@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3791BFE0961008774E0 /* Locked Animation_0025@3x.png */; };
+		478CD39A1BFE0BA4008774E0 /* CountDownTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478CD3991BFE0BA4008774E0 /* CountDownTimerViewController.m */; };
+		478CD3B51BFE0E02008774E0 /* Locked_Animation_0001.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD39C1BFE0E02008774E0 /* Locked_Animation_0001.png */; };
+		478CD3B61BFE0E02008774E0 /* Locked_Animation_0002.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD39D1BFE0E02008774E0 /* Locked_Animation_0002.png */; };
+		478CD3B71BFE0E02008774E0 /* Locked_Animation_0003.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD39E1BFE0E02008774E0 /* Locked_Animation_0003.png */; };
+		478CD3B81BFE0E02008774E0 /* Locked_Animation_0004.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD39F1BFE0E02008774E0 /* Locked_Animation_0004.png */; };
+		478CD3B91BFE0E02008774E0 /* Locked_Animation_0005.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A01BFE0E02008774E0 /* Locked_Animation_0005.png */; };
+		478CD3BA1BFE0E02008774E0 /* Locked_Animation_0006.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A11BFE0E02008774E0 /* Locked_Animation_0006.png */; };
+		478CD3BB1BFE0E02008774E0 /* Locked_Animation_0007.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A21BFE0E02008774E0 /* Locked_Animation_0007.png */; };
+		478CD3BC1BFE0E02008774E0 /* Locked_Animation_0008.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A31BFE0E02008774E0 /* Locked_Animation_0008.png */; };
+		478CD3BD1BFE0E02008774E0 /* Locked_Animation_0009.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A41BFE0E02008774E0 /* Locked_Animation_0009.png */; };
+		478CD3BE1BFE0E02008774E0 /* Locked_Animation_0010.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A51BFE0E02008774E0 /* Locked_Animation_0010.png */; };
+		478CD3BF1BFE0E02008774E0 /* Locked_Animation_0011.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A61BFE0E02008774E0 /* Locked_Animation_0011.png */; };
+		478CD3C01BFE0E02008774E0 /* Locked_Animation_0012.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A71BFE0E02008774E0 /* Locked_Animation_0012.png */; };
+		478CD3C11BFE0E02008774E0 /* Locked_Animation_0013.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A81BFE0E02008774E0 /* Locked_Animation_0013.png */; };
+		478CD3C21BFE0E02008774E0 /* Locked_Animation_0014.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A91BFE0E02008774E0 /* Locked_Animation_0014.png */; };
+		478CD3C31BFE0E02008774E0 /* Locked_Animation_0015.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AA1BFE0E02008774E0 /* Locked_Animation_0015.png */; };
+		478CD3C41BFE0E02008774E0 /* Locked_Animation_0016.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AB1BFE0E02008774E0 /* Locked_Animation_0016.png */; };
+		478CD3C51BFE0E02008774E0 /* Locked_Animation_0017.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AC1BFE0E02008774E0 /* Locked_Animation_0017.png */; };
+		478CD3C61BFE0E02008774E0 /* Locked_Animation_0018.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AD1BFE0E02008774E0 /* Locked_Animation_0018.png */; };
+		478CD3C71BFE0E02008774E0 /* Locked_Animation_0019.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AE1BFE0E02008774E0 /* Locked_Animation_0019.png */; };
+		478CD3C81BFE0E02008774E0 /* Locked_Animation_0020.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AF1BFE0E02008774E0 /* Locked_Animation_0020.png */; };
+		478CD3C91BFE0E02008774E0 /* Locked_Animation_0021.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3B01BFE0E02008774E0 /* Locked_Animation_0021.png */; };
+		478CD3CA1BFE0E02008774E0 /* Locked_Animation_0022.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3B11BFE0E02008774E0 /* Locked_Animation_0022.png */; };
+		478CD3CB1BFE0E02008774E0 /* Locked_Animation_0023.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3B21BFE0E02008774E0 /* Locked_Animation_0023.png */; };
+		478CD3CC1BFE0E02008774E0 /* Locked_Animation_0024.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3B31BFE0E02008774E0 /* Locked_Animation_0024.png */; };
+		478CD3CD1BFE0E02008774E0 /* Locked_Animation_0025.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3B41BFE0E02008774E0 /* Locked_Animation_0025.png */; };
 		47AAF8171BE8DE3400B7DD86 /* BKG_320x568.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 47AAF8161BE8D9A200B7DD86 /* BKG_320x568.m4v */; };
 		47AAF81F1BE8E9A600B7DD86 /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AAF81C1BE8E9A600B7DD86 /* VideoPlayerView.m */; };
 		47AAF8201BE8E9A600B7DD86 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AAF81E1BE8E9A600B7DD86 /* VideoPlayerViewController.m */; };
@@ -1030,6 +1081,58 @@
 		477498FE1BE7949800026C01 /* begin1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "begin1@2x.png"; sourceTree = "<group>"; };
 		477499021BE7A2D900026C01 /* AppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppHelper.h; path = "Helper Classes/AppHelper.h"; sourceTree = "<group>"; };
 		477499031BE7A2D900026C01 /* AppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppHelper.m; path = "Helper Classes/AppHelper.m"; sourceTree = "<group>"; };
+		478CD3611BFE0961008774E0 /* Locked Animation_0001@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0001@3x.png"; sourceTree = "<group>"; };
+		478CD3621BFE0961008774E0 /* Locked Animation_0002@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0002@3x.png"; sourceTree = "<group>"; };
+		478CD3631BFE0961008774E0 /* Locked Animation_0003@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0003@3x.png"; sourceTree = "<group>"; };
+		478CD3641BFE0961008774E0 /* Locked Animation_0004@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0004@3x.png"; sourceTree = "<group>"; };
+		478CD3651BFE0961008774E0 /* Locked Animation_0005@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0005@3x.png"; sourceTree = "<group>"; };
+		478CD3661BFE0961008774E0 /* Locked Animation_0006@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0006@3x.png"; sourceTree = "<group>"; };
+		478CD3671BFE0961008774E0 /* Locked Animation_0007@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0007@3x.png"; sourceTree = "<group>"; };
+		478CD3681BFE0961008774E0 /* Locked Animation_0008@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0008@3x.png"; sourceTree = "<group>"; };
+		478CD3691BFE0961008774E0 /* Locked Animation_0009@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0009@3x.png"; sourceTree = "<group>"; };
+		478CD36A1BFE0961008774E0 /* Locked Animation_0010@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0010@3x.png"; sourceTree = "<group>"; };
+		478CD36B1BFE0961008774E0 /* Locked Animation_0011@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0011@3x.png"; sourceTree = "<group>"; };
+		478CD36C1BFE0961008774E0 /* Locked Animation_0012@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0012@3x.png"; sourceTree = "<group>"; };
+		478CD36D1BFE0961008774E0 /* Locked Animation_0013@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0013@3x.png"; sourceTree = "<group>"; };
+		478CD36E1BFE0961008774E0 /* Locked Animation_0014@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0014@3x.png"; sourceTree = "<group>"; };
+		478CD36F1BFE0961008774E0 /* Locked Animation_0015@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0015@3x.png"; sourceTree = "<group>"; };
+		478CD3701BFE0961008774E0 /* Locked Animation_0016@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0016@3x.png"; sourceTree = "<group>"; };
+		478CD3711BFE0961008774E0 /* Locked Animation_0017@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0017@3x.png"; sourceTree = "<group>"; };
+		478CD3721BFE0961008774E0 /* Locked Animation_0018@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0018@3x.png"; sourceTree = "<group>"; };
+		478CD3731BFE0961008774E0 /* Locked Animation_0019@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0019@3x.png"; sourceTree = "<group>"; };
+		478CD3741BFE0961008774E0 /* Locked Animation_0020@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0020@3x.png"; sourceTree = "<group>"; };
+		478CD3751BFE0961008774E0 /* Locked Animation_0021@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0021@3x.png"; sourceTree = "<group>"; };
+		478CD3761BFE0961008774E0 /* Locked Animation_0022@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0022@3x.png"; sourceTree = "<group>"; };
+		478CD3771BFE0961008774E0 /* Locked Animation_0023@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0023@3x.png"; sourceTree = "<group>"; };
+		478CD3781BFE0961008774E0 /* Locked Animation_0024@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0024@3x.png"; sourceTree = "<group>"; };
+		478CD3791BFE0961008774E0 /* Locked Animation_0025@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0025@3x.png"; sourceTree = "<group>"; };
+		478CD3981BFE0BA4008774E0 /* CountDownTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountDownTimerViewController.h; path = ViewControllers/CountDownTimerViewController/CountDownTimerViewController.h; sourceTree = "<group>"; };
+		478CD3991BFE0BA4008774E0 /* CountDownTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountDownTimerViewController.m; path = ViewControllers/CountDownTimerViewController/CountDownTimerViewController.m; sourceTree = "<group>"; };
+		478CD39C1BFE0E02008774E0 /* Locked_Animation_0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0001.png; sourceTree = "<group>"; };
+		478CD39D1BFE0E02008774E0 /* Locked_Animation_0002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0002.png; sourceTree = "<group>"; };
+		478CD39E1BFE0E02008774E0 /* Locked_Animation_0003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0003.png; sourceTree = "<group>"; };
+		478CD39F1BFE0E02008774E0 /* Locked_Animation_0004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0004.png; sourceTree = "<group>"; };
+		478CD3A01BFE0E02008774E0 /* Locked_Animation_0005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0005.png; sourceTree = "<group>"; };
+		478CD3A11BFE0E02008774E0 /* Locked_Animation_0006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0006.png; sourceTree = "<group>"; };
+		478CD3A21BFE0E02008774E0 /* Locked_Animation_0007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0007.png; sourceTree = "<group>"; };
+		478CD3A31BFE0E02008774E0 /* Locked_Animation_0008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0008.png; sourceTree = "<group>"; };
+		478CD3A41BFE0E02008774E0 /* Locked_Animation_0009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0009.png; sourceTree = "<group>"; };
+		478CD3A51BFE0E02008774E0 /* Locked_Animation_0010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0010.png; sourceTree = "<group>"; };
+		478CD3A61BFE0E02008774E0 /* Locked_Animation_0011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0011.png; sourceTree = "<group>"; };
+		478CD3A71BFE0E02008774E0 /* Locked_Animation_0012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0012.png; sourceTree = "<group>"; };
+		478CD3A81BFE0E02008774E0 /* Locked_Animation_0013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0013.png; sourceTree = "<group>"; };
+		478CD3A91BFE0E02008774E0 /* Locked_Animation_0014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0014.png; sourceTree = "<group>"; };
+		478CD3AA1BFE0E02008774E0 /* Locked_Animation_0015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0015.png; sourceTree = "<group>"; };
+		478CD3AB1BFE0E02008774E0 /* Locked_Animation_0016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0016.png; sourceTree = "<group>"; };
+		478CD3AC1BFE0E02008774E0 /* Locked_Animation_0017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0017.png; sourceTree = "<group>"; };
+		478CD3AD1BFE0E02008774E0 /* Locked_Animation_0018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0018.png; sourceTree = "<group>"; };
+		478CD3AE1BFE0E02008774E0 /* Locked_Animation_0019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0019.png; sourceTree = "<group>"; };
+		478CD3AF1BFE0E02008774E0 /* Locked_Animation_0020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0020.png; sourceTree = "<group>"; };
+		478CD3B01BFE0E02008774E0 /* Locked_Animation_0021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0021.png; sourceTree = "<group>"; };
+		478CD3B11BFE0E02008774E0 /* Locked_Animation_0022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0022.png; sourceTree = "<group>"; };
+		478CD3B21BFE0E02008774E0 /* Locked_Animation_0023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0023.png; sourceTree = "<group>"; };
+		478CD3B31BFE0E02008774E0 /* Locked_Animation_0024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0024.png; sourceTree = "<group>"; };
+		478CD3B41BFE0E02008774E0 /* Locked_Animation_0025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0025.png; sourceTree = "<group>"; };
 		47AAF8161BE8D9A200B7DD86 /* BKG_320x568.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = BKG_320x568.m4v; path = ../BKG_320x568.m4v; sourceTree = "<group>"; };
 		47AAF81B1BE8E9A600B7DD86 /* VideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerView.h; sourceTree = "<group>"; };
 		47AAF81C1BE8E9A600B7DD86 /* VideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerView.m; sourceTree = "<group>"; };
@@ -1433,6 +1536,8 @@
 		4729E07D1BF1F76C00627DA8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				478CD39B1BFE0E02008774E0 /* Account_Locked_Animation */,
+				478CD3601BFE0961008774E0 /* Account_Locked_Animation  @3x */,
 				473697351BF3687F00A0855B /* DevicePaired Color fill Animation */,
 				4729E0811BF1F8D200627DA8 /* Keypad Dot Animation */,
 				4736969E1BF3556C00A0855B /* Logo Animation */,
@@ -2095,9 +2200,10 @@
 				471C76031BF0D5F100F9907E /* Settings/Menu List */,
 				477498B11BE78AB500026C01 /* WelcomeAppViewController */,
 				47AAF8291BE8F5F000B7DD86 /* BeginViewController */,
-				47119D0C1BEA3DDB00876684 /* CameraOverlayViewController */,
 				471D008A1BEB71A4003BC1C6 /* ThankYouViewController */,
 				47E90E361BEC99FB00402A5B /* NotificationViewController */,
+				47119D0C1BEA3DDB00876684 /* CameraOverlayViewController */,
+				478CD3971BFE0B37008774E0 /* CountDownTimerViewController */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -2176,6 +2282,81 @@
 				477499031BE7A2D900026C01 /* AppHelper.m */,
 			);
 			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		478CD3601BFE0961008774E0 /* Account_Locked_Animation  @3x */ = {
+			isa = PBXGroup;
+			children = (
+				478CD3611BFE0961008774E0 /* Locked Animation_0001@3x.png */,
+				478CD3621BFE0961008774E0 /* Locked Animation_0002@3x.png */,
+				478CD3631BFE0961008774E0 /* Locked Animation_0003@3x.png */,
+				478CD3641BFE0961008774E0 /* Locked Animation_0004@3x.png */,
+				478CD3651BFE0961008774E0 /* Locked Animation_0005@3x.png */,
+				478CD3661BFE0961008774E0 /* Locked Animation_0006@3x.png */,
+				478CD3671BFE0961008774E0 /* Locked Animation_0007@3x.png */,
+				478CD3681BFE0961008774E0 /* Locked Animation_0008@3x.png */,
+				478CD3691BFE0961008774E0 /* Locked Animation_0009@3x.png */,
+				478CD36A1BFE0961008774E0 /* Locked Animation_0010@3x.png */,
+				478CD36B1BFE0961008774E0 /* Locked Animation_0011@3x.png */,
+				478CD36C1BFE0961008774E0 /* Locked Animation_0012@3x.png */,
+				478CD36D1BFE0961008774E0 /* Locked Animation_0013@3x.png */,
+				478CD36E1BFE0961008774E0 /* Locked Animation_0014@3x.png */,
+				478CD36F1BFE0961008774E0 /* Locked Animation_0015@3x.png */,
+				478CD3701BFE0961008774E0 /* Locked Animation_0016@3x.png */,
+				478CD3711BFE0961008774E0 /* Locked Animation_0017@3x.png */,
+				478CD3721BFE0961008774E0 /* Locked Animation_0018@3x.png */,
+				478CD3731BFE0961008774E0 /* Locked Animation_0019@3x.png */,
+				478CD3741BFE0961008774E0 /* Locked Animation_0020@3x.png */,
+				478CD3751BFE0961008774E0 /* Locked Animation_0021@3x.png */,
+				478CD3761BFE0961008774E0 /* Locked Animation_0022@3x.png */,
+				478CD3771BFE0961008774E0 /* Locked Animation_0023@3x.png */,
+				478CD3781BFE0961008774E0 /* Locked Animation_0024@3x.png */,
+				478CD3791BFE0961008774E0 /* Locked Animation_0025@3x.png */,
+			);
+			name = "Account_Locked_Animation  @3x";
+			path = "Images/Animations/Account_Locked_Animation  @3x";
+			sourceTree = "<group>";
+		};
+		478CD3971BFE0B37008774E0 /* CountDownTimerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				478CD3981BFE0BA4008774E0 /* CountDownTimerViewController.h */,
+				478CD3991BFE0BA4008774E0 /* CountDownTimerViewController.m */,
+			);
+			name = CountDownTimerViewController;
+			sourceTree = "<group>";
+		};
+		478CD39B1BFE0E02008774E0 /* Account_Locked_Animation */ = {
+			isa = PBXGroup;
+			children = (
+				478CD39C1BFE0E02008774E0 /* Locked_Animation_0001.png */,
+				478CD39D1BFE0E02008774E0 /* Locked_Animation_0002.png */,
+				478CD39E1BFE0E02008774E0 /* Locked_Animation_0003.png */,
+				478CD39F1BFE0E02008774E0 /* Locked_Animation_0004.png */,
+				478CD3A01BFE0E02008774E0 /* Locked_Animation_0005.png */,
+				478CD3A11BFE0E02008774E0 /* Locked_Animation_0006.png */,
+				478CD3A21BFE0E02008774E0 /* Locked_Animation_0007.png */,
+				478CD3A31BFE0E02008774E0 /* Locked_Animation_0008.png */,
+				478CD3A41BFE0E02008774E0 /* Locked_Animation_0009.png */,
+				478CD3A51BFE0E02008774E0 /* Locked_Animation_0010.png */,
+				478CD3A61BFE0E02008774E0 /* Locked_Animation_0011.png */,
+				478CD3A71BFE0E02008774E0 /* Locked_Animation_0012.png */,
+				478CD3A81BFE0E02008774E0 /* Locked_Animation_0013.png */,
+				478CD3A91BFE0E02008774E0 /* Locked_Animation_0014.png */,
+				478CD3AA1BFE0E02008774E0 /* Locked_Animation_0015.png */,
+				478CD3AB1BFE0E02008774E0 /* Locked_Animation_0016.png */,
+				478CD3AC1BFE0E02008774E0 /* Locked_Animation_0017.png */,
+				478CD3AD1BFE0E02008774E0 /* Locked_Animation_0018.png */,
+				478CD3AE1BFE0E02008774E0 /* Locked_Animation_0019.png */,
+				478CD3AF1BFE0E02008774E0 /* Locked_Animation_0020.png */,
+				478CD3B01BFE0E02008774E0 /* Locked_Animation_0021.png */,
+				478CD3B11BFE0E02008774E0 /* Locked_Animation_0022.png */,
+				478CD3B21BFE0E02008774E0 /* Locked_Animation_0023.png */,
+				478CD3B31BFE0E02008774E0 /* Locked_Animation_0024.png */,
+				478CD3B41BFE0E02008774E0 /* Locked_Animation_0025.png */,
+			);
+			name = Account_Locked_Animation;
+			path = Images/Animations/Account_Locked_Animation;
 			sourceTree = "<group>";
 		};
 		47AAF8291BE8F5F000B7DD86 /* BeginViewController */ = {
@@ -2376,10 +2557,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4729E1AB1BF1F8D200627DA8 /* PIN_Anim_Positive017.png in Resources */,
+				478CD3CC1BFE0E02008774E0 /* Locked_Animation_0024.png in Resources */,
+				478CD3BD1BFE0E02008774E0 /* Locked_Animation_0009.png in Resources */,
 				4729E1501BF1F8D200627DA8 /* PIN_Anim_Negative026.png in Resources */,
 				4729E1901BF1F8D200627DA8 /* PIN_Anim_Negative090.png in Resources */,
 				473697261BF35CF500A0855B /* Authenticator_Logo_10.png in Resources */,
 				473697341BF35CF500A0855B /* Authenticator_Logo_24.png in Resources */,
+				478CD3C71BFE0E02008774E0 /* Locked_Animation_0019.png in Resources */,
+				478CD3911BFE0961008774E0 /* Locked Animation_0024@3x.png in Resources */,
 				47E90E351BEC969000402A5B /* Back_Arrow_ON@2x.png in Resources */,
 				4729E1661BF1F8D200627DA8 /* PIN_Anim_Negative048.png in Resources */,
 				47E90E491BECE79B00402A5B /* deselect.png in Resources */,
@@ -2397,16 +2582,20 @@
 				4729E19A1BF1F8D200627DA8 /* PIN_Anim_Positive000.png in Resources */,
 				4729E17D1BF1F8D200627DA8 /* PIN_Anim_Negative071.png in Resources */,
 				2BC906EB1BFDC7BF009AF8E4 /* QRScanAtHome.png in Resources */,
+				478CD3BB1BFE0E02008774E0 /* Locked_Animation_0007.png in Resources */,
 				4729E1591BF1F8D200627DA8 /* PIN_Anim_Negative035.png in Resources */,
 				4729E1761BF1F8D200627DA8 /* PIN_Anim_Negative064.png in Resources */,
 				4729E18D1BF1F8D200627DA8 /* PIN_Anim_Negative087.png in Resources */,
+				478CD37A1BFE0961008774E0 /* Locked Animation_0001@3x.png in Resources */,
 				4729E1A51BF1F8D200627DA8 /* PIN_Anim_Positive011.png in Resources */,
 				4736972E1BF35CF500A0855B /* Authenticator_Logo_18.png in Resources */,
+				478CD3C21BFE0E02008774E0 /* Locked_Animation_0014.png in Resources */,
 				4729E18A1BF1F8D200627DA8 /* PIN_Anim_Negative084.png in Resources */,
 				473698541BF371EF00A0855B /* GTMABAddressBook.strings in Resources */,
 				4729E1391BF1F8D200627DA8 /* PIN_Anim_Negative003.png in Resources */,
 				4729E1C21BF1F8D200627DA8 /* PIN_Anim_Positive040.png in Resources */,
 				4736987C1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.6.png in Resources */,
+				478CD37C1BFE0961008774E0 /* Locked Animation_0003@3x.png in Resources */,
 				473697591BF3687F00A0855B /* GREY PANEL_00021.png in Resources */,
 				471C75EA1BF0AE5200F9907E /* PIN_Icon_OFF@2x.png in Resources */,
 				473698C01BF371EF00A0855B /* GTMUnitTestingWindow.10.6.gtmUTState in Resources */,
@@ -2414,9 +2603,11 @@
 				4729E1A81BF1F8D200627DA8 /* PIN_Anim_Positive014.png in Resources */,
 				47E0CECD1BFCB0B700AC390B /* Pirean_Settings_Logo@3x.png in Resources */,
 				47119D111BEA3EC400876684 /* CameraOverlayViewController.xib in Resources */,
+				478CD38F1BFE0961008774E0 /* Locked Animation_0022@3x.png in Resources */,
 				473698701BF371EF00A0855B /* GTMFadeTruncatingLabelTest1.6.png in Resources */,
 				47E0CED91BFCBA9E00AC390B /* Ribbon_Hamburger.png in Resources */,
 				474F1BF01BFB64F600D5B569 /* SetPin.png in Resources */,
+				478CD3B81BFE0E02008774E0 /* Locked_Animation_0004.png in Resources */,
 				4729E1C81BF1F8D200627DA8 /* PIN_Anim_Positive046.png in Resources */,
 				4736971D1BF35CF500A0855B /* Authenticator_Logo_1.png in Resources */,
 				471D00801BEB5BF6003BC1C6 /* LoadingScreen_iphone6.png in Resources */,
@@ -2439,6 +2630,7 @@
 				473698791BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.6.png in Resources */,
 				47E0CF0E1BFCC23E00AC390B /* Message_0017@3x.png in Resources */,
 				4729E1DD1BF1F8D200627DA8 /* PIN_Anim_Positive067.png in Resources */,
+				478CD3CA1BFE0E02008774E0 /* Locked_Animation_0022.png in Resources */,
 				47E0CECA1BFCB08200AC390B /* PIN_Icon_OFF@3x.png in Resources */,
 				474F1BE01BFB5CF100D5B569 /* QRDoesn’tScan.png in Resources */,
 				473698C71BF371EF00A0855B /* OTPTableViewCell.xib in Resources */,
@@ -2453,6 +2645,7 @@
 				473698781BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.5.png in Resources */,
 				4729E18E1BF1F8D200627DA8 /* PIN_Anim_Negative088.png in Resources */,
 				4729E1D71BF1F8D200627DA8 /* PIN_Anim_Positive061.png in Resources */,
+				478CD3C61BFE0E02008774E0 /* Locked_Animation_0018.png in Resources */,
 				4729E1381BF1F8D200627DA8 /* PIN_Anim_Negative002.png in Resources */,
 				4729E16B1BF1F8D200627DA8 /* PIN_Anim_Negative053.png in Resources */,
 				473698821BF371EF00A0855B /* GTMUIImage+Resize_100x50.png in Resources */,
@@ -2466,10 +2659,14 @@
 				4729E1741BF1F8D200627DA8 /* PIN_Anim_Negative062.png in Resources */,
 				4729E1891BF1F8D200627DA8 /* PIN_Anim_Negative083.png in Resources */,
 				4729E1621BF1F8D200627DA8 /* PIN_Anim_Negative044.png in Resources */,
+				478CD3B71BFE0E02008774E0 /* Locked_Animation_0003.png in Resources */,
 				473697491BF3687F00A0855B /* GREY PANEL_00005.png in Resources */,
 				2B92E3C61BF637AA003CF4A1 /* cameraOverlay 4.png in Resources */,
 				47D2CA1B1BFA094B00C1D89F /* ResetMyApp.png in Resources */,
+				478CD38B1BFE0961008774E0 /* Locked Animation_0018@3x.png in Resources */,
 				473698C91BF371EF00A0855B /* RootViewController.xib in Resources */,
+				478CD3BE1BFE0E02008774E0 /* Locked_Animation_0010.png in Resources */,
+				478CD3B61BFE0E02008774E0 /* Locked_Animation_0002.png in Resources */,
 				47E90E461BECB1BC00402A5B /* ImageNotification@2x.png in Resources */,
 				4729E1B51BF1F8D200627DA8 /* PIN_Anim_Positive027.png in Resources */,
 				47D2CA211BFA168B00C1D89F /* begin@2x.png in Resources */,
@@ -2498,6 +2695,7 @@
 				47E0CEC71BFCB04400AC390B /* TOUCH_Icon_ON@3x.png in Resources */,
 				473698C31BF371EF00A0855B /* GTMUnitTestingWindow.tiff in Resources */,
 				47119CF71BEA19B200876684 /* Ribbon@2x.png in Resources */,
+				478CD3821BFE0961008774E0 /* Locked Animation_0009@3x.png in Resources */,
 				473698711BF371EF00A0855B /* GTMFadeTruncatingLabelTest1.png in Resources */,
 				4729E1D41BF1F8D200627DA8 /* PIN_Anim_Positive058.png in Resources */,
 				4729E1D81BF1F8D200627DA8 /* PIN_Anim_Positive062.png in Resources */,
@@ -2522,9 +2720,12 @@
 				4729E1551BF1F8D200627DA8 /* PIN_Anim_Negative031.png in Resources */,
 				473697241BF35CF500A0855B /* Authenticator_Logo_8.png in Resources */,
 				473698B41BF371EF00A0855B /* GTMUIViewUnitTestingTest.png in Resources */,
+				478CD3861BFE0961008774E0 /* Locked Animation_0013@3x.png in Resources */,
 				473698B71BF371EF00A0855B /* GTMUnitTestingImage.tiff in Resources */,
 				4729E1811BF1F8D200627DA8 /* PIN_Anim_Negative075.png in Resources */,
+				478CD3921BFE0961008774E0 /* Locked Animation_0025@3x.png in Resources */,
 				473697221BF35CF500A0855B /* Authenticator_Logo_6.png in Resources */,
+				478CD3C91BFE0E02008774E0 /* Locked_Animation_0021.png in Resources */,
 				4729E14C1BF1F8D200627DA8 /* PIN_Anim_Negative022.png in Resources */,
 				4729E1C31BF1F8D200627DA8 /* PIN_Anim_Positive041.png in Resources */,
 				4729E1A61BF1F8D200627DA8 /* PIN_Anim_Positive012.png in Resources */,
@@ -2546,6 +2747,7 @@
 				4729E13B1BF1F8D200627DA8 /* PIN_Anim_Negative005.png in Resources */,
 				4729E1451BF1F8D200627DA8 /* PIN_Anim_Negative015.png in Resources */,
 				4729E1921BF1F8D200627DA8 /* PIN_Anim_Negative092.png in Resources */,
+				478CD3901BFE0961008774E0 /* Locked Animation_0023@3x.png in Resources */,
 				4729E1681BF1F8D200627DA8 /* PIN_Anim_Negative050.png in Resources */,
 				4729E1881BF1F8D200627DA8 /* PIN_Anim_Negative082.png in Resources */,
 				47E0CEB71BFCAC1E00AC390B /* TouchID_OFF@3x.png in Resources */,
@@ -2579,6 +2781,7 @@
 				4729E15A1BF1F8D200627DA8 /* PIN_Anim_Negative036.png in Resources */,
 				4729E1CE1BF1F8D200627DA8 /* PIN_Anim_Positive052.png in Resources */,
 				4736988E1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_50x50_clip.png in Resources */,
+				478CD3C51BFE0E02008774E0 /* Locked_Animation_0017.png in Resources */,
 				4729E17F1BF1F8D200627DA8 /* PIN_Anim_Negative073.png in Resources */,
 				4729E1AA1BF1F8D200627DA8 /* PIN_Anim_Positive016.png in Resources */,
 				4729E1541BF1F8D200627DA8 /* PIN_Anim_Negative030.png in Resources */,
@@ -2586,7 +2789,9 @@
 				47E0CF081BFCC23E00AC390B /* Message_0011@3x.png in Resources */,
 				4736975B1BF3687F00A0855B /* GREY PANEL_00023.png in Resources */,
 				4729E1B21BF1F8D200627DA8 /* PIN_Anim_Positive024.png in Resources */,
+				478CD3851BFE0961008774E0 /* Locked Animation_0012@3x.png in Resources */,
 				4729E14A1BF1F8D200627DA8 /* PIN_Anim_Negative020.png in Resources */,
+				478CD3BC1BFE0E02008774E0 /* Locked_Animation_0008.png in Resources */,
 				471C75E21BF0AE3900F9907E /* QR_Icon_OFF@2x.png in Resources */,
 				47E0CECB1BFCB08200AC390B /* PIN_Icon_ON@3x.png in Resources */,
 				473698C61BF371EF00A0855B /* OTPAuthURLEntryController.xib in Resources */,
@@ -2604,9 +2809,11 @@
 				473698BB1BF371EF00A0855B /* GTMUnitTestingView.10.6.tiff in Resources */,
 				4736975A1BF3687F00A0855B /* GREY PANEL_00022.png in Resources */,
 				4736971F1BF35CF500A0855B /* Authenticator_Logo_3.png in Resources */,
+				478CD37F1BFE0961008774E0 /* Locked Animation_0006@3x.png in Resources */,
 				4736986F1BF371EF00A0855B /* GTMFadeTruncatingLabelTest1.5.png in Resources */,
 				4736972C1BF35CF500A0855B /* Authenticator_Logo_16.png in Resources */,
 				4729E1F61BF2113B00627DA8 /* QR_Help_Icon@2x.png in Resources */,
+				478CD38E1BFE0961008774E0 /* Locked Animation_0021@3x.png in Resources */,
 				4729E1A71BF1F8D200627DA8 /* PIN_Anim_Positive013.png in Resources */,
 				473698871BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_50x50_noclip.png in Resources */,
 				4736971C1BF35CF500A0855B /* Authenticator_Logo_0.png in Resources */,
@@ -2615,11 +2822,14 @@
 				4729E1831BF1F8D200627DA8 /* PIN_Anim_Negative077.png in Resources */,
 				4729E1441BF1F8D200627DA8 /* PIN_Anim_Negative014.png in Resources */,
 				471C75EB1BF0AE5200F9907E /* PIN_Icon_ON@2x.png in Resources */,
+				478CD3801BFE0961008774E0 /* Locked Animation_0007@3x.png in Resources */,
 				4729E1E21BF1F8D200627DA8 /* PIN_Anim_Positive072.png in Resources */,
+				478CD3871BFE0961008774E0 /* Locked Animation_0014@3x.png in Resources */,
 				473697311BF35CF500A0855B /* Authenticator_Logo_21.png in Resources */,
 				4729E1CD1BF1F8D200627DA8 /* PIN_Anim_Positive051.png in Resources */,
 				473697501BF3687F00A0855B /* GREY PANEL_00012.png in Resources */,
 				4729E19B1BF1F8D200627DA8 /* PIN_Anim_Positive001.png in Resources */,
+				478CD3881BFE0961008774E0 /* Locked Animation_0015@3x.png in Resources */,
 				47E90E4A1BECE79B00402A5B /* select.png in Resources */,
 				4729E17E1BF1F8D200627DA8 /* PIN_Anim_Negative072.png in Resources */,
 				4729E14E1BF1F8D200627DA8 /* PIN_Anim_Negative024.png in Resources */,
@@ -2629,8 +2839,11 @@
 				4736987F1BF371EF00A0855B /* GTMUIImage+Resize_100x100_to_40x60.png in Resources */,
 				4729E0801BF1F79F00627DA8 /* startCircleImage.png in Resources */,
 				477498FF1BE7949800026C01 /* begin1.png in Resources */,
+				478CD3C41BFE0E02008774E0 /* Locked_Animation_0016.png in Resources */,
 				4729E1C01BF1F8D200627DA8 /* PIN_Anim_Positive038.png in Resources */,
 				4729E1581BF1F8D200627DA8 /* PIN_Anim_Negative034.png in Resources */,
+				478CD3BA1BFE0E02008774E0 /* Locked_Animation_0006.png in Resources */,
+				478CD3841BFE0961008774E0 /* Locked Animation_0011@3x.png in Resources */,
 				47E0CEDF1BFCBE9200AC390B /* ScanANewQR_ON.png in Resources */,
 				2B92E3C51BF637AA003CF4A1 /* cameraOverlay 4.7.png in Resources */,
 				4729E1781BF1F8D200627DA8 /* PIN_Anim_Negative066.png in Resources */,
@@ -2643,9 +2856,12 @@
 				473697281BF35CF500A0855B /* Authenticator_Logo_12.png in Resources */,
 				4729E17A1BF1F8D200627DA8 /* PIN_Anim_Negative068.png in Resources */,
 				4729E1F21BF20A3600627DA8 /* Notification_Help_Icon@2x.png in Resources */,
+				478CD37E1BFE0961008774E0 /* Locked Animation_0005@3x.png in Resources */,
 				4729E1E91BF1F8D200627DA8 /* PIN_Anim_Positive079.png in Resources */,
+				478CD37D1BFE0961008774E0 /* Locked Animation_0004@3x.png in Resources */,
 				4729E1431BF1F8D200627DA8 /* PIN_Anim_Negative013.png in Resources */,
 				4729E19F1BF1F8D200627DA8 /* PIN_Anim_Positive005.png in Resources */,
+				478CD3831BFE0961008774E0 /* Locked Animation_0010@3x.png in Resources */,
 				47E0CEB81BFCAC1E00AC390B /* TouchID_ON@2x.png in Resources */,
 				4729E1AE1BF1F8D200627DA8 /* PIN_Anim_Positive020.png in Resources */,
 				4729E1DE1BF1F8D200627DA8 /* PIN_Anim_Positive068.png in Resources */,
@@ -2662,6 +2878,8 @@
 				47E0CEE21BFCBE9C00AC390B /* ScanANewQR_OFF@2x.png in Resources */,
 				47E0CE961BFC5A2000AC390B /* Submit@2x.png in Resources */,
 				473698AF1BF371EF00A0855B /* ReadMe_iossim.txt in Resources */,
+				478CD3C01BFE0E02008774E0 /* Locked_Animation_0012.png in Resources */,
+				478CD38D1BFE0961008774E0 /* Locked Animation_0020@3x.png in Resources */,
 				4729E18F1BF1F8D200627DA8 /* PIN_Anim_Negative089.png in Resources */,
 				473698741BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.png in Resources */,
 				474F1BF41BFB651400D5B569 /* SetPin@3x.png in Resources */,
@@ -2670,6 +2888,7 @@
 				4729E1CF1BF1F8D200627DA8 /* PIN_Anim_Positive053.png in Resources */,
 				47E0CF0A1BFCC23E00AC390B /* Message_0013@3x.png in Resources */,
 				47E0CF031BFCC23E00AC390B /* Message_0006@3x.png in Resources */,
+				478CD3C11BFE0E02008774E0 /* Locked_Animation_0013.png in Resources */,
 				47E90E341BEC969000402A5B /* Back_Arrow_OFF@2x.png in Resources */,
 				4729E1961BF1F8D200627DA8 /* PIN_Anim_Negative096.png in Resources */,
 				4729E14B1BF1F8D200627DA8 /* PIN_Anim_Negative021.png in Resources */,
@@ -2686,6 +2905,7 @@
 				471C75E51BF0AE3900F9907E /* TOTP_Icon_ON@2x.png in Resources */,
 				4736972D1BF35CF500A0855B /* Authenticator_Logo_17.png in Resources */,
 				4729E1B91BF1F8D200627DA8 /* PIN_Anim_Positive031.png in Resources */,
+				478CD3C81BFE0E02008774E0 /* Locked_Animation_0020.png in Resources */,
 				4729E16F1BF1F8D200627DA8 /* PIN_Anim_Negative057.png in Resources */,
 				4729E1401BF1F8D200627DA8 /* PIN_Anim_Negative010.png in Resources */,
 				4729E1BA1BF1F8D200627DA8 /* PIN_Anim_Positive032.png in Resources */,
@@ -2694,23 +2914,27 @@
 				473697511BF3687F00A0855B /* GREY PANEL_00013.png in Resources */,
 				4736971E1BF35CF500A0855B /* Authenticator_Logo_2.png in Resources */,
 				4729E14D1BF1F8D200627DA8 /* PIN_Anim_Negative023.png in Resources */,
+				478CD38A1BFE0961008774E0 /* Locked Animation_0017@3x.png in Resources */,
 				47E0CEFF1BFCC23E00AC390B /* Message_0002@3x.png in Resources */,
 				4729E1C91BF1F8D200627DA8 /* PIN_Anim_Positive047.png in Resources */,
 				473698721BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.5.png in Resources */,
 				473697531BF3687F00A0855B /* GREY PANEL_00015.png in Resources */,
 				4729E19E1BF1F8D200627DA8 /* PIN_Anim_Positive004.png in Resources */,
 				4736988D1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_40x60_noclip.png in Resources */,
+				478CD3B91BFE0E02008774E0 /* Locked_Animation_0005.png in Resources */,
 				4729E1B11BF1F8D200627DA8 /* PIN_Anim_Positive023.png in Resources */,
 				47D2CA231BFA169400C1D89F /* begin@3x.png in Resources */,
 				471D008F1BEB761E003BC1C6 /* defaultProfileImage@2x.png in Resources */,
 				4736988B1BF371EF00A0855B /* GTMUIImage+Resize_50x100_flipped.png in Resources */,
 				4729E1E01BF1F8D200627DA8 /* PIN_Anim_Positive070.png in Resources */,
+				478CD3CD1BFE0E02008774E0 /* Locked_Animation_0025.png in Resources */,
 				4729E16C1BF1F8D200627DA8 /* PIN_Anim_Negative054.png in Resources */,
 				4729E1751BF1F8D200627DA8 /* PIN_Anim_Negative063.png in Resources */,
 				47E0CF0B1BFCC23E00AC390B /* Message_0014@3x.png in Resources */,
 				4729E1511BF1F8D200627DA8 /* PIN_Anim_Negative027.png in Resources */,
 				473698BD1BF371EF00A0855B /* GTMUnitTestingWindow.10.5.6.tiff in Resources */,
 				471D007D1BEB37C1003BC1C6 /* scanBox.png in Resources */,
+				478CD3B51BFE0E02008774E0 /* Locked_Animation_0001.png in Resources */,
 				4729E15E1BF1F8D200627DA8 /* PIN_Anim_Negative040.png in Resources */,
 				47E0CEB01BFCAC1100AC390B /* SecurePIN_ON@2x.png in Resources */,
 				4729E1B81BF1F8D200627DA8 /* PIN_Anim_Positive030.png in Resources */,
@@ -2724,6 +2948,7 @@
 				47119D151BEA436200876684 /* X_OFF@2x.png in Resources */,
 				4729E1E31BF1F8D200627DA8 /* PIN_Anim_Positive073.png in Resources */,
 				473698731BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.6.png in Resources */,
+				478CD3811BFE0961008774E0 /* Locked Animation_0008@3x.png in Resources */,
 				4729E1B61BF1F8D200627DA8 /* PIN_Anim_Positive028.png in Resources */,
 				4729E1421BF1F8D200627DA8 /* PIN_Anim_Negative012.png in Resources */,
 				473697231BF35CF500A0855B /* Authenticator_Logo_7.png in Resources */,
@@ -2749,10 +2974,12 @@
 				4729E1DF1BF1F8D200627DA8 /* PIN_Anim_Positive069.png in Resources */,
 				47E0CEC21BFCAFFC00AC390B /* QR_Icon_OFF@3x.png in Resources */,
 				474F1BE81BFB5D0400D5B569 /* QRDoesn’tScan@3x.png in Resources */,
+				478CD37B1BFE0961008774E0 /* Locked Animation_0002@3x.png in Resources */,
 				4729E13F1BF1F8D200627DA8 /* PIN_Anim_Negative009.png in Resources */,
 				473697271BF35CF500A0855B /* Authenticator_Logo_11.png in Resources */,
 				4729E1411BF1F8D200627DA8 /* PIN_Anim_Negative011.png in Resources */,
 				4729E1491BF1F8D200627DA8 /* PIN_Anim_Negative019.png in Resources */,
+				478CD3C31BFE0E02008774E0 /* Locked_Animation_0015.png in Resources */,
 				4729E1B31BF1F8D200627DA8 /* PIN_Anim_Positive025.png in Resources */,
 				474F1BF21BFB650300D5B569 /* SetPin@2x.png in Resources */,
 				4729E15C1BF1F8D200627DA8 /* PIN_Anim_Negative038.png in Resources */,
@@ -2764,12 +2991,16 @@
 				473698861BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_50x50_clip.png in Resources */,
 				4729E1821BF1F8D200627DA8 /* PIN_Anim_Negative076.png in Resources */,
 				473698561BF371EF00A0855B /* phone.png in Resources */,
+				478CD3CB1BFE0E02008774E0 /* Locked_Animation_0023.png in Resources */,
 				47E0CEB11BFCAC1100AC390B /* SecurePIN_ON@3x.png in Resources */,
+				478CD38C1BFE0961008774E0 /* Locked Animation_0019@3x.png in Resources */,
 				47E0CF021BFCC23E00AC390B /* Message_0005@3x.png in Resources */,
+				478CD3891BFE0961008774E0 /* Locked Animation_0016@3x.png in Resources */,
 				473698BC1BF371EF00A0855B /* GTMUnitTestingView.tiff in Resources */,
 				4736988C1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_40x60_clip.png in Resources */,
 				473698B81BF371EF00A0855B /* GTMUnitTestingTest.nib in Resources */,
 				4736988F1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_50x50_noclip.png in Resources */,
+				478CD3BF1BFE0E02008774E0 /* Locked_Animation_0011.png in Resources */,
 				4729E1EF1BF2010200627DA8 /* PIN_Circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2830,6 +3061,7 @@
 				4736985D1BF371EF00A0855B /* GTMNSString+URLArguments.m in Sources */,
 				474313991BE78A3A0021CF58 /* AppDelegate.m in Sources */,
 				473698461BF371EF00A0855B /* OTPAuthBarClock.m in Sources */,
+				478CD39A1BFE0BA4008774E0 /* CountDownTimerViewController.m in Sources */,
 				474313961BE78A3A0021CF58 /* main.m in Sources */,
 				470E69761BF4794100D6A091 /* AppSettings.m in Sources */,
 				4736984D1BF371EF00A0855B /* OTPTableViewCell.m in Sources */,

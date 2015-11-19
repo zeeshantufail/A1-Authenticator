@@ -30,7 +30,7 @@
 @implementation SettingsViewController
 {
     NSArray *_menuItems;
-    BOOL pinFlag, totpFlag, setPinFlag;
+    BOOL touchIDFlag, pinFlag, qryptoFlag, totpFlag, setPinFlag;
 }
 
 - (void)viewDidLoad
@@ -76,7 +76,9 @@
 //                     completion:^(BOOL finished){
 //                     }];
     
-    
+    setPinFlag = true;
+    pinFlag    = true;
+    totpFlag   = true;
     
 }
 
@@ -123,9 +125,10 @@
     NSString *CellIdentifier = [_menuItems objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-//    SettingCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-//    [cell.label setHighlightedTextColor: [UIColor blackColor]];
+    if (indexPath.row == 1 || indexPath.row == 2 )
+    {
+        [self setActionsToButtonsOfCell:cell atIndexPath:indexPath];
+    }
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
@@ -138,48 +141,51 @@
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     [self highlightCellLabel:indexPath.row];
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    if (indexPath.row == 0)
-    {
-        HomeViewController *homeViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
-        [self.revealViewController pushFrontViewController:homeViewController animated:YES];
-    }
-    if (indexPath.row == 1)
-    {
-    }
-    if (indexPath.row == 2)
-    {
-    }
-    if (indexPath.row == 3)
-    {
-    }
-    if (indexPath.row == 4)
-    {
-        HistoryViewController *historyViewController = [storyboard instantiateViewControllerWithIdentifier:@"HistoryViewController"];
-        [self.revealViewController pushFrontViewController:historyViewController animated:YES];
-    }
-    if (indexPath.row == 5)
-    {
-        ResetAppViewController *resetAppViewController = [storyboard instantiateViewControllerWithIdentifier:@"ResetAppViewController"];
-        [self.revealViewController pushFrontViewController:resetAppViewController animated:YES];
-    }
-    if (indexPath.row == 6)
-    {
-        HelpViewController *helpViewController = [storyboard instantiateViewControllerWithIdentifier:@"HelpViewController"];
-        [self.revealViewController pushFrontViewController:helpViewController animated:YES];
-    }
-    if (indexPath.row == 7)
-    {
-        AboutViewController *aboutViewController = [storyboard instantiateViewControllerWithIdentifier:@"AboutViewController"];
-        [self.revealViewController pushFrontViewController:aboutViewController animated:YES];
-    }
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {
     return !([identifier isEqualToString:@"setPinScreenThroughSettingSegue"] && [[AppSettings sharedAppSettings] appPinState]);
+}
+
+-(void)setActionsToButtonsOfCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 1)
+    {
+        UIButton *qryptoButton = [cell viewWithTag:201];
+        UIButton *otpButton    = [cell viewWithTag:202];
+        
+        [qryptoButton addTarget:self action:@selector(qryptoButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [otpButton addTarget:self action:@selector(otpButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        
+        if (totpFlag)
+        {
+            [otpButton setBackgroundImage:[UIImage imageNamed:@"TOTP_Icon_ON.png"] forState:UIControlStateNormal];
+            [qryptoButton setBackgroundImage:[UIImage imageNamed:@"QR_Icon_OFF.png"] forState:UIControlStateNormal];
+        }
+        else
+        {
+            [otpButton setBackgroundImage:[UIImage imageNamed:@"TOTP_Icon_OFF.png"] forState:UIControlStateNormal];
+        }
+    }
+    else
+    {
+        UIButton *touchIDButton = [cell viewWithTag:301];
+        UIButton *pinButton    = [cell viewWithTag:302];
+        
+        [touchIDButton addTarget:self action:@selector(touchIDButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [pinButton addTarget:self action:@selector(pinButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        
+        if (pinFlag)
+        {
+            [pinButton setBackgroundImage:[UIImage imageNamed:@"PIN_Icon_ON.png"] forState:UIControlStateNormal];
+            [touchIDButton setBackgroundImage:[UIImage imageNamed:@"TOUCH_Icon_OFF.png"] forState:UIControlStateNormal];
+        }
+        else
+        {
+            [pinButton setBackgroundImage:[UIImage imageNamed:@"PIN_Icon_OFF.png"] forState:UIControlStateNormal];
+        }
+    }
 }
 
 -(void)highlightCellLabel:(NSInteger)rowNo
@@ -201,6 +207,33 @@
     }
 }
 
+-(void)qryptoButtonPressed:(UIButton*)sender
+{
+    NSLog(@"qryptoButtonPressed");
+}
+
+-(void)otpButtonPressed:(UIButton*)sender
+{
+    NSLog(@"otpButtonPressed");
+}
+
+-(void)touchIDButtonPressed:(UIButton*)sender
+{
+    NSLog(@"touchIDButtonPressed");
+}
+
+-(void)pinButtonPressed:(UIButton*)sender
+{
+    NSLog(@"pinButtonPressed");
+}
+
+- (BOOL)image:(UIImage *)image1 isEqualTo:(UIImage *)image2
+{
+    NSData *data1 = UIImagePNGRepresentation(image1);
+    NSData *data2 = UIImagePNGRepresentation(image2);
+    
+    return [data1 isEqual:data2];
+}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
