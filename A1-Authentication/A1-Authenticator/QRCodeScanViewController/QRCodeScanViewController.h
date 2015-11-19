@@ -19,7 +19,8 @@
 
 @optional
 
--(void)didScanResultWithString:(QRCodeScanViewController *)qrCodeScanViewController;
+-(void)didScanResult:(QRCodeScanViewController *)qrCodeScanViewController;
+-(void)didDismissQrScan:(QRCodeScanViewController *)qrCodeScanViewController;
 
 @end
 

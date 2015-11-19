@@ -362,7 +362,7 @@
                         <segue destination="qU4-Th-eo7" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="YuP-6C-cMH"/>
                         <segue destination="4JE-9E-Y7c" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="fLf-Xd-qGm"/>
                         <segue destination="VEH-Os-g86" kind="modal" identifier="enterPasscodeSegue" animates="NO" id="RAz-cl-gjX"/>
-                        <segue destination="v9n-9R-rIl" kind="modal" identifier="enterTouchIdSegue" animates="NO" id="984-vK-SXK"/>
+                        <segue destination="QzI-oG-Irs" kind="modal" identifier="enterTouchIdSegue" animates="NO" id="1vK-jv-YHd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRn-sj-7vK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -635,7 +635,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6P-DL-kZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-112" y="-1071"/>
+            <point key="canvasLocation" x="-215" y="-1104"/>
         </scene>
         <!--Welcome App View Controller-->
         <scene sceneID="zbi-v1-QEU">
@@ -1999,9 +1999,19 @@
                                                     <color key="titleColor" red="1" green="0.71764705880000002" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A1.png" id="Uoi-r5-Gmq">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                            </imageView>
                                         </subviews>
                                         <animations/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="vM0-AH-50w">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="JHI-e6-vLy">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
@@ -2037,6 +2047,7 @@
                                             </button>
                                         </subviews>
                                         <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JjB-93-NAw">
                                         <rect key="frame" x="11" y="0.0" width="47" height="63"/>
@@ -2057,6 +2068,7 @@
                     </view>
                     <connections>
                         <outlet property="designationLabel" destination="GB1-UE-sxW" id="P7W-W5-pix"/>
+                        <outlet property="homeContentView" destination="vM0-AH-50w" id="yEQ-tD-Bn5"/>
                         <outlet property="messageBtn" destination="JcY-9h-hxN" id="udC-es-UD6"/>
                         <outlet property="messageImageView" destination="DNE-kt-N54" id="zIH-hu-8eB"/>
                         <outlet property="nameLbl" destination="zOR-KG-21Z" id="kYO-np-tmr"/>
@@ -2455,6 +2467,60 @@
             </objects>
             <point key="canvasLocation" x="824" y="-937"/>
         </scene>
+        <!--Code Scan View Controller-->
+        <scene sceneID="Y13-SO-3l3">
+            <objects>
+                <viewController storyboardIdentifier="qrHomeView" id="p8f-52-0HG" customClass="QRCodeScanViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CDg-ct-4uQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QRScanAtHome.png" id="k9H-HZ-xe0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view tag="11" contentMode="scaleToFill" id="6So-S4-EN8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="FcL-EW-iUw">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please scan your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qsR-8K-HY3">
+                                        <rect key="frame" x="0.0" y="183" width="320" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A:1 QR code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="czy-Mf-AK4">
+                                        <rect key="frame" x="0.0" y="205" width="320" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanBox.png" id="rav-qs-Zyg">
+                                        <rect key="frame" x="83" y="251" width="153" height="153"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scanView" destination="rav-qs-Zyg" id="tX3-Fo-E3G"/>
+                        <outlet property="viewPreview" destination="FcL-EW-iUw" id="tjl-hj-Ony"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyH-VK-Pfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304" y="-1024"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="CiW-ps-pPJ">
             <objects>
@@ -2532,6 +2598,7 @@
         <image name="PIN_Icon_ON.png" width="40" height="40"/>
         <image name="Pirean_Settings_Logo.png" width="105" height="30"/>
         <image name="QRDoesn’tScan.png" width="296" height="71"/>
+        <image name="QRScanAtHome.png" width="383" height="679"/>
         <image name="QR_Help_Icon.png" width="36" height="36"/>
         <image name="QR_Icon_ON.png" width="40" height="40"/>
         <image name="ResetMyApp.png" width="291" height="65"/>
@@ -2555,6 +2622,7 @@
         <image name="defaultProfileImage.png" width="84" height="84"/>
         <image name="deselect.png" width="36" height="36"/>
         <image name="iPad_Stop_ON.png" width="51" height="51"/>
+        <image name="scanBox.png" width="366" height="367"/>
         <image name="startCircleImage.png" width="640" height="124"/>
     </resources>
     <inferredMetricsTieBreakers>

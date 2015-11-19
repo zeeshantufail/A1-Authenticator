@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QRCodeScanViewController.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController<QRCodeScanDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView * upperColorImageView;
 @property (weak, nonatomic) IBOutlet UIImageView * profileImageView;
@@ -17,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton    * settingsBtn;
 @property (weak, nonatomic) IBOutlet UILabel     * nameLbl;
 @property (weak, nonatomic) IBOutlet UILabel     * designationLabel;
+@property (weak, nonatomic) IBOutlet UIView *homeContentView;
 
 - (IBAction)messageBtnPressed:(id)sender;
 - (IBAction)settingsBtnPressed:(id)sender;

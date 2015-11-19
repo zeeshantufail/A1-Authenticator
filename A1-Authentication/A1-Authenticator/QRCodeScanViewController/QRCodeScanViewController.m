@@ -38,14 +38,21 @@
     
     // Begin loading the sound effect so to have it ready for playback when it's needed.
     [self loadBeepSound];
-}
-
--(void)viewDidAppear:(BOOL)animated{
+    
     if(!_isReading)
     {
         _isReading = YES;
         [self startReading];
     }
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+ 
 }
 
 - (void)didReceiveMemoryWarning
@@ -79,7 +86,8 @@
 }
 
 - (IBAction)crossButtonAction:(id)sender {
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+//    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate didDismissQrScan:self];
 }
 
 
@@ -100,7 +108,7 @@ AVCaptureDeviceInput *input;
     if (!input) {
         // If any error occurs, simply log the description of it and don't continue any more.
         NSLog(@"%@", [error localizedDescription]);
-         [self.delegate didScanResultWithString:nil];
+         [self.delegate didScanResult:nil];
         return NO;
     }
     
@@ -240,7 +248,7 @@ AVCaptureDeviceInput *input;
     }
     
     
-    [self.delegate didScanResultWithString:self];
+    [self.delegate didScanResult:self];
     
 //    AuthenticateUser *au = [[AuthenticateUser alloc] init];
 //    au.delegate = self;

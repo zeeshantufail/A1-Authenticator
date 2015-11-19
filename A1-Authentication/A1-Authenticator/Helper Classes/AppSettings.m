@@ -565,4 +565,31 @@ static AppSettings *appSettings;
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+
+- (BOOL)appTotp {
+    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"appTotp"];
+    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+    // NSNumber *pinState = [unarchiver decodeObjectForKey:PinKey];
+    NSString *number = [unarchiver decodeObjectForKey:PinKey];
+    float pinState = [number  isEqual: @"a"] ? 1 : 0 ;
+    [unarchiver finishDecoding];
+    if (!pinState) {
+        return NO;
+    }
+    else
+        //return [pinState boolValue];
+        return YES;
+}
+
+- (void)setAppTotp:(BOOL)totp {
+    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+    //[archiver encodeObject:[NSNumber numberWithBool:pinState] forKey:PinKey];
+    [archiver encodeObject:[NSString stringWithFormat:@"%@", totp ? @"a" : @"b" ] forKey:PinKey];
+    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"appTotp"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [self appTotp];
+}
+
 @end
