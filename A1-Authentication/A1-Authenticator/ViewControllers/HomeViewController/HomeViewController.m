@@ -12,7 +12,9 @@
 
 
 @interface HomeViewController ()
-
+{
+    BOOL isTotpView;
+}
 @end
 
 @implementation HomeViewController
@@ -21,9 +23,12 @@
 {
     [super viewDidLoad];
     
+    [self loadHomeViewContent];
+    
     [self addTapGesture];
     [self performAnimations];
 }
+
 
 -(void)viewDidDisappear:(BOOL)animated{
 }
@@ -182,6 +187,60 @@
 - (IBAction)settingsBtnPressed:(id)sender
 {
     [self.revealViewController revealToggle:sender];
+}
+
+#pragma mark - qrcode scan delegates and definations
+
+-(void)loadQrCodeContent{
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    QRCodeScanViewController *qrCodeVC = [storyboard instantiateViewControllerWithIdentifier:@"qrHomeView"];
+    qrCodeVC.delegate = self;
+    
+    [self addChildViewController:qrCodeVC];
+    
+    UIView * contentView = [qrCodeVC.view viewWithTag:11];
+    
+    [self.homeContentView addSubview:contentView];
+    
+//    [qrCodeVC startStopReading:nil];
+    
+}
+
+-(void)loadHomeViewContent{
+    isTotpView = [[AppSettings sharedAppSettings] appTotp];
+    
+    if (isTotpView) {
+        
+    }
+    else{
+        
+        [self loadQrCodeContent];
+    }
+}
+
+-(void)refreshHomeViewContent{
+    
+    BOOL newTotp = [[AppSettings sharedAppSettings] appTotp];
+    
+    if (newTotp != isTotpView) {
+        if (newTotp) {
+            
+        }
+        else{
+            [self loadQrCodeContent];
+        }
+        
+        isTotpView = newTotp;
+    }
+}
+
+-(void)didScanResult:(QRCodeScanViewController *)qrCodeScanViewController{
+    
+}
+
+-(void)didDismissQrScan:(QRCodeScanViewController *)qrCodeScanViewController{
+    
 }
 
 @end

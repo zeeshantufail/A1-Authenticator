@@ -112,7 +112,7 @@
     
     mc = [[MessageContent alloc] init];
     //Authenticate with Touch ID
-    mc.headerText = @"Touch ID";
+    mc.headerText = @"Hi John";
     mc.subHeaderText = @"Please authenticate your Touch ID";
     mc.errorText = @"";
     
@@ -327,14 +327,15 @@
                 break;
         }
         
-        if (self.passcodeScreenState.screenType != 1) {//unused object
+        
+        if (self.passcodeScreenState.screenType != -1) {//unused object
             [self resetPinScreen];
         }
-        
+        return;
     }
     
     
-    if (self.passcodeScreenState.screenType != 4 && self.passcodeScreenState.screenType != 5) {
+    if (self.passcodeScreenState.screenType != 4) {
         
         MessageContent *mc = screenState[self.passcodeScreenState.screenType][self.passcodeScreenState.screenNumber];
         

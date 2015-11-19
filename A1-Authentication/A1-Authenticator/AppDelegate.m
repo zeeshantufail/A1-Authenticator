@@ -27,6 +27,8 @@
 //    UINavigationController *navigationController=[[UINavigationController alloc] initWithRootViewController:rvc];
 //    self.window.rootViewController = navigationController;
     
+    [[AppSettings sharedAppSettings] setAppActivationState:NO];
+    
     [application setStatusBarHidden:YES];
     return YES;
 }

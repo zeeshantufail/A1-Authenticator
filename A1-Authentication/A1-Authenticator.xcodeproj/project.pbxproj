@@ -15,6 +15,7 @@
 		2B92E3C51BF637AA003CF4A1 /* cameraOverlay 4.7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C11BF637AA003CF4A1 /* cameraOverlay 4.7.png */; };
 		2B92E3C61BF637AA003CF4A1 /* cameraOverlay 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C21BF637AA003CF4A1 /* cameraOverlay 4.png */; };
 		2B92E3C71BF637AA003CF4A1 /* cameraOverlay 5.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */; };
+		2BC906EB1BFDC7BF009AF8E4 /* QRScanAtHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */; settings = {ASSET_TAGS = (); }; };
 		2BF94A961BFC5EA600C8C0A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */; };
 		2BF94A991BFC5ED100C8C0A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */; };
 		2BF94A9C1BFC5F0C00C8C0A8 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */; };
@@ -563,6 +564,7 @@
 		2B92E3C11BF637AA003CF4A1 /* cameraOverlay 4.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 4.7.png"; sourceTree = "<group>"; };
 		2B92E3C21BF637AA003CF4A1 /* cameraOverlay 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 4.png"; sourceTree = "<group>"; };
 		2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 5.5.png"; sourceTree = "<group>"; };
+		2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRScanAtHome.png; sourceTree = "<group>"; };
 		2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -1185,6 +1187,7 @@
 		47064A301BF47027004B2E42 /* QRCodeScanViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */,
 				47064A311BF47027004B2E42 /* QRCodeScanViewController.h */,
 				47064A321BF47027004B2E42 /* QRCodeScanViewController.m */,
 			);
@@ -2396,6 +2399,7 @@
 				4729E1931BF1F8D200627DA8 /* PIN_Anim_Negative093.png in Resources */,
 				4729E19A1BF1F8D200627DA8 /* PIN_Anim_Positive000.png in Resources */,
 				4729E17D1BF1F8D200627DA8 /* PIN_Anim_Negative071.png in Resources */,
+				2BC906EB1BFDC7BF009AF8E4 /* QRScanAtHome.png in Resources */,
 				4729E1591BF1F8D200627DA8 /* PIN_Anim_Negative035.png in Resources */,
 				4729E1761BF1F8D200627DA8 /* PIN_Anim_Negative064.png in Resources */,
 				4729E18D1BF1F8D200627DA8 /* PIN_Anim_Negative087.png in Resources */,

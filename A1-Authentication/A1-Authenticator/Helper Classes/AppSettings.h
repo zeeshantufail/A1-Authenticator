@@ -91,6 +91,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 -(NSString *)googleSecret;
 - (void)setGoogleSecret:(NSString *)secret;
 
+- (BOOL)appTotp;
+- (void)setAppTotp:(BOOL)totp;
+
 @property (strong) id refrenceHolder;
 @property (strong) id rootController;
 

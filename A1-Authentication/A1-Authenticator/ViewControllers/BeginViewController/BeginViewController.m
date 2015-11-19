@@ -148,7 +148,7 @@
 }
 
 
--(void)didScanResultWithString:(NSString *)result
+-(void)didScanResult:(QRCodeScanViewController *)result
 {
     NSLog(@"Qr result : %@", result);
     
@@ -161,6 +161,10 @@
         [self performSegueWithIdentifier: @"showThankyouPin" sender: self];
     }
     
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)didDismissQrScan:(QRCodeScanViewController *)qrCodeScanViewController{
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
