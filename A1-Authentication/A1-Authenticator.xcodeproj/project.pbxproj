@@ -2005,8 +2005,8 @@
 		474313871BE78A3A0021CF58 = {
 			isa = PBXGroup;
 			children = (
-				2BF94A971BFC5EAF00C8C0A8 /* Frameworks */,
 				4736975F1BF370C500A0855B /* PireanSharedLib.xcodeproj */,
+				2BF94A971BFC5EAF00C8C0A8 /* Frameworks */,
 				473697771BF371EE00A0855B /* GoogleAuthentication */,
 				473697691BF3716100A0855B /* Gravatar */,
 				474313921BE78A3A0021CF58 /* A1-Authenticator */,
