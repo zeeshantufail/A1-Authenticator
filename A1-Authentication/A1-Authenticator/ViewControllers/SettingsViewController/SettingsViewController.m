@@ -20,6 +20,7 @@
 #import "PasscodeHelper.h"
 #import "AppSettings.h"
 
+
 @interface SettingsViewController ()
 
 @property (nonatomic, strong) NSArray *menuItems;
@@ -29,6 +30,7 @@
 @implementation SettingsViewController
 {
     NSArray *_menuItems;
+    BOOL pinFlag, totpFlag, setPinFlag;
 }
 
 - (void)viewDidLoad
@@ -38,7 +40,15 @@
     self.profileImageView.layer.cornerRadius = 35.0;
     self.profileImageView.layer.masksToBounds = YES  ;
     
-    _menuItems = @[@"HomeCell", @"AuthenticationTypeCell", @"AppSecurityCell", @"ChangeMyPinCell",@"AuditHistoryCell", @"ResetMyDeviceCell", @"HelpCell",@"AboutCell"];
+    if (setPinFlag)
+    {
+        _menuItems = @[@"HomeCell", @"AuthenticationTypeCell", @"AppSecurityCell", @"ChangeMyPinCell",@"AuditHistoryCell", @"ResetMyDeviceCell", @"HelpCell",@"AboutCell"];
+    }
+    else
+    {
+        _menuItems = @[@"HomeCell", @"AuthenticationTypeCell", @"AppSecurityCell", @"AuditHistoryCell", @"ResetMyDeviceCell", @"HelpCell",@"AboutCell"];
+    }
+    
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor clearColor];
@@ -110,14 +120,21 @@
     NSString *CellIdentifier = [_menuItems objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+//    SettingCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+//    [cell.label setHighlightedTextColor: [UIColor blackColor]];
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
 
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    [self highlightCellLabel:indexPath.row];
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
@@ -157,12 +174,33 @@
     }
 }
 
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
     return !([identifier isEqualToString:@"setPinScreenThroughSettingSegue"] && [[AppSettings sharedAppSettings] appPinState]);
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
+-(void)highlightCellLabel:(NSInteger)rowNo
+{
+    for (NSInteger i = 0; i < 8; i++)
+    {
+        NSIndexPath *index = [NSIndexPath indexPathForRow:i inSection:0];
+        UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:index];
+        UILabel *label = [cell viewWithTag:100];
+        
+        if (i == rowNo)
+        {
+            label.textColor = [UIColor whiteColor];
+        }
+        else
+        {
+            label.textColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
+        }
+    }
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     if ([[segue identifier] isEqualToString:@"setPinScreenThroughSettingSegue"])
     {
         //[[segue destinationViewController] setDelegate:self];

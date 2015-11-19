@@ -53,7 +53,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 63.0;
+    return 60.0;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,7 +69,7 @@
     [cell.selectionBtn addTarget:self action:@selector(checkBoxBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [cell.selectionBtn setTag:indexPath.row];
     
-    cell.image_View.layer.cornerRadius  = 20   ;
+    cell.image_View.layer.cornerRadius  = 21   ;
     cell.image_View.layer.masksToBounds = YES  ;
     
     [self animateCell:cell atIndexPath:indexPath];

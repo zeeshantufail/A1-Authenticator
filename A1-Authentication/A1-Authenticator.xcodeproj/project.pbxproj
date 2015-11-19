@@ -451,7 +451,6 @@
 		47E0CECB1BFCB08200AC390B /* PIN_Icon_ON@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEC91BFCB08200AC390B /* PIN_Icon_ON@3x.png */; };
 		47E0CECD1BFCB0B700AC390B /* Pirean_Settings_Logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CECC1BFCB0B700AC390B /* Pirean_Settings_Logo@3x.png */; };
 		47E0CECF1BFCB10100AC390B /* Ribbon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CECE1BFCB10100AC390B /* Ribbon@3x.png */; };
-		47E0CED51BFCB39F00AC390B /* A1.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CED41BFCB39F00AC390B /* A1.png */; };
 		47E0CED91BFCBA9E00AC390B /* Ribbon_Hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CED61BFCBA9E00AC390B /* Ribbon_Hamburger.png */; };
 		47E0CEDA1BFCBA9E00AC390B /* Ribbon_Hamburger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CED71BFCBA9E00AC390B /* Ribbon_Hamburger@2x.png */; };
 		47E0CEDB1BFCBA9E00AC390B /* Ribbon_Hamburger@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CED81BFCBA9E00AC390B /* Ribbon_Hamburger@3x.png */; };
@@ -1068,7 +1067,6 @@
 		47E0CEC91BFCB08200AC390B /* PIN_Icon_ON@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PIN_Icon_ON@3x.png"; sourceTree = "<group>"; };
 		47E0CECC1BFCB0B700AC390B /* Pirean_Settings_Logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pirean_Settings_Logo@3x.png"; sourceTree = "<group>"; };
 		47E0CECE1BFCB10100AC390B /* Ribbon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ribbon@3x.png"; sourceTree = "<group>"; };
-		47E0CED41BFCB39F00AC390B /* A1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1.png; sourceTree = "<group>"; };
 		47E0CED61BFCBA9E00AC390B /* Ribbon_Hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ribbon_Hamburger.png; sourceTree = "<group>"; };
 		47E0CED71BFCBA9E00AC390B /* Ribbon_Hamburger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ribbon_Hamburger@2x.png"; sourceTree = "<group>"; };
 		47E0CED81BFCBA9E00AC390B /* Ribbon_Hamburger@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ribbon_Hamburger@3x.png"; sourceTree = "<group>"; };
@@ -2131,7 +2129,6 @@
 		477498F21BE78E5300026C01 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				47E0CED41BFCB39F00AC390B /* A1.png */,
 				4729E07D1BF1F76C00627DA8 /* Animations */,
 				471D007E1BEB5BE3003BC1C6 /* Splash */,
 				47119CEA1BE9E5FB00876684 /* General */,
@@ -2719,7 +2716,6 @@
 				4729E1461BF1F8D200627DA8 /* PIN_Anim_Negative016.png in Resources */,
 				4729E16E1BF1F8D200627DA8 /* PIN_Anim_Negative056.png in Resources */,
 				47E0CEBF1BFCAFE800AC390B /* TOTP_Icon_ON@3x.png in Resources */,
-				47E0CED51BFCB39F00AC390B /* A1.png in Resources */,
 				4736972B1BF35CF500A0855B /* Authenticator_Logo_15.png in Resources */,
 				47119D151BEA436200876684 /* X_OFF@2x.png in Resources */,
 				4729E1E31BF1F8D200627DA8 /* PIN_Anim_Positive073.png in Resources */,

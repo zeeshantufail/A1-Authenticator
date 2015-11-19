@@ -87,7 +87,7 @@
 
 -(void)performAnimations
 {
-    self.profileImageView.layer.cornerRadius = 68.0;
+    self.profileImageView.layer.cornerRadius = 65.0;
     self.profileImageView.layer.masksToBounds = YES  ;
     
     [self animateUpperColorView];

@@ -49,7 +49,7 @@
 
 -(void)performAnimations
 {
-    self.profileImageView.layer.cornerRadius = 68.0;
+    self.profileImageView.layer.cornerRadius = 65.0;
     self.profileImageView.layer.masksToBounds = YES  ;
     
     [self animateUpperColorView];
@@ -66,7 +66,7 @@
     
     [self performSelector:@selector(animateMessageBtn) withObject:self afterDelay:1.5 ];
     
-    [self performSelector:@selector(showMessageBtn) withObject:self afterDelay:2.0 ];
+    [self performSelector:@selector(showMessageBtn) withObject:self afterDelay:1.5 ];
 }
 
 -(void)animateUpperColorView
@@ -152,17 +152,17 @@
     }
 
     self.messageImageView.animationImages=animationArray;
-    self.messageImageView.animationDuration= 1.0;
+    self.messageImageView.animationDuration= 0.8;
     self.messageImageView.animationRepeatCount = 1;
     [self.messageImageView startAnimating];
 }
 
 -(void)showMessageBtn
 {
-    [UIView transitionWithView:self.messageBtn duration:1.0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^(void){
+    [UIView transitionWithView:self.messageBtn duration:0.6 options:UIViewAnimationOptionTransitionCrossDissolve animations:^(void){
         
         [self.messageBtn setHidden:NO];
-        self.messageBtn.transform = CGAffineTransformMakeScale(1.2, 1.2);
+        self.messageBtn.transform = CGAffineTransformMakeScale(2.0, 2.0);
         
     } completion:nil];
 }
