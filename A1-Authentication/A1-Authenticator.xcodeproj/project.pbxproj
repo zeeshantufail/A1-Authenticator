@@ -491,7 +491,6 @@
 		474F1BF01BFB64F600D5B569 /* SetPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BEF1BFB64F600D5B569 /* SetPin.png */; };
 		474F1BF21BFB650300D5B569 /* SetPin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BF11BFB650300D5B569 /* SetPin@2x.png */; };
 		474F1BF41BFB651400D5B569 /* SetPin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BF31BFB651400D5B569 /* SetPin@3x.png */; };
-		476B0F341BFF345F0070891C /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 476B0F331BFF345F0070891C /* Countdown_Animation */; };
 		477498F01BE78D8F00026C01 /* WelcomeAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477498EF1BE78D8F00026C01 /* WelcomeAppViewController.m */; };
 		477498FF1BE7949800026C01 /* begin1.png in Resources */ = {isa = PBXBuildFile; fileRef = 477498FD1BE7949800026C01 /* begin1.png */; };
 		477499001BE7949800026C01 /* begin1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 477498FE1BE7949800026C01 /* begin1@2x.png */; };
@@ -1185,7 +1184,6 @@
 		474F1BEF1BFB64F600D5B569 /* SetPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SetPin.png; sourceTree = "<group>"; };
 		474F1BF11BFB650300D5B569 /* SetPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SetPin@2x.png"; sourceTree = "<group>"; };
 		474F1BF31BFB651400D5B569 /* SetPin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SetPin@3x.png"; sourceTree = "<group>"; };
-		476B0F331BFF345F0070891C /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = Images/Animations/Countdown_Animation; sourceTree = "<group>"; };
 		477498EE1BE78D8F00026C01 /* WelcomeAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeAppViewController.h; path = ViewControllers/WelcomeAppViewController/WelcomeAppViewController.h; sourceTree = "<group>"; };
 		477498EF1BE78D8F00026C01 /* WelcomeAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeAppViewController.m; path = ViewControllers/WelcomeAppViewController/WelcomeAppViewController.m; sourceTree = "<group>"; };
 		477498FD1BE7949800026C01 /* begin1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = begin1.png; sourceTree = "<group>"; };
@@ -1738,7 +1736,12 @@
 		4729E07D1BF1F76C00627DA8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				473697351BF3687F00A0855B /* DevicePaired Color fill Animation */,
+				470E36F91BFEF45F009EAA8C /* MessageButtonAnimation @2x */,
+				470E36361BFEEFA0009EAA8C /* MessageButtonAnimation @3x */,
+				470E371A1BFEF5CA009EAA8C /* Account_Locked_Animation @2x */,
+				478CD3601BFE0961008774E0 /* Account_Locked_Animation  @3x */,
+				470E369F1BFEF386009EAA8C /* DevicePaired Color fill Animation @2x */,
+				470E36781BFEF2E8009EAA8C /* DevicePaired Color fill Animation @3x */,
 				4729E0811BF1F8D200627DA8 /* Keypad Dot Animation */,
 				4736969E1BF3556C00A0855B /* Logo Animation */,
 			);
@@ -2677,6 +2680,7 @@
 				47E90E351BEC969000402A5B /* Back_Arrow_ON@2x.png in Resources */,
 				470E37471BFEF5CA009EAA8C /* Locked Animation_0020@2x.png in Resources */,
 				4729E1661BF1F8D200627DA8 /* PIN_Anim_Negative048.png in Resources */,
+				470E36C11BFEF386009EAA8C /* GREY PANEL_00019@2x.png in Resources */,
 				47E90E491BECE79B00402A5B /* deselect.png in Resources */,
 				4729E1C61BF1F8D200627DA8 /* PIN_Anim_Positive044.png in Resources */,
 				4729E1941BF1F8D200627DA8 /* PIN_Anim_Negative094.png in Resources */,
@@ -3045,7 +3049,6 @@
 				473697301BF35CF500A0855B /* Authenticator_Logo_20.png in Resources */,
 				471C75E51BF0AE3900F9907E /* TOTP_Icon_ON@2x.png in Resources */,
 				4736972D1BF35CF500A0855B /* Authenticator_Logo_17.png in Resources */,
-				476B0F341BFF345F0070891C /* Countdown_Animation in Resources */,
 				4729E1B91BF1F8D200627DA8 /* PIN_Anim_Positive031.png in Resources */,
 				4729E16F1BF1F8D200627DA8 /* PIN_Anim_Negative057.png in Resources */,
 				4729E1401BF1F8D200627DA8 /* PIN_Anim_Negative010.png in Resources */,
