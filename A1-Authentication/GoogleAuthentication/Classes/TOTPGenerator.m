@@ -27,7 +27,7 @@
 @synthesize period = period_;
 
 + (NSTimeInterval)defaultPeriod {
-  return 30;
+  return 60;
 }
 
 - (id)initWithSecret:(NSData *)secret

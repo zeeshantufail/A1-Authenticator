@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "QRCodeScanViewController.h"
+#import "TimerViewController.h"
 
 @interface HomeViewController : UIViewController<QRCodeScanDelegate>
 

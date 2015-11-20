@@ -20,7 +20,7 @@
 
 @implementation PasscodeHelper
 {
-    id screenState[6][3];
+    id screenState[6][4];
 }
 
 -(void)loadContent{
@@ -116,7 +116,8 @@
     mc.subHeaderText = @"Please authenticate your Touch ID";
     mc.errorText = @"";
     
-    screenState[5][0] = mc;
+    screenState[5][0] = mc; //first screen with touch alert
+    screenState[5][3] = mc; //first screen without touch alert
     
     
 }
@@ -347,9 +348,11 @@
         
     }
     
+    if (self.passcodeScreenState.screenType >= 4) {
+        [self hideKeyboard];
+    }
     
     if (self.passcodeScreenState.screenType == 4 && self.passcodeScreenState.screenNumber == 0) {
-        [[keyBoardController keyPadView] setHidden:YES];
         self.passcodeScreenState.screenNumber = 1;
         TouchIDAuthentication * tia = [[TouchIDAuthentication alloc] init];
         [tia setUpAuthenticationWithMessageString:@"Place your finger on home button to confirm for Touch ID" andFallbackTitle:@""];
@@ -357,7 +360,6 @@
         
     }
     else if (self.passcodeScreenState.screenType == 5 && self.passcodeScreenState.screenNumber == 0) {
-        [[keyBoardController keyPadView] setHidden:YES];
         self.passcodeScreenState.screenNumber = 1;
         TouchIDAuthentication * tia = [[TouchIDAuthentication alloc] init];
         [tia setUpAuthenticationWithMessageString:@"Place your finger on home button to authenticate for Touch ID" andFallbackTitle:@""];
@@ -368,6 +370,12 @@
         [_keyboardViewController.buttonCancel setHidden:YES];
         [_keyboardViewController.settingsBtnOutlet setUserInteractionEnabled:NO];
     }
+}
+
+-(void)hideKeyboard{
+    _keyboardViewController.keyPadView.hidden = YES;
+    _keyboardViewController.deleteButtonOutlet.hidden = YES;
+    _keyboardViewController.buttonCancel.hidden = YES;
 }
 
 -(void)touchIDErrorUserCancel:(TouchIDAuthentication *)touchID{
