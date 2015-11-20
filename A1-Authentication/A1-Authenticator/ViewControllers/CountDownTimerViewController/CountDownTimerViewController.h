@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface CountDownTimerViewController : UIViewController
+{
+    NSTimer *timer;
+    int hours, minutes, seconds;
+}
 
-@property (weak, nonatomic) IBOutlet UIImageView * lockImageView;
-@property (weak, nonatomic) IBOutlet UILabel     * timerLabel;
+@property (assign,nonatomic) int                    secondsLeft;
+@property (weak, nonatomic)  IBOutlet UIImageView * lockImageView;
+@property (weak, nonatomic)  IBOutlet UILabel     * timerLabel;
 
 @end

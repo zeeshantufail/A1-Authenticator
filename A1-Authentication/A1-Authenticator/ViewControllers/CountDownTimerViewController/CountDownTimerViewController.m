@@ -14,16 +14,47 @@
 
 @implementation CountDownTimerViewController
 
+@synthesize secondsLeft;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     [self startLockScreenAnimation];
+    
+    secondsLeft = 300;
+    [self startCountdownTimer];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)updateCounter
+{
+    if(secondsLeft > 0 )
+    {
+        secondsLeft -- ;
+        hours = secondsLeft / 3600;
+        minutes = (secondsLeft % 3600) / 60;
+        seconds = (secondsLeft %3600) % 60;
+        self.timerLabel.text = [NSString stringWithFormat:@"%d:%02d", minutes, seconds];
+    }
+    else
+    {
+        [timer invalidate];
+        seconds = 0;
+        minutes = 0;
+
+        NSString* timeNow = [NSString stringWithFormat:@"%d:%02d", minutes, seconds];
+        self.timerLabel.text= timeNow;
+    }
+}
+
+-(void)startCountdownTimer
+{
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter) userInfo:nil repeats:YES];
 }
 
 -(void)startLockScreenAnimation

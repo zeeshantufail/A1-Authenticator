@@ -61,7 +61,7 @@
     
     if (cell == nil)
     {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"HistoryCustomCell" owner:self options:nil] objectAtIndex:0];
+        cell = [[HistoryCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
     cell.image_View.layer.cornerRadius  = 14   ;

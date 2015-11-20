@@ -69,9 +69,9 @@
     
     [self performSelector:@selector(animateProfileImage) withObject:self afterDelay:0.9 ];
     
-    [self performSelector:@selector(animateMessageBtn) withObject:self afterDelay:1.5 ];
+    [self performSelector:@selector(animateMessageBtn) withObject:self afterDelay:1.2 ];
     
-    [self performSelector:@selector(showMessageBtn) withObject:self afterDelay:1.5 ];
+    [self performSelector:@selector(showMessageBtn) withObject:self afterDelay:1.3 ];
 }
 
 -(void)animateUpperColorView
@@ -147,11 +147,11 @@
 
 -(void)animateMessageBtn
 {
-    self.messageImageView.image = [UIImage imageNamed:@"Message_0021.png"];
+    self.messageImageView.image = [UIImage imageNamed:@"Message_0016.png"];
     
     NSMutableArray *animationArray = [[NSMutableArray alloc] init];
     
-    for (int i=1 ; i<=21 ; i++)
+    for (int i=1 ; i<=16 ; i++)
     {
         [animationArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"Message_%.4d.png",i]]];
     }

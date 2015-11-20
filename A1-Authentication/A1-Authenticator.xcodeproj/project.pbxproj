@@ -32,6 +32,101 @@
 		2BF94AB11BFC5F7F00C8C0A8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AB01BFC5F7F00C8C0A8 /* CoreVideo.framework */; };
 		2BF94AB31BFC5F8400C8C0A8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AB21BFC5F8400C8C0A8 /* CoreMedia.framework */; };
 		47064A331BF47027004B2E42 /* QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47064A321BF47027004B2E42 /* QRCodeScanViewController.m */; };
+		470E36471BFEEFA0009EAA8C /* Message_0001@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36371BFEEFA0009EAA8C /* Message_0001@3x.png */; };
+		470E36481BFEEFA0009EAA8C /* Message_0002@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36381BFEEFA0009EAA8C /* Message_0002@3x.png */; };
+		470E36491BFEEFA0009EAA8C /* Message_0003@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36391BFEEFA0009EAA8C /* Message_0003@3x.png */; };
+		470E364A1BFEEFA0009EAA8C /* Message_0004@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E363A1BFEEFA0009EAA8C /* Message_0004@3x.png */; };
+		470E364B1BFEEFA0009EAA8C /* Message_0005@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E363B1BFEEFA0009EAA8C /* Message_0005@3x.png */; };
+		470E364C1BFEEFA0009EAA8C /* Message_0006@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E363C1BFEEFA0009EAA8C /* Message_0006@3x.png */; };
+		470E364D1BFEEFA0009EAA8C /* Message_0007@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E363D1BFEEFA0009EAA8C /* Message_0007@3x.png */; };
+		470E364E1BFEEFA0009EAA8C /* Message_0008@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E363E1BFEEFA0009EAA8C /* Message_0008@3x.png */; };
+		470E364F1BFEEFA0009EAA8C /* Message_0009@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E363F1BFEEFA0009EAA8C /* Message_0009@3x.png */; };
+		470E36501BFEEFA0009EAA8C /* Message_0010@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36401BFEEFA0009EAA8C /* Message_0010@3x.png */; };
+		470E36511BFEEFA0009EAA8C /* Message_0011@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36411BFEEFA0009EAA8C /* Message_0011@3x.png */; };
+		470E36521BFEEFA0009EAA8C /* Message_0012@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36421BFEEFA0009EAA8C /* Message_0012@3x.png */; };
+		470E36531BFEEFA0009EAA8C /* Message_0013@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36431BFEEFA0009EAA8C /* Message_0013@3x.png */; };
+		470E36541BFEEFA0009EAA8C /* Message_0014@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36441BFEEFA0009EAA8C /* Message_0014@3x.png */; };
+		470E36551BFEEFA0009EAA8C /* Message_0015@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36451BFEEFA0009EAA8C /* Message_0015@3x.png */; };
+		470E36561BFEEFA0009EAA8C /* Message_0016@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36461BFEEFA0009EAA8C /* Message_0016@3x.png */; };
+		470E368C1BFEF2E8009EAA8C /* GREY PANEL_00005@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36791BFEF2E8009EAA8C /* GREY PANEL_00005@3x.png */; };
+		470E368D1BFEF2E8009EAA8C /* GREY PANEL_00006@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E367A1BFEF2E8009EAA8C /* GREY PANEL_00006@3x.png */; };
+		470E368E1BFEF2E8009EAA8C /* GREY PANEL_00007@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E367B1BFEF2E8009EAA8C /* GREY PANEL_00007@3x.png */; };
+		470E368F1BFEF2E8009EAA8C /* GREY PANEL_00008@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E367C1BFEF2E8009EAA8C /* GREY PANEL_00008@3x.png */; };
+		470E36901BFEF2E8009EAA8C /* GREY PANEL_00009@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E367D1BFEF2E8009EAA8C /* GREY PANEL_00009@3x.png */; };
+		470E36911BFEF2E8009EAA8C /* GREY PANEL_00010@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E367E1BFEF2E8009EAA8C /* GREY PANEL_00010@3x.png */; };
+		470E36921BFEF2E8009EAA8C /* GREY PANEL_00011@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E367F1BFEF2E8009EAA8C /* GREY PANEL_00011@3x.png */; };
+		470E36931BFEF2E8009EAA8C /* GREY PANEL_00012@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36801BFEF2E8009EAA8C /* GREY PANEL_00012@3x.png */; };
+		470E36941BFEF2E8009EAA8C /* GREY PANEL_00013@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36811BFEF2E8009EAA8C /* GREY PANEL_00013@3x.png */; };
+		470E36951BFEF2E8009EAA8C /* GREY PANEL_00014@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36821BFEF2E8009EAA8C /* GREY PANEL_00014@3x.png */; };
+		470E36961BFEF2E8009EAA8C /* GREY PANEL_00015@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36831BFEF2E8009EAA8C /* GREY PANEL_00015@3x.png */; };
+		470E36971BFEF2E8009EAA8C /* GREY PANEL_00016@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36841BFEF2E8009EAA8C /* GREY PANEL_00016@3x.png */; };
+		470E36981BFEF2E8009EAA8C /* GREY PANEL_00017@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36851BFEF2E8009EAA8C /* GREY PANEL_00017@3x.png */; };
+		470E36991BFEF2E8009EAA8C /* GREY PANEL_00018@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36861BFEF2E8009EAA8C /* GREY PANEL_00018@3x.png */; };
+		470E369A1BFEF2E8009EAA8C /* GREY PANEL_00019@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36871BFEF2E8009EAA8C /* GREY PANEL_00019@3x.png */; };
+		470E369B1BFEF2E8009EAA8C /* GREY PANEL_00020@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36881BFEF2E8009EAA8C /* GREY PANEL_00020@3x.png */; };
+		470E369C1BFEF2E8009EAA8C /* GREY PANEL_00021@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36891BFEF2E8009EAA8C /* GREY PANEL_00021@3x.png */; };
+		470E369D1BFEF2E8009EAA8C /* GREY PANEL_00022@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E368A1BFEF2E8009EAA8C /* GREY PANEL_00022@3x.png */; };
+		470E369E1BFEF2E8009EAA8C /* GREY PANEL_00023@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E368B1BFEF2E8009EAA8C /* GREY PANEL_00023@3x.png */; };
+		470E36B31BFEF386009EAA8C /* GREY PANEL_00005@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36A01BFEF386009EAA8C /* GREY PANEL_00005@2x.png */; };
+		470E36B41BFEF386009EAA8C /* GREY PANEL_00006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36A11BFEF386009EAA8C /* GREY PANEL_00006@2x.png */; };
+		470E36B51BFEF386009EAA8C /* GREY PANEL_00007@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36A21BFEF386009EAA8C /* GREY PANEL_00007@2x.png */; };
+		470E36B61BFEF386009EAA8C /* GREY PANEL_00008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36A31BFEF386009EAA8C /* GREY PANEL_00008@2x.png */; };
+		470E36B71BFEF386009EAA8C /* GREY PANEL_00009@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36A41BFEF386009EAA8C /* GREY PANEL_00009@2x.png */; };
+		470E36B81BFEF386009EAA8C /* GREY PANEL_00010@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36A51BFEF386009EAA8C /* GREY PANEL_00010@2x.png */; };
+		470E36B91BFEF386009EAA8C /* GREY PANEL_00011@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36A61BFEF386009EAA8C /* GREY PANEL_00011@2x.png */; };
+		470E36BA1BFEF386009EAA8C /* GREY PANEL_00012@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36A71BFEF386009EAA8C /* GREY PANEL_00012@2x.png */; };
+		470E36BB1BFEF386009EAA8C /* GREY PANEL_00013@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36A81BFEF386009EAA8C /* GREY PANEL_00013@2x.png */; };
+		470E36BC1BFEF386009EAA8C /* GREY PANEL_00014@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36A91BFEF386009EAA8C /* GREY PANEL_00014@2x.png */; };
+		470E36BD1BFEF386009EAA8C /* GREY PANEL_00015@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36AA1BFEF386009EAA8C /* GREY PANEL_00015@2x.png */; };
+		470E36BE1BFEF386009EAA8C /* GREY PANEL_00016@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36AB1BFEF386009EAA8C /* GREY PANEL_00016@2x.png */; };
+		470E36BF1BFEF386009EAA8C /* GREY PANEL_00017@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36AC1BFEF386009EAA8C /* GREY PANEL_00017@2x.png */; };
+		470E36C01BFEF386009EAA8C /* GREY PANEL_00018@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36AD1BFEF386009EAA8C /* GREY PANEL_00018@2x.png */; };
+		470E36C11BFEF386009EAA8C /* GREY PANEL_00019@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36AE1BFEF386009EAA8C /* GREY PANEL_00019@2x.png */; };
+		470E36C21BFEF386009EAA8C /* GREY PANEL_00020@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36AF1BFEF386009EAA8C /* GREY PANEL_00020@2x.png */; };
+		470E36C31BFEF386009EAA8C /* GREY PANEL_00021@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36B01BFEF386009EAA8C /* GREY PANEL_00021@2x.png */; };
+		470E36C41BFEF386009EAA8C /* GREY PANEL_00022@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36B11BFEF386009EAA8C /* GREY PANEL_00022@2x.png */; };
+		470E36C51BFEF386009EAA8C /* GREY PANEL_00023@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36B21BFEF386009EAA8C /* GREY PANEL_00023@2x.png */; };
+		470E370A1BFEF45F009EAA8C /* Message_0001@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36FA1BFEF45F009EAA8C /* Message_0001@2x.png */; };
+		470E370B1BFEF45F009EAA8C /* Message_0002@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36FB1BFEF45F009EAA8C /* Message_0002@2x.png */; };
+		470E370C1BFEF45F009EAA8C /* Message_0003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36FC1BFEF45F009EAA8C /* Message_0003@2x.png */; };
+		470E370D1BFEF45F009EAA8C /* Message_0004@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36FD1BFEF45F009EAA8C /* Message_0004@2x.png */; };
+		470E370E1BFEF45F009EAA8C /* Message_0005@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36FE1BFEF45F009EAA8C /* Message_0005@2x.png */; };
+		470E370F1BFEF45F009EAA8C /* Message_0006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36FF1BFEF45F009EAA8C /* Message_0006@2x.png */; };
+		470E37101BFEF45F009EAA8C /* Message_0007@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37001BFEF45F009EAA8C /* Message_0007@2x.png */; };
+		470E37111BFEF45F009EAA8C /* Message_0008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37011BFEF45F009EAA8C /* Message_0008@2x.png */; };
+		470E37121BFEF45F009EAA8C /* Message_0009@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37021BFEF45F009EAA8C /* Message_0009@2x.png */; };
+		470E37131BFEF45F009EAA8C /* Message_0010@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37031BFEF45F009EAA8C /* Message_0010@2x.png */; };
+		470E37141BFEF45F009EAA8C /* Message_0011@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37041BFEF45F009EAA8C /* Message_0011@2x.png */; };
+		470E37151BFEF45F009EAA8C /* Message_0012@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37051BFEF45F009EAA8C /* Message_0012@2x.png */; };
+		470E37161BFEF45F009EAA8C /* Message_0013@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37061BFEF45F009EAA8C /* Message_0013@2x.png */; };
+		470E37171BFEF45F009EAA8C /* Message_0014@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37071BFEF45F009EAA8C /* Message_0014@2x.png */; };
+		470E37181BFEF45F009EAA8C /* Message_0015@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37081BFEF45F009EAA8C /* Message_0015@2x.png */; };
+		470E37191BFEF45F009EAA8C /* Message_0016@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37091BFEF45F009EAA8C /* Message_0016@2x.png */; };
+		470E37341BFEF5CA009EAA8C /* Locked Animation_0001@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E371B1BFEF5CA009EAA8C /* Locked Animation_0001@2x.png */; };
+		470E37351BFEF5CA009EAA8C /* Locked Animation_0002@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E371C1BFEF5CA009EAA8C /* Locked Animation_0002@2x.png */; };
+		470E37361BFEF5CA009EAA8C /* Locked Animation_0003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E371D1BFEF5CA009EAA8C /* Locked Animation_0003@2x.png */; };
+		470E37371BFEF5CA009EAA8C /* Locked Animation_0004@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E371E1BFEF5CA009EAA8C /* Locked Animation_0004@2x.png */; };
+		470E37381BFEF5CA009EAA8C /* Locked Animation_0005@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E371F1BFEF5CA009EAA8C /* Locked Animation_0005@2x.png */; };
+		470E37391BFEF5CA009EAA8C /* Locked Animation_0006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37201BFEF5CA009EAA8C /* Locked Animation_0006@2x.png */; };
+		470E373A1BFEF5CA009EAA8C /* Locked Animation_0007@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37211BFEF5CA009EAA8C /* Locked Animation_0007@2x.png */; };
+		470E373B1BFEF5CA009EAA8C /* Locked Animation_0008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37221BFEF5CA009EAA8C /* Locked Animation_0008@2x.png */; };
+		470E373C1BFEF5CA009EAA8C /* Locked Animation_0009@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37231BFEF5CA009EAA8C /* Locked Animation_0009@2x.png */; };
+		470E373D1BFEF5CA009EAA8C /* Locked Animation_0010@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37241BFEF5CA009EAA8C /* Locked Animation_0010@2x.png */; };
+		470E373E1BFEF5CA009EAA8C /* Locked Animation_0011@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37251BFEF5CA009EAA8C /* Locked Animation_0011@2x.png */; };
+		470E373F1BFEF5CA009EAA8C /* Locked Animation_0012@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37261BFEF5CA009EAA8C /* Locked Animation_0012@2x.png */; };
+		470E37401BFEF5CA009EAA8C /* Locked Animation_0013@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37271BFEF5CA009EAA8C /* Locked Animation_0013@2x.png */; };
+		470E37411BFEF5CA009EAA8C /* Locked Animation_0014@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37281BFEF5CA009EAA8C /* Locked Animation_0014@2x.png */; };
+		470E37421BFEF5CA009EAA8C /* Locked Animation_0015@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37291BFEF5CA009EAA8C /* Locked Animation_0015@2x.png */; };
+		470E37431BFEF5CA009EAA8C /* Locked Animation_0016@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E372A1BFEF5CA009EAA8C /* Locked Animation_0016@2x.png */; };
+		470E37441BFEF5CA009EAA8C /* Locked Animation_0017@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E372B1BFEF5CA009EAA8C /* Locked Animation_0017@2x.png */; };
+		470E37451BFEF5CA009EAA8C /* Locked Animation_0018@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E372C1BFEF5CA009EAA8C /* Locked Animation_0018@2x.png */; };
+		470E37461BFEF5CA009EAA8C /* Locked Animation_0019@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E372D1BFEF5CA009EAA8C /* Locked Animation_0019@2x.png */; };
+		470E37471BFEF5CA009EAA8C /* Locked Animation_0020@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E372E1BFEF5CA009EAA8C /* Locked Animation_0020@2x.png */; };
+		470E37481BFEF5CA009EAA8C /* Locked Animation_0021@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E372F1BFEF5CA009EAA8C /* Locked Animation_0021@2x.png */; };
+		470E37491BFEF5CA009EAA8C /* Locked Animation_0022@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37301BFEF5CA009EAA8C /* Locked Animation_0022@2x.png */; };
+		470E374A1BFEF5CA009EAA8C /* Locked Animation_0023@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37311BFEF5CA009EAA8C /* Locked Animation_0023@2x.png */; };
+		470E374B1BFEF5CA009EAA8C /* Locked Animation_0024@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37321BFEF5CA009EAA8C /* Locked Animation_0024@2x.png */; };
+		470E374C1BFEF5CA009EAA8C /* Locked Animation_0025@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E37331BFEF5CA009EAA8C /* Locked Animation_0025@2x.png */; };
 		470E69751BF4794100D6A091 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 470E69701BF4794100D6A091 /* AppInfo.m */; };
 		470E69761BF4794100D6A091 /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 470E69721BF4794100D6A091 /* AppSettings.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		470E69771BF4794100D6A091 /* TouchIDAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 470E69741BF4794100D6A091 /* TouchIDAuthentication.m */; };
@@ -283,25 +378,6 @@
 		473697321BF35CF500A0855B /* Authenticator_Logo_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697191BF35CF500A0855B /* Authenticator_Logo_22.png */; };
 		473697331BF35CF500A0855B /* Authenticator_Logo_23.png in Resources */ = {isa = PBXBuildFile; fileRef = 4736971A1BF35CF500A0855B /* Authenticator_Logo_23.png */; };
 		473697341BF35CF500A0855B /* Authenticator_Logo_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 4736971B1BF35CF500A0855B /* Authenticator_Logo_24.png */; };
-		473697491BF3687F00A0855B /* GREY PANEL_00005.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697361BF3687F00A0855B /* GREY PANEL_00005.png */; };
-		4736974A1BF3687F00A0855B /* GREY PANEL_00006.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697371BF3687F00A0855B /* GREY PANEL_00006.png */; };
-		4736974B1BF3687F00A0855B /* GREY PANEL_00007.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697381BF3687F00A0855B /* GREY PANEL_00007.png */; };
-		4736974C1BF3687F00A0855B /* GREY PANEL_00008.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697391BF3687F00A0855B /* GREY PANEL_00008.png */; };
-		4736974D1BF3687F00A0855B /* GREY PANEL_00009.png in Resources */ = {isa = PBXBuildFile; fileRef = 4736973A1BF3687F00A0855B /* GREY PANEL_00009.png */; };
-		4736974E1BF3687F00A0855B /* GREY PANEL_00010.png in Resources */ = {isa = PBXBuildFile; fileRef = 4736973B1BF3687F00A0855B /* GREY PANEL_00010.png */; };
-		4736974F1BF3687F00A0855B /* GREY PANEL_00011.png in Resources */ = {isa = PBXBuildFile; fileRef = 4736973C1BF3687F00A0855B /* GREY PANEL_00011.png */; };
-		473697501BF3687F00A0855B /* GREY PANEL_00012.png in Resources */ = {isa = PBXBuildFile; fileRef = 4736973D1BF3687F00A0855B /* GREY PANEL_00012.png */; };
-		473697511BF3687F00A0855B /* GREY PANEL_00013.png in Resources */ = {isa = PBXBuildFile; fileRef = 4736973E1BF3687F00A0855B /* GREY PANEL_00013.png */; };
-		473697521BF3687F00A0855B /* GREY PANEL_00014.png in Resources */ = {isa = PBXBuildFile; fileRef = 4736973F1BF3687F00A0855B /* GREY PANEL_00014.png */; };
-		473697531BF3687F00A0855B /* GREY PANEL_00015.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697401BF3687F00A0855B /* GREY PANEL_00015.png */; };
-		473697541BF3687F00A0855B /* GREY PANEL_00016.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697411BF3687F00A0855B /* GREY PANEL_00016.png */; };
-		473697551BF3687F00A0855B /* GREY PANEL_00017.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697421BF3687F00A0855B /* GREY PANEL_00017.png */; };
-		473697561BF3687F00A0855B /* GREY PANEL_00018.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697431BF3687F00A0855B /* GREY PANEL_00018.png */; };
-		473697571BF3687F00A0855B /* GREY PANEL_00019.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697441BF3687F00A0855B /* GREY PANEL_00019.png */; };
-		473697581BF3687F00A0855B /* GREY PANEL_00020.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697451BF3687F00A0855B /* GREY PANEL_00020.png */; };
-		473697591BF3687F00A0855B /* GREY PANEL_00021.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697461BF3687F00A0855B /* GREY PANEL_00021.png */; };
-		4736975A1BF3687F00A0855B /* GREY PANEL_00022.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697471BF3687F00A0855B /* GREY PANEL_00022.png */; };
-		4736975B1BF3687F00A0855B /* GREY PANEL_00023.png in Resources */ = {isa = PBXBuildFile; fileRef = 473697481BF3687F00A0855B /* GREY PANEL_00023.png */; };
 		473698411BF371EF00A0855B /* HOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4736977A1BF371EE00A0855B /* HOTPGenerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		473698431BF371EF00A0855B /* OTPAuthAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4736977D1BF371EE00A0855B /* OTPAuthAboutController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		473698441BF371EF00A0855B /* OTPAuthAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4736977F1BF371EE00A0855B /* OTPAuthAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -444,31 +520,6 @@
 		478CD3911BFE0961008774E0 /* Locked Animation_0024@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3781BFE0961008774E0 /* Locked Animation_0024@3x.png */; };
 		478CD3921BFE0961008774E0 /* Locked Animation_0025@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3791BFE0961008774E0 /* Locked Animation_0025@3x.png */; };
 		478CD39A1BFE0BA4008774E0 /* CountDownTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478CD3991BFE0BA4008774E0 /* CountDownTimerViewController.m */; };
-		478CD3B51BFE0E02008774E0 /* Locked_Animation_0001.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD39C1BFE0E02008774E0 /* Locked_Animation_0001.png */; };
-		478CD3B61BFE0E02008774E0 /* Locked_Animation_0002.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD39D1BFE0E02008774E0 /* Locked_Animation_0002.png */; };
-		478CD3B71BFE0E02008774E0 /* Locked_Animation_0003.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD39E1BFE0E02008774E0 /* Locked_Animation_0003.png */; };
-		478CD3B81BFE0E02008774E0 /* Locked_Animation_0004.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD39F1BFE0E02008774E0 /* Locked_Animation_0004.png */; };
-		478CD3B91BFE0E02008774E0 /* Locked_Animation_0005.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A01BFE0E02008774E0 /* Locked_Animation_0005.png */; };
-		478CD3BA1BFE0E02008774E0 /* Locked_Animation_0006.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A11BFE0E02008774E0 /* Locked_Animation_0006.png */; };
-		478CD3BB1BFE0E02008774E0 /* Locked_Animation_0007.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A21BFE0E02008774E0 /* Locked_Animation_0007.png */; };
-		478CD3BC1BFE0E02008774E0 /* Locked_Animation_0008.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A31BFE0E02008774E0 /* Locked_Animation_0008.png */; };
-		478CD3BD1BFE0E02008774E0 /* Locked_Animation_0009.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A41BFE0E02008774E0 /* Locked_Animation_0009.png */; };
-		478CD3BE1BFE0E02008774E0 /* Locked_Animation_0010.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A51BFE0E02008774E0 /* Locked_Animation_0010.png */; };
-		478CD3BF1BFE0E02008774E0 /* Locked_Animation_0011.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A61BFE0E02008774E0 /* Locked_Animation_0011.png */; };
-		478CD3C01BFE0E02008774E0 /* Locked_Animation_0012.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A71BFE0E02008774E0 /* Locked_Animation_0012.png */; };
-		478CD3C11BFE0E02008774E0 /* Locked_Animation_0013.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A81BFE0E02008774E0 /* Locked_Animation_0013.png */; };
-		478CD3C21BFE0E02008774E0 /* Locked_Animation_0014.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3A91BFE0E02008774E0 /* Locked_Animation_0014.png */; };
-		478CD3C31BFE0E02008774E0 /* Locked_Animation_0015.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AA1BFE0E02008774E0 /* Locked_Animation_0015.png */; };
-		478CD3C41BFE0E02008774E0 /* Locked_Animation_0016.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AB1BFE0E02008774E0 /* Locked_Animation_0016.png */; };
-		478CD3C51BFE0E02008774E0 /* Locked_Animation_0017.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AC1BFE0E02008774E0 /* Locked_Animation_0017.png */; };
-		478CD3C61BFE0E02008774E0 /* Locked_Animation_0018.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AD1BFE0E02008774E0 /* Locked_Animation_0018.png */; };
-		478CD3C71BFE0E02008774E0 /* Locked_Animation_0019.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AE1BFE0E02008774E0 /* Locked_Animation_0019.png */; };
-		478CD3C81BFE0E02008774E0 /* Locked_Animation_0020.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3AF1BFE0E02008774E0 /* Locked_Animation_0020.png */; };
-		478CD3C91BFE0E02008774E0 /* Locked_Animation_0021.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3B01BFE0E02008774E0 /* Locked_Animation_0021.png */; };
-		478CD3CA1BFE0E02008774E0 /* Locked_Animation_0022.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3B11BFE0E02008774E0 /* Locked_Animation_0022.png */; };
-		478CD3CB1BFE0E02008774E0 /* Locked_Animation_0023.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3B21BFE0E02008774E0 /* Locked_Animation_0023.png */; };
-		478CD3CC1BFE0E02008774E0 /* Locked_Animation_0024.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3B31BFE0E02008774E0 /* Locked_Animation_0024.png */; };
-		478CD3CD1BFE0E02008774E0 /* Locked_Animation_0025.png in Resources */ = {isa = PBXBuildFile; fileRef = 478CD3B41BFE0E02008774E0 /* Locked_Animation_0025.png */; };
 		47AAF8171BE8DE3400B7DD86 /* BKG_320x568.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 47AAF8161BE8D9A200B7DD86 /* BKG_320x568.m4v */; };
 		47AAF81F1BE8E9A600B7DD86 /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AAF81C1BE8E9A600B7DD86 /* VideoPlayerView.m */; };
 		47AAF8201BE8E9A600B7DD86 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AAF81E1BE8E9A600B7DD86 /* VideoPlayerViewController.m */; };
@@ -512,27 +563,6 @@
 		47E0CEE31BFCBE9C00AC390B /* ScanANewQR_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEE11BFCBE9C00AC390B /* ScanANewQR_ON@2x.png */; };
 		47E0CEE61BFCBEA700AC390B /* ScanANewQR_OFF@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEE41BFCBEA700AC390B /* ScanANewQR_OFF@3x.png */; };
 		47E0CEE71BFCBEA700AC390B /* ScanANewQR_ON@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEE51BFCBEA700AC390B /* ScanANewQR_ON@3x.png */; };
-		47E0CEFE1BFCC23E00AC390B /* Message_0001@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEE91BFCC23E00AC390B /* Message_0001@3x.png */; };
-		47E0CEFF1BFCC23E00AC390B /* Message_0002@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEEA1BFCC23E00AC390B /* Message_0002@3x.png */; };
-		47E0CF001BFCC23E00AC390B /* Message_0003@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEEB1BFCC23E00AC390B /* Message_0003@3x.png */; };
-		47E0CF011BFCC23E00AC390B /* Message_0004@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEEC1BFCC23E00AC390B /* Message_0004@3x.png */; };
-		47E0CF021BFCC23E00AC390B /* Message_0005@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEED1BFCC23E00AC390B /* Message_0005@3x.png */; };
-		47E0CF031BFCC23E00AC390B /* Message_0006@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEEE1BFCC23E00AC390B /* Message_0006@3x.png */; };
-		47E0CF041BFCC23E00AC390B /* Message_0007@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEEF1BFCC23E00AC390B /* Message_0007@3x.png */; };
-		47E0CF051BFCC23E00AC390B /* Message_0008@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEF01BFCC23E00AC390B /* Message_0008@3x.png */; };
-		47E0CF061BFCC23E00AC390B /* Message_0009@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEF11BFCC23E00AC390B /* Message_0009@3x.png */; };
-		47E0CF071BFCC23E00AC390B /* Message_0010@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEF21BFCC23E00AC390B /* Message_0010@3x.png */; };
-		47E0CF081BFCC23E00AC390B /* Message_0011@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEF31BFCC23E00AC390B /* Message_0011@3x.png */; };
-		47E0CF091BFCC23E00AC390B /* Message_0012@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEF41BFCC23E00AC390B /* Message_0012@3x.png */; };
-		47E0CF0A1BFCC23E00AC390B /* Message_0013@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEF51BFCC23E00AC390B /* Message_0013@3x.png */; };
-		47E0CF0B1BFCC23E00AC390B /* Message_0014@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEF61BFCC23E00AC390B /* Message_0014@3x.png */; };
-		47E0CF0C1BFCC23E00AC390B /* Message_0015@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEF71BFCC23E00AC390B /* Message_0015@3x.png */; };
-		47E0CF0D1BFCC23E00AC390B /* Message_0016@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEF81BFCC23E00AC390B /* Message_0016@3x.png */; };
-		47E0CF0E1BFCC23E00AC390B /* Message_0017@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEF91BFCC23E00AC390B /* Message_0017@3x.png */; };
-		47E0CF0F1BFCC23E00AC390B /* Message_0018@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEFA1BFCC23E00AC390B /* Message_0018@3x.png */; };
-		47E0CF101BFCC23E00AC390B /* Message_0019@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEFB1BFCC23E00AC390B /* Message_0019@3x.png */; };
-		47E0CF111BFCC23E00AC390B /* Message_0020@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEFC1BFCC23E00AC390B /* Message_0020@3x.png */; };
-		47E0CF121BFCC23E00AC390B /* Message_0021@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CEFD1BFCC23E00AC390B /* Message_0021@3x.png */; };
 		47E90E341BEC969000402A5B /* Back_Arrow_OFF@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E90E321BEC969000402A5B /* Back_Arrow_OFF@2x.png */; };
 		47E90E351BEC969000402A5B /* Back_Arrow_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E90E331BEC969000402A5B /* Back_Arrow_ON@2x.png */; };
 		47E90E391BEC9A5D00402A5B /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E90E381BEC9A5D00402A5B /* NotificationViewController.m */; };
@@ -632,6 +662,101 @@
 		2BF94AB21BFC5F8400C8C0A8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		47064A311BF47027004B2E42 /* QRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScanViewController.h; sourceTree = "<group>"; };
 		47064A321BF47027004B2E42 /* QRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanViewController.m; sourceTree = "<group>"; };
+		470E36371BFEEFA0009EAA8C /* Message_0001@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0001@3x.png"; sourceTree = "<group>"; };
+		470E36381BFEEFA0009EAA8C /* Message_0002@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0002@3x.png"; sourceTree = "<group>"; };
+		470E36391BFEEFA0009EAA8C /* Message_0003@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0003@3x.png"; sourceTree = "<group>"; };
+		470E363A1BFEEFA0009EAA8C /* Message_0004@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0004@3x.png"; sourceTree = "<group>"; };
+		470E363B1BFEEFA0009EAA8C /* Message_0005@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0005@3x.png"; sourceTree = "<group>"; };
+		470E363C1BFEEFA0009EAA8C /* Message_0006@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0006@3x.png"; sourceTree = "<group>"; };
+		470E363D1BFEEFA0009EAA8C /* Message_0007@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0007@3x.png"; sourceTree = "<group>"; };
+		470E363E1BFEEFA0009EAA8C /* Message_0008@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0008@3x.png"; sourceTree = "<group>"; };
+		470E363F1BFEEFA0009EAA8C /* Message_0009@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0009@3x.png"; sourceTree = "<group>"; };
+		470E36401BFEEFA0009EAA8C /* Message_0010@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0010@3x.png"; sourceTree = "<group>"; };
+		470E36411BFEEFA0009EAA8C /* Message_0011@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0011@3x.png"; sourceTree = "<group>"; };
+		470E36421BFEEFA0009EAA8C /* Message_0012@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0012@3x.png"; sourceTree = "<group>"; };
+		470E36431BFEEFA0009EAA8C /* Message_0013@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0013@3x.png"; sourceTree = "<group>"; };
+		470E36441BFEEFA0009EAA8C /* Message_0014@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0014@3x.png"; sourceTree = "<group>"; };
+		470E36451BFEEFA0009EAA8C /* Message_0015@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0015@3x.png"; sourceTree = "<group>"; };
+		470E36461BFEEFA0009EAA8C /* Message_0016@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0016@3x.png"; sourceTree = "<group>"; };
+		470E36791BFEF2E8009EAA8C /* GREY PANEL_00005@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00005@3x.png"; sourceTree = "<group>"; };
+		470E367A1BFEF2E8009EAA8C /* GREY PANEL_00006@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00006@3x.png"; sourceTree = "<group>"; };
+		470E367B1BFEF2E8009EAA8C /* GREY PANEL_00007@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00007@3x.png"; sourceTree = "<group>"; };
+		470E367C1BFEF2E8009EAA8C /* GREY PANEL_00008@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00008@3x.png"; sourceTree = "<group>"; };
+		470E367D1BFEF2E8009EAA8C /* GREY PANEL_00009@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00009@3x.png"; sourceTree = "<group>"; };
+		470E367E1BFEF2E8009EAA8C /* GREY PANEL_00010@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00010@3x.png"; sourceTree = "<group>"; };
+		470E367F1BFEF2E8009EAA8C /* GREY PANEL_00011@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00011@3x.png"; sourceTree = "<group>"; };
+		470E36801BFEF2E8009EAA8C /* GREY PANEL_00012@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00012@3x.png"; sourceTree = "<group>"; };
+		470E36811BFEF2E8009EAA8C /* GREY PANEL_00013@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00013@3x.png"; sourceTree = "<group>"; };
+		470E36821BFEF2E8009EAA8C /* GREY PANEL_00014@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00014@3x.png"; sourceTree = "<group>"; };
+		470E36831BFEF2E8009EAA8C /* GREY PANEL_00015@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00015@3x.png"; sourceTree = "<group>"; };
+		470E36841BFEF2E8009EAA8C /* GREY PANEL_00016@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00016@3x.png"; sourceTree = "<group>"; };
+		470E36851BFEF2E8009EAA8C /* GREY PANEL_00017@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00017@3x.png"; sourceTree = "<group>"; };
+		470E36861BFEF2E8009EAA8C /* GREY PANEL_00018@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00018@3x.png"; sourceTree = "<group>"; };
+		470E36871BFEF2E8009EAA8C /* GREY PANEL_00019@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00019@3x.png"; sourceTree = "<group>"; };
+		470E36881BFEF2E8009EAA8C /* GREY PANEL_00020@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00020@3x.png"; sourceTree = "<group>"; };
+		470E36891BFEF2E8009EAA8C /* GREY PANEL_00021@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00021@3x.png"; sourceTree = "<group>"; };
+		470E368A1BFEF2E8009EAA8C /* GREY PANEL_00022@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00022@3x.png"; sourceTree = "<group>"; };
+		470E368B1BFEF2E8009EAA8C /* GREY PANEL_00023@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00023@3x.png"; sourceTree = "<group>"; };
+		470E36A01BFEF386009EAA8C /* GREY PANEL_00005@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00005@2x.png"; sourceTree = "<group>"; };
+		470E36A11BFEF386009EAA8C /* GREY PANEL_00006@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00006@2x.png"; sourceTree = "<group>"; };
+		470E36A21BFEF386009EAA8C /* GREY PANEL_00007@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00007@2x.png"; sourceTree = "<group>"; };
+		470E36A31BFEF386009EAA8C /* GREY PANEL_00008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00008@2x.png"; sourceTree = "<group>"; };
+		470E36A41BFEF386009EAA8C /* GREY PANEL_00009@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00009@2x.png"; sourceTree = "<group>"; };
+		470E36A51BFEF386009EAA8C /* GREY PANEL_00010@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00010@2x.png"; sourceTree = "<group>"; };
+		470E36A61BFEF386009EAA8C /* GREY PANEL_00011@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00011@2x.png"; sourceTree = "<group>"; };
+		470E36A71BFEF386009EAA8C /* GREY PANEL_00012@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00012@2x.png"; sourceTree = "<group>"; };
+		470E36A81BFEF386009EAA8C /* GREY PANEL_00013@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00013@2x.png"; sourceTree = "<group>"; };
+		470E36A91BFEF386009EAA8C /* GREY PANEL_00014@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00014@2x.png"; sourceTree = "<group>"; };
+		470E36AA1BFEF386009EAA8C /* GREY PANEL_00015@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00015@2x.png"; sourceTree = "<group>"; };
+		470E36AB1BFEF386009EAA8C /* GREY PANEL_00016@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00016@2x.png"; sourceTree = "<group>"; };
+		470E36AC1BFEF386009EAA8C /* GREY PANEL_00017@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00017@2x.png"; sourceTree = "<group>"; };
+		470E36AD1BFEF386009EAA8C /* GREY PANEL_00018@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00018@2x.png"; sourceTree = "<group>"; };
+		470E36AE1BFEF386009EAA8C /* GREY PANEL_00019@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00019@2x.png"; sourceTree = "<group>"; };
+		470E36AF1BFEF386009EAA8C /* GREY PANEL_00020@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00020@2x.png"; sourceTree = "<group>"; };
+		470E36B01BFEF386009EAA8C /* GREY PANEL_00021@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00021@2x.png"; sourceTree = "<group>"; };
+		470E36B11BFEF386009EAA8C /* GREY PANEL_00022@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00022@2x.png"; sourceTree = "<group>"; };
+		470E36B21BFEF386009EAA8C /* GREY PANEL_00023@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00023@2x.png"; sourceTree = "<group>"; };
+		470E36FA1BFEF45F009EAA8C /* Message_0001@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0001@2x.png"; sourceTree = "<group>"; };
+		470E36FB1BFEF45F009EAA8C /* Message_0002@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0002@2x.png"; sourceTree = "<group>"; };
+		470E36FC1BFEF45F009EAA8C /* Message_0003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0003@2x.png"; sourceTree = "<group>"; };
+		470E36FD1BFEF45F009EAA8C /* Message_0004@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0004@2x.png"; sourceTree = "<group>"; };
+		470E36FE1BFEF45F009EAA8C /* Message_0005@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0005@2x.png"; sourceTree = "<group>"; };
+		470E36FF1BFEF45F009EAA8C /* Message_0006@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0006@2x.png"; sourceTree = "<group>"; };
+		470E37001BFEF45F009EAA8C /* Message_0007@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0007@2x.png"; sourceTree = "<group>"; };
+		470E37011BFEF45F009EAA8C /* Message_0008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0008@2x.png"; sourceTree = "<group>"; };
+		470E37021BFEF45F009EAA8C /* Message_0009@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0009@2x.png"; sourceTree = "<group>"; };
+		470E37031BFEF45F009EAA8C /* Message_0010@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0010@2x.png"; sourceTree = "<group>"; };
+		470E37041BFEF45F009EAA8C /* Message_0011@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0011@2x.png"; sourceTree = "<group>"; };
+		470E37051BFEF45F009EAA8C /* Message_0012@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0012@2x.png"; sourceTree = "<group>"; };
+		470E37061BFEF45F009EAA8C /* Message_0013@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0013@2x.png"; sourceTree = "<group>"; };
+		470E37071BFEF45F009EAA8C /* Message_0014@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0014@2x.png"; sourceTree = "<group>"; };
+		470E37081BFEF45F009EAA8C /* Message_0015@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0015@2x.png"; sourceTree = "<group>"; };
+		470E37091BFEF45F009EAA8C /* Message_0016@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0016@2x.png"; sourceTree = "<group>"; };
+		470E371B1BFEF5CA009EAA8C /* Locked Animation_0001@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0001@2x.png"; sourceTree = "<group>"; };
+		470E371C1BFEF5CA009EAA8C /* Locked Animation_0002@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0002@2x.png"; sourceTree = "<group>"; };
+		470E371D1BFEF5CA009EAA8C /* Locked Animation_0003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0003@2x.png"; sourceTree = "<group>"; };
+		470E371E1BFEF5CA009EAA8C /* Locked Animation_0004@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0004@2x.png"; sourceTree = "<group>"; };
+		470E371F1BFEF5CA009EAA8C /* Locked Animation_0005@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0005@2x.png"; sourceTree = "<group>"; };
+		470E37201BFEF5CA009EAA8C /* Locked Animation_0006@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0006@2x.png"; sourceTree = "<group>"; };
+		470E37211BFEF5CA009EAA8C /* Locked Animation_0007@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0007@2x.png"; sourceTree = "<group>"; };
+		470E37221BFEF5CA009EAA8C /* Locked Animation_0008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0008@2x.png"; sourceTree = "<group>"; };
+		470E37231BFEF5CA009EAA8C /* Locked Animation_0009@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0009@2x.png"; sourceTree = "<group>"; };
+		470E37241BFEF5CA009EAA8C /* Locked Animation_0010@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0010@2x.png"; sourceTree = "<group>"; };
+		470E37251BFEF5CA009EAA8C /* Locked Animation_0011@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0011@2x.png"; sourceTree = "<group>"; };
+		470E37261BFEF5CA009EAA8C /* Locked Animation_0012@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0012@2x.png"; sourceTree = "<group>"; };
+		470E37271BFEF5CA009EAA8C /* Locked Animation_0013@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0013@2x.png"; sourceTree = "<group>"; };
+		470E37281BFEF5CA009EAA8C /* Locked Animation_0014@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0014@2x.png"; sourceTree = "<group>"; };
+		470E37291BFEF5CA009EAA8C /* Locked Animation_0015@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0015@2x.png"; sourceTree = "<group>"; };
+		470E372A1BFEF5CA009EAA8C /* Locked Animation_0016@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0016@2x.png"; sourceTree = "<group>"; };
+		470E372B1BFEF5CA009EAA8C /* Locked Animation_0017@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0017@2x.png"; sourceTree = "<group>"; };
+		470E372C1BFEF5CA009EAA8C /* Locked Animation_0018@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0018@2x.png"; sourceTree = "<group>"; };
+		470E372D1BFEF5CA009EAA8C /* Locked Animation_0019@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0019@2x.png"; sourceTree = "<group>"; };
+		470E372E1BFEF5CA009EAA8C /* Locked Animation_0020@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0020@2x.png"; sourceTree = "<group>"; };
+		470E372F1BFEF5CA009EAA8C /* Locked Animation_0021@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0021@2x.png"; sourceTree = "<group>"; };
+		470E37301BFEF5CA009EAA8C /* Locked Animation_0022@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0022@2x.png"; sourceTree = "<group>"; };
+		470E37311BFEF5CA009EAA8C /* Locked Animation_0023@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0023@2x.png"; sourceTree = "<group>"; };
+		470E37321BFEF5CA009EAA8C /* Locked Animation_0024@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0024@2x.png"; sourceTree = "<group>"; };
+		470E37331BFEF5CA009EAA8C /* Locked Animation_0025@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0025@2x.png"; sourceTree = "<group>"; };
 		470E696F1BF4794100D6A091 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppInfo.h; path = "Helper Classes/AppInfo.h"; sourceTree = "<group>"; };
 		470E69701BF4794100D6A091 /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppInfo.m; path = "Helper Classes/AppInfo.m"; sourceTree = "<group>"; };
 		470E69711BF4794100D6A091 /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppSettings.h; path = "Helper Classes/AppSettings.h"; sourceTree = "<group>"; };
@@ -902,25 +1027,6 @@
 		473697191BF35CF500A0855B /* Authenticator_Logo_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Authenticator_Logo_22.png; sourceTree = "<group>"; };
 		4736971A1BF35CF500A0855B /* Authenticator_Logo_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Authenticator_Logo_23.png; sourceTree = "<group>"; };
 		4736971B1BF35CF500A0855B /* Authenticator_Logo_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Authenticator_Logo_24.png; sourceTree = "<group>"; };
-		473697361BF3687F00A0855B /* GREY PANEL_00005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00005.png"; sourceTree = "<group>"; };
-		473697371BF3687F00A0855B /* GREY PANEL_00006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00006.png"; sourceTree = "<group>"; };
-		473697381BF3687F00A0855B /* GREY PANEL_00007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00007.png"; sourceTree = "<group>"; };
-		473697391BF3687F00A0855B /* GREY PANEL_00008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00008.png"; sourceTree = "<group>"; };
-		4736973A1BF3687F00A0855B /* GREY PANEL_00009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00009.png"; sourceTree = "<group>"; };
-		4736973B1BF3687F00A0855B /* GREY PANEL_00010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00010.png"; sourceTree = "<group>"; };
-		4736973C1BF3687F00A0855B /* GREY PANEL_00011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00011.png"; sourceTree = "<group>"; };
-		4736973D1BF3687F00A0855B /* GREY PANEL_00012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00012.png"; sourceTree = "<group>"; };
-		4736973E1BF3687F00A0855B /* GREY PANEL_00013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00013.png"; sourceTree = "<group>"; };
-		4736973F1BF3687F00A0855B /* GREY PANEL_00014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00014.png"; sourceTree = "<group>"; };
-		473697401BF3687F00A0855B /* GREY PANEL_00015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00015.png"; sourceTree = "<group>"; };
-		473697411BF3687F00A0855B /* GREY PANEL_00016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00016.png"; sourceTree = "<group>"; };
-		473697421BF3687F00A0855B /* GREY PANEL_00017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00017.png"; sourceTree = "<group>"; };
-		473697431BF3687F00A0855B /* GREY PANEL_00018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00018.png"; sourceTree = "<group>"; };
-		473697441BF3687F00A0855B /* GREY PANEL_00019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00019.png"; sourceTree = "<group>"; };
-		473697451BF3687F00A0855B /* GREY PANEL_00020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00020.png"; sourceTree = "<group>"; };
-		473697461BF3687F00A0855B /* GREY PANEL_00021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00021.png"; sourceTree = "<group>"; };
-		473697471BF3687F00A0855B /* GREY PANEL_00022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00022.png"; sourceTree = "<group>"; };
-		473697481BF3687F00A0855B /* GREY PANEL_00023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GREY PANEL_00023.png"; sourceTree = "<group>"; };
 		4736975F1BF370C500A0855B /* PireanSharedLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PireanSharedLib.xcodeproj; path = PireanSharedLib/PireanSharedLib.xcodeproj; sourceTree = "<group>"; };
 		4736976A1BF3719000A0855B /* GravatarImageDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GravatarImageDemo.xcodeproj; path = Gravatar/GravatarImageDemo/GravatarImageDemo.xcodeproj; sourceTree = "<group>"; };
 		473697791BF371EE00A0855B /* HOTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HOTPGenerator.h; sourceTree = "<group>"; };
@@ -1108,31 +1214,6 @@
 		478CD3791BFE0961008774E0 /* Locked Animation_0025@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locked Animation_0025@3x.png"; sourceTree = "<group>"; };
 		478CD3981BFE0BA4008774E0 /* CountDownTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountDownTimerViewController.h; path = ViewControllers/CountDownTimerViewController/CountDownTimerViewController.h; sourceTree = "<group>"; };
 		478CD3991BFE0BA4008774E0 /* CountDownTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountDownTimerViewController.m; path = ViewControllers/CountDownTimerViewController/CountDownTimerViewController.m; sourceTree = "<group>"; };
-		478CD39C1BFE0E02008774E0 /* Locked_Animation_0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0001.png; sourceTree = "<group>"; };
-		478CD39D1BFE0E02008774E0 /* Locked_Animation_0002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0002.png; sourceTree = "<group>"; };
-		478CD39E1BFE0E02008774E0 /* Locked_Animation_0003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0003.png; sourceTree = "<group>"; };
-		478CD39F1BFE0E02008774E0 /* Locked_Animation_0004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0004.png; sourceTree = "<group>"; };
-		478CD3A01BFE0E02008774E0 /* Locked_Animation_0005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0005.png; sourceTree = "<group>"; };
-		478CD3A11BFE0E02008774E0 /* Locked_Animation_0006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0006.png; sourceTree = "<group>"; };
-		478CD3A21BFE0E02008774E0 /* Locked_Animation_0007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0007.png; sourceTree = "<group>"; };
-		478CD3A31BFE0E02008774E0 /* Locked_Animation_0008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0008.png; sourceTree = "<group>"; };
-		478CD3A41BFE0E02008774E0 /* Locked_Animation_0009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0009.png; sourceTree = "<group>"; };
-		478CD3A51BFE0E02008774E0 /* Locked_Animation_0010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0010.png; sourceTree = "<group>"; };
-		478CD3A61BFE0E02008774E0 /* Locked_Animation_0011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0011.png; sourceTree = "<group>"; };
-		478CD3A71BFE0E02008774E0 /* Locked_Animation_0012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0012.png; sourceTree = "<group>"; };
-		478CD3A81BFE0E02008774E0 /* Locked_Animation_0013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0013.png; sourceTree = "<group>"; };
-		478CD3A91BFE0E02008774E0 /* Locked_Animation_0014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0014.png; sourceTree = "<group>"; };
-		478CD3AA1BFE0E02008774E0 /* Locked_Animation_0015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0015.png; sourceTree = "<group>"; };
-		478CD3AB1BFE0E02008774E0 /* Locked_Animation_0016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0016.png; sourceTree = "<group>"; };
-		478CD3AC1BFE0E02008774E0 /* Locked_Animation_0017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0017.png; sourceTree = "<group>"; };
-		478CD3AD1BFE0E02008774E0 /* Locked_Animation_0018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0018.png; sourceTree = "<group>"; };
-		478CD3AE1BFE0E02008774E0 /* Locked_Animation_0019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0019.png; sourceTree = "<group>"; };
-		478CD3AF1BFE0E02008774E0 /* Locked_Animation_0020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0020.png; sourceTree = "<group>"; };
-		478CD3B01BFE0E02008774E0 /* Locked_Animation_0021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0021.png; sourceTree = "<group>"; };
-		478CD3B11BFE0E02008774E0 /* Locked_Animation_0022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0022.png; sourceTree = "<group>"; };
-		478CD3B21BFE0E02008774E0 /* Locked_Animation_0023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0023.png; sourceTree = "<group>"; };
-		478CD3B31BFE0E02008774E0 /* Locked_Animation_0024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0024.png; sourceTree = "<group>"; };
-		478CD3B41BFE0E02008774E0 /* Locked_Animation_0025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked_Animation_0025.png; sourceTree = "<group>"; };
 		47AAF8161BE8D9A200B7DD86 /* BKG_320x568.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = BKG_320x568.m4v; path = ../BKG_320x568.m4v; sourceTree = "<group>"; };
 		47AAF81B1BE8E9A600B7DD86 /* VideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerView.h; sourceTree = "<group>"; };
 		47AAF81C1BE8E9A600B7DD86 /* VideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerView.m; sourceTree = "<group>"; };
@@ -1181,27 +1262,6 @@
 		47E0CEE11BFCBE9C00AC390B /* ScanANewQR_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanANewQR_ON@2x.png"; sourceTree = "<group>"; };
 		47E0CEE41BFCBEA700AC390B /* ScanANewQR_OFF@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanANewQR_OFF@3x.png"; sourceTree = "<group>"; };
 		47E0CEE51BFCBEA700AC390B /* ScanANewQR_ON@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanANewQR_ON@3x.png"; sourceTree = "<group>"; };
-		47E0CEE91BFCC23E00AC390B /* Message_0001@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0001@3x.png"; sourceTree = "<group>"; };
-		47E0CEEA1BFCC23E00AC390B /* Message_0002@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0002@3x.png"; sourceTree = "<group>"; };
-		47E0CEEB1BFCC23E00AC390B /* Message_0003@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0003@3x.png"; sourceTree = "<group>"; };
-		47E0CEEC1BFCC23E00AC390B /* Message_0004@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0004@3x.png"; sourceTree = "<group>"; };
-		47E0CEED1BFCC23E00AC390B /* Message_0005@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0005@3x.png"; sourceTree = "<group>"; };
-		47E0CEEE1BFCC23E00AC390B /* Message_0006@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0006@3x.png"; sourceTree = "<group>"; };
-		47E0CEEF1BFCC23E00AC390B /* Message_0007@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0007@3x.png"; sourceTree = "<group>"; };
-		47E0CEF01BFCC23E00AC390B /* Message_0008@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0008@3x.png"; sourceTree = "<group>"; };
-		47E0CEF11BFCC23E00AC390B /* Message_0009@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0009@3x.png"; sourceTree = "<group>"; };
-		47E0CEF21BFCC23E00AC390B /* Message_0010@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0010@3x.png"; sourceTree = "<group>"; };
-		47E0CEF31BFCC23E00AC390B /* Message_0011@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0011@3x.png"; sourceTree = "<group>"; };
-		47E0CEF41BFCC23E00AC390B /* Message_0012@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0012@3x.png"; sourceTree = "<group>"; };
-		47E0CEF51BFCC23E00AC390B /* Message_0013@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0013@3x.png"; sourceTree = "<group>"; };
-		47E0CEF61BFCC23E00AC390B /* Message_0014@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0014@3x.png"; sourceTree = "<group>"; };
-		47E0CEF71BFCC23E00AC390B /* Message_0015@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0015@3x.png"; sourceTree = "<group>"; };
-		47E0CEF81BFCC23E00AC390B /* Message_0016@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0016@3x.png"; sourceTree = "<group>"; };
-		47E0CEF91BFCC23E00AC390B /* Message_0017@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0017@3x.png"; sourceTree = "<group>"; };
-		47E0CEFA1BFCC23E00AC390B /* Message_0018@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0018@3x.png"; sourceTree = "<group>"; };
-		47E0CEFB1BFCC23E00AC390B /* Message_0019@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0019@3x.png"; sourceTree = "<group>"; };
-		47E0CEFC1BFCC23E00AC390B /* Message_0020@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0020@3x.png"; sourceTree = "<group>"; };
-		47E0CEFD1BFCC23E00AC390B /* Message_0021@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0021@3x.png"; sourceTree = "<group>"; };
 		47E90E321BEC969000402A5B /* Back_Arrow_OFF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Arrow_OFF@2x.png"; sourceTree = "<group>"; };
 		47E90E331BEC969000402A5B /* Back_Arrow_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Arrow_ON@2x.png"; sourceTree = "<group>"; };
 		47E90E371BEC9A5D00402A5B /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationViewController.h; path = ViewControllers/NotificationVIewController/NotificationViewController.h; sourceTree = "<group>"; };
@@ -1293,6 +1353,141 @@
 				47064A321BF47027004B2E42 /* QRCodeScanViewController.m */,
 			);
 			path = QRCodeScanViewController;
+			sourceTree = "<group>";
+		};
+		470E36361BFEEFA0009EAA8C /* MessageButtonAnimation @3x */ = {
+			isa = PBXGroup;
+			children = (
+				470E36371BFEEFA0009EAA8C /* Message_0001@3x.png */,
+				470E36381BFEEFA0009EAA8C /* Message_0002@3x.png */,
+				470E36391BFEEFA0009EAA8C /* Message_0003@3x.png */,
+				470E363A1BFEEFA0009EAA8C /* Message_0004@3x.png */,
+				470E363B1BFEEFA0009EAA8C /* Message_0005@3x.png */,
+				470E363C1BFEEFA0009EAA8C /* Message_0006@3x.png */,
+				470E363D1BFEEFA0009EAA8C /* Message_0007@3x.png */,
+				470E363E1BFEEFA0009EAA8C /* Message_0008@3x.png */,
+				470E363F1BFEEFA0009EAA8C /* Message_0009@3x.png */,
+				470E36401BFEEFA0009EAA8C /* Message_0010@3x.png */,
+				470E36411BFEEFA0009EAA8C /* Message_0011@3x.png */,
+				470E36421BFEEFA0009EAA8C /* Message_0012@3x.png */,
+				470E36431BFEEFA0009EAA8C /* Message_0013@3x.png */,
+				470E36441BFEEFA0009EAA8C /* Message_0014@3x.png */,
+				470E36451BFEEFA0009EAA8C /* Message_0015@3x.png */,
+				470E36461BFEEFA0009EAA8C /* Message_0016@3x.png */,
+			);
+			name = "MessageButtonAnimation @3x";
+			path = "Images/Animations/MessageButtonAnimation @3x";
+			sourceTree = "<group>";
+		};
+		470E36781BFEF2E8009EAA8C /* DevicePaired Color fill Animation @3x */ = {
+			isa = PBXGroup;
+			children = (
+				470E36791BFEF2E8009EAA8C /* GREY PANEL_00005@3x.png */,
+				470E367A1BFEF2E8009EAA8C /* GREY PANEL_00006@3x.png */,
+				470E367B1BFEF2E8009EAA8C /* GREY PANEL_00007@3x.png */,
+				470E367C1BFEF2E8009EAA8C /* GREY PANEL_00008@3x.png */,
+				470E367D1BFEF2E8009EAA8C /* GREY PANEL_00009@3x.png */,
+				470E367E1BFEF2E8009EAA8C /* GREY PANEL_00010@3x.png */,
+				470E367F1BFEF2E8009EAA8C /* GREY PANEL_00011@3x.png */,
+				470E36801BFEF2E8009EAA8C /* GREY PANEL_00012@3x.png */,
+				470E36811BFEF2E8009EAA8C /* GREY PANEL_00013@3x.png */,
+				470E36821BFEF2E8009EAA8C /* GREY PANEL_00014@3x.png */,
+				470E36831BFEF2E8009EAA8C /* GREY PANEL_00015@3x.png */,
+				470E36841BFEF2E8009EAA8C /* GREY PANEL_00016@3x.png */,
+				470E36851BFEF2E8009EAA8C /* GREY PANEL_00017@3x.png */,
+				470E36861BFEF2E8009EAA8C /* GREY PANEL_00018@3x.png */,
+				470E36871BFEF2E8009EAA8C /* GREY PANEL_00019@3x.png */,
+				470E36881BFEF2E8009EAA8C /* GREY PANEL_00020@3x.png */,
+				470E36891BFEF2E8009EAA8C /* GREY PANEL_00021@3x.png */,
+				470E368A1BFEF2E8009EAA8C /* GREY PANEL_00022@3x.png */,
+				470E368B1BFEF2E8009EAA8C /* GREY PANEL_00023@3x.png */,
+			);
+			name = "DevicePaired Color fill Animation @3x";
+			path = "Images/Animations/DevicePaired Color fill Animation @3x";
+			sourceTree = "<group>";
+		};
+		470E369F1BFEF386009EAA8C /* DevicePaired Color fill Animation @2x */ = {
+			isa = PBXGroup;
+			children = (
+				470E36A01BFEF386009EAA8C /* GREY PANEL_00005@2x.png */,
+				470E36A11BFEF386009EAA8C /* GREY PANEL_00006@2x.png */,
+				470E36A21BFEF386009EAA8C /* GREY PANEL_00007@2x.png */,
+				470E36A31BFEF386009EAA8C /* GREY PANEL_00008@2x.png */,
+				470E36A41BFEF386009EAA8C /* GREY PANEL_00009@2x.png */,
+				470E36A51BFEF386009EAA8C /* GREY PANEL_00010@2x.png */,
+				470E36A61BFEF386009EAA8C /* GREY PANEL_00011@2x.png */,
+				470E36A71BFEF386009EAA8C /* GREY PANEL_00012@2x.png */,
+				470E36A81BFEF386009EAA8C /* GREY PANEL_00013@2x.png */,
+				470E36A91BFEF386009EAA8C /* GREY PANEL_00014@2x.png */,
+				470E36AA1BFEF386009EAA8C /* GREY PANEL_00015@2x.png */,
+				470E36AB1BFEF386009EAA8C /* GREY PANEL_00016@2x.png */,
+				470E36AC1BFEF386009EAA8C /* GREY PANEL_00017@2x.png */,
+				470E36AD1BFEF386009EAA8C /* GREY PANEL_00018@2x.png */,
+				470E36AE1BFEF386009EAA8C /* GREY PANEL_00019@2x.png */,
+				470E36AF1BFEF386009EAA8C /* GREY PANEL_00020@2x.png */,
+				470E36B01BFEF386009EAA8C /* GREY PANEL_00021@2x.png */,
+				470E36B11BFEF386009EAA8C /* GREY PANEL_00022@2x.png */,
+				470E36B21BFEF386009EAA8C /* GREY PANEL_00023@2x.png */,
+			);
+			name = "DevicePaired Color fill Animation @2x";
+			path = "Images/Animations/Account_Locked_Animation  @3x/DevicePaired Color fill Animation @2x";
+			sourceTree = "<group>";
+		};
+		470E36F91BFEF45F009EAA8C /* MessageButtonAnimation @2x */ = {
+			isa = PBXGroup;
+			children = (
+				470E36FA1BFEF45F009EAA8C /* Message_0001@2x.png */,
+				470E36FB1BFEF45F009EAA8C /* Message_0002@2x.png */,
+				470E36FC1BFEF45F009EAA8C /* Message_0003@2x.png */,
+				470E36FD1BFEF45F009EAA8C /* Message_0004@2x.png */,
+				470E36FE1BFEF45F009EAA8C /* Message_0005@2x.png */,
+				470E36FF1BFEF45F009EAA8C /* Message_0006@2x.png */,
+				470E37001BFEF45F009EAA8C /* Message_0007@2x.png */,
+				470E37011BFEF45F009EAA8C /* Message_0008@2x.png */,
+				470E37021BFEF45F009EAA8C /* Message_0009@2x.png */,
+				470E37031BFEF45F009EAA8C /* Message_0010@2x.png */,
+				470E37041BFEF45F009EAA8C /* Message_0011@2x.png */,
+				470E37051BFEF45F009EAA8C /* Message_0012@2x.png */,
+				470E37061BFEF45F009EAA8C /* Message_0013@2x.png */,
+				470E37071BFEF45F009EAA8C /* Message_0014@2x.png */,
+				470E37081BFEF45F009EAA8C /* Message_0015@2x.png */,
+				470E37091BFEF45F009EAA8C /* Message_0016@2x.png */,
+			);
+			name = "MessageButtonAnimation @2x";
+			path = "Images/Animations/MessageButtonAnimation @2x";
+			sourceTree = "<group>";
+		};
+		470E371A1BFEF5CA009EAA8C /* Account_Locked_Animation @2x */ = {
+			isa = PBXGroup;
+			children = (
+				470E371B1BFEF5CA009EAA8C /* Locked Animation_0001@2x.png */,
+				470E371C1BFEF5CA009EAA8C /* Locked Animation_0002@2x.png */,
+				470E371D1BFEF5CA009EAA8C /* Locked Animation_0003@2x.png */,
+				470E371E1BFEF5CA009EAA8C /* Locked Animation_0004@2x.png */,
+				470E371F1BFEF5CA009EAA8C /* Locked Animation_0005@2x.png */,
+				470E37201BFEF5CA009EAA8C /* Locked Animation_0006@2x.png */,
+				470E37211BFEF5CA009EAA8C /* Locked Animation_0007@2x.png */,
+				470E37221BFEF5CA009EAA8C /* Locked Animation_0008@2x.png */,
+				470E37231BFEF5CA009EAA8C /* Locked Animation_0009@2x.png */,
+				470E37241BFEF5CA009EAA8C /* Locked Animation_0010@2x.png */,
+				470E37251BFEF5CA009EAA8C /* Locked Animation_0011@2x.png */,
+				470E37261BFEF5CA009EAA8C /* Locked Animation_0012@2x.png */,
+				470E37271BFEF5CA009EAA8C /* Locked Animation_0013@2x.png */,
+				470E37281BFEF5CA009EAA8C /* Locked Animation_0014@2x.png */,
+				470E37291BFEF5CA009EAA8C /* Locked Animation_0015@2x.png */,
+				470E372A1BFEF5CA009EAA8C /* Locked Animation_0016@2x.png */,
+				470E372B1BFEF5CA009EAA8C /* Locked Animation_0017@2x.png */,
+				470E372C1BFEF5CA009EAA8C /* Locked Animation_0018@2x.png */,
+				470E372D1BFEF5CA009EAA8C /* Locked Animation_0019@2x.png */,
+				470E372E1BFEF5CA009EAA8C /* Locked Animation_0020@2x.png */,
+				470E372F1BFEF5CA009EAA8C /* Locked Animation_0021@2x.png */,
+				470E37301BFEF5CA009EAA8C /* Locked Animation_0022@2x.png */,
+				470E37311BFEF5CA009EAA8C /* Locked Animation_0023@2x.png */,
+				470E37321BFEF5CA009EAA8C /* Locked Animation_0024@2x.png */,
+				470E37331BFEF5CA009EAA8C /* Locked Animation_0025@2x.png */,
+			);
+			name = "Account_Locked_Animation @2x";
+			path = "Images/Animations/MessageButtonAnimation @3x/Account_Locked_Animation @2x";
 			sourceTree = "<group>";
 		};
 		470E69781BF479B900D6A091 /* CoreClasses */ = {
@@ -1536,12 +1731,14 @@
 		4729E07D1BF1F76C00627DA8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				478CD39B1BFE0E02008774E0 /* Account_Locked_Animation */,
+				470E36F91BFEF45F009EAA8C /* MessageButtonAnimation @2x */,
+				470E36361BFEEFA0009EAA8C /* MessageButtonAnimation @3x */,
+				470E371A1BFEF5CA009EAA8C /* Account_Locked_Animation @2x */,
 				478CD3601BFE0961008774E0 /* Account_Locked_Animation  @3x */,
-				473697351BF3687F00A0855B /* DevicePaired Color fill Animation */,
+				470E369F1BFEF386009EAA8C /* DevicePaired Color fill Animation @2x */,
+				470E36781BFEF2E8009EAA8C /* DevicePaired Color fill Animation @3x */,
 				4729E0811BF1F8D200627DA8 /* Keypad Dot Animation */,
 				4736969E1BF3556C00A0855B /* Logo Animation */,
-				47E0CEE81BFCC23E00AC390B /* MessageButtonAnimation */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -1815,33 +2012,6 @@
 			);
 			name = "Logo Animation";
 			path = "Images/Animations/Logo Animation";
-			sourceTree = "<group>";
-		};
-		473697351BF3687F00A0855B /* DevicePaired Color fill Animation */ = {
-			isa = PBXGroup;
-			children = (
-				473697361BF3687F00A0855B /* GREY PANEL_00005.png */,
-				473697371BF3687F00A0855B /* GREY PANEL_00006.png */,
-				473697381BF3687F00A0855B /* GREY PANEL_00007.png */,
-				473697391BF3687F00A0855B /* GREY PANEL_00008.png */,
-				4736973A1BF3687F00A0855B /* GREY PANEL_00009.png */,
-				4736973B1BF3687F00A0855B /* GREY PANEL_00010.png */,
-				4736973C1BF3687F00A0855B /* GREY PANEL_00011.png */,
-				4736973D1BF3687F00A0855B /* GREY PANEL_00012.png */,
-				4736973E1BF3687F00A0855B /* GREY PANEL_00013.png */,
-				4736973F1BF3687F00A0855B /* GREY PANEL_00014.png */,
-				473697401BF3687F00A0855B /* GREY PANEL_00015.png */,
-				473697411BF3687F00A0855B /* GREY PANEL_00016.png */,
-				473697421BF3687F00A0855B /* GREY PANEL_00017.png */,
-				473697431BF3687F00A0855B /* GREY PANEL_00018.png */,
-				473697441BF3687F00A0855B /* GREY PANEL_00019.png */,
-				473697451BF3687F00A0855B /* GREY PANEL_00020.png */,
-				473697461BF3687F00A0855B /* GREY PANEL_00021.png */,
-				473697471BF3687F00A0855B /* GREY PANEL_00022.png */,
-				473697481BF3687F00A0855B /* GREY PANEL_00023.png */,
-			);
-			name = "DevicePaired Color fill Animation";
-			path = "Images/Animations/DevicePaired Color fill Animation";
 			sourceTree = "<group>";
 		};
 		473697601BF370C500A0855B /* Products */ = {
@@ -2326,39 +2496,6 @@
 			name = CountDownTimerViewController;
 			sourceTree = "<group>";
 		};
-		478CD39B1BFE0E02008774E0 /* Account_Locked_Animation */ = {
-			isa = PBXGroup;
-			children = (
-				478CD39C1BFE0E02008774E0 /* Locked_Animation_0001.png */,
-				478CD39D1BFE0E02008774E0 /* Locked_Animation_0002.png */,
-				478CD39E1BFE0E02008774E0 /* Locked_Animation_0003.png */,
-				478CD39F1BFE0E02008774E0 /* Locked_Animation_0004.png */,
-				478CD3A01BFE0E02008774E0 /* Locked_Animation_0005.png */,
-				478CD3A11BFE0E02008774E0 /* Locked_Animation_0006.png */,
-				478CD3A21BFE0E02008774E0 /* Locked_Animation_0007.png */,
-				478CD3A31BFE0E02008774E0 /* Locked_Animation_0008.png */,
-				478CD3A41BFE0E02008774E0 /* Locked_Animation_0009.png */,
-				478CD3A51BFE0E02008774E0 /* Locked_Animation_0010.png */,
-				478CD3A61BFE0E02008774E0 /* Locked_Animation_0011.png */,
-				478CD3A71BFE0E02008774E0 /* Locked_Animation_0012.png */,
-				478CD3A81BFE0E02008774E0 /* Locked_Animation_0013.png */,
-				478CD3A91BFE0E02008774E0 /* Locked_Animation_0014.png */,
-				478CD3AA1BFE0E02008774E0 /* Locked_Animation_0015.png */,
-				478CD3AB1BFE0E02008774E0 /* Locked_Animation_0016.png */,
-				478CD3AC1BFE0E02008774E0 /* Locked_Animation_0017.png */,
-				478CD3AD1BFE0E02008774E0 /* Locked_Animation_0018.png */,
-				478CD3AE1BFE0E02008774E0 /* Locked_Animation_0019.png */,
-				478CD3AF1BFE0E02008774E0 /* Locked_Animation_0020.png */,
-				478CD3B01BFE0E02008774E0 /* Locked_Animation_0021.png */,
-				478CD3B11BFE0E02008774E0 /* Locked_Animation_0022.png */,
-				478CD3B21BFE0E02008774E0 /* Locked_Animation_0023.png */,
-				478CD3B31BFE0E02008774E0 /* Locked_Animation_0024.png */,
-				478CD3B41BFE0E02008774E0 /* Locked_Animation_0025.png */,
-			);
-			name = Account_Locked_Animation;
-			path = Images/Animations/Account_Locked_Animation;
-			sourceTree = "<group>";
-		};
 		47AAF8291BE8F5F000B7DD86 /* BeginViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -2366,35 +2503,6 @@
 				47AAF82B1BE8F61D00B7DD86 /* BeginViewController.m */,
 			);
 			name = BeginViewController;
-			sourceTree = "<group>";
-		};
-		47E0CEE81BFCC23E00AC390B /* MessageButtonAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				47E0CEE91BFCC23E00AC390B /* Message_0001@3x.png */,
-				47E0CEEA1BFCC23E00AC390B /* Message_0002@3x.png */,
-				47E0CEEB1BFCC23E00AC390B /* Message_0003@3x.png */,
-				47E0CEEC1BFCC23E00AC390B /* Message_0004@3x.png */,
-				47E0CEED1BFCC23E00AC390B /* Message_0005@3x.png */,
-				47E0CEEE1BFCC23E00AC390B /* Message_0006@3x.png */,
-				47E0CEEF1BFCC23E00AC390B /* Message_0007@3x.png */,
-				47E0CEF01BFCC23E00AC390B /* Message_0008@3x.png */,
-				47E0CEF11BFCC23E00AC390B /* Message_0009@3x.png */,
-				47E0CEF21BFCC23E00AC390B /* Message_0010@3x.png */,
-				47E0CEF31BFCC23E00AC390B /* Message_0011@3x.png */,
-				47E0CEF41BFCC23E00AC390B /* Message_0012@3x.png */,
-				47E0CEF51BFCC23E00AC390B /* Message_0013@3x.png */,
-				47E0CEF61BFCC23E00AC390B /* Message_0014@3x.png */,
-				47E0CEF71BFCC23E00AC390B /* Message_0015@3x.png */,
-				47E0CEF81BFCC23E00AC390B /* Message_0016@3x.png */,
-				47E0CEF91BFCC23E00AC390B /* Message_0017@3x.png */,
-				47E0CEFA1BFCC23E00AC390B /* Message_0018@3x.png */,
-				47E0CEFB1BFCC23E00AC390B /* Message_0019@3x.png */,
-				47E0CEFC1BFCC23E00AC390B /* Message_0020@3x.png */,
-				47E0CEFD1BFCC23E00AC390B /* Message_0021@3x.png */,
-			);
-			name = MessageButtonAnimation;
-			path = Images/Animations/MessageButtonAnimation;
 			sourceTree = "<group>";
 		};
 		47E90E361BEC99FB00402A5B /* NotificationViewController */ = {
@@ -2557,16 +2665,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4729E1AB1BF1F8D200627DA8 /* PIN_Anim_Positive017.png in Resources */,
-				478CD3CC1BFE0E02008774E0 /* Locked_Animation_0024.png in Resources */,
-				478CD3BD1BFE0E02008774E0 /* Locked_Animation_0009.png in Resources */,
+				470E36931BFEF2E8009EAA8C /* GREY PANEL_00012@3x.png in Resources */,
 				4729E1501BF1F8D200627DA8 /* PIN_Anim_Negative026.png in Resources */,
 				4729E1901BF1F8D200627DA8 /* PIN_Anim_Negative090.png in Resources */,
 				473697261BF35CF500A0855B /* Authenticator_Logo_10.png in Resources */,
+				470E37481BFEF5CA009EAA8C /* Locked Animation_0021@2x.png in Resources */,
 				473697341BF35CF500A0855B /* Authenticator_Logo_24.png in Resources */,
-				478CD3C71BFE0E02008774E0 /* Locked_Animation_0019.png in Resources */,
 				478CD3911BFE0961008774E0 /* Locked Animation_0024@3x.png in Resources */,
 				47E90E351BEC969000402A5B /* Back_Arrow_ON@2x.png in Resources */,
+				470E37471BFEF5CA009EAA8C /* Locked Animation_0020@2x.png in Resources */,
 				4729E1661BF1F8D200627DA8 /* PIN_Anim_Negative048.png in Resources */,
+				470E36C11BFEF386009EAA8C /* GREY PANEL_00019@2x.png in Resources */,
 				47E90E491BECE79B00402A5B /* deselect.png in Resources */,
 				4729E1C61BF1F8D200627DA8 /* PIN_Anim_Positive044.png in Resources */,
 				4729E1941BF1F8D200627DA8 /* PIN_Anim_Negative094.png in Resources */,
@@ -2575,43 +2684,52 @@
 				47119D0B1BEA352100876684 /* FTU_TOTP_Icon_ON.png in Resources */,
 				4729E1701BF1F8D200627DA8 /* PIN_Anim_Negative058.png in Resources */,
 				4736987B1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.5.png in Resources */,
-				473697521BF3687F00A0855B /* GREY PANEL_00014.png in Resources */,
+				470E36911BFEF2E8009EAA8C /* GREY PANEL_00010@3x.png in Resources */,
 				473698831BF371EF00A0855B /* GTMUIImage+Resize_100x50_flipped.png in Resources */,
 				477499001BE7949800026C01 /* begin1@2x.png in Resources */,
+				470E370C1BFEF45F009EAA8C /* Message_0003@2x.png in Resources */,
+				470E36C41BFEF386009EAA8C /* GREY PANEL_00022@2x.png in Resources */,
 				4729E1931BF1F8D200627DA8 /* PIN_Anim_Negative093.png in Resources */,
 				4729E19A1BF1F8D200627DA8 /* PIN_Anim_Positive000.png in Resources */,
 				4729E17D1BF1F8D200627DA8 /* PIN_Anim_Negative071.png in Resources */,
 				2BC906EB1BFDC7BF009AF8E4 /* QRScanAtHome.png in Resources */,
-				478CD3BB1BFE0E02008774E0 /* Locked_Animation_0007.png in Resources */,
+				470E36B91BFEF386009EAA8C /* GREY PANEL_00011@2x.png in Resources */,
 				4729E1591BF1F8D200627DA8 /* PIN_Anim_Negative035.png in Resources */,
+				470E36B41BFEF386009EAA8C /* GREY PANEL_00006@2x.png in Resources */,
 				4729E1761BF1F8D200627DA8 /* PIN_Anim_Negative064.png in Resources */,
 				4729E18D1BF1F8D200627DA8 /* PIN_Anim_Negative087.png in Resources */,
 				478CD37A1BFE0961008774E0 /* Locked Animation_0001@3x.png in Resources */,
 				4729E1A51BF1F8D200627DA8 /* PIN_Anim_Positive011.png in Resources */,
 				4736972E1BF35CF500A0855B /* Authenticator_Logo_18.png in Resources */,
-				478CD3C21BFE0E02008774E0 /* Locked_Animation_0014.png in Resources */,
+				470E364E1BFEEFA0009EAA8C /* Message_0008@3x.png in Resources */,
 				4729E18A1BF1F8D200627DA8 /* PIN_Anim_Negative084.png in Resources */,
 				473698541BF371EF00A0855B /* GTMABAddressBook.strings in Resources */,
 				4729E1391BF1F8D200627DA8 /* PIN_Anim_Negative003.png in Resources */,
+				470E37381BFEF5CA009EAA8C /* Locked Animation_0005@2x.png in Resources */,
 				4729E1C21BF1F8D200627DA8 /* PIN_Anim_Positive040.png in Resources */,
 				4736987C1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.6.png in Resources */,
+				470E37371BFEF5CA009EAA8C /* Locked Animation_0004@2x.png in Resources */,
 				478CD37C1BFE0961008774E0 /* Locked Animation_0003@3x.png in Resources */,
-				473697591BF3687F00A0855B /* GREY PANEL_00021.png in Resources */,
+				470E36921BFEF2E8009EAA8C /* GREY PANEL_00011@3x.png in Resources */,
+				470E37361BFEF5CA009EAA8C /* Locked Animation_0003@2x.png in Resources */,
 				471C75EA1BF0AE5200F9907E /* PIN_Icon_OFF@2x.png in Resources */,
 				473698C01BF371EF00A0855B /* GTMUnitTestingWindow.10.6.gtmUTState in Resources */,
 				4729E1A31BF1F8D200627DA8 /* PIN_Anim_Positive009.png in Resources */,
 				4729E1A81BF1F8D200627DA8 /* PIN_Anim_Positive014.png in Resources */,
 				47E0CECD1BFCB0B700AC390B /* Pirean_Settings_Logo@3x.png in Resources */,
+				470E36951BFEF2E8009EAA8C /* GREY PANEL_00014@3x.png in Resources */,
 				47119D111BEA3EC400876684 /* CameraOverlayViewController.xib in Resources */,
 				478CD38F1BFE0961008774E0 /* Locked Animation_0022@3x.png in Resources */,
 				473698701BF371EF00A0855B /* GTMFadeTruncatingLabelTest1.6.png in Resources */,
+				470E37491BFEF5CA009EAA8C /* Locked Animation_0022@2x.png in Resources */,
 				47E0CED91BFCBA9E00AC390B /* Ribbon_Hamburger.png in Resources */,
 				474F1BF01BFB64F600D5B569 /* SetPin.png in Resources */,
-				478CD3B81BFE0E02008774E0 /* Locked_Animation_0004.png in Resources */,
+				470E36561BFEEFA0009EAA8C /* Message_0016@3x.png in Resources */,
 				4729E1C81BF1F8D200627DA8 /* PIN_Anim_Positive046.png in Resources */,
 				4736971D1BF35CF500A0855B /* Authenticator_Logo_1.png in Resources */,
 				471D00801BEB5BF6003BC1C6 /* LoadingScreen_iphone6.png in Resources */,
 				4729E1971BF1F8D200627DA8 /* PIN_Anim_Negative097.png in Resources */,
+				470E36541BFEEFA0009EAA8C /* Message_0014@3x.png in Resources */,
 				4729E1A91BF1F8D200627DA8 /* PIN_Anim_Positive015.png in Resources */,
 				4729E1C11BF1F8D200627DA8 /* PIN_Anim_Positive039.png in Resources */,
 				4729E1BD1BF1F8D200627DA8 /* PIN_Anim_Positive035.png in Resources */,
@@ -2620,57 +2738,54 @@
 				47E0CE981BFC5A2A00AC390B /* Submit.png in Resources */,
 				47E0CEB91BFCAC1E00AC390B /* TouchID_ON@3x.png in Resources */,
 				4729E1D01BF1F8D200627DA8 /* PIN_Anim_Positive054.png in Resources */,
-				473697571BF3687F00A0855B /* GREY PANEL_00019.png in Resources */,
 				4729E1BC1BF1F8D200627DA8 /* PIN_Anim_Positive034.png in Resources */,
 				47119D081BEA352100876684 /* FTU_QR_Icon_OFF.png in Resources */,
+				470E36971BFEF2E8009EAA8C /* GREY PANEL_00016@3x.png in Resources */,
 				473697211BF35CF500A0855B /* Authenticator_Logo_5.png in Resources */,
 				4729E1D61BF1F8D200627DA8 /* PIN_Anim_Positive060.png in Resources */,
+				470E36501BFEEFA0009EAA8C /* Message_0010@3x.png in Resources */,
 				473698B31BF371EF00A0855B /* GTMUIViewUnitTestingTest.gtmUTState in Resources */,
 				471C75ED1BF0AE7200F9907E /* Pirean_Settings_Logo@2x.png in Resources */,
 				473698791BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.6.png in Resources */,
-				47E0CF0E1BFCC23E00AC390B /* Message_0017@3x.png in Resources */,
 				4729E1DD1BF1F8D200627DA8 /* PIN_Anim_Positive067.png in Resources */,
-				478CD3CA1BFE0E02008774E0 /* Locked_Animation_0022.png in Resources */,
 				47E0CECA1BFCB08200AC390B /* PIN_Icon_OFF@3x.png in Resources */,
 				474F1BE01BFB5CF100D5B569 /* QRDoesn’tScan.png in Resources */,
 				473698C71BF371EF00A0855B /* OTPTableViewCell.xib in Resources */,
 				473698751BF371EF00A0855B /* GTMFadeTruncatingLabelTest3.5.png in Resources */,
+				470E37121BFEF45F009EAA8C /* Message_0009@2x.png in Resources */,
 				4729E1CA1BF1F8D200627DA8 /* PIN_Anim_Positive048.png in Resources */,
 				473698901BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_60x40_clip.png in Resources */,
 				4729E1631BF1F8D200627DA8 /* PIN_Anim_Negative045.png in Resources */,
-				47E0CF0C1BFCC23E00AC390B /* Message_0015@3x.png in Resources */,
+				470E373A1BFEF5CA009EAA8C /* Locked Animation_0007@2x.png in Resources */,
+				470E36BE1BFEF386009EAA8C /* GREY PANEL_00016@2x.png in Resources */,
+				470E36BC1BFEF386009EAA8C /* GREY PANEL_00014@2x.png in Resources */,
 				473697291BF35CF500A0855B /* Authenticator_Logo_13.png in Resources */,
+				470E369B1BFEF2E8009EAA8C /* GREY PANEL_00020@3x.png in Resources */,
+				470E37391BFEF5CA009EAA8C /* Locked Animation_0006@2x.png in Resources */,
 				473698C81BF371EF00A0855B /* OTPWelcomeViewController.xib in Resources */,
-				47E0CF0D1BFCC23E00AC390B /* Message_0016@3x.png in Resources */,
 				473698781BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.5.png in Resources */,
 				4729E18E1BF1F8D200627DA8 /* PIN_Anim_Negative088.png in Resources */,
 				4729E1D71BF1F8D200627DA8 /* PIN_Anim_Positive061.png in Resources */,
-				478CD3C61BFE0E02008774E0 /* Locked_Animation_0018.png in Resources */,
 				4729E1381BF1F8D200627DA8 /* PIN_Anim_Negative002.png in Resources */,
+				470E36521BFEEFA0009EAA8C /* Message_0012@3x.png in Resources */,
 				4729E16B1BF1F8D200627DA8 /* PIN_Anim_Negative053.png in Resources */,
 				473698821BF371EF00A0855B /* GTMUIImage+Resize_100x50.png in Resources */,
 				474313A21BE78A3A0021CF58 /* Main.storyboard in Resources */,
 				4729E1E61BF1F8D200627DA8 /* PIN_Anim_Positive076.png in Resources */,
 				4729E15F1BF1F8D200627DA8 /* PIN_Anim_Negative041.png in Resources */,
 				4729E1771BF1F8D200627DA8 /* PIN_Anim_Negative065.png in Resources */,
-				47E0CF051BFCC23E00AC390B /* Message_0008@3x.png in Resources */,
 				4729E1DC1BF1F8D200627DA8 /* PIN_Anim_Positive066.png in Resources */,
 				473698BF1BF371EF00A0855B /* GTMUnitTestingWindow.10.5.8.tiff in Resources */,
 				4729E1741BF1F8D200627DA8 /* PIN_Anim_Negative062.png in Resources */,
 				4729E1891BF1F8D200627DA8 /* PIN_Anim_Negative083.png in Resources */,
 				4729E1621BF1F8D200627DA8 /* PIN_Anim_Negative044.png in Resources */,
-				478CD3B71BFE0E02008774E0 /* Locked_Animation_0003.png in Resources */,
-				473697491BF3687F00A0855B /* GREY PANEL_00005.png in Resources */,
 				2B92E3C61BF637AA003CF4A1 /* cameraOverlay 4.png in Resources */,
 				47D2CA1B1BFA094B00C1D89F /* ResetMyApp.png in Resources */,
 				478CD38B1BFE0961008774E0 /* Locked Animation_0018@3x.png in Resources */,
 				473698C91BF371EF00A0855B /* RootViewController.xib in Resources */,
-				478CD3BE1BFE0E02008774E0 /* Locked_Animation_0010.png in Resources */,
-				478CD3B61BFE0E02008774E0 /* Locked_Animation_0002.png in Resources */,
 				47E90E461BECB1BC00402A5B /* ImageNotification@2x.png in Resources */,
 				4729E1B51BF1F8D200627DA8 /* PIN_Anim_Positive027.png in Resources */,
 				47D2CA211BFA168B00C1D89F /* begin@2x.png in Resources */,
-				47E0CF061BFCC23E00AC390B /* Message_0009@3x.png in Resources */,
 				47D2CA1D1BFA095100C1D89F /* ResetMyApp@2x.png in Resources */,
 				473697251BF35CF500A0855B /* Authenticator_Logo_9.png in Resources */,
 				473697201BF35CF500A0855B /* Authenticator_Logo_4.png in Resources */,
@@ -2678,15 +2793,18 @@
 				4729E13A1BF1F8D200627DA8 /* PIN_Anim_Negative004.png in Resources */,
 				4729E1911BF1F8D200627DA8 /* PIN_Anim_Negative091.png in Resources */,
 				471C75E31BF0AE3900F9907E /* QR_Icon_ON@2x.png in Resources */,
+				470E37401BFEF5CA009EAA8C /* Locked Animation_0013@2x.png in Resources */,
 				4729E1CB1BF1F8D200627DA8 /* PIN_Anim_Positive049.png in Resources */,
 				47D2CA1F1BFA095C00C1D89F /* ResetMyApp@3x.png in Resources */,
-				47E0CF111BFCC23E00AC390B /* Message_0020@3x.png in Resources */,
 				47E0CEAE1BFCAC1100AC390B /* SecurePIN_OFF@2x.png in Resources */,
 				4729E1AF1BF1F8D200627DA8 /* PIN_Anim_Positive021.png in Resources */,
 				473698921BF371EF00A0855B /* phone.png in Resources */,
+				470E36531BFEEFA0009EAA8C /* Message_0013@3x.png in Resources */,
 				47E0CEE31BFCBE9C00AC390B /* ScanANewQR_ON@2x.png in Resources */,
+				470E36B51BFEF386009EAA8C /* GREY PANEL_00007@2x.png in Resources */,
 				4729E1B41BF1F8D200627DA8 /* PIN_Anim_Positive026.png in Resources */,
 				4729E1E11BF1F8D200627DA8 /* PIN_Anim_Positive071.png in Resources */,
+				470E37341BFEF5CA009EAA8C /* Locked Animation_0001@2x.png in Resources */,
 				4729E1E81BF1F8D200627DA8 /* PIN_Anim_Positive078.png in Resources */,
 				4729E1571BF1F8D200627DA8 /* PIN_Anim_Negative033.png in Resources */,
 				4729E1851BF1F8D200627DA8 /* PIN_Anim_Negative079.png in Resources */,
@@ -2694,60 +2812,74 @@
 				4729E1D11BF1F8D200627DA8 /* PIN_Anim_Positive055.png in Resources */,
 				47E0CEC71BFCB04400AC390B /* TOUCH_Icon_ON@3x.png in Resources */,
 				473698C31BF371EF00A0855B /* GTMUnitTestingWindow.tiff in Resources */,
+				470E36BA1BFEF386009EAA8C /* GREY PANEL_00012@2x.png in Resources */,
 				47119CF71BEA19B200876684 /* Ribbon@2x.png in Resources */,
 				478CD3821BFE0961008774E0 /* Locked Animation_0009@3x.png in Resources */,
 				473698711BF371EF00A0855B /* GTMFadeTruncatingLabelTest1.png in Resources */,
 				4729E1D41BF1F8D200627DA8 /* PIN_Anim_Positive058.png in Resources */,
 				4729E1D81BF1F8D200627DA8 /* PIN_Anim_Positive062.png in Resources */,
+				470E364C1BFEEFA0009EAA8C /* Message_0006@3x.png in Resources */,
+				470E36551BFEEFA0009EAA8C /* Message_0015@3x.png in Resources */,
 				4729E1C41BF1F8D200627DA8 /* PIN_Anim_Positive042.png in Resources */,
-				4736974A1BF3687F00A0855B /* GREY PANEL_00006.png in Resources */,
 				4729E1C71BF1F8D200627DA8 /* PIN_Anim_Positive045.png in Resources */,
 				473698A71BF371EF00A0855B /* Localizable.strings in Resources */,
 				4729E16D1BF1F8D200627DA8 /* PIN_Anim_Negative055.png in Resources */,
 				47AAF8171BE8DE3400B7DD86 /* BKG_320x568.m4v in Resources */,
 				4736987E1BF371EF00A0855B /* GTMUIImage+Resize_100x100.png in Resources */,
-				473697581BF3687F00A0855B /* GREY PANEL_00020.png in Resources */,
 				4729E1731BF1F8D200627DA8 /* PIN_Anim_Negative061.png in Resources */,
 				47E0CEB61BFCAC1E00AC390B /* TouchID_OFF@2x.png in Resources */,
+				470E364A1BFEEFA0009EAA8C /* Message_0004@3x.png in Resources */,
 				473698771BF371EF00A0855B /* GTMFadeTruncatingLabelTest3.png in Resources */,
 				4729E1A11BF1F8D200627DA8 /* PIN_Anim_Positive007.png in Resources */,
 				4729E1E41BF1F8D200627DA8 /* PIN_Anim_Positive074.png in Resources */,
-				47E0CF041BFCC23E00AC390B /* Message_0007@3x.png in Resources */,
 				471C75E71BF0AE3900F9907E /* TOUCH_Icon_ON@2x.png in Resources */,
+				470E368C1BFEF2E8009EAA8C /* GREY PANEL_00005@3x.png in Resources */,
+				470E36B31BFEF386009EAA8C /* GREY PANEL_00005@2x.png in Resources */,
 				4729E19D1BF1F8D200627DA8 /* PIN_Anim_Positive003.png in Resources */,
 				4729E1801BF1F8D200627DA8 /* PIN_Anim_Negative074.png in Resources */,
 				473698BE1BF371EF00A0855B /* GTMUnitTestingWindow.10.5.7.tiff in Resources */,
 				4729E1551BF1F8D200627DA8 /* PIN_Anim_Negative031.png in Resources */,
+				470E373C1BFEF5CA009EAA8C /* Locked Animation_0009@2x.png in Resources */,
 				473697241BF35CF500A0855B /* Authenticator_Logo_8.png in Resources */,
 				473698B41BF371EF00A0855B /* GTMUIViewUnitTestingTest.png in Resources */,
 				478CD3861BFE0961008774E0 /* Locked Animation_0013@3x.png in Resources */,
 				473698B71BF371EF00A0855B /* GTMUnitTestingImage.tiff in Resources */,
 				4729E1811BF1F8D200627DA8 /* PIN_Anim_Negative075.png in Resources */,
+				470E374C1BFEF5CA009EAA8C /* Locked Animation_0025@2x.png in Resources */,
+				470E368D1BFEF2E8009EAA8C /* GREY PANEL_00006@3x.png in Resources */,
 				478CD3921BFE0961008774E0 /* Locked Animation_0025@3x.png in Resources */,
+				470E36C01BFEF386009EAA8C /* GREY PANEL_00018@2x.png in Resources */,
 				473697221BF35CF500A0855B /* Authenticator_Logo_6.png in Resources */,
-				478CD3C91BFE0E02008774E0 /* Locked_Animation_0021.png in Resources */,
 				4729E14C1BF1F8D200627DA8 /* PIN_Anim_Negative022.png in Resources */,
 				4729E1C31BF1F8D200627DA8 /* PIN_Anim_Positive041.png in Resources */,
 				4729E1A61BF1F8D200627DA8 /* PIN_Anim_Positive012.png in Resources */,
 				473697321BF35CF500A0855B /* Authenticator_Logo_22.png in Resources */,
+				470E36C31BFEF386009EAA8C /* GREY PANEL_00021@2x.png in Resources */,
 				4729E1B01BF1F8D200627DA8 /* PIN_Anim_Positive022.png in Resources */,
+				470E37451BFEF5CA009EAA8C /* Locked Animation_0018@2x.png in Resources */,
 				4729E13D1BF1F8D200627DA8 /* PIN_Anim_Negative007.png in Resources */,
 				4729E1E51BF1F8D200627DA8 /* PIN_Anim_Positive075.png in Resources */,
 				471C75E41BF0AE3900F9907E /* TOTP_Icon_OFF@2x.png in Resources */,
+				470E36981BFEF2E8009EAA8C /* GREY PANEL_00017@3x.png in Resources */,
 				4729E1AC1BF1F8D200627DA8 /* PIN_Anim_Positive018.png in Resources */,
 				4729E1561BF1F8D200627DA8 /* PIN_Anim_Negative032.png in Resources */,
+				470E36B81BFEF386009EAA8C /* GREY PANEL_00010@2x.png in Resources */,
 				4736972A1BF35CF500A0855B /* Authenticator_Logo_14.png in Resources */,
 				4729E1531BF1F8D200627DA8 /* PIN_Anim_Negative029.png in Resources */,
 				4729E1601BF1F8D200627DA8 /* PIN_Anim_Negative042.png in Resources */,
 				4729E1F81BF2129E00627DA8 /* TOTP_Help_Icon@2x.png in Resources */,
+				470E370E1BFEF45F009EAA8C /* Message_0005@2x.png in Resources */,
 				4729E1E71BF1F8D200627DA8 /* PIN_Anim_Positive077.png in Resources */,
 				4729E1691BF1F8D200627DA8 /* PIN_Anim_Negative051.png in Resources */,
 				473698C51BF371EF00A0855B /* OTPAuthAboutController.xib in Resources */,
+				470E36BD1BFEF386009EAA8C /* GREY PANEL_00015@2x.png in Resources */,
 				4729E1D31BF1F8D200627DA8 /* PIN_Anim_Positive057.png in Resources */,
 				4729E13B1BF1F8D200627DA8 /* PIN_Anim_Negative005.png in Resources */,
 				4729E1451BF1F8D200627DA8 /* PIN_Anim_Negative015.png in Resources */,
 				4729E1921BF1F8D200627DA8 /* PIN_Anim_Negative092.png in Resources */,
+				470E37411BFEF5CA009EAA8C /* Locked Animation_0014@2x.png in Resources */,
 				478CD3901BFE0961008774E0 /* Locked Animation_0023@3x.png in Resources */,
+				470E36B71BFEF386009EAA8C /* GREY PANEL_00009@2x.png in Resources */,
 				4729E1681BF1F8D200627DA8 /* PIN_Anim_Negative050.png in Resources */,
 				4729E1881BF1F8D200627DA8 /* PIN_Anim_Negative082.png in Resources */,
 				47E0CEB71BFCAC1E00AC390B /* TouchID_OFF@3x.png in Resources */,
@@ -2759,65 +2891,71 @@
 				473698BA1BF371EF00A0855B /* GTMUnitTestingTestApp.gtmUTState in Resources */,
 				4729E1F41BF20E6300627DA8 /* Authenticator_Help_Icon@2x.png in Resources */,
 				4729E1471BF1F8D200627DA8 /* PIN_Anim_Negative017.png in Resources */,
+				470E37171BFEF45F009EAA8C /* Message_0014@2x.png in Resources */,
 				473698C11BF371EF00A0855B /* GTMUnitTestingWindow.10.6.tiff in Resources */,
 				4729E1641BF1F8D200627DA8 /* PIN_Anim_Negative046.png in Resources */,
 				47E0CEC31BFCAFFC00AC390B /* QR_Icon_ON@3x.png in Resources */,
+				470E37441BFEF5CA009EAA8C /* Locked Animation_0017@2x.png in Resources */,
 				4729E1361BF1F8D200627DA8 /* PIN_Anim_Negative000.png in Resources */,
 				4729E1AD1BF1F8D200627DA8 /* PIN_Anim_Positive019.png in Resources */,
 				473698B51BF371EF00A0855B /* GTMUnitTestingImage.10.6.tiff in Resources */,
-				4736974B1BF3687F00A0855B /* GREY PANEL_00007.png in Resources */,
 				4736987A1BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.png in Resources */,
 				473698C21BF371EF00A0855B /* GTMUnitTestingWindow.gtmUTState in Resources */,
 				2B92E3C41BF637AA003CF4A1 /* cameraOverlay 3.5.png in Resources */,
 				473697331BF35CF500A0855B /* Authenticator_Logo_23.png in Resources */,
+				470E36471BFEEFA0009EAA8C /* Message_0001@3x.png in Resources */,
 				47E0CEDB1BFCBA9E00AC390B /* Ribbon_Hamburger@3x.png in Resources */,
 				4729E1871BF1F8D200627DA8 /* PIN_Anim_Negative081.png in Resources */,
 				4729E1791BF1F8D200627DA8 /* PIN_Anim_Negative067.png in Resources */,
+				470E37191BFEF45F009EAA8C /* Message_0016@2x.png in Resources */,
 				2B92E3C71BF637AA003CF4A1 /* cameraOverlay 5.5.png in Resources */,
+				470E37101BFEF45F009EAA8C /* Message_0007@2x.png in Resources */,
+				470E37461BFEF5CA009EAA8C /* Locked Animation_0019@2x.png in Resources */,
 				47119D161BEA436200876684 /* X_ON@2x.png in Resources */,
-				47E0CEFE1BFCC23E00AC390B /* Message_0001@3x.png in Resources */,
+				470E37111BFEF45F009EAA8C /* Message_0008@2x.png in Resources */,
 				4729E15B1BF1F8D200627DA8 /* PIN_Anim_Negative037.png in Resources */,
 				47E0CEC61BFCB04400AC390B /* TOUCH_Icon_OFF@3x.png in Resources */,
 				4729E15A1BF1F8D200627DA8 /* PIN_Anim_Negative036.png in Resources */,
 				4729E1CE1BF1F8D200627DA8 /* PIN_Anim_Positive052.png in Resources */,
+				470E373E1BFEF5CA009EAA8C /* Locked Animation_0011@2x.png in Resources */,
 				4736988E1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_50x50_clip.png in Resources */,
-				478CD3C51BFE0E02008774E0 /* Locked_Animation_0017.png in Resources */,
 				4729E17F1BF1F8D200627DA8 /* PIN_Anim_Negative073.png in Resources */,
 				4729E1AA1BF1F8D200627DA8 /* PIN_Anim_Positive016.png in Resources */,
+				470E37161BFEF45F009EAA8C /* Message_0013@2x.png in Resources */,
 				4729E1541BF1F8D200627DA8 /* PIN_Anim_Negative030.png in Resources */,
-				47E0CF071BFCC23E00AC390B /* Message_0010@3x.png in Resources */,
-				47E0CF081BFCC23E00AC390B /* Message_0011@3x.png in Resources */,
-				4736975B1BF3687F00A0855B /* GREY PANEL_00023.png in Resources */,
 				4729E1B21BF1F8D200627DA8 /* PIN_Anim_Positive024.png in Resources */,
 				478CD3851BFE0961008774E0 /* Locked Animation_0012@3x.png in Resources */,
 				4729E14A1BF1F8D200627DA8 /* PIN_Anim_Negative020.png in Resources */,
-				478CD3BC1BFE0E02008774E0 /* Locked_Animation_0008.png in Resources */,
 				471C75E21BF0AE3900F9907E /* QR_Icon_OFF@2x.png in Resources */,
 				47E0CECB1BFCB08200AC390B /* PIN_Icon_ON@3x.png in Resources */,
 				473698C61BF371EF00A0855B /* OTPAuthURLEntryController.xib in Resources */,
-				473697551BF3687F00A0855B /* GREY PANEL_00017.png in Resources */,
+				470E36511BFEEFA0009EAA8C /* Message_0011@3x.png in Resources */,
 				4729E1CC1BF1F8D200627DA8 /* PIN_Anim_Positive050.png in Resources */,
-				4736974F1BF3687F00A0855B /* GREY PANEL_00011.png in Resources */,
 				474313A71BE78A3A0021CF58 /* LaunchScreen.xib in Resources */,
 				4729E1951BF1F8D200627DA8 /* PIN_Anim_Negative095.png in Resources */,
 				4729E18B1BF1F8D200627DA8 /* PIN_Anim_Negative085.png in Resources */,
+				470E36941BFEF2E8009EAA8C /* GREY PANEL_00013@3x.png in Resources */,
 				47119D0A1BEA352100876684 /* FTU_TOTP_Icon_OFF.png in Resources */,
 				4729E1BE1BF1F8D200627DA8 /* PIN_Anim_Positive036.png in Resources */,
-				47E0CF091BFCC23E00AC390B /* Message_0012@3x.png in Resources */,
+				470E37421BFEF5CA009EAA8C /* Locked Animation_0015@2x.png in Resources */,
+				470E37181BFEF45F009EAA8C /* Message_0015@2x.png in Resources */,
+				470E369A1BFEF2E8009EAA8C /* GREY PANEL_00019@3x.png in Resources */,
 				4729E1711BF1F8D200627DA8 /* PIN_Anim_Negative059.png in Resources */,
-				47E0CF0F1BFCC23E00AC390B /* Message_0018@3x.png in Resources */,
 				473698BB1BF371EF00A0855B /* GTMUnitTestingView.10.6.tiff in Resources */,
-				4736975A1BF3687F00A0855B /* GREY PANEL_00022.png in Resources */,
 				4736971F1BF35CF500A0855B /* Authenticator_Logo_3.png in Resources */,
 				478CD37F1BFE0961008774E0 /* Locked Animation_0006@3x.png in Resources */,
+				470E369C1BFEF2E8009EAA8C /* GREY PANEL_00021@3x.png in Resources */,
 				4736986F1BF371EF00A0855B /* GTMFadeTruncatingLabelTest1.5.png in Resources */,
 				4736972C1BF35CF500A0855B /* Authenticator_Logo_16.png in Resources */,
 				4729E1F61BF2113B00627DA8 /* QR_Help_Icon@2x.png in Resources */,
+				470E36C51BFEF386009EAA8C /* GREY PANEL_00023@2x.png in Resources */,
 				478CD38E1BFE0961008774E0 /* Locked Animation_0021@3x.png in Resources */,
+				470E370F1BFEF45F009EAA8C /* Message_0006@2x.png in Resources */,
 				4729E1A71BF1F8D200627DA8 /* PIN_Anim_Positive013.png in Resources */,
 				473698871BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_50x50_noclip.png in Resources */,
 				4736971C1BF35CF500A0855B /* Authenticator_Logo_0.png in Resources */,
 				47E0CEE71BFCBEA700AC390B /* ScanANewQR_ON@3x.png in Resources */,
+				470E36491BFEEFA0009EAA8C /* Message_0003@3x.png in Resources */,
 				4729E1BB1BF1F8D200627DA8 /* PIN_Anim_Positive033.png in Resources */,
 				4729E1831BF1F8D200627DA8 /* PIN_Anim_Negative077.png in Resources */,
 				4729E1441BF1F8D200627DA8 /* PIN_Anim_Negative014.png in Resources */,
@@ -2827,32 +2965,31 @@
 				478CD3871BFE0961008774E0 /* Locked Animation_0014@3x.png in Resources */,
 				473697311BF35CF500A0855B /* Authenticator_Logo_21.png in Resources */,
 				4729E1CD1BF1F8D200627DA8 /* PIN_Anim_Positive051.png in Resources */,
-				473697501BF3687F00A0855B /* GREY PANEL_00012.png in Resources */,
+				470E369E1BFEF2E8009EAA8C /* GREY PANEL_00023@3x.png in Resources */,
+				470E369D1BFEF2E8009EAA8C /* GREY PANEL_00022@3x.png in Resources */,
+				470E37431BFEF5CA009EAA8C /* Locked Animation_0016@2x.png in Resources */,
 				4729E19B1BF1F8D200627DA8 /* PIN_Anim_Positive001.png in Resources */,
 				478CD3881BFE0961008774E0 /* Locked Animation_0015@3x.png in Resources */,
 				47E90E4A1BECE79B00402A5B /* select.png in Resources */,
 				4729E17E1BF1F8D200627DA8 /* PIN_Anim_Negative072.png in Resources */,
 				4729E14E1BF1F8D200627DA8 /* PIN_Anim_Negative024.png in Resources */,
 				4729E1841BF1F8D200627DA8 /* PIN_Anim_Negative078.png in Resources */,
+				470E37351BFEF5CA009EAA8C /* Locked Animation_0002@2x.png in Resources */,
+				470E36481BFEEFA0009EAA8C /* Message_0002@3x.png in Resources */,
 				4729E18C1BF1F8D200627DA8 /* PIN_Anim_Negative086.png in Resources */,
 				47E0CEAF1BFCAC1100AC390B /* SecurePIN_OFF@3x.png in Resources */,
 				4736987F1BF371EF00A0855B /* GTMUIImage+Resize_100x100_to_40x60.png in Resources */,
+				470E37131BFEF45F009EAA8C /* Message_0010@2x.png in Resources */,
 				4729E0801BF1F79F00627DA8 /* startCircleImage.png in Resources */,
 				477498FF1BE7949800026C01 /* begin1.png in Resources */,
-				478CD3C41BFE0E02008774E0 /* Locked_Animation_0016.png in Resources */,
 				4729E1C01BF1F8D200627DA8 /* PIN_Anim_Positive038.png in Resources */,
 				4729E1581BF1F8D200627DA8 /* PIN_Anim_Negative034.png in Resources */,
-				478CD3BA1BFE0E02008774E0 /* Locked_Animation_0006.png in Resources */,
 				478CD3841BFE0961008774E0 /* Locked Animation_0011@3x.png in Resources */,
 				47E0CEDF1BFCBE9200AC390B /* ScanANewQR_ON.png in Resources */,
 				2B92E3C51BF637AA003CF4A1 /* cameraOverlay 4.7.png in Resources */,
 				4729E1781BF1F8D200627DA8 /* PIN_Anim_Negative066.png in Resources */,
 				4736972F1BF35CF500A0855B /* Authenticator_Logo_19.png in Resources */,
 				47E0CEBE1BFCAFE800AC390B /* TOTP_Icon_OFF@3x.png in Resources */,
-				47E0CF121BFCC23E00AC390B /* Message_0021@3x.png in Resources */,
-				47E0CF101BFCC23E00AC390B /* Message_0019@3x.png in Resources */,
-				473697541BF3687F00A0855B /* GREY PANEL_00016.png in Resources */,
-				473697561BF3687F00A0855B /* GREY PANEL_00018.png in Resources */,
 				473697281BF35CF500A0855B /* Authenticator_Logo_12.png in Resources */,
 				4729E17A1BF1F8D200627DA8 /* PIN_Anim_Negative068.png in Resources */,
 				4729E1F21BF20A3600627DA8 /* Notification_Help_Icon@2x.png in Resources */,
@@ -2863,6 +3000,7 @@
 				4729E19F1BF1F8D200627DA8 /* PIN_Anim_Positive005.png in Resources */,
 				478CD3831BFE0961008774E0 /* Locked Animation_0010@3x.png in Resources */,
 				47E0CEB81BFCAC1E00AC390B /* TouchID_ON@2x.png in Resources */,
+				470E374A1BFEF5CA009EAA8C /* Locked Animation_0023@2x.png in Resources */,
 				4729E1AE1BF1F8D200627DA8 /* PIN_Anim_Positive020.png in Resources */,
 				4729E1DE1BF1F8D200627DA8 /* PIN_Anim_Positive068.png in Resources */,
 				4729E1371BF1F8D200627DA8 /* PIN_Anim_Negative001.png in Resources */,
@@ -2872,13 +3010,18 @@
 				47E0CEDE1BFCBE9200AC390B /* ScanANewQR_OFF.png in Resources */,
 				474F1BE61BFB5CFB00D5B569 /* QRDoesn’tScan@2x.png in Resources */,
 				473698B91BF371EF00A0855B /* GTMUnitTestingTestApp.10.6.gtmUTState in Resources */,
+				470E36BF1BFEF386009EAA8C /* GREY PANEL_00017@2x.png in Resources */,
 				4729E1481BF1F8D200627DA8 /* PIN_Anim_Negative018.png in Resources */,
 				4736987D1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.png in Resources */,
+				470E37151BFEF45F009EAA8C /* Message_0012@2x.png in Resources */,
 				4729E17B1BF1F8D200627DA8 /* PIN_Anim_Negative069.png in Resources */,
+				470E364B1BFEEFA0009EAA8C /* Message_0005@3x.png in Resources */,
+				470E36901BFEF2E8009EAA8C /* GREY PANEL_00009@3x.png in Resources */,
+				470E36991BFEF2E8009EAA8C /* GREY PANEL_00018@3x.png in Resources */,
 				47E0CEE21BFCBE9C00AC390B /* ScanANewQR_OFF@2x.png in Resources */,
 				47E0CE961BFC5A2000AC390B /* Submit@2x.png in Resources */,
+				470E36C21BFEF386009EAA8C /* GREY PANEL_00020@2x.png in Resources */,
 				473698AF1BF371EF00A0855B /* ReadMe_iossim.txt in Resources */,
-				478CD3C01BFE0E02008774E0 /* Locked_Animation_0012.png in Resources */,
 				478CD38D1BFE0961008774E0 /* Locked Animation_0020@3x.png in Resources */,
 				4729E18F1BF1F8D200627DA8 /* PIN_Anim_Negative089.png in Resources */,
 				473698741BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.png in Resources */,
@@ -2886,16 +3029,13 @@
 				4729E16A1BF1F8D200627DA8 /* PIN_Anim_Negative052.png in Resources */,
 				473698B61BF371EF00A0855B /* GTMUnitTestingImage.gtmUTState in Resources */,
 				4729E1CF1BF1F8D200627DA8 /* PIN_Anim_Positive053.png in Resources */,
-				47E0CF0A1BFCC23E00AC390B /* Message_0013@3x.png in Resources */,
-				47E0CF031BFCC23E00AC390B /* Message_0006@3x.png in Resources */,
-				478CD3C11BFE0E02008774E0 /* Locked_Animation_0013.png in Resources */,
 				47E90E341BEC969000402A5B /* Back_Arrow_OFF@2x.png in Resources */,
 				4729E1961BF1F8D200627DA8 /* PIN_Anim_Negative096.png in Resources */,
+				470E370A1BFEF45F009EAA8C /* Message_0001@2x.png in Resources */,
 				4729E14B1BF1F8D200627DA8 /* PIN_Anim_Negative021.png in Resources */,
-				4736974E1BF3687F00A0855B /* GREY PANEL_00010.png in Resources */,
 				4729E1B71BF1F8D200627DA8 /* PIN_Anim_Positive029.png in Resources */,
-				47E0CF001BFCC23E00AC390B /* Message_0003@3x.png in Resources */,
 				4729E14F1BF1F8D200627DA8 /* PIN_Anim_Negative025.png in Resources */,
+				470E374B1BFEF5CA009EAA8C /* Locked Animation_0024@2x.png in Resources */,
 				4729E19C1BF1F8D200627DA8 /* PIN_Anim_Positive002.png in Resources */,
 				4729E1861BF1F8D200627DA8 /* PIN_Anim_Negative080.png in Resources */,
 				4729E13E1BF1F8D200627DA8 /* PIN_Anim_Negative008.png in Resources */,
@@ -2905,36 +3045,32 @@
 				471C75E51BF0AE3900F9907E /* TOTP_Icon_ON@2x.png in Resources */,
 				4736972D1BF35CF500A0855B /* Authenticator_Logo_17.png in Resources */,
 				4729E1B91BF1F8D200627DA8 /* PIN_Anim_Positive031.png in Resources */,
-				478CD3C81BFE0E02008774E0 /* Locked_Animation_0020.png in Resources */,
 				4729E16F1BF1F8D200627DA8 /* PIN_Anim_Negative057.png in Resources */,
 				4729E1401BF1F8D200627DA8 /* PIN_Anim_Negative010.png in Resources */,
 				4729E1BA1BF1F8D200627DA8 /* PIN_Anim_Positive032.png in Resources */,
 				4729E20C1BF2239E00627DA8 /* background@2x.png in Resources */,
 				473698841BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_40x60_clip.png in Resources */,
-				473697511BF3687F00A0855B /* GREY PANEL_00013.png in Resources */,
 				4736971E1BF35CF500A0855B /* Authenticator_Logo_2.png in Resources */,
 				4729E14D1BF1F8D200627DA8 /* PIN_Anim_Negative023.png in Resources */,
 				478CD38A1BFE0961008774E0 /* Locked Animation_0017@3x.png in Resources */,
-				47E0CEFF1BFCC23E00AC390B /* Message_0002@3x.png in Resources */,
 				4729E1C91BF1F8D200627DA8 /* PIN_Anim_Positive047.png in Resources */,
+				470E37141BFEF45F009EAA8C /* Message_0011@2x.png in Resources */,
+				470E368E1BFEF2E8009EAA8C /* GREY PANEL_00007@3x.png in Resources */,
 				473698721BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.5.png in Resources */,
-				473697531BF3687F00A0855B /* GREY PANEL_00015.png in Resources */,
 				4729E19E1BF1F8D200627DA8 /* PIN_Anim_Positive004.png in Resources */,
 				4736988D1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_40x60_noclip.png in Resources */,
-				478CD3B91BFE0E02008774E0 /* Locked_Animation_0005.png in Resources */,
+				470E370B1BFEF45F009EAA8C /* Message_0002@2x.png in Resources */,
 				4729E1B11BF1F8D200627DA8 /* PIN_Anim_Positive023.png in Resources */,
 				47D2CA231BFA169400C1D89F /* begin@3x.png in Resources */,
 				471D008F1BEB761E003BC1C6 /* defaultProfileImage@2x.png in Resources */,
 				4736988B1BF371EF00A0855B /* GTMUIImage+Resize_50x100_flipped.png in Resources */,
 				4729E1E01BF1F8D200627DA8 /* PIN_Anim_Positive070.png in Resources */,
-				478CD3CD1BFE0E02008774E0 /* Locked_Animation_0025.png in Resources */,
 				4729E16C1BF1F8D200627DA8 /* PIN_Anim_Negative054.png in Resources */,
+				470E36961BFEF2E8009EAA8C /* GREY PANEL_00015@3x.png in Resources */,
 				4729E1751BF1F8D200627DA8 /* PIN_Anim_Negative063.png in Resources */,
-				47E0CF0B1BFCC23E00AC390B /* Message_0014@3x.png in Resources */,
 				4729E1511BF1F8D200627DA8 /* PIN_Anim_Negative027.png in Resources */,
 				473698BD1BF371EF00A0855B /* GTMUnitTestingWindow.10.5.6.tiff in Resources */,
 				471D007D1BEB37C1003BC1C6 /* scanBox.png in Resources */,
-				478CD3B51BFE0E02008774E0 /* Locked_Animation_0001.png in Resources */,
 				4729E15E1BF1F8D200627DA8 /* PIN_Anim_Negative040.png in Resources */,
 				47E0CEB01BFCAC1100AC390B /* SecurePIN_ON@2x.png in Resources */,
 				4729E1B81BF1F8D200627DA8 /* PIN_Anim_Positive030.png in Resources */,
@@ -2942,8 +3078,11 @@
 				4729E1BF1BF1F8D200627DA8 /* PIN_Anim_Positive037.png in Resources */,
 				4729E1981BF1F8D200627DA8 /* PIN_Anim_Negative098.png in Resources */,
 				4729E1461BF1F8D200627DA8 /* PIN_Anim_Negative016.png in Resources */,
+				470E364F1BFEEFA0009EAA8C /* Message_0009@3x.png in Resources */,
 				4729E16E1BF1F8D200627DA8 /* PIN_Anim_Negative056.png in Resources */,
+				470E368F1BFEF2E8009EAA8C /* GREY PANEL_00008@3x.png in Resources */,
 				47E0CEBF1BFCAFE800AC390B /* TOTP_Icon_ON@3x.png in Resources */,
+				470E373F1BFEF5CA009EAA8C /* Locked Animation_0012@2x.png in Resources */,
 				4736972B1BF35CF500A0855B /* Authenticator_Logo_15.png in Resources */,
 				47119D151BEA436200876684 /* X_OFF@2x.png in Resources */,
 				4729E1E31BF1F8D200627DA8 /* PIN_Anim_Positive073.png in Resources */,
@@ -2956,10 +3095,12 @@
 				471C75E61BF0AE3900F9907E /* TOUCH_Icon_OFF@2x.png in Resources */,
 				4729E1671BF1F8D200627DA8 /* PIN_Anim_Negative049.png in Resources */,
 				473698AE1BF371EF00A0855B /* iossim in Resources */,
+				470E36BB1BFEF386009EAA8C /* GREY PANEL_00013@2x.png in Resources */,
 				4729E1DA1BF1F8D200627DA8 /* PIN_Anim_Positive064.png in Resources */,
 				47E0CEDA1BFCBA9E00AC390B /* Ribbon_Hamburger@2x.png in Resources */,
-				47E0CF011BFCC23E00AC390B /* Message_0004@3x.png in Resources */,
 				47E0CEE61BFCBEA700AC390B /* ScanANewQR_OFF@3x.png in Resources */,
+				470E36B61BFEF386009EAA8C /* GREY PANEL_00008@2x.png in Resources */,
+				470E370D1BFEF45F009EAA8C /* Message_0004@2x.png in Resources */,
 				4729E1A21BF1F8D200627DA8 /* PIN_Anim_Positive008.png in Resources */,
 				47119D091BEA352100876684 /* FTU_QR_Icon_ON.png in Resources */,
 				473698881BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_60x40_clip.png in Resources */,
@@ -2967,6 +3108,7 @@
 				47D2CA251BFA16A100C1D89F /* begin.png in Resources */,
 				4729E1651BF1F8D200627DA8 /* PIN_Anim_Negative047.png in Resources */,
 				4729E1D51BF1F8D200627DA8 /* PIN_Anim_Positive059.png in Resources */,
+				470E364D1BFEEFA0009EAA8C /* Message_0007@3x.png in Resources */,
 				473698931BF371EF00A0855B /* BuildUsingXCodeBuild.sh in Resources */,
 				4729E1A41BF1F8D200627DA8 /* PIN_Anim_Positive010.png in Resources */,
 				4729E1D91BF1F8D200627DA8 /* PIN_Anim_Positive063.png in Resources */,
@@ -2979,28 +3121,24 @@
 				473697271BF35CF500A0855B /* Authenticator_Logo_11.png in Resources */,
 				4729E1411BF1F8D200627DA8 /* PIN_Anim_Negative011.png in Resources */,
 				4729E1491BF1F8D200627DA8 /* PIN_Anim_Negative019.png in Resources */,
-				478CD3C31BFE0E02008774E0 /* Locked_Animation_0015.png in Resources */,
 				4729E1B31BF1F8D200627DA8 /* PIN_Anim_Positive025.png in Resources */,
 				474F1BF21BFB650300D5B569 /* SetPin@2x.png in Resources */,
 				4729E15C1BF1F8D200627DA8 /* PIN_Anim_Negative038.png in Resources */,
+				470E373B1BFEF5CA009EAA8C /* Locked Animation_0008@2x.png in Resources */,
 				4729E1D21BF1F8D200627DA8 /* PIN_Anim_Positive056.png in Resources */,
 				4729E1A01BF1F8D200627DA8 /* PIN_Anim_Positive006.png in Resources */,
-				4736974C1BF3687F00A0855B /* GREY PANEL_00008.png in Resources */,
 				473698801BF371EF00A0855B /* GTMUIImage+Resize_100x100_to_50x50.png in Resources */,
-				4736974D1BF3687F00A0855B /* GREY PANEL_00009.png in Resources */,
 				473698861BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_50x50_clip.png in Resources */,
+				470E373D1BFEF5CA009EAA8C /* Locked Animation_0010@2x.png in Resources */,
 				4729E1821BF1F8D200627DA8 /* PIN_Anim_Negative076.png in Resources */,
 				473698561BF371EF00A0855B /* phone.png in Resources */,
-				478CD3CB1BFE0E02008774E0 /* Locked_Animation_0023.png in Resources */,
 				47E0CEB11BFCAC1100AC390B /* SecurePIN_ON@3x.png in Resources */,
 				478CD38C1BFE0961008774E0 /* Locked Animation_0019@3x.png in Resources */,
-				47E0CF021BFCC23E00AC390B /* Message_0005@3x.png in Resources */,
 				478CD3891BFE0961008774E0 /* Locked Animation_0016@3x.png in Resources */,
 				473698BC1BF371EF00A0855B /* GTMUnitTestingView.tiff in Resources */,
 				4736988C1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_40x60_clip.png in Resources */,
 				473698B81BF371EF00A0855B /* GTMUnitTestingTest.nib in Resources */,
 				4736988F1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_50x50_noclip.png in Resources */,
-				478CD3BF1BFE0E02008774E0 /* Locked_Animation_0011.png in Resources */,
 				4729E1EF1BF2010200627DA8 /* PIN_Circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

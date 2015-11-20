@@ -63,7 +63,7 @@
     
     if (cell == nil)
     {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"NotificationCustomCell" owner:self options:nil] objectAtIndex:0];
+        cell = [[NotificationCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
     [cell.selectionBtn addTarget:self action:@selector(checkBoxBtnClick:) forControlEvents:UIControlEventTouchUpInside];
