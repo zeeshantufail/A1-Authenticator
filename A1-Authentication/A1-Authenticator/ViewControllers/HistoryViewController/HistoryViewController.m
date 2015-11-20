@@ -12,6 +12,9 @@
 
 
 @interface HistoryViewController ()
+{
+    NSMutableArray *historyArray;
+}
 
 @end
 
@@ -20,6 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    historyArray = [[NSMutableArray alloc] init];
     
     [self addTapGesture];
 }
@@ -53,6 +58,11 @@
 {
     return 39.0f;
 }
+
+
+
+//clear history to do
+
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

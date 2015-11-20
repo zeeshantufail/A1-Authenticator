@@ -21,6 +21,8 @@
 {
     [super viewDidLoad];
     
+    //[self drawCircle];
+    
     [self performAnimations];
 }
 
@@ -28,6 +30,83 @@
 {
     [super didReceiveMemoryWarning];
 }
+
+
+//-(void) drawCircle
+//{
+//    // Set up the shape of the circle
+//    int radius = 100;
+//    CAShapeLayer *circle = [CAShapeLayer layer];
+//    // Make a circular shape
+//    circle.path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 2.0*radius, 2.0*radius)
+//                                             cornerRadius:radius].CGPath;
+//    // Center the shape in self.view
+//    circle.position = CGPointMake(CGRectGetMidX(self.view.frame)-radius,
+//                                  CGRectGetMidY(self.view.frame)-radius);
+//    
+//    // Configure the apperence of the circle
+//    circle.fillColor = [UIColor clearColor].CGColor;
+//    //circle.strokeColor = [UIColor blackColor].CGColor;
+//    circle.strokeColor = [UIColor colorWithRed:0.18 green:0.18 blue:0.18 alpha:0.8].CGColor;
+//    circle.lineWidth = 5;
+//    
+//    // Add to parent layer
+//    [self.view.layer addSublayer:circle];
+//    
+//    // Configure animation
+//    CABasicAnimation *drawAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+//    drawAnimation.duration            = 0.1; // "animate over 10 seconds or so.."
+//    drawAnimation.repeatCount         = 1.0;  // Animate only once..
+//    
+//    // Animate from no part of the stroke being drawn to the entire stroke being drawn
+//    drawAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
+//    drawAnimation.toValue   = [NSNumber numberWithFloat:1.0f];
+//    
+//    // Experiment with timing to get the appearence to look the way you want
+//    drawAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+//    
+//    // Add the animation to the circle
+//    [circle addAnimation:drawAnimation forKey:@"drawCircleAnimation"];
+//    
+//    [self drawCircle2];
+//}
+//
+//-(void) drawCircle2
+//{
+//    // Set up the shape of the circle
+//    int radius = 100;
+//    CAShapeLayer *circle = [CAShapeLayer layer];
+//    // Make a circular shape
+//    circle.path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 2.0*radius, 2.0*radius)
+//                                             cornerRadius:radius].CGPath;
+//    // Center the shape in self.view
+//    circle.position = CGPointMake(CGRectGetMidX(self.view.frame)-radius,
+//                                  CGRectGetMidY(self.view.frame)-radius);
+//    
+//    // Configure the apperence of the circle
+//    circle.fillColor = [UIColor clearColor].CGColor;
+//    //circle.strokeColor = [UIColor whiteColor].CGColor;
+//    circle.strokeColor = [UIColor colorWithRed:0.92 green:0.92 blue:0.92 alpha:1.0].CGColor;
+//    circle.lineWidth = 7;
+//    
+//    // Add to parent layer
+//    [self.view.layer addSublayer:circle];
+//    
+//    // Configure animation
+//    CABasicAnimation *drawAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+//    drawAnimation.duration            = 10.0; // "animate over 10 seconds or so.."
+//    drawAnimation.repeatCount         = 1.0;  // Animate only once..
+//    
+//    // Animate from no part of the stroke being drawn to the entire stroke being drawn
+//    drawAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
+//    drawAnimation.toValue   = [NSNumber numberWithFloat:1.0f];
+//    
+//    // Experiment with timing to get the appearence to look the way you want
+//    drawAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+//    
+//    // Add the animation to the circle
+//    [circle addAnimation:drawAnimation forKey:@"drawCircleAnimation"];
+//}
 
 //-(void)viewDidLayoutSubviews
 //{

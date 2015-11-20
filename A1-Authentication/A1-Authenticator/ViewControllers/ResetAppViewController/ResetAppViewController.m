@@ -20,8 +20,12 @@
 {
     [super viewDidLoad];
     
+   
+    
     [self addTapGesture];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
