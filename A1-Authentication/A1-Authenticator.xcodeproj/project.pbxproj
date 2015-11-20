@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B83DDAA1BFF2FB300D156C6 /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B83DDA91BFF2FB300D156C6 /* Countdown_Animation */; settings = {ASSET_TAGS = (); }; };
 		2B92E3BC1BF62C51003CF4A1 /* AnimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */; };
 		2B92E3BD1BF62C51003CF4A1 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B71BF62C51003CF4A1 /* KeyboardViewController.m */; };
 		2B92E3BE1BF62C51003CF4A1 /* PasscodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B91BF62C51003CF4A1 /* PasscodeHelper.m */; };
@@ -554,7 +553,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B83DDA91BFF2FB300D156C6 /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = Images/Animations/Countdown_Animation; sourceTree = "<group>"; };
 		2B92E3B41BF62C51003CF4A1 /* AnimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeHelper.h; sourceTree = "<group>"; };
 		2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeHelper.m; sourceTree = "<group>"; };
 		2B92E3B61BF62C51003CF4A1 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
@@ -1442,7 +1440,6 @@
 		4729E07D1BF1F76C00627DA8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				2B83DDA91BFF2FB300D156C6 /* Countdown_Animation */,
 				473697351BF3687F00A0855B /* DevicePaired Color fill Animation */,
 				4729E0811BF1F8D200627DA8 /* Keypad Dot Animation */,
 				4736969E1BF3556C00A0855B /* Logo Animation */,
@@ -2393,7 +2390,6 @@
 				473697341BF35CF500A0855B /* Authenticator_Logo_24.png in Resources */,
 				47E90E351BEC969000402A5B /* Back_Arrow_ON@2x.png in Resources */,
 				4729E1661BF1F8D200627DA8 /* PIN_Anim_Negative048.png in Resources */,
-				2B83DDAA1BFF2FB300D156C6 /* Countdown_Animation in Resources */,
 				47E90E491BECE79B00402A5B /* deselect.png in Resources */,
 				4729E1C61BF1F8D200627DA8 /* PIN_Anim_Positive044.png in Resources */,
 				4729E1941BF1F8D200627DA8 /* PIN_Anim_Negative094.png in Resources */,
