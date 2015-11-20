@@ -47,7 +47,7 @@ int nextBufferLoadBeforeImagesRemaining = 50;
     for (int c = si; c < li; c++) {
         [imagesBuff2 addObject:[UIImage imageNamed: [ NSString stringWithFormat:@"Countdown_Animation_%.5d.png", c ]]];
     }
-
+    images = imagesBuff1;
     
 }
 
@@ -154,9 +154,10 @@ int nextBufferLoadBeforeImagesRemaining = 50;
     
     float currentDelta = progress + fraction;
     
+    UIImage *img = [self getImageForDelta:currentDelta];
     NSLog(@"%f", currentDelta);
     
-    self.countDownImageView.image = [self getImageForDelta:currentDelta];
+    self.countDownImageView.image = img;
     
     if (progress == 0 || progress > period) {
         

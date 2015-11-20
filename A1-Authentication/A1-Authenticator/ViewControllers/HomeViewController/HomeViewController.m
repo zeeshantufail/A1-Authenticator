@@ -215,7 +215,7 @@
     
     UIView * contentView = [timerVC.view viewWithTag:11];
     
-    [self.homeContentView addSubview:contentView];
+    [self.homeContentView addSubview:timerVC.view];
     [timerVC showTimer];
     
 }
