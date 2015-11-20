@@ -23,6 +23,7 @@ int currentBuffer = 0;
 int nextBufferLoadBeforeImagesRemaining = 50;
 
 -(void)showTimer{
+    [self loadImages];
     self.sTOTPTimer = [NSTimer scheduledTimerWithTimeInterval:(1/fps)
                                                   target:self
                                                 selector:@selector(totpTimer:)
@@ -53,7 +54,7 @@ int nextBufferLoadBeforeImagesRemaining = 50;
 
 -(void)loadImagesForBuffer:(NSMutableArray *)imageBuffer{
     [imageBuffer removeAllObjects];
-        int si = (currentBuffer+1) * imagesLoadInMemory;
+        int si = (currentBuffer) * imagesLoadInMemory;
         int li = si + imagesLoadInMemory;
         for (int c = si; c < li; c++) {
             [imageBuffer addObject:[UIImage imageNamed: [ NSString stringWithFormat:@"Countdown_Animation_%.5d.png", c ]]];
@@ -63,6 +64,10 @@ int nextBufferLoadBeforeImagesRemaining = 50;
 }
 
 -(void)swapBuffers{
+    currentBuffer++;
+    if (currentBuffer > totalImages / imagesLoadInMemory) {
+        currentBuffer = 0;
+    }
     if (images == imagesBuff1) {
         images = imagesBuff2;
         
