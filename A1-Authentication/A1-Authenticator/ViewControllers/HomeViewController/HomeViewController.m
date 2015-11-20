@@ -203,7 +203,20 @@
     
     [self.homeContentView addSubview:contentView];
     
-//    [qrCodeVC startStopReading:nil];
+    
+}
+-(void)loadTotpContent{
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    TimerViewController *timerVC = [storyboard instantiateViewControllerWithIdentifier:@"totpHomeView"];
+//    timerVC.delegate = self;
+    
+    [self addChildViewController:timerVC];
+    
+    UIView * contentView = [timerVC.view viewWithTag:11];
+    
+    [self.homeContentView addSubview:timerVC.view];
+    [timerVC showTimer];
     
 }
 
@@ -211,7 +224,7 @@
     isTotpView = [[AppSettings sharedAppSettings] appTotp];
     
     if (isTotpView) {
-        
+        [self loadTotpContent];
     }
     else{
         
@@ -225,7 +238,7 @@
     
     if (newTotp != isTotpView) {
         if (newTotp) {
-            
+            [self loadTotpContent];
         }
         else{
             [self loadQrCodeContent];

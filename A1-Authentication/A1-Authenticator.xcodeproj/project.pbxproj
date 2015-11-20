@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B83DDAA1BFF2FB300D156C6 /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B83DDA91BFF2FB300D156C6 /* Countdown_Animation */; settings = {ASSET_TAGS = (); }; };
 		2B92E3BC1BF62C51003CF4A1 /* AnimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */; };
 		2B92E3BD1BF62C51003CF4A1 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B71BF62C51003CF4A1 /* KeyboardViewController.m */; };
 		2B92E3BE1BF62C51003CF4A1 /* PasscodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B91BF62C51003CF4A1 /* PasscodeHelper.m */; };
@@ -632,6 +633,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B83DDA91BFF2FB300D156C6 /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = Images/Animations/Countdown_Animation; sourceTree = "<group>"; };
 		2B92E3B41BF62C51003CF4A1 /* AnimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeHelper.h; sourceTree = "<group>"; };
 		2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeHelper.m; sourceTree = "<group>"; };
 		2B92E3B61BF62C51003CF4A1 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
@@ -645,6 +647,8 @@
 		2B92E3C21BF637AA003CF4A1 /* cameraOverlay 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 4.png"; sourceTree = "<group>"; };
 		2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 5.5.png"; sourceTree = "<group>"; };
 		2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRScanAtHome.png; sourceTree = "<group>"; };
+		2BC906F21BFDDFA6009AF8E4 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimerViewController.h; path = ViewControllers/HomeViewController/TimerViewController.h; sourceTree = "<group>"; };
+		2BC906F31BFDDFA6009AF8E4 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimerViewController.m; path = ViewControllers/HomeViewController/TimerViewController.m; sourceTree = "<group>"; };
 		2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -1635,6 +1639,8 @@
 			children = (
 				471C75F41BF0C50200F9907E /* HomeViewController.h */,
 				471C75F51BF0C50200F9907E /* HomeViewController.m */,
+				2BC906F21BFDDFA6009AF8E4 /* TimerViewController.h */,
+				2BC906F31BFDDFA6009AF8E4 /* TimerViewController.m */,
 			);
 			name = HomeViewController;
 			sourceTree = "<group>";
@@ -3184,6 +3190,7 @@
 				473698591BF371EF00A0855B /* GTMMethodCheck.m in Sources */,
 				4743139C1BE78A3A0021CF58 /* A1_Authenticator.xcdatamodeld in Sources */,
 				47E90E391BEC9A5D00402A5B /* NotificationViewController.m in Sources */,
+				2BC906F41BFDDFA6009AF8E4 /* TimerViewController.m in Sources */,
 				470E69801BF479B900D6A091 /* AuthenticateUser.m in Sources */,
 				4736984E1BF371EF00A0855B /* OTPWelcomeViewController.m in Sources */,
 				471C75F61BF0C50200F9907E /* HomeViewController.m in Sources */,

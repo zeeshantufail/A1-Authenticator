@@ -9,6 +9,7 @@
 #import "BeginViewController.h"
 #import "VideoViewController.h"
 #import "AppHelper.h"
+#import "AppSettings.h"
 
 
 @interface BeginViewController ()
@@ -138,9 +139,16 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"qryptoNavId"] || [[segue identifier] isEqualToString:@"totpNavId"])
+    if ([[segue identifier] isEqualToString:@"qryptoNavId"])
     {
         //[[segue destinationViewController] setDelegate:self];
+        [[AppSettings sharedAppSettings] setAppTotp:NO];
+        UINavigationController *nav = (UINavigationController *)[segue destinationViewController];
+        QRCodeScanViewController *qrview = (QRCodeScanViewController *)[nav topViewController];
+        qrview.delegate = self;
+    }
+    else if([[segue identifier] isEqualToString:@"totpNavId"]){
+        [[AppSettings sharedAppSettings] setAppTotp:YES];
         UINavigationController *nav = (UINavigationController *)[segue destinationViewController];
         QRCodeScanViewController *qrview = (QRCodeScanViewController *)[nav topViewController];
         qrview.delegate = self;

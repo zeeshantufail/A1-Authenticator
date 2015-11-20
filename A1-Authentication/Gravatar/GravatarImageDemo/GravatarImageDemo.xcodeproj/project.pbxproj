@@ -98,8 +98,6 @@
 		1FE989FA660B622860B0285D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		2B0BC4D31BF0A5240029CA86 /* GravatarImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GravatarImage.h; sourceTree = "<group>"; };
 		2B0BC4D51BF0A5240029CA86 /* GravatarImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravatarImage.m; sourceTree = "<group>"; };
-		2B0BC4E01BF0A5540029CA86 /* GravatarImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GravatarImage.h; sourceTree = "<group>"; };
-		2B0BC4E21BF0A5540029CA86 /* GravatarImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravatarImage.m; sourceTree = "<group>"; };
 		2B0BC4F31BF0A6250029CA86 /* libGravatarImageIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGravatarImageIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0BC4F51BF0A6250029CA86 /* GravatarImageIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GravatarImageIOS.h; sourceTree = "<group>"; };
 		2B0BC4F71BF0A6250029CA86 /* GravatarImageIOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravatarImageIOS.m; sourceTree = "<group>"; };
@@ -181,15 +179,6 @@
 			path = GravatarImage;
 			sourceTree = "<group>";
 		};
-		2B0BC4DF1BF0A5540029CA86 /* GravatarImage */ = {
-			isa = PBXGroup;
-			children = (
-				2B0BC4E01BF0A5540029CA86 /* GravatarImage.h */,
-				2B0BC4E21BF0A5540029CA86 /* GravatarImage.m */,
-			);
-			path = GravatarImage;
-			sourceTree = "<group>";
-		};
 		2B0BC4F41BF0A6250029CA86 /* GravatarImageIOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +214,6 @@
 				CE9FF13918575AEB0043592B /* GravatarImageDemo */,
 				CE9FF15818575AEB0043592B /* GravatarImageDemoTests */,
 				2B0BC4D21BF0A5240029CA86 /* GravatarImage */,
-				2B0BC4DF1BF0A5540029CA86 /* GravatarImage */,
 				2B0BC4F41BF0A6250029CA86 /* GravatarImageIOS */,
 				CE9FF13218575AEB0043592B /* Frameworks */,
 				CE9FF13118575AEB0043592B /* Products */,
