@@ -12,6 +12,9 @@
 
 
 @interface HistoryViewController ()
+{
+    NSMutableArray *historyArray;
+}
 
 @end
 
@@ -20,6 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    historyArray = [[NSMutableArray alloc] init];
     
     [self addTapGesture];
 }
@@ -54,6 +59,11 @@
     return 39.0f;
 }
 
+
+
+//clear history to do
+
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"HistoryCell";
@@ -61,7 +71,7 @@
     
     if (cell == nil)
     {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"HistoryCustomCell" owner:self options:nil] objectAtIndex:0];
+        cell = [[HistoryCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
     cell.image_View.layer.cornerRadius  = 14   ;

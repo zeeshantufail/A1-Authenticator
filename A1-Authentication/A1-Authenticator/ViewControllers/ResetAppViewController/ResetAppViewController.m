@@ -20,8 +20,12 @@
 {
     [super viewDidLoad];
     
+   
+    
     [self addTapGesture];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -41,15 +45,15 @@
     [self.revealViewController revealToggle:sender];
 }
 
-- (IBAction)resetButtonAction:(id)sender {
-    
-    
+- (IBAction)resetButtonAction:(id)sender
+{
     [[AppSettings sharedAppSettings] resetApplication];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self performSelector:@selector(exitApp) withObject:nil afterDelay:0.5];
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
     //    if (buttonIndex == 1) {
     //        [[AppSettings sharedAppSettings] resetApplication];
     //        [[NSUserDefaults standardUserDefaults] synchronize];
@@ -57,7 +61,9 @@
     //    }
 }
 
--(void)exitApp{
+-(void)exitApp
+{
     exit(0);
 }
+
 @end

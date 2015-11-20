@@ -54,7 +54,7 @@
 
 -(void)performAnimations
 {
-    self.profileImageView.layer.cornerRadius = 68.0;
+    self.profileImageView.layer.cornerRadius = 65.0;
     self.profileImageView.layer.masksToBounds = YES  ;
     
     [self animateUpperColorView];
@@ -69,9 +69,9 @@
     
     [self performSelector:@selector(animateProfileImage) withObject:self afterDelay:0.9 ];
     
-    [self performSelector:@selector(animateMessageBtn) withObject:self afterDelay:1.5 ];
+    [self performSelector:@selector(animateMessageBtn) withObject:self afterDelay:1.2 ];
     
-    [self performSelector:@selector(showMessageBtn) withObject:self afterDelay:2.0 ];
+    [self performSelector:@selector(showMessageBtn) withObject:self afterDelay:1.3 ];
 }
 
 -(void)animateUpperColorView
@@ -147,27 +147,27 @@
 
 -(void)animateMessageBtn
 {
-    self.messageImageView.image = [UIImage imageNamed:@"Message_0021.png"];
+    self.messageImageView.image = [UIImage imageNamed:@"Message_0016.png"];
     
     NSMutableArray *animationArray = [[NSMutableArray alloc] init];
     
-    for (int i=1 ; i<=21 ; i++)
+    for (int i=1 ; i<=16 ; i++)
     {
         [animationArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"Message_%.4d.png",i]]];
     }
 
     self.messageImageView.animationImages=animationArray;
-    self.messageImageView.animationDuration= 1.0;
+    self.messageImageView.animationDuration= 0.8;
     self.messageImageView.animationRepeatCount = 1;
     [self.messageImageView startAnimating];
 }
 
 -(void)showMessageBtn
 {
-    [UIView transitionWithView:self.messageBtn duration:1.0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^(void){
+    [UIView transitionWithView:self.messageBtn duration:0.6 options:UIViewAnimationOptionTransitionCrossDissolve animations:^(void){
         
         [self.messageBtn setHidden:NO];
-        self.messageBtn.transform = CGAffineTransformMakeScale(1.2, 1.2);
+        self.messageBtn.transform = CGAffineTransformMakeScale(2.0, 2.0);
         
     } completion:nil];
 }

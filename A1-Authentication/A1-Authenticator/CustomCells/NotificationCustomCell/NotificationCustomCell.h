@@ -17,8 +17,4 @@
 @property (weak, nonatomic) IBOutlet UIButton    * markAsReadBtn;
 @property (weak, nonatomic) IBOutlet UIButton    * deleteBtn;
 
-
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *cellMainViewLeadingConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *cellMainViewTrailingConstraint;
-
 @end

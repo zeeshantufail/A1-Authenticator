@@ -47,6 +47,7 @@ static AppSettings *appSettings;
 }
 
 - (BOOL)checkPin:(NSString*)pin {
+    return true;//todo
     NSData *pinData = [pin dataUsingEncoding:NSASCIIStringEncoding];
     NSData *hashData = [pinData SHA1Hash];
     
