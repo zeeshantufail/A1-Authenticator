@@ -57,6 +57,11 @@
     self.profileImageView.layer.cornerRadius = 65.0;
     self.profileImageView.layer.masksToBounds = YES  ;
     
+    if ([AppHelper isIphone6p])
+    {
+        self.profileImageView.layer.cornerRadius = 88.0;
+    }
+    
     [self animateUpperColorView];
     
     [self.profileImageView setHidden:YES];
@@ -193,7 +198,8 @@
 
 -(void)loadQrCodeContent{
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:[AppHelper getStoryboardName] bundle:nil];
+    
     QRCodeScanViewController *qrCodeVC = [storyboard instantiateViewControllerWithIdentifier:@"qrHomeView"];
     qrCodeVC.delegate = self;
     
@@ -207,7 +213,8 @@
 }
 -(void)loadTotpContent{
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:[AppHelper getStoryboardName] bundle:nil];
+    
     TimerViewController *timerVC = [storyboard instantiateViewControllerWithIdentifier:@"totpHomeView"];
 //    timerVC.delegate = self;
     
@@ -220,14 +227,16 @@
     
 }
 
--(void)loadHomeViewContent{
+-(void)loadHomeViewContent
+{
     isTotpView = [[AppSettings sharedAppSettings] appTotp];
     
-    if (isTotpView) {
+    if (isTotpView)
+    {
         [self loadTotpContent];
     }
-    else{
-        
+    else
+    {
         [self loadQrCodeContent];
     }
 }

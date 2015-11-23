@@ -54,6 +54,22 @@ static AppHelper *instance;
     return [[[TouchIDAuthentication alloc] init]  touchIDAvailable];
 }
 
++(NSString *)getStoryboardName
+{
+    NSString *storyboard;
+    
+    if ([self isIphone6p])
+    {
+        storyboard = @"StoryBoard_iphone6Plus";
+    }
+    else
+    {
+        storyboard = @"Main";
+    }
+    
+    return storyboard;
+}
+
 +(void)showTouchScanWithMessage: (NSString *)message fallBackString: (NSString *)fallbackMessage{
     
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 80000

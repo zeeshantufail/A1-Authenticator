@@ -12,6 +12,7 @@
 #import "HelpPage1ViewController.h"
 #import "HelpPage2ViewController.h"
 #import "HelpPage3ViewController.h"
+#import "AppHelper.h"
 
 @interface HelpViewController ()
 
@@ -61,7 +62,8 @@ int numberOf_Pages = 3;
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView.showsVerticalScrollIndicator = NO;
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:[AppHelper getStoryboardName] bundle:nil];
+    
     HelpPage1ViewController *helpPage1ViewController = [storyboard instantiateViewControllerWithIdentifier:@"HelpPage1ViewController"];
     HelpPage2ViewController *helpPage2ViewController = [storyboard instantiateViewControllerWithIdentifier:@"HelpPage2ViewController"];
     HelpPage3ViewController *helpPage3ViewController = [storyboard instantiateViewControllerWithIdentifier:@"HelpPage3ViewController"];

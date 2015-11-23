@@ -18,6 +18,9 @@
 + (BOOL)isIphone6p;
 +(BOOL)isIOS8;
 +(BOOL)isDeviceTouchIDSetup;
+
++(NSString *)getStoryboardName;
+
 +(void)showTouchScanWithMessage: (NSString *)message;
 + (void)dismissViewController:(UIViewController*)viewController animated:(BOOL)animated;
 + (void)presentNavController:(UINavigationController*)navController overNavController:(UINavigationController*)overNavController animated:(BOOL)animated;

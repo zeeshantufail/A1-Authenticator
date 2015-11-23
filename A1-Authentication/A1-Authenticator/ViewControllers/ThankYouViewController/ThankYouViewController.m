@@ -167,14 +167,22 @@
 -(void)performAnimations
 {
     self.profileImageView.layer.cornerRadius = 65.0;
-    self.profileImageView.layer.masksToBounds = YES  ;
+    self.profileImageView.layer.masksToBounds = YES;
     
     [self animateUpperColorView];
     
     [self.profileImageView setHidden:YES];
     [self.designationLbl setHidden:YES];
     
-    [self performSelector:@selector(animateProfileImage) withObject:self afterDelay:0.6 ];
+    if ([AppHelper isIphone6p])
+    {
+        self.profileImageView.layer.cornerRadius = 88.0;
+        [self performSelector:@selector(animateProfileImage) withObject:self afterDelay:1.0 ];
+    }
+    else
+    {
+        [self performSelector:@selector(animateProfileImage) withObject:self afterDelay:0.6 ];
+    }
 }
 
 -(void)animateUpperColorView

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppSettings.h"
+#import "AppHelper.h"
 
 @interface AppDelegate ()
 
@@ -27,10 +28,24 @@
 //    UINavigationController *navigationController=[[UINavigationController alloc] initWithRootViewController:rvc];
 //    self.window.rootViewController = navigationController;
     
+    UIStoryboard *storyboard = [self getStoryboard];
+    
+    self.window.rootViewController = [storyboard instantiateInitialViewController];
+    //[self.window makeKeyAndVisible];
+    
     [[AppSettings sharedAppSettings] setAppActivationState:NO];
     
     [application setStatusBarHidden:YES];
     return YES;
+}
+
+-(UIStoryboard *)getStoryboard
+{
+    UIStoryboard *storyboard;
+    
+    storyboard = [UIStoryboard storyboardWithName:[AppHelper getStoryboardName] bundle:nil];
+    
+    return storyboard;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -11,6 +11,8 @@
 
 @interface WelcomeAppViewController : UIViewController <UIScrollViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView   * temporaryImageView;
+
 @property (weak, nonatomic) IBOutlet UIImageView   * logoImageView;
 
 @property (weak, nonatomic) IBOutlet UIView        * videoView;

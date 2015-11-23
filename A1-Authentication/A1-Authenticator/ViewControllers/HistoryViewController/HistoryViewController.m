@@ -9,7 +9,7 @@
 #import "HistoryViewController.h"
 #import "SWRevealViewController.h"
 #import "HistoryCustomCell.h"
-
+#import "AppHelper.h"
 
 @interface HistoryViewController ()
 {
@@ -56,6 +56,10 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if ([AppHelper isIphone6p])
+    {
+        return 47.0f;
+    }
     return 39.0f;
 }
 
@@ -76,6 +80,11 @@
     
     cell.image_View.layer.cornerRadius  = 14   ;
     cell.image_View.layer.masksToBounds = YES  ;
+    
+    if ([AppHelper isIphone6p])
+    {
+        cell.image_View.layer.cornerRadius  = 18   ;
+    }
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     

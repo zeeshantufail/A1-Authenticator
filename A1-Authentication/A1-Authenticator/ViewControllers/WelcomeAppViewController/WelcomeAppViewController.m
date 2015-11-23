@@ -26,9 +26,13 @@ int numberOfPages = 3;
 {
     [super viewDidLoad];
     
+    [self.view bringSubviewToFront:self.temporaryImageView];
+    
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackFinished:) name:MPMoviePlayerPlaybackDidFinishNotification object:player];
 //    [self playBackGroundVideo];
     
+    [self performSelector:@selector(removeTemporaryImageView) withObject:nil afterDelay:0.5];
+
     
     VideoViewController *videoViewController = [[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:nil];
     [self addChildViewController:videoViewController];
@@ -38,6 +42,11 @@ int numberOfPages = 3;
     
     self.pageControl.numberOfPages = numberOfPages;
     self.pageControl.currentPage   = 0;
+}
+
+-(void)removeTemporaryImageView
+{
+    [self.temporaryImageView setHidden:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -235,6 +244,14 @@ int numberOfPages = 3;
             [h1 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:20]];
             [h2 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15]];
         }
+        if ([AppHelper isIphone6p])
+        {
+            h1 = [[UILabel alloc] initWithFrame:CGRectMake(0 , 0, 414, 68)];
+            h2 = [[UILabel alloc] initWithFrame:CGRectMake(0 , 66, 414, 88)];
+            
+            [h1 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:24]];
+            [h2 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:18]];
+        }
         
         h1.numberOfLines = 2;
         h1.textAlignment = NSTextAlignmentCenter;
@@ -288,6 +305,11 @@ int numberOfPages = 3;
                     h1.frame = CGRectMake(70, 50, 225, 60);
                     h2.frame = CGRectMake(0, 110, screenWidth, 71 );
                 }
+                if ([AppHelper isIphone6p])
+                {
+                    h1.frame = CGRectMake(0 , 0, 414, 68);
+                    h2.frame = CGRectMake(0 , 66, 414, 88);
+                }
                 
                 labelHeadingText = @"Your apps, your choice\nof security";
                 attributedString = [[NSMutableAttributedString alloc] initWithString:labelHeadingText];
@@ -317,6 +339,11 @@ int numberOfPages = 3;
                 {
                     h1.frame = CGRectMake(35, 50, 290, 60);
                     h2.frame = CGRectMake(0, 100, screenWidth, 91 );
+                }
+                if ([AppHelper isIphone6p])
+                {
+                    h1.frame = CGRectMake(0 , 0, 414, 68);
+                    h2.frame = CGRectMake(0 , 66, 414, 88);
                 }
                 
                 labelHeadingText = @"To get started, just link\n to your Access: One account";

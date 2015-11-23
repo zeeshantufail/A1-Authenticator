@@ -40,6 +40,11 @@
     self.profileImageView.layer.cornerRadius = 35.0;
     self.profileImageView.layer.masksToBounds = YES  ;
     
+    if ([AppHelper isIphone6p])
+    {
+        self.profileImageView.layer.cornerRadius = 45.0;
+    }
+    
     if (setPinFlag)
     {
         _menuItems = @[@"HomeCell", @"AuthenticationTypeCell", @"AppSecurityCell", @"ChangeMyPinCell",@"AuditHistoryCell", @"ResetMyDeviceCell", @"HelpCell",@"AboutCell"];
@@ -52,6 +57,11 @@
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor clearColor];
+    
+    if ([AppHelper isIphone6p])
+    {
+        self.revealViewController.rearViewRevealWidth = 325;
+    }
     
     self.revealViewController.rearViewRevealOverdraw = 0;
     self.revealViewController.toggleAnimationDuration = 0.3;
@@ -79,7 +89,6 @@
     setPinFlag = true;
     pinFlag    = true;
     totpFlag   = true;
-    
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -111,7 +120,10 @@
         {
             return 80.0f;
         }
-        return 85.0f;
+        if ([AppHelper isIphone6p])
+        {
+            return 100.0f;
+        }
     }
     if ([AppHelper isIphone5])
     {
