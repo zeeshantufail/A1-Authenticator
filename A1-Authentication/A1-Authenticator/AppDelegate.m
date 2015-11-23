@@ -22,7 +22,7 @@
     [application setStatusBarHidden:YES];
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [self getStoryboard];
     UINavigationController *nc;
     if ([[AppSettings sharedAppSettings] appActivationState]) {
         nc = (UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"RTUNavigation"];
@@ -31,13 +31,10 @@
         nc = [storyboard instantiateViewControllerWithIdentifier:@"FTUNavigation"];
     }
     
-    UIStoryboard *storyboard = [self getStoryboard];
+    self.window.rootViewController = nc;
+    [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [storyboard instantiateInitialViewController];
-    //[self.window makeKeyAndVisible];
-    
-    [[AppSettings sharedAppSettings] setAppActivationState:NO];
-    
+    [application setStatusBarHidden:YES];
     return YES;
 }
 

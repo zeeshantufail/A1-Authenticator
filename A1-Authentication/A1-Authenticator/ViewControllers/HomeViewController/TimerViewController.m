@@ -44,10 +44,8 @@ int nextBufferLoadBeforeImagesRemaining = 50;
 }
 
 -(void)showTimer{
-    
-    //[self loadImages];  //1122
-    
-    self.sTOTPTimer = [NSTimer scheduledTimerWithTimeInterval:(1/fps)
+    [self loadImages];
+    self.sTOTPTimer = [NSTimer scheduledTimerWithTimeInterval:(0.03)
                                                   target:self
                                                 selector:@selector(totpTimer:)
                                                 userInfo:nil
