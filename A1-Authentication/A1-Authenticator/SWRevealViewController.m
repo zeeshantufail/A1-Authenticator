@@ -30,6 +30,8 @@
 #import "KeyboardViewController.h"
 #import "PasscodeHelper.h"
 #import "AppSettings.h"
+#import "CountDownTimerViewController.h"
+#import "AppHelper.h"
 
 
 #pragma mark - StatusBar Helper Function
@@ -703,6 +705,8 @@ const int FrontViewPositionNone = 0xff;
     //[super loadView];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive) name:@"applicationWillResignActive" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(wrongPasscodeEntered:) name:@"wrongPasscodeEntered" object:nil];
+    
     [self presentEnterPINScreen];
     // load any defined front/rear controllers from the storyboard before
     [self loadStoryboardControllers];
@@ -742,9 +746,53 @@ const int FrontViewPositionNone = 0xff;
     // now set the desired initial position
     [self _setFrontViewPosition:initialPosition withDuration:0.0];
 }
+KeyboardViewController *kbc;
+bool shouldChellangeAcuthentication;
+NSInteger count;
+-(void)wrongPasscodeEntered:(NSNotification *)notification{
+    
+    if ([notification.object isKindOfClass:[KeyboardViewController class]])
+    {
+        kbc = [notification object];
+        
+        count = [[AppSettings sharedAppSettings] passCodeFailCount] + 1;
+        [[AppSettings sharedAppSettings] setPassCodeFailCount:count];
+        
+        if (count %3 == 0 && count >= 3) {
+            
+//            if ([[AppSettings sharedAppSettings] lockScreenTimerCount] - [[NSDate date] timeIntervalSince1970] <= 0) {
+//                [[AppSettings sharedAppSettings] setLockScreenTimerCount:[[NSDate date] timeIntervalSince1970] + [AppHelper lockScreenDuration]];
+//            }
+            
+            if (kbc.passcodeHelper.passcodeScreenState.screenType == 1) {
+                shouldChellangeAcuthentication = true;
+            }
+            
+            if ([[AppSettings sharedAppSettings] lockScreenTimerCount] - [[NSDate date] timeIntervalSince1970] <= 0) {
+                NSLog(@"current timer %f screentimer %f", [[NSDate date] timeIntervalSince1970], [[AppSettings sharedAppSettings] lockScreenTimerCount]);
+                [[AppSettings sharedAppSettings] setLockScreenTimerCount:[[NSDate date] timeIntervalSince1970] + 30];
+                NSLog(@"current timer %f screentimer %f rst %f", [[NSDate date] timeIntervalSince1970], [[AppSettings sharedAppSettings] lockScreenTimerCount], [[NSDate date] timeIntervalSince1970] + 30);
+            }
+            [self presentEnterPINScreen];
+        }
+    }
+    else
+    {
+        NSLog(@"Error, object not recognised.");
+    }
+    
+    
+}
+
 
 -(void)applicationWillResignActive{
     [self presentEnterPINScreen];
+}
+
+-(void)showLockScreen{
+    if (kbc && count %3 == 0 && count >= 3 && [[AppSettings sharedAppSettings] lockScreenTimerCount] - [[NSDate date] timeIntervalSince1970] > 0) {
+        [kbc performSegueWithIdentifier:@"lockScreenSegue" sender:self];
+    }
 }
 
 -(void)presentEnterPINScreen{
@@ -762,7 +810,13 @@ const int FrontViewPositionNone = 0xff;
             [self performSegueWithIdentifier:@"enterPasscodeSegue" sender:self];
         }
     }
-    else{
+    else
+    {
+        
+        if ([vc isKindOfClass:[UINavigationController class]] && ![[(UINavigationController*)vc topViewController] isKindOfClass:[CountDownTimerViewController class]]) {
+            [self showLockScreen];
+        }
+        
         KeyboardViewController *kbc;
         if ([vc isKindOfClass:[KeyboardViewController class]]) {
              kbc = (KeyboardViewController *)vc;
@@ -770,7 +824,7 @@ const int FrontViewPositionNone = 0xff;
         else if([vc isKindOfClass:[UINavigationController class]])
         {
             UINavigationController *nc = (UINavigationController *)vc;
-            kbc = (KeyboardViewController *)[nc topViewController];
+            kbc = (KeyboardViewController *)[[nc viewControllers] objectAtIndex:0];
             
         }
         if (kbc.passcodeHelper.passcodeScreenState.screenType == 5) {
@@ -792,7 +846,7 @@ const int FrontViewPositionNone = 0xff;
     {
         //[[segue destinationViewController] setDelegate:self];
         UINavigationController * navC = (UINavigationController *)[segue destinationViewController];
-        KeyboardViewController *kbc = (KeyboardViewController *)[navC topViewController];
+        KeyboardViewController *kbc = (KeyboardViewController *)[[navC viewControllers] objectAtIndex:0];
         PasscodeHelper *pc = [[PasscodeHelper alloc] init];
         [pc loadContent];
         pc.passcodeScreenState.screenNumber = 0;
@@ -801,7 +855,7 @@ const int FrontViewPositionNone = 0xff;
         
         kbc.passcodeHelper = pc;
     }
-    if ([[segue identifier] isEqualToString:@"enterTouchIdSegue"])
+    else if ([[segue identifier] isEqualToString:@"enterTouchIdSegue"])
     {
         //[[segue destinationViewController] setDelegate:self];
 //        UINavigationController * navC = (UINavigationController *)[segue destinationViewController];

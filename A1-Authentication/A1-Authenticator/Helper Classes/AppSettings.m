@@ -47,7 +47,7 @@ static AppSettings *appSettings;
 }
 
 - (BOOL)checkPin:(NSString*)pin {
-    return true;//todo
+//    return true;//todo
     NSData *pinData = [pin dataUsingEncoding:NSASCIIStringEncoding];
     NSData *hashData = [pinData SHA1Hash];
     
@@ -591,5 +591,48 @@ static AppSettings *appSettings;
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self appTotp];
 }
+
+-(void)setPassCodeFailCount:(NSInteger)count{
+    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+    [archiver encodeObject:[NSNumber numberWithInt:(int)count] forKey:PinKey];
+    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"passcodeFailCount"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+-(NSInteger)passCodeFailCount{
+    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"passcodeFailCount"];
+    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+    NSNumber *count = [unarchiver decodeObjectForKey:PinKey];
+    [unarchiver finishDecoding];
+    if (!count) {
+        return 0;
+    }
+    else
+        return [count integerValue];
+}
+-(void)setLockScreenTimerCount:(double)count{
+//    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+//    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+//    [archiver encodeObject:[NSNumber numberWithFloat:(CGFloat)count] forKey:PinKey];
+//    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setDouble:count forKey:@"lockScreenTimerCount"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+-(double)lockScreenTimerCount{
+//    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"lockScreenTimerCount"];
+//    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+//    NSNumber *count = [unarchiver decodeObjectForKey:PinKey];
+//    [unarchiver finishDecoding];
+    double count = [[NSUserDefaults standardUserDefaults] doubleForKey:@"lockScreenTimerCount"];
+    if (!count) {
+        return [[NSDate date] timeIntervalSince1970];
+    }
+    else
+        return count;//[count floatValue];
+}
+
 
 @end

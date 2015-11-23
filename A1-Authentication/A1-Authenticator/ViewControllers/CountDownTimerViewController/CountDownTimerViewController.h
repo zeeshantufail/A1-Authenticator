@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KeyboardViewController.h"
 
 @interface CountDownTimerViewController : UIViewController
 {
@@ -17,5 +18,7 @@
 @property (assign,nonatomic) int                    secondsLeft;
 @property (weak, nonatomic)  IBOutlet UIImageView * lockImageView;
 @property (weak, nonatomic)  IBOutlet UILabel     * timerLabel;
+@property (nonatomic) KeyboardViewController *keyboardViewController;
+@property BOOL shouldChellangeAuthentication;
 
 @end

@@ -93,6 +93,13 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 
 - (BOOL)appTotp;
 - (void)setAppTotp:(BOOL)totp;
+-(void)setPassCodeFailCount:(NSInteger)count;
+-(NSInteger)passCodeFailCount;
+
+-(void)setLockScreenTimerCount:(double)count;
+-(double)lockScreenTimerCount;
+
+
 
 @property (strong) id refrenceHolder;
 @property (strong) id rootController;

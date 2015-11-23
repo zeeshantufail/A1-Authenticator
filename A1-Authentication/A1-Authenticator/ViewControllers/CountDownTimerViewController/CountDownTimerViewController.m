@@ -7,8 +7,13 @@
 //
 
 #import "CountDownTimerViewController.h"
+#import "PasscodeHelper.h"
+#import "AppSettings.h"
+#import "AppHelper.h"
 
 @interface CountDownTimerViewController ()
+{
+}
 
 @end
 
@@ -16,13 +21,20 @@
 
 @synthesize secondsLeft;
 
+double timerCount = -1;
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     [self startLockScreenAnimation];
+
+    secondsLeft = 0;
+    timerCount = [[AppSettings sharedAppSettings] lockScreenTimerCount];
+    NSLog(@"%f %f %f", [[NSDate date] timeIntervalSince1970], timerCount, [[AppSettings sharedAppSettings] lockScreenTimerCount]);
+    secondsLeft = timerCount - [[NSDate date] timeIntervalSince1970];
     
-    secondsLeft = 300;
     [self startCountdownTimer];
 }
 
@@ -35,7 +47,7 @@
 {
     if(secondsLeft > 0 )
     {
-        secondsLeft -- ;
+        secondsLeft = timerCount - [[NSDate date] timeIntervalSince1970];
         hours = secondsLeft / 3600;
         minutes = (secondsLeft % 3600) / 60;
         seconds = (secondsLeft %3600) % 60;
@@ -49,6 +61,8 @@
 
         NSString* timeNow = [NSString stringWithFormat:@"%d:%02d", minutes, seconds];
         self.timerLabel.text= timeNow;
+        
+        [self dismissLockScreen];
     }
 }
 
@@ -72,6 +86,15 @@
     self.lockImageView.animationDuration= 0.8;
     self.lockImageView.animationRepeatCount = 1;
     [self.lockImageView startAnimating];
+}
+
+-(void)dismissLockScreen{
+    if ([AppHelper shouldChellangeAuthentication]) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else{
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 @end

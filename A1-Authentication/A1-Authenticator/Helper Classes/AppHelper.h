@@ -25,7 +25,12 @@
 -(void)authenticateUserNotification;
 
 +(AppHelper*) sharedInstance;
-
 +(NSString *)getGooglePasscode;
 
++(CGFloat)lockScreenDuration;
++(void)setLockScreenDuration:(CGFloat)count;
+
+
++(BOOL)shouldChellangeAuthentication;
++(void)setShouldChellangeAuthentication:(BOOL)flag;
 @end

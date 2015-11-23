@@ -9,6 +9,7 @@
 #import "QRCodeScanViewController.h"
 #import "AppSettings.h"
 #import "QRStorage.h"
+#import "SWRevealViewController.h"
 //#import "OTPAuthURLEntryController.h"
 
 @interface QRCodeScanViewController ()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B83DDB31BFF34A400D156C6 /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B83DDB21BFF34A400D156C6 /* Countdown_Animation */; settings = {ASSET_TAGS = (); }; };
 		2B92E3BC1BF62C51003CF4A1 /* AnimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */; };
 		2B92E3BD1BF62C51003CF4A1 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B71BF62C51003CF4A1 /* KeyboardViewController.m */; };
 		2B92E3BE1BF62C51003CF4A1 /* PasscodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B91BF62C51003CF4A1 /* PasscodeHelper.m */; };
@@ -633,6 +634,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B83DDB21BFF34A400D156C6 /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = Images/Animations/Countdown_Animation; sourceTree = "<group>"; };
 		2B92E3B41BF62C51003CF4A1 /* AnimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeHelper.h; sourceTree = "<group>"; };
 		2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeHelper.m; sourceTree = "<group>"; };
 		2B92E3B61BF62C51003CF4A1 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
@@ -1736,6 +1738,7 @@
 		4729E07D1BF1F76C00627DA8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				2B83DDB21BFF34A400D156C6 /* Countdown_Animation */,
 				470E36F91BFEF45F009EAA8C /* MessageButtonAnimation @2x */,
 				470E36361BFEEFA0009EAA8C /* MessageButtonAnimation @3x */,
 				470E371A1BFEF5CA009EAA8C /* Account_Locked_Animation @2x */,
@@ -3049,6 +3052,7 @@
 				473697301BF35CF500A0855B /* Authenticator_Logo_20.png in Resources */,
 				471C75E51BF0AE3900F9907E /* TOTP_Icon_ON@2x.png in Resources */,
 				4736972D1BF35CF500A0855B /* Authenticator_Logo_17.png in Resources */,
+				2B83DDB31BFF34A400D156C6 /* Countdown_Animation in Resources */,
 				4729E1B91BF1F8D200627DA8 /* PIN_Anim_Positive031.png in Resources */,
 				4729E16F1BF1F8D200627DA8 /* PIN_Anim_Negative057.png in Resources */,
 				4729E1401BF1F8D200627DA8 /* PIN_Anim_Negative010.png in Resources */,

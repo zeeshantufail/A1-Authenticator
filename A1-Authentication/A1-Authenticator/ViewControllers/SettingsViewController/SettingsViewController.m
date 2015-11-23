@@ -40,15 +40,6 @@
     self.profileImageView.layer.cornerRadius = 35.0;
     self.profileImageView.layer.masksToBounds = YES  ;
     
-    if (setPinFlag)
-    {
-        _menuItems = @[@"HomeCell", @"AuthenticationTypeCell", @"AppSecurityCell", @"ChangeMyPinCell",@"AuditHistoryCell", @"ResetMyDeviceCell", @"HelpCell",@"AboutCell"];
-    }
-    else
-    {
-        _menuItems = @[@"HomeCell", @"AuthenticationTypeCell", @"AppSecurityCell", @"AuditHistoryCell", @"ResetMyDeviceCell", @"HelpCell",@"AboutCell"];
-    }
-    
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor clearColor];
@@ -76,10 +67,31 @@
 //                     completion:^(BOOL finished){
 //                     }];
     
-    setPinFlag = true;
-    pinFlag    = true;
-    totpFlag   = true;
+ 
     
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [self reloadTableView];
+}
+
+-(void)reloadTableView{
+    
+    setPinFlag = [[AppSettings sharedAppSettings] appPinCreated];
+    pinFlag = [[AppSettings sharedAppSettings] appPinState];
+    totpFlag = [[AppSettings sharedAppSettings] appTotp];
+    
+    if (setPinFlag)
+    {
+        _menuItems = @[@"HomeCell", @"AuthenticationTypeCell", @"AppSecurityCell", @"ChangeMyPinCell",@"AuditHistoryCell", @"ResetMyDeviceCell", @"HelpCell",@"AboutCell"];
+    }
+    else
+    {
+        _menuItems = @[@"HomeCell", @"AuthenticationTypeCell", @"AppSecurityCell", @"AuditHistoryCell", @"ResetMyDeviceCell", @"HelpCell",@"AboutCell"];
+    }
+    
+    [self.tableView reloadData];
+
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -89,6 +101,7 @@
 //        self.view.frame = CGRectMake(768, 0, 320, 364);
 //        
 //    }];
+    
 }
 
 #pragma mark - Table view data source
@@ -145,7 +158,18 @@
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {
-    return !([identifier isEqualToString:@"setPinScreenThroughSettingSegue"] && [[AppSettings sharedAppSettings] appPinState]);
+    if( !([identifier isEqualToString:@"setPinScreenThroughSettingSegue"] && [[AppSettings sharedAppSettings] appPinState]) )
+    {
+        return true;
+    }
+    else{
+        
+        [[AppSettings sharedAppSettings] setAppTouchID:NO];
+        [[AppSettings sharedAppSettings] setAppPinState:YES];
+        
+        [self reloadTableView];
+        return false;
+    }
 }
 
 -(void)setActionsToButtonsOfCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
@@ -261,6 +285,29 @@
         
         kbc.passcodeHelper = pc;
     }
+    else if([[segue identifier] isEqualToString:@"qrScanViewSegue"]){
+        QRCodeScanViewController *qrVC = (QRCodeScanViewController *)[segue destinationViewController];
+        qrVC.delegate = self;
+    }
+    else if([[segue identifier] isEqualToString:@"totpScanViewSegue"]){
+        QRCodeScanViewController *qrVC = (QRCodeScanViewController *)[segue destinationViewController];
+        qrVC.delegate = self;
+    }
 }
 
+-(void)didScanResult:(QRCodeScanViewController *)qrCodeScanViewController{
+    [qrCodeScanViewController.revealViewController revealToggle:qrCodeScanViewController];
+}
+
+-(void)didDismissQrScan:(QRCodeScanViewController *)qrCodeScanViewController{
+    [qrCodeScanViewController.revealViewController revealToggle:qrCodeScanViewController];
+    
+}
+
+- (IBAction)touchIdAction:(id)sender {
+    [[AppSettings sharedAppSettings] setAppTouchID:YES];
+    [[AppSettings sharedAppSettings] setAppPinState:NO];
+    
+    [self reloadTableView];
+}
 @end

@@ -13,6 +13,8 @@
 #import "AppSettings.h"
 #import "SetPinViewController.h"
 #import "PasscodeHelper.h"
+#import "CountDownTimerViewController.h"
+#import "AppHelper.h"
 
 @interface KeyboardViewController ()
 {
@@ -43,6 +45,18 @@
     [dotsView setImage:[UIImage imageNamed:@"startCircleImage.png"]];
      //(//)(1)(2)(3)(4)(5)
     [self.view setBackgroundColor:[UIColor clearColor]];
+    
+    
+    if ( [self showLockScreen]) {
+        [self performSegueWithIdentifier:@"lockScreenSegue" sender:self];
+    }
+
+    
+}
+
+-(BOOL)showLockScreen{
+    int count = (int)[[AppSettings sharedAppSettings] passCodeFailCount];
+    return (count %3 == 0 && count >= 3 && self.passcodeHelper.passcodeScreenState.screenType == 1 && self.navigationController.viewControllers.count == 1 && [[AppSettings sharedAppSettings] lockScreenTimerCount] - [[NSDate date] timeIntervalSince1970] > 0);
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -53,6 +67,7 @@
 //    {
 //        [self.view setHidden:YES];
 //    }
+   
     
     [self.passcodeHelper updatePINScreen:self];
 }
@@ -327,6 +342,13 @@
     dotsView.image = [UIImage imageNamed:imageName];
     [dotsView startAnimating];
     //[imageName release];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"lockScreenSegue"]){
+        CountDownTimerViewController *timerVC = (CountDownTimerViewController *)[segue destinationViewController];
+        timerVC.keyboardViewController = self;
+    }
 }
 
 - (void)dealloc {

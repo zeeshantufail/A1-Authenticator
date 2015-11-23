@@ -9,6 +9,7 @@
 #import "PasscodeHelper.h"
 #import "KeyboardViewController.h"
 #import "AppSettings.h"
+#import "AppHelper.h"
 
 @implementation MessageContent
 
@@ -169,6 +170,14 @@
     }
 }
 
+-(void)authenticationFailed{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"wrongPasscodeEntered" object:_keyboardViewController];
+}
+-(void)authenticationWasSuccessfull{
+    [[AppSettings sharedAppSettings] setPassCodeFailCount:0];
+    [AppHelper setShouldChellangeAuthentication:NO];
+}
+
 -(void)passcodeEntered:(NSString *)passcode{
     switch (self.passcodeScreenState.screenType) {
         case 0:
@@ -197,12 +206,14 @@
                 self.passcodeScreenState.dismiss = true;
                 [_keyboardViewController runPositiveAnime];
                 [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
+                [self authenticationWasSuccessfull];
             }
             else{
                 self.passcodeScreenState.screenNumber = 0;
                 [_keyboardViewController runNegativeAnime];
                 [_keyboardViewController.errorLabel setHidden:NO];
                 [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:1];
+                [self performSelector:@selector(authenticationFailed) withObject:nil afterDelay:0.7];
             }
             break;
             
@@ -233,6 +244,7 @@
                     self.passcodeScreenState.screenNumber = 1;
                     [_keyboardViewController runPositiveAnime];
                     [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
+                    [self authenticationWasSuccessfull];
                 }
                 else{
                     
@@ -240,6 +252,7 @@
                     [_keyboardViewController runNegativeAnime];
                     [_keyboardViewController.errorLabel setHidden:NO];
                     [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:1];
+                    [self performSelector:@selector(authenticationFailed) withObject:nil afterDelay:0.7];
                 }
                 
             }
@@ -296,7 +309,7 @@
         switch (self.passcodeScreenState.screenType) {
             case 0:
                 [keyBoardController performSegueWithIdentifier: @"homeViewSegue" sender: self];
-//                [[AppSettings sharedAppSettings] setAppActivationState:YES];
+                [[AppSettings sharedAppSettings] setAppPinCreated:YES];
                 [[AppSettings sharedAppSettings] setAppPinState:YES];
                 [[AppSettings sharedAppSettings] setAppTouchID:NO];
                 self.passcodeScreenState.screenType = -1;
@@ -308,7 +321,9 @@
                 break;
             case 2:
                 [self authenticationCanceled]; //dismiss view on success
+                [[AppSettings sharedAppSettings] setAppPinCreated:YES];
                 [[AppSettings sharedAppSettings] setAppPinState:YES];
+                [_keyboardViewController.view setUserInteractionEnabled:NO];
                 [[AppSettings sharedAppSettings] setAppTouchID:NO];
                 break;
             case 3:
