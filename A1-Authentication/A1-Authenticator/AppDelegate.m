@@ -18,15 +18,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [AppHelper setShouldChellangeAuthentication:true];
+    [application setStatusBarHidden:YES];
     
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    SWRevealViewController *viewController = (SWRevealViewController *)[storyboard instantiateViewControllerWithIdentifier:@"mainStoryboard"];
-//    self.window.rootViewController = viewController;
-    
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    RegistrationViewController *rvc = [storyboard instantiateViewControllerWithIdentifier:@"registerationStoryboard"];
-//    UINavigationController *navigationController=[[UINavigationController alloc] initWithRootViewController:rvc];
-//    self.window.rootViewController = navigationController;
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController *nc;
+    if ([[AppSettings sharedAppSettings] appActivationState]) {
+        nc = (UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"RTUNavigation"];
+    }
+    else{
+        nc = [storyboard instantiateViewControllerWithIdentifier:@"FTUNavigation"];
+    }
     
     UIStoryboard *storyboard = [self getStoryboard];
     
@@ -35,7 +38,6 @@
     
     [[AppSettings sharedAppSettings] setAppActivationState:NO];
     
-    [application setStatusBarHidden:YES];
     return YES;
 }
 
@@ -51,6 +53,8 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
+    [AppHelper setShouldChellangeAuthentication:true];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"applicationWillResignActive" object:nil];
 }
 

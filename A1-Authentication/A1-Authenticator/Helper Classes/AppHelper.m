@@ -18,6 +18,7 @@
 @implementation AppHelper
 
 static AppHelper *instance;
+static CGFloat timerCount = 0;
 +(AppHelper *)sharedInstance{
     if (instance == nil) {
         instance = [[AppHelper alloc] init];
@@ -184,6 +185,25 @@ static OTPAuthURL * authUrl;
     else{
         return nil;
     }
+}
+
+
++(CGFloat)lockScreenDuration{
+    return 30;
+}
+
++(void)setLockScreenDuration:(CGFloat)count{
+    timerCount = count;
+}
+
+static bool shouldChellangeAuthentication = true;
+
++(BOOL)shouldChellangeAuthentication{
+    return shouldChellangeAuthentication;
+}
+
++(void)setShouldChellangeAuthentication:(BOOL)flag{
+    shouldChellangeAuthentication = flag;
 }
 
 @end

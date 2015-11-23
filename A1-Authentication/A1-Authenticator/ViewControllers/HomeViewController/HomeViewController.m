@@ -220,10 +220,8 @@
     
     [self addChildViewController:timerVC];
     
-    UIView * contentView = [timerVC.view viewWithTag:11];
     
     [self.homeContentView addSubview:timerVC.view];
-    [timerVC showTimer];
     
 }
 

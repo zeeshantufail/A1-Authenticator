@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QRCodeScanViewController.h"
 
-@interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, QRCodeScanDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView * profileImageView;
 @property (weak, nonatomic) IBOutlet UILabel     * nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel     * designationLabel;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)touchIdAction:(id)sender;
 
 @end
