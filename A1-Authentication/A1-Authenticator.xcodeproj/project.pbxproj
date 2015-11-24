@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B83DDB31BFF34A400D156C6 /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B83DDB21BFF34A400D156C6 /* Countdown_Animation */; };
+		2B08304D1C0352C40037E87D /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B08304C1C0352C40037E87D /* Countdown_Animation */; settings = {ASSET_TAGS = (); }; };
+		2B1D05031C04685000010B1B /* button_animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05021C04685000010B1B /* button_animation */; settings = {ASSET_TAGS = (); }; };
+		2B1D05051C04704600010B1B /* set pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05041C04704600010B1B /* set pin.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05081C04772400010B1B /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D05071C04772400010B1B /* AnimationHelper.m */; settings = {ASSET_TAGS = (); }; };
+		2B1D050A1C04903100010B1B /* home screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05091C04903100010B1B /* home screen.png */; settings = {ASSET_TAGS = (); }; };
 		2B92E3BC1BF62C51003CF4A1 /* AnimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */; };
 		2B92E3BD1BF62C51003CF4A1 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B71BF62C51003CF4A1 /* KeyboardViewController.m */; };
 		2B92E3BE1BF62C51003CF4A1 /* PasscodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B91BF62C51003CF4A1 /* PasscodeHelper.m */; };

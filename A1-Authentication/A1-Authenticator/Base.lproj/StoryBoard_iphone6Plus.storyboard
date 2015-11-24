@@ -3204,8 +3204,9 @@
         <image name="startCircleImage.png" width="640" height="124"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nXl-Ug-gK1"/>
+        <segue reference="iOO-yA-B45"/>
         <segue reference="sQF-eJ-Oi3"/>
-        <segue reference="5Oe-zj-vbE"/>
+        <segue reference="GNQ-mN-q4G"/>
+        <segue reference="fLf-Xd-qGm"/>
     </inferredMetricsTieBreakers>
 </document>

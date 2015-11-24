@@ -294,7 +294,7 @@
     
     }completion:^(BOOL finished)
      {
-
+         [[AnimationHelper sharedInstance] performSelector:@selector(animateButton:) withObject:self.pinButtonContainer afterDelay:0.0];
      }];
     
     
