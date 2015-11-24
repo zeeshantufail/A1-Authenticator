@@ -12,6 +12,7 @@
 
 #import "ThankYouViewController.h"
 #import "NotificationViewController.h"
+#import "AppHelper.h"
 
 
 @interface CameraOverlayViewController ()
@@ -47,7 +48,7 @@
 
 - (IBAction)crossBtnPressed:(id)sender
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:[AppHelper getStoryboardName] bundle:nil];
     NotificationViewController *notificationViewController = [storyboard instantiateViewControllerWithIdentifier:@"NotificationViewController"];
     [self presentViewController:notificationViewController animated:YES completion:nil];
     

@@ -33,6 +33,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *scanView;
 @property (nonatomic) id<QRCodeScanDelegate> delegate;
 
+@property BOOL isTotp;
+
 - (IBAction)startStopReading:(id)sender;
 - (IBAction)crossButtonAction:(id)sender;
 

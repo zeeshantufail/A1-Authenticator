@@ -142,16 +142,18 @@
     if ([[segue identifier] isEqualToString:@"qryptoNavId"])
     {
         //[[segue destinationViewController] setDelegate:self];
-        [[AppSettings sharedAppSettings] setAppTotp:NO];
+//        [[AppSettings sharedAppSettings] setAppTotp:NO];
         UINavigationController *nav = (UINavigationController *)[segue destinationViewController];
         QRCodeScanViewController *qrview = (QRCodeScanViewController *)[nav topViewController];
+        qrview.isTotp = NO;
         qrview.delegate = self;
     }
     else if([[segue identifier] isEqualToString:@"totpNavId"]){
-        [[AppSettings sharedAppSettings] setAppTotp:YES];
+//        [[AppSettings sharedAppSettings] setAppTotp:YES];
         UINavigationController *nav = (UINavigationController *)[segue destinationViewController];
         QRCodeScanViewController *qrview = (QRCodeScanViewController *)[nav topViewController];
         qrview.delegate = self;
+        qrview.isTotp = YES;
     }
 }
 
@@ -168,7 +170,6 @@
     {
         [self performSegueWithIdentifier: @"showThankyouPin" sender: self];
     }
-    
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 

@@ -10,6 +10,7 @@
 #import "KeyboardViewController.h"
 #import "AppSettings.h"
 #import "AppHelper.h"
+#import "ThankYouViewController.h"
 
 @implementation MessageContent
 
@@ -51,16 +52,16 @@
     mc = [[MessageContent alloc] init];
     //Set your pin 2nd screen from welcome screen
     mc.headerText = @"Set your PIN";
-    mc.subHeaderText = @"Please confirm your PIN";
+    mc.subHeaderText = @"Confirm your 4 digit PIN";
     mc.errorText = @"PINs don't match, please try again.";
     
     screenState[0][1] = mc;
     
     mc = [[MessageContent alloc] init];
     //Enter your pin
-    mc.headerText = @"Enter your PIN";
-    mc.subHeaderText = @"Please enter a 4 digit PIN";
-    mc.errorText = @"Wrong pin entered";
+    mc.headerText = @"Hi Jhon";
+    mc.subHeaderText = @"Please enter your PIN";
+    mc.errorText = @"Pin not recognized, please try again";
     
     screenState[1][0] = mc;
     
@@ -144,6 +145,7 @@
             break;
         case 4:
             
+            [((ThankYouViewController *)(_keyboardViewController.parentViewController)).thankyouLowerContentView setHidden:NO];
             [_keyboardViewController.view removeFromSuperview];
             [_keyboardViewController removeFromParentViewController];
             break;
@@ -162,7 +164,7 @@
         self.passcodeScreenState.dismiss = true;
         [_keyboardViewController runPositiveAnime];
         [self performSelector:@selector(updatePINScreen:) withObject:_keyboardViewController afterDelay:0.7];
-        [[AppSettings sharedAppSettings] setAppPin:passcode]; //todo
+        [[AppSettings sharedAppSettings] setAppPin:passcode];
         return YES;
     }
     else{
@@ -313,7 +315,6 @@
                 [[AppSettings sharedAppSettings] setAppPinState:YES];
                 [[AppSettings sharedAppSettings] setAppTouchID:NO];
                 self.passcodeScreenState.screenType = -1;
-                
                 break;
             case 1:
 //                [_keyboardViewController.navigationController dismissViewControllerAnimated:YES completion:nil];
@@ -384,6 +385,16 @@
     else if(self.passcodeScreenState.screenType == 1){
         [_keyboardViewController.buttonCancel setHidden:YES];
         [_keyboardViewController.settingsBtnOutlet setUserInteractionEnabled:NO];
+    }
+    
+    switch (self.passcodeScreenState.screenType) {
+        case 1:
+        case 0:
+            [_keyboardViewController.settingsBtnOutlet setHidden:YES];
+            break;
+            
+        default:
+            break;
     }
 }
 

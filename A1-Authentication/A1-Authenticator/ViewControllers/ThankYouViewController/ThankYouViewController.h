@@ -21,6 +21,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextView  * detail1TextView;
 @property (weak, nonatomic) IBOutlet UITextView  * detail2TextView;
+@property (weak, nonatomic) IBOutlet UIView *pinButtonContainer;
+@property (weak, nonatomic) IBOutlet UIView *thankyouLowerContentView;
 
 
 

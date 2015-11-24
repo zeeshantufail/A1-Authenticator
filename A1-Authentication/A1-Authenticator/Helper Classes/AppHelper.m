@@ -51,7 +51,6 @@ static CGFloat timerCount = 0;
 }
 
 +(BOOL)isDeviceTouchIDSetup{
-    
     return [[[TouchIDAuthentication alloc] init]  touchIDAvailable];
 }
 

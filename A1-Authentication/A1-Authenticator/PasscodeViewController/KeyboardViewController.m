@@ -15,6 +15,7 @@
 #import "PasscodeHelper.h"
 #import "CountDownTimerViewController.h"
 #import "AppHelper.h"
+#import "VideoViewController.h"
 
 @interface KeyboardViewController ()
 {
@@ -58,7 +59,7 @@
     int count = (int)[[AppSettings sharedAppSettings] passCodeFailCount];
     return (count %3 == 0 && count >= 3 && self.passcodeHelper.passcodeScreenState.screenType == 1 && self.navigationController.viewControllers.count == 1 && [[AppSettings sharedAppSettings] lockScreenTimerCount] - [[NSDate date] timeIntervalSince1970] > 0);
 }
-
+VideoViewController *videoViewController;
 -(void)viewWillAppear:(BOOL)animated{
 //    [self viewWillLayoutSubviews];
 //    passCodeViewController = (PassCodeViewController*)self.parentViewController;
@@ -70,6 +71,12 @@
    
     
     [self.passcodeHelper updatePINScreen:self];
+    if (!videoViewController && (self.passcodeHelper.passcodeScreenState.screenType == 1 || self.passcodeHelper.passcodeScreenState.screenType == 5) && ![self showLockScreen]) {
+        videoViewController = [[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:nil];
+        [self addChildViewController:videoViewController];
+        [self.videoViewContainer addSubview:videoViewController.view];
+        [self.mainContainerView setBackgroundColor:[UIColor clearColor]];
+    }
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -157,9 +164,9 @@
     buttonBackgroundImageView.alpha = 0;
     buttonBackgroundImageView.frame = b.frame;
     
-    CGFloat backgroundDelta = 32;
-//    buttonBackgroundImageView.frame = CGRectMake(buttonBackgroundImageView.frame.origin.x, buttonBackgroundImageView.frame.origin.y, buttonBackgroundImageView.frame.size.width-backgroundDelta, buttonBackgroundImageView.frame.size.height-backgroundDelta);
-    buttonBackgroundImageView.frame = b.frame;
+    CGFloat backgroundDelta = 7;
+    buttonBackgroundImageView.frame = CGRectMake(buttonBackgroundImageView.frame.origin.x, buttonBackgroundImageView.frame.origin.y, buttonBackgroundImageView.frame.size.width-backgroundDelta, buttonBackgroundImageView.frame.size.height-backgroundDelta);
+//    buttonBackgroundImageView.frame = b.frame;
     buttonBackgroundImageView.center = b.center;
     //[self.keyPadView bringSubviewToFront:b];
     [self.keyPadView sendSubviewToBack:buttonBackgroundImageView];

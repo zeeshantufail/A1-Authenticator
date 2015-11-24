@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ResetAppViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *checkingBtnAnime;
 
 - (IBAction)settingsBtnPressed:(id)sender;
 - (IBAction)resetButtonAction:(id)sender;

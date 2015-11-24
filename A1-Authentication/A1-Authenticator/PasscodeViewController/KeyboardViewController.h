@@ -30,6 +30,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *headerLabel;
 @property (weak, nonatomic) IBOutlet UITextView *subHeaderLabel;
 @property (nonatomic) id<KeyboardViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIView *videoViewContainer;
+@property (weak, nonatomic) IBOutlet UIView *mainContainerView;
 
 @property (retain, nonatomic) IBOutlet UIView *keyPadView;
 @property (retain, nonatomic) IBOutlet UIButton *deleteButtonOutlet;

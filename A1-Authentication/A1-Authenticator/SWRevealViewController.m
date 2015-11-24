@@ -797,7 +797,7 @@ NSInteger count;
 
 -(void)presentEnterPINScreen{
     
-    if (![[AppSettings sharedAppSettings] appActivationState]) {//todo
+    if (![[AppSettings sharedAppSettings] appActivationState]) {
         return;
     }
     

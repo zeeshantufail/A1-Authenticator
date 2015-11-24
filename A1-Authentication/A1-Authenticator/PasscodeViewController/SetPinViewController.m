@@ -7,6 +7,7 @@
 //
 
 #import "SetPinViewController.h"
+#import "AppHelper.h"
 
 @interface SetPinViewController ()
 
@@ -27,7 +28,7 @@
     UIView *subview;
 -(void)viewWillAppear:(BOOL)animated{
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:[AppHelper getStoryboardName] bundle: nil];
     
     self.keyboardViewController = [storyboard instantiateViewControllerWithIdentifier:@"KeyboardViewController"];
     [self addChildViewController:self.keyboardViewController];
