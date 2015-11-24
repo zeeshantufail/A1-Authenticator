@@ -40,6 +40,10 @@
     self.profileImageView.layer.cornerRadius = 35.0;
     self.profileImageView.layer.masksToBounds = YES  ;
     
+    if ([AppHelper isIphone6])
+    {
+        self.profileImageView.layer.cornerRadius = 40.0;
+    }
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor clearColor];
@@ -47,6 +51,10 @@
     if ([AppHelper isIphone6p])
     {
         self.revealViewController.rearViewRevealWidth = 325;
+    }
+    if ([AppHelper isIphone6])
+    {
+        self.revealViewController.rearViewRevealWidth = 295;
     }
     
     self.revealViewController.rearViewRevealOverdraw = 0;
@@ -71,9 +79,6 @@
 //                     }
 //                     completion:^(BOOL finished){
 //                     }];
-    
- 
-    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -83,8 +88,8 @@
 -(void)reloadTableView{
     
     setPinFlag = [[AppSettings sharedAppSettings] appPinCreated];
-    pinFlag = [[AppSettings sharedAppSettings] appPinState];
-    totpFlag = [[AppSettings sharedAppSettings] appTotp];
+    pinFlag    = [[AppSettings sharedAppSettings] appPinState];
+    totpFlag   = [[AppSettings sharedAppSettings] appTotp];
     
     if (setPinFlag)
     {
@@ -129,6 +134,10 @@
         {
             return 80.0f;
         }
+        if ([AppHelper isIphone6])
+        {
+            return 85.0f;
+        }
         if ([AppHelper isIphone6p])
         {
             return 100.0f;
@@ -137,6 +146,10 @@
     if ([AppHelper isIphone5])
     {
         return 34.0f;
+    }
+    if ([AppHelper isIphone6])
+    {
+        return 38.0f;
     }
     return 44.0f;
 }
@@ -166,7 +179,7 @@
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {
-    if( !([identifier isEqualToString:@"setPinScreenThroughSettingSegue"] && [[AppSettings sharedAppSettings] appPinState]) )
+    if( !([identifier isEqualToString:@"setPinScreenThroughSettingSegue"] && [[AppSettings sharedAppSettings] appPinCreated]) )
     {
         return true;
     }
@@ -198,6 +211,7 @@
         else
         {
             [otpButton setBackgroundImage:[UIImage imageNamed:@"TOTP_Icon_OFF.png"] forState:UIControlStateNormal];
+            [qryptoButton setBackgroundImage:[UIImage imageNamed:@"QR_Icon_ON.png"] forState:UIControlStateNormal];
         }
     }
     else
@@ -216,6 +230,7 @@
         else
         {
             [pinButton setBackgroundImage:[UIImage imageNamed:@"PIN_Icon_OFF.png"] forState:UIControlStateNormal];
+            [touchIDButton setBackgroundImage:[UIImage imageNamed:@"TOUCH_Icon_ON.png"] forState:UIControlStateNormal];
         }
     }
 }

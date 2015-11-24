@@ -18,10 +18,9 @@
 @property (weak, nonatomic) IBOutlet UITextView  * questionTextView;
 @property (weak, nonatomic) IBOutlet UIButton    * touchIDBtn;
 @property (weak, nonatomic) IBOutlet UIButton    * securePINBtn;
-
 @property (weak, nonatomic) IBOutlet UITextView  * detail1TextView;
 @property (weak, nonatomic) IBOutlet UITextView  * detail2TextView;
-
+@property (weak, nonatomic) IBOutlet UIView      * textsContainerView;
 
 
 - (IBAction)touchIDBtnPressed:(id)sender;

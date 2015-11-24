@@ -28,12 +28,8 @@ int numberOfPages = 3;
     
     [self.view bringSubviewToFront:self.temporaryImageView];
     
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackFinished:) name:MPMoviePlayerPlaybackDidFinishNotification object:player];
-//    [self playBackGroundVideo];
-    
     [self performSelector:@selector(removeTemporaryImageView) withObject:nil afterDelay:0.5];
 
-    
     VideoViewController *videoViewController = [[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:nil];
     [self addChildViewController:videoViewController];
     [self.videoView addSubview:videoViewController.view];
@@ -65,14 +61,11 @@ int numberOfPages = 3;
     [self.videoView bringSubviewToFront:self.pageControl];
     [self.videoView bringSubviewToFront:self.beginButton];
     [self.videoView bringSubviewToFront:self.logoImageView];
-    
-    //[player play];
 }
 
 
 -(void)viewDidDisappear:(BOOL)animated
 {
-    //[player pause];
 }
 
 -(void)animateLogo
@@ -111,75 +104,9 @@ int numberOfPages = 3;
     self.logoImageView.animationDuration=1.5;
     self.logoImageView.animationRepeatCount = 1;
     [self.logoImageView startAnimating];
-    
-    
 }
 
 #pragma Mark - HelperMethods
-
-//MPMoviePlayerController *player;
-//NSTimeInterval playerTime = 0.0;
-//
-//-(void)playBackGroundVideo
-//{
-//    // NSTimeInterval time = player.currentPlaybackTime;
-//    
-//    NSBundle *bundle = [NSBundle mainBundle];
-//    NSString *moviePath;
-//    
-////    if([AppHelper isIphone5])
-////        moviePath = [bundle pathForResource:@"BKG_320x568" ofType:@"m4v"];
-////    else if([AppHelper isIPad])
-////    {
-////        if(UIInterfaceOrientationIsLandscape(videoOrientation))
-////            moviePath = [bundle pathForResource:@"1024x768" ofType:@"m4v"];
-////        else
-////            moviePath = [bundle pathForResource:@"768x1024" ofType:@"m4v"];
-////    }
-////    else
-//        moviePath = [bundle pathForResource:@"BKG_320x568" ofType:@"m4v"];
-//    
-////    NSURL *movieURL = [NSURL fileURLWithPath:moviePath];
-//    
-//    
-//    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-//                                         pathForResource:@"BKG_320x568" ofType:@"m4v"]];
-//    
-//    player = [[MPMoviePlayerController alloc] initWithContentURL:url];
-//    
-////    if([AppHelper isIPad])
-////    {
-////        if(UIInterfaceOrientationIsLandscape(videoOrientation)){
-////            player.view.frame = CGRectMake(0, 0, 1024, 786);
-////        }
-////        else{
-////            player.view.frame = CGRectMake(0, 0, 786, 1024);
-////        }
-////    }
-////    else
-//        player.view.frame = [[UIScreen mainScreen] bounds];
-//    
-//    //player.view.frame = CGRectMake(0, 0, 520, 700);
-//    
-//    player.controlStyle = MPMovieControlStyleNone;
-//    player.scalingMode = MPMovieScalingModeAspectFill;
-//    [player setInitialPlaybackTime:playerTime];
-//    [self.view addSubview:player.view];
-//    
-//    //[self.view bringSubviewToFront:self.gradientViewContainer];
-//    [self.view bringSubviewToFront:self.scrollView];
-//    [self.view bringSubviewToFront:self.pageControl];
-//    [self.view bringSubviewToFront:self.beginButton];
-//    
-//    [player play];
-//}
-//
-//-(void)playbackFinished:(MPMoviePlayerController*) p
-//{
-//    //[player play];
-//    [player performSelector:@selector(play) withObject:nil afterDelay:0.3];
-//}
-
 
 - (CGRect)getScreenFrameForCurrentOrientation
 {
@@ -199,7 +126,7 @@ int numberOfPages = 3;
     }
     if (! [UIApplication sharedApplication].statusBarHidden )
     {
-        CGFloat statusBarHeight = 20; // Needs a better solution, FYI statusBarFrame reports wrong in some cases..
+        CGFloat statusBarHeight = 20;
         fullScreenRect.size.height -= statusBarHeight;
     }
     
@@ -238,11 +165,11 @@ int numberOfPages = 3;
         }
         if ([AppHelper isIphone6])
         {
-            h1 = [[UILabel alloc] initWithFrame:CGRectMake(70 , 50, 225, 60)];
-            h2 = [[UILabel alloc] initWithFrame:CGRectMake(70 , 100, 225, 71)];
+            h1 = [[UILabel alloc] initWithFrame:CGRectMake(0 ,0 ,375 ,61)];
+            h2 = [[UILabel alloc] initWithFrame:CGRectMake(0 ,61 ,375 ,80)];
             
-            [h1 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:20]];
-            [h2 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15]];
+            [h1 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:21]];
+            [h2 setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:16]];
         }
         if ([AppHelper isIphone6p])
         {
@@ -274,6 +201,12 @@ int numberOfPages = 3;
         {
             case 0:
 
+                if ([AppHelper isIphone6])
+                {
+                    h1.frame = CGRectMake(0 ,0 ,375 ,61);
+                    h2.frame = CGRectMake(0 ,50 ,375 ,80);
+                }
+                
                 labelHeadingText = @"Strong Authentication in\n the palm of your hand";
                 
                 attributedString = [[NSMutableAttributedString alloc] initWithString:labelHeadingText];
@@ -300,16 +233,6 @@ int numberOfPages = 3;
                     h1.frame = CGRectMake(0, 0, 320, 48);
                     h2.frame = CGRectMake(0, 55, 320, 60 );
                 }
-                if ([AppHelper isIphone6])
-                {
-                    h1.frame = CGRectMake(70, 50, 225, 60);
-                    h2.frame = CGRectMake(0, 110, screenWidth, 71 );
-                }
-                if ([AppHelper isIphone6p])
-                {
-                    h1.frame = CGRectMake(0 , 0, 414, 68);
-                    h2.frame = CGRectMake(0 , 66, 414, 88);
-                }
                 
                 labelHeadingText = @"Your apps, your choice\nof security";
                 attributedString = [[NSMutableAttributedString alloc] initWithString:labelHeadingText];
@@ -334,16 +257,6 @@ int numberOfPages = 3;
                 {
                     h1.frame = CGRectMake(0, 0, 320, 48);
                     h2.frame = CGRectMake(0, 55, 320, 60 );
-                }
-                if ([AppHelper isIphone6])
-                {
-                    h1.frame = CGRectMake(35, 50, 290, 60);
-                    h2.frame = CGRectMake(0, 100, screenWidth, 91 );
-                }
-                if ([AppHelper isIphone6p])
-                {
-                    h1.frame = CGRectMake(0 , 0, 414, 68);
-                    h2.frame = CGRectMake(0 , 66, 414, 88);
                 }
                 
                 labelHeadingText = @"To get started, just link\n to your Access: One account";

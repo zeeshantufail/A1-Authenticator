@@ -23,8 +23,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     historyArray = [[NSMutableArray alloc] init];
+    historyArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"AuditHistory"] mutableCopy];
     
     [self addTapGesture];
 }
@@ -51,7 +52,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 12;
+    return [historyArray count];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -59,6 +60,10 @@
     if ([AppHelper isIphone6p])
     {
         return 47.0f;
+    }
+    if ([AppHelper isIphone6])
+    {
+        return 44.0f;
     }
     return 39.0f;
 }
@@ -78,9 +83,18 @@
         cell = [[HistoryCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
+    NSDictionary *dict = [historyArray objectAtIndex:indexPath.row];
+    
+    cell.dateTime.text = [dict objectForKey:@"datetime"];
+    cell.performedAction.text = [dict objectForKey:@"action"];
+    
     cell.image_View.layer.cornerRadius  = 14   ;
     cell.image_View.layer.masksToBounds = YES  ;
     
+    if ([AppHelper isIphone6])
+    {
+        cell.image_View.layer.cornerRadius  = 15   ;
+    }
     if ([AppHelper isIphone6p])
     {
         cell.image_View.layer.cornerRadius  = 18   ;
@@ -104,6 +118,15 @@
 
 - (IBAction)clearHistoryBtnPressed:(id)sender
 {
+    if ([historyArray count] > 0)
+    {
+        [historyArray removeAllObjects];
+
+        [[NSUserDefaults standardUserDefaults] setObject:historyArray forKey:@"AuditHistory"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        [self.tableView reloadData];
+    }
 }
 
 @end

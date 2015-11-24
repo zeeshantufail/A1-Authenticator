@@ -173,10 +173,17 @@
     
     [self.profileImageView setHidden:YES];
     [self.designationLbl setHidden:YES];
+    [self.textsContainerView setAlpha:0];
+    self.textsContainerView.frame = CGRectMake(self.textsContainerView.frame.origin.x, self.textsContainerView.frame.origin.y - 15, self.textsContainerView.frame.size.width, self.textsContainerView.frame.size.height);
     
     if ([AppHelper isIphone6p])
     {
         self.profileImageView.layer.cornerRadius = 88.0;
+        [self performSelector:@selector(animateProfileImage) withObject:self afterDelay:1.0 ];
+    }
+    else if ([AppHelper isIphone6])
+    {
+        self.profileImageView.layer.cornerRadius = 80.0;
         [self performSelector:@selector(animateProfileImage) withObject:self afterDelay:1.0 ];
     }
     else
@@ -260,11 +267,31 @@
         
         [self.designationLbl setHidden:NO];
         
-    } completion:nil];
+    }completion:^(BOOL finished)
+     {
+         [self showTextsContainerView];
+     }];
+}
+
+-(void) showTextsContainerView
+{
+    [UIView transitionWithView:self.designationLbl duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:^(void){
+        
+        [self.textsContainerView setAlpha:1];
+        self.textsContainerView.frame = CGRectMake(self.textsContainerView.frame.origin.x, self.textsContainerView.frame.origin.y + 15, self.textsContainerView.frame.size.width, self.textsContainerView.frame.size.height);
+    
+    }completion:^(BOOL finished)
+     {
+
+     }];
+    
     
 //    [UIView animateWithDuration:0.6 animations:^() {
-//        self.designationLbl.alpha = 1.0;
-//    }];
+//        
+//    }completion:^(BOOL finished)
+//     {
+//         [self.textsContainerView setHidden:NO];
+//     }];
 }
 
 - (BOOL)image:(UIImage *)image1 isEqualTo:(UIImage *)image2

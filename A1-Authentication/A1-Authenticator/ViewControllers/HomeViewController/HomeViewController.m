@@ -61,6 +61,10 @@
     {
         self.profileImageView.layer.cornerRadius = 88.0;
     }
+    if ([AppHelper isIphone6])
+    {
+        self.profileImageView.layer.cornerRadius = 80.0;
+    }
     
     [self animateUpperColorView];
     

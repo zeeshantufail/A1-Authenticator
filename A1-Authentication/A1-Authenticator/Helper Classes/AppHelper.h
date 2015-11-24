@@ -20,6 +20,8 @@
 +(BOOL)isDeviceTouchIDSetup;
 
 +(NSString *)getStoryboardName;
++(NSString *)getCurrentDateAndTime;
++(NSString *)getStringFromDate:(NSDate *)date;
 
 +(void)showTouchScanWithMessage: (NSString *)message;
 + (void)dismissViewController:(UIViewController*)viewController animated:(BOOL)animated;

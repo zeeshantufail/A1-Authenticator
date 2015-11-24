@@ -63,12 +63,37 @@ static CGFloat timerCount = 0;
     {
         storyboard = @"StoryBoard_iphone6Plus";
     }
+    else if ([self isIphone6])
+    {
+        storyboard = @"StoryBoard_iPhone6";
+    }
     else
     {
-        storyboard = @"Main";
+        storyboard = @"Main";                   // iphone 5,5s
     }
     
     return storyboard;
+}
+
++(NSString *) getCurrentDateAndTime
+{
+    NSDate   * crntDate;
+    NSString * currentDateTime;
+    
+    crntDate = [NSDate date];
+    
+    currentDateTime = [self getStringFromDate:crntDate];
+    
+    return currentDateTime;
+}
+
++(NSString *)getStringFromDate:(NSDate *)date
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.locale = [NSLocale currentLocale];
+    [dateFormatter setDateFormat:@"dd/MM/yyyy hh:mm:ss"];
+    NSString *stringFromDate = [dateFormatter stringFromDate:date];
+    return stringFromDate;
 }
 
 +(void)showTouchScanWithMessage: (NSString *)message fallBackString: (NSString *)fallbackMessage{

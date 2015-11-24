@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B83DDB31BFF34A400D156C6 /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B83DDB21BFF34A400D156C6 /* Countdown_Animation */; settings = {ASSET_TAGS = (); }; };
+		2B83DDB31BFF34A400D156C6 /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B83DDB21BFF34A400D156C6 /* Countdown_Animation */; };
 		2B92E3BC1BF62C51003CF4A1 /* AnimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */; };
 		2B92E3BD1BF62C51003CF4A1 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B71BF62C51003CF4A1 /* KeyboardViewController.m */; };
 		2B92E3BE1BF62C51003CF4A1 /* PasscodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B91BF62C51003CF4A1 /* PasscodeHelper.m */; };
@@ -488,7 +488,6 @@
 		474F1BF01BFB64F600D5B569 /* SetPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BEF1BFB64F600D5B569 /* SetPin.png */; };
 		474F1BF21BFB650300D5B569 /* SetPin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BF11BFB650300D5B569 /* SetPin@2x.png */; };
 		474F1BF41BFB651400D5B569 /* SetPin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 474F1BF31BFB651400D5B569 /* SetPin@3x.png */; };
-		476B0F341BFF345F0070891C /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 476B0F331BFF345F0070891C /* Countdown_Animation */; };
 		476B0F371BFF37960070891C /* StoryBoard_iphone6Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476B0F351BFF37960070891C /* StoryBoard_iphone6Plus.storyboard */; };
 		476B0F591BFF5ECE0070891C /* FTU_QR_Icon_OFF@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 476B0F551BFF5ECE0070891C /* FTU_QR_Icon_OFF@2x.png */; };
 		476B0F5A1BFF5ECE0070891C /* FTU_QR_Icon_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 476B0F561BFF5ECE0070891C /* FTU_QR_Icon_ON@2x.png */; };
@@ -535,13 +534,24 @@
 		47B8A7CE1C02F1BA00CF14AD /* SetPin_ON@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B8A7CC1C02F1BA00CF14AD /* SetPin_ON@3x.png */; };
 		47B8A7DC1C03256200CF14AD /* X_ON@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B8A7DB1C03256200CF14AD /* X_ON@3x.png */; };
 		47B8A7E21C032F5700CF14AD /* X_OFF@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B8A7E11C032F5700CF14AD /* X_OFF@3x.png */; };
-		47B8A7EC1C0341E100CF14AD /* A1.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B8A7EB1C0341E100CF14AD /* A1.png */; };
 		47D2CA1B1BFA094B00C1D89F /* ResetMyApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2CA1A1BFA094B00C1D89F /* ResetMyApp.png */; };
 		47D2CA1D1BFA095100C1D89F /* ResetMyApp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2CA1C1BFA095100C1D89F /* ResetMyApp@2x.png */; };
 		47D2CA1F1BFA095C00C1D89F /* ResetMyApp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2CA1E1BFA095C00C1D89F /* ResetMyApp@3x.png */; };
 		47D2CA211BFA168B00C1D89F /* begin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2CA201BFA168B00C1D89F /* begin@2x.png */; };
 		47D2CA231BFA169400C1D89F /* begin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2CA221BFA169400C1D89F /* begin@3x.png */; };
 		47D2CA251BFA16A100C1D89F /* begin.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D2CA241BFA16A100C1D89F /* begin.png */; };
+		47D4AC5F1C043E5B003C279E /* StoryBoard_iPhone6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC5D1C043E5B003C279E /* StoryBoard_iPhone6.storyboard */; };
+		47D4AC8A1C0497A0003C279E /* Splash Screen_Iphone_6plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC861C0497A0003C279E /* Splash Screen_Iphone_6plus.png */; };
+		47D4AC8B1C0497A0003C279E /* Splash_Screen_Iphone_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC871C0497A0003C279E /* Splash_Screen_Iphone_3.png */; };
+		47D4AC8C1C0497A0003C279E /* Splash_Screen_Iphone_4S.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC881C0497A0003C279E /* Splash_Screen_Iphone_4S.png */; };
+		47D4AC8D1C0497A0003C279E /* Splash_Screen_Iphone_5S.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC891C0497A0003C279E /* Splash_Screen_Iphone_5S.png */; };
+		47D4AC901C04A07E003C279E /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC8F1C04A07E003C279E /* iTunesArtwork */; };
+		47D4AC921C04A23B003C279E /* icon_60pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC911C04A23B003C279E /* icon_60pt@3x.png */; };
+		47D4AC941C04A273003C279E /* icon_60pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC931C04A273003C279E /* icon_60pt@2x.png */; };
+		47D4AC971C04A367003C279E /* icon_40pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC951C04A367003C279E /* icon_40pt@2x.png */; };
+		47D4AC981C04A367003C279E /* icon_40pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC961C04A367003C279E /* icon_40pt@3x.png */; };
+		47D4AC9B1C04A412003C279E /* icon_29pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC991C04A412003C279E /* icon_29pt@2x.png */; };
+		47D4AC9C1C04A412003C279E /* icon_29pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D4AC9A1C04A412003C279E /* icon_29pt@3x.png */; };
 		47E0CE941BFC5A1700AC390B /* Submit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CE931BFC5A1700AC390B /* Submit@3x.png */; };
 		47E0CE961BFC5A2000AC390B /* Submit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CE951BFC5A2000AC390B /* Submit@2x.png */; };
 		47E0CE981BFC5A2A00AC390B /* Submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0CE971BFC5A2A00AC390B /* Submit.png */; };
@@ -1189,7 +1199,6 @@
 		474F1BEF1BFB64F600D5B569 /* SetPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SetPin.png; sourceTree = "<group>"; };
 		474F1BF11BFB650300D5B569 /* SetPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SetPin@2x.png"; sourceTree = "<group>"; };
 		474F1BF31BFB651400D5B569 /* SetPin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SetPin@3x.png"; sourceTree = "<group>"; };
-		476B0F331BFF345F0070891C /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = Images/Animations/Countdown_Animation; sourceTree = "<group>"; };
 		476B0F361BFF37960070891C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StoryBoard_iphone6Plus.storyboard; sourceTree = "<group>"; };
 		476B0F551BFF5ECE0070891C /* FTU_QR_Icon_OFF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FTU_QR_Icon_OFF@2x.png"; sourceTree = "<group>"; };
 		476B0F561BFF5ECE0070891C /* FTU_QR_Icon_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FTU_QR_Icon_ON@2x.png"; sourceTree = "<group>"; };
@@ -1244,13 +1253,24 @@
 		47B8A7CC1C02F1BA00CF14AD /* SetPin_ON@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SetPin_ON@3x.png"; sourceTree = "<group>"; };
 		47B8A7DB1C03256200CF14AD /* X_ON@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X_ON@3x.png"; sourceTree = "<group>"; };
 		47B8A7E11C032F5700CF14AD /* X_OFF@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X_OFF@3x.png"; sourceTree = "<group>"; };
-		47B8A7EB1C0341E100CF14AD /* A1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1.png; sourceTree = "<group>"; };
 		47D2CA1A1BFA094B00C1D89F /* ResetMyApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResetMyApp.png; sourceTree = "<group>"; };
 		47D2CA1C1BFA095100C1D89F /* ResetMyApp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ResetMyApp@2x.png"; sourceTree = "<group>"; };
 		47D2CA1E1BFA095C00C1D89F /* ResetMyApp@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ResetMyApp@3x.png"; sourceTree = "<group>"; };
 		47D2CA201BFA168B00C1D89F /* begin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "begin@2x.png"; sourceTree = "<group>"; };
 		47D2CA221BFA169400C1D89F /* begin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "begin@3x.png"; sourceTree = "<group>"; };
 		47D2CA241BFA16A100C1D89F /* begin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = begin.png; sourceTree = "<group>"; };
+		47D4AC5E1C043E5B003C279E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StoryBoard_iPhone6.storyboard; sourceTree = "<group>"; };
+		47D4AC861C0497A0003C279E /* Splash Screen_Iphone_6plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash Screen_Iphone_6plus.png"; sourceTree = "<group>"; };
+		47D4AC871C0497A0003C279E /* Splash_Screen_Iphone_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash_Screen_Iphone_3.png; sourceTree = "<group>"; };
+		47D4AC881C0497A0003C279E /* Splash_Screen_Iphone_4S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash_Screen_Iphone_4S.png; sourceTree = "<group>"; };
+		47D4AC891C0497A0003C279E /* Splash_Screen_Iphone_5S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash_Screen_Iphone_5S.png; sourceTree = "<group>"; };
+		47D4AC8F1C04A07E003C279E /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		47D4AC911C04A23B003C279E /* icon_60pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_60pt@3x.png"; sourceTree = "<group>"; };
+		47D4AC931C04A273003C279E /* icon_60pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_60pt@2x.png"; sourceTree = "<group>"; };
+		47D4AC951C04A367003C279E /* icon_40pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40pt@2x.png"; sourceTree = "<group>"; };
+		47D4AC961C04A367003C279E /* icon_40pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40pt@3x.png"; sourceTree = "<group>"; };
+		47D4AC991C04A412003C279E /* icon_29pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_29pt@2x.png"; sourceTree = "<group>"; };
+		47D4AC9A1C04A412003C279E /* icon_29pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_29pt@3x.png"; sourceTree = "<group>"; };
 		47E0CE931BFC5A1700AC390B /* Submit@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit@3x.png"; sourceTree = "<group>"; };
 		47E0CE951BFC5A2000AC390B /* Submit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit@2x.png"; sourceTree = "<group>"; };
 		47E0CE971BFC5A2A00AC390B /* Submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Submit.png; sourceTree = "<group>"; };
@@ -1707,6 +1727,10 @@
 			isa = PBXGroup;
 			children = (
 				471D007F1BEB5BF6003BC1C6 /* LoadingScreen_iphone6.png */,
+				47D4AC861C0497A0003C279E /* Splash Screen_Iphone_6plus.png */,
+				47D4AC871C0497A0003C279E /* Splash_Screen_Iphone_3.png */,
+				47D4AC881C0497A0003C279E /* Splash_Screen_Iphone_4S.png */,
+				47D4AC891C0497A0003C279E /* Splash_Screen_Iphone_5S.png */,
 			);
 			name = Splash;
 			sourceTree = "<group>";
@@ -2427,6 +2451,7 @@
 			children = (
 				474313A51BE78A3A0021CF58 /* LaunchScreen.xib */,
 				474313A01BE78A3A0021CF58 /* Main.storyboard */,
+				47D4AC5D1C043E5B003C279E /* StoryBoard_iPhone6.storyboard */,
 				476B0F351BFF37960070891C /* StoryBoard_iphone6Plus.storyboard */,
 			);
 			name = Views;
@@ -2435,9 +2460,9 @@
 		477498F21BE78E5300026C01 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				47B8A7EB1C0341E100CF14AD /* A1.png */,
-				4729E07D1BF1F76C00627DA8 /* Animations */,
 				471D007E1BEB5BE3003BC1C6 /* Splash */,
+				47D4AC8E1C04A06F003C279E /* Icons */,
+				4729E07D1BF1F76C00627DA8 /* Animations */,
 				47119CEA1BE9E5FB00876684 /* General */,
 				4729E1F01BF20A2700627DA8 /* Help */,
 				471C75DB1BF0AE0400F9907E /* Settings */,
@@ -2531,6 +2556,20 @@
 				47AAF82B1BE8F61D00B7DD86 /* BeginViewController.m */,
 			);
 			name = BeginViewController;
+			sourceTree = "<group>";
+		};
+		47D4AC8E1C04A06F003C279E /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				47D4AC8F1C04A07E003C279E /* iTunesArtwork */,
+				47D4AC991C04A412003C279E /* icon_29pt@2x.png */,
+				47D4AC9A1C04A412003C279E /* icon_29pt@3x.png */,
+				47D4AC951C04A367003C279E /* icon_40pt@2x.png */,
+				47D4AC961C04A367003C279E /* icon_40pt@3x.png */,
+				47D4AC931C04A273003C279E /* icon_60pt@2x.png */,
+				47D4AC911C04A23B003C279E /* icon_60pt@3x.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 		47E90E361BEC99FB00402A5B /* NotificationViewController */ = {
@@ -2703,6 +2742,7 @@
 				47E90E351BEC969000402A5B /* Back_Arrow_ON@2x.png in Resources */,
 				470E37471BFEF5CA009EAA8C /* Locked Animation_0020@2x.png in Resources */,
 				4729E1661BF1F8D200627DA8 /* PIN_Anim_Negative048.png in Resources */,
+				47D4AC8A1C0497A0003C279E /* Splash Screen_Iphone_6plus.png in Resources */,
 				470E36C11BFEF386009EAA8C /* GREY PANEL_00019@2x.png in Resources */,
 				47E90E491BECE79B00402A5B /* deselect.png in Resources */,
 				4729E1C61BF1F8D200627DA8 /* PIN_Anim_Positive044.png in Resources */,
@@ -2713,6 +2753,7 @@
 				4736987B1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.5.png in Resources */,
 				470E36911BFEF2E8009EAA8C /* GREY PANEL_00010@3x.png in Resources */,
 				473698831BF371EF00A0855B /* GTMUIImage+Resize_100x50_flipped.png in Resources */,
+				47D4AC901C04A07E003C279E /* iTunesArtwork in Resources */,
 				477499001BE7949800026C01 /* begin1@2x.png in Resources */,
 				470E370C1BFEF45F009EAA8C /* Message_0003@2x.png in Resources */,
 				470E36C41BFEF386009EAA8C /* GREY PANEL_00022@2x.png in Resources */,
@@ -2732,6 +2773,7 @@
 				4729E18A1BF1F8D200627DA8 /* PIN_Anim_Negative084.png in Resources */,
 				473698541BF371EF00A0855B /* GTMABAddressBook.strings in Resources */,
 				4729E1391BF1F8D200627DA8 /* PIN_Anim_Negative003.png in Resources */,
+				47D4AC981C04A367003C279E /* icon_40pt@3x.png in Resources */,
 				470E37381BFEF5CA009EAA8C /* Locked Animation_0005@2x.png in Resources */,
 				4729E1C21BF1F8D200627DA8 /* PIN_Anim_Positive040.png in Resources */,
 				4736987C1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.6.png in Resources */,
@@ -2765,6 +2807,7 @@
 				47E0CE981BFC5A2A00AC390B /* Submit.png in Resources */,
 				47E0CEB91BFCAC1E00AC390B /* TouchID_ON@3x.png in Resources */,
 				4729E1D01BF1F8D200627DA8 /* PIN_Anim_Positive054.png in Resources */,
+				47D4AC9B1C04A412003C279E /* icon_29pt@2x.png in Resources */,
 				4729E1BC1BF1F8D200627DA8 /* PIN_Anim_Positive034.png in Resources */,
 				470E36971BFEF2E8009EAA8C /* GREY PANEL_00016@3x.png in Resources */,
 				473697211BF35CF500A0855B /* Authenticator_Logo_5.png in Resources */,
@@ -2836,6 +2879,7 @@
 				4729E1E81BF1F8D200627DA8 /* PIN_Anim_Positive078.png in Resources */,
 				4729E1571BF1F8D200627DA8 /* PIN_Anim_Negative033.png in Resources */,
 				4729E1851BF1F8D200627DA8 /* PIN_Anim_Negative079.png in Resources */,
+				47D4AC8D1C0497A0003C279E /* Splash_Screen_Iphone_5S.png in Resources */,
 				4729E1611BF1F8D200627DA8 /* PIN_Anim_Negative043.png in Resources */,
 				4729E1D11BF1F8D200627DA8 /* PIN_Anim_Positive055.png in Resources */,
 				47E0CEC71BFCB04400AC390B /* TOUCH_Icon_ON@3x.png in Resources */,
@@ -2884,6 +2928,7 @@
 				473697321BF35CF500A0855B /* Authenticator_Logo_22.png in Resources */,
 				470E36C31BFEF386009EAA8C /* GREY PANEL_00021@2x.png in Resources */,
 				4729E1B01BF1F8D200627DA8 /* PIN_Anim_Positive022.png in Resources */,
+				47D4AC971C04A367003C279E /* icon_40pt@2x.png in Resources */,
 				470E37451BFEF5CA009EAA8C /* Locked Animation_0018@2x.png in Resources */,
 				4729E13D1BF1F8D200627DA8 /* PIN_Anim_Negative007.png in Resources */,
 				4729E1E51BF1F8D200627DA8 /* PIN_Anim_Positive075.png in Resources */,
@@ -2898,7 +2943,6 @@
 				4729E1601BF1F8D200627DA8 /* PIN_Anim_Negative042.png in Resources */,
 				4729E1F81BF2129E00627DA8 /* TOTP_Help_Icon@2x.png in Resources */,
 				470E370E1BFEF45F009EAA8C /* Message_0005@2x.png in Resources */,
-				47B8A7EC1C0341E100CF14AD /* A1.png in Resources */,
 				4729E1E71BF1F8D200627DA8 /* PIN_Anim_Positive077.png in Resources */,
 				4729E1691BF1F8D200627DA8 /* PIN_Anim_Negative051.png in Resources */,
 				473698C51BF371EF00A0855B /* OTPAuthAboutController.xib in Resources */,
@@ -2921,6 +2965,7 @@
 				473698BA1BF371EF00A0855B /* GTMUnitTestingTestApp.gtmUTState in Resources */,
 				4729E1F41BF20E6300627DA8 /* Authenticator_Help_Icon@2x.png in Resources */,
 				4729E1471BF1F8D200627DA8 /* PIN_Anim_Negative017.png in Resources */,
+				47D4AC941C04A273003C279E /* icon_60pt@2x.png in Resources */,
 				470E37171BFEF45F009EAA8C /* Message_0014@2x.png in Resources */,
 				473698C11BF371EF00A0855B /* GTMUnitTestingWindow.10.6.tiff in Resources */,
 				4729E1641BF1F8D200627DA8 /* PIN_Anim_Negative046.png in Resources */,
@@ -2928,6 +2973,7 @@
 				470E37441BFEF5CA009EAA8C /* Locked Animation_0017@2x.png in Resources */,
 				4729E1361BF1F8D200627DA8 /* PIN_Anim_Negative000.png in Resources */,
 				4729E1AD1BF1F8D200627DA8 /* PIN_Anim_Positive019.png in Resources */,
+				47D4AC8C1C0497A0003C279E /* Splash_Screen_Iphone_4S.png in Resources */,
 				473698B51BF371EF00A0855B /* GTMUnitTestingImage.10.6.tiff in Resources */,
 				4736987A1BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.png in Resources */,
 				473698C21BF371EF00A0855B /* GTMUnitTestingWindow.gtmUTState in Resources */,
@@ -2946,6 +2992,7 @@
 				4729E15B1BF1F8D200627DA8 /* PIN_Anim_Negative037.png in Resources */,
 				47E0CEC61BFCB04400AC390B /* TOUCH_Icon_OFF@3x.png in Resources */,
 				4729E15A1BF1F8D200627DA8 /* PIN_Anim_Negative036.png in Resources */,
+				47D4AC921C04A23B003C279E /* icon_60pt@3x.png in Resources */,
 				4729E1CE1BF1F8D200627DA8 /* PIN_Anim_Positive052.png in Resources */,
 				470E373E1BFEF5CA009EAA8C /* Locked Animation_0011@2x.png in Resources */,
 				4736988E1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_50x50_clip.png in Resources */,
@@ -3065,6 +3112,7 @@
 				470E370A1BFEF45F009EAA8C /* Message_0001@2x.png in Resources */,
 				4729E14B1BF1F8D200627DA8 /* PIN_Anim_Negative021.png in Resources */,
 				4729E1B71BF1F8D200627DA8 /* PIN_Anim_Positive029.png in Resources */,
+				47D4AC5F1C043E5B003C279E /* StoryBoard_iPhone6.storyboard in Resources */,
 				4729E14F1BF1F8D200627DA8 /* PIN_Anim_Negative025.png in Resources */,
 				470E374B1BFEF5CA009EAA8C /* Locked Animation_0024@2x.png in Resources */,
 				4729E19C1BF1F8D200627DA8 /* PIN_Anim_Positive002.png in Resources */,
@@ -3142,6 +3190,7 @@
 				4729E1721BF1F8D200627DA8 /* PIN_Anim_Negative060.png in Resources */,
 				47D2CA251BFA16A100C1D89F /* begin.png in Resources */,
 				4729E1651BF1F8D200627DA8 /* PIN_Anim_Negative047.png in Resources */,
+				47D4AC9C1C04A412003C279E /* icon_29pt@3x.png in Resources */,
 				4729E1D51BF1F8D200627DA8 /* PIN_Anim_Positive059.png in Resources */,
 				470E364D1BFEEFA0009EAA8C /* Message_0007@3x.png in Resources */,
 				473698931BF371EF00A0855B /* BuildUsingXCodeBuild.sh in Resources */,
@@ -3151,6 +3200,7 @@
 				4729E1DF1BF1F8D200627DA8 /* PIN_Anim_Positive069.png in Resources */,
 				47E0CEC21BFCAFFC00AC390B /* QR_Icon_OFF@3x.png in Resources */,
 				474F1BE81BFB5D0400D5B569 /* QRDoesn’tScan@3x.png in Resources */,
+				47D4AC8B1C0497A0003C279E /* Splash_Screen_Iphone_3.png in Resources */,
 				478CD37B1BFE0961008774E0 /* Locked Animation_0002@3x.png in Resources */,
 				4729E13F1BF1F8D200627DA8 /* PIN_Anim_Negative009.png in Resources */,
 				473697271BF35CF500A0855B /* Authenticator_Logo_11.png in Resources */,
@@ -3326,6 +3376,14 @@
 			name = StoryBoard_iphone6Plus.storyboard;
 			sourceTree = "<group>";
 		};
+		47D4AC5D1C043E5B003C279E /* StoryBoard_iPhone6.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47D4AC5E1C043E5B003C279E /* Base */,
+			);
+			name = StoryBoard_iPhone6.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -3415,6 +3473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3446,6 +3505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";

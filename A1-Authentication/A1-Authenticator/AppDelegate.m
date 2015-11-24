@@ -17,17 +17,22 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     [AppHelper setShouldChellangeAuthentication:true];
     [application setStatusBarHidden:YES];
+    
+    [self saveApplicationLaunchedAction];
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     UIStoryboard *storyboard = [self getStoryboard];
     UINavigationController *nc;
-    if ([[AppSettings sharedAppSettings] appActivationState]) {
+    if ([[AppSettings sharedAppSettings] appActivationState])
+    {
         nc = (UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"RTUNavigation"];
     }
-    else{
+    else
+    {
         nc = [storyboard instantiateViewControllerWithIdentifier:@"FTUNavigation"];
     }
     
@@ -36,6 +41,30 @@
     
     [application setStatusBarHidden:YES];
     return YES;
+}
+
+-(void) saveApplicationLaunchedAction
+{
+    NSMutableArray *tempArray;
+    
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"AuditHistory"])
+    {
+        tempArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"AuditHistory"] mutableCopy];
+    }
+    else
+    {
+        tempArray = [[NSMutableArray alloc] init];
+    }
+    
+    NSDictionary * dict = [[NSDictionary alloc] initWithObjectsAndKeys:
+                           [AppHelper getCurrentDateAndTime],@"datetime",
+                           @"Application Launched",@"action",
+                           nil];
+        
+    [tempArray addObject:dict];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:tempArray forKey:@"AuditHistory"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 -(UIStoryboard *)getStoryboard

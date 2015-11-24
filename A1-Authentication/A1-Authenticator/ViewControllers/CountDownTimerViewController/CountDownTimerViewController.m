@@ -36,6 +36,8 @@ double timerCount = -1;
     secondsLeft = timerCount - [[NSDate date] timeIntervalSince1970];
     
     [self startCountdownTimer];
+    
+    [self updateCounter];
 }
 
 - (void)didReceiveMemoryWarning
