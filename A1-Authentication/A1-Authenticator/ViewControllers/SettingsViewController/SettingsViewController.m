@@ -311,10 +311,12 @@
     else if([[segue identifier] isEqualToString:@"qrScanViewSegue"]){
         QRCodeScanViewController *qrVC = (QRCodeScanViewController *)[segue destinationViewController];
         qrVC.delegate = self;
+        qrVC.isTotp = NO;
     }
     else if([[segue identifier] isEqualToString:@"totpScanViewSegue"]){
         QRCodeScanViewController *qrVC = (QRCodeScanViewController *)[segue destinationViewController];
         qrVC.delegate = self;
+        qrVC.isTotp = YES;
     }
 }
 

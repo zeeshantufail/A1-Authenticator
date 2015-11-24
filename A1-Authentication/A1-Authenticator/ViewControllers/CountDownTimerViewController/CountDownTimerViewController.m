@@ -34,7 +34,7 @@ double timerCount = -1;
     timerCount = [[AppSettings sharedAppSettings] lockScreenTimerCount];
     NSLog(@"%f %f %f", [[NSDate date] timeIntervalSince1970], timerCount, [[AppSettings sharedAppSettings] lockScreenTimerCount]);
     secondsLeft = timerCount - [[NSDate date] timeIntervalSince1970];
-    
+    [self updateCounter];
     [self startCountdownTimer];
     
     [self updateCounter];

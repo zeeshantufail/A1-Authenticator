@@ -651,7 +651,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B83DDB21BFF34A400D156C6 /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = Images/Animations/Countdown_Animation; sourceTree = "<group>"; };
+		2B08304C1C0352C40037E87D /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = "../../../../../Documents/Pirean/A1-Authentication/Waqar/A1-Authentication Resources/13 nov 2015/@3x Animations/Countdown_Animation"; sourceTree = "<group>"; };
+		2B1D05021C04685000010B1B /* button_animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = button_animation; path = ../../../../../Downloads/button_animation; sourceTree = "<group>"; };
+		2B1D05041C04704600010B1B /* set pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "set pin.png"; sourceTree = "<group>"; };
+		2B1D05061C04772400010B1B /* AnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationHelper.h; path = "Helper Classes/AnimationHelper.h"; sourceTree = "<group>"; };
+		2B1D05071C04772400010B1B /* AnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationHelper.m; path = "Helper Classes/AnimationHelper.m"; sourceTree = "<group>"; };
+		2B1D05091C04903100010B1B /* home screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home screen.png"; sourceTree = "<group>"; };
 		2B92E3B41BF62C51003CF4A1 /* AnimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeHelper.h; sourceTree = "<group>"; };
 		2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeHelper.m; sourceTree = "<group>"; };
 		2B92E3B61BF62C51003CF4A1 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
@@ -1676,6 +1681,7 @@
 		471C75F31BF0C4C800F9907E /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2B1D05091C04903100010B1B /* home screen.png */,
 				471C75F41BF0C50200F9907E /* HomeViewController.h */,
 				471C75F51BF0C50200F9907E /* HomeViewController.m */,
 				2BC906F21BFDDFA6009AF8E4 /* TimerViewController.h */,
@@ -1753,6 +1759,7 @@
 		471D008A1BEB71A4003BC1C6 /* ThankYouViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2B1D05041C04704600010B1B /* set pin.png */,
 				471D008B1BEB71F3003BC1C6 /* ThankYouViewController.h */,
 				471D008C1BEB71F3003BC1C6 /* ThankYouViewController.m */,
 			);
@@ -1780,7 +1787,8 @@
 		4729E07D1BF1F76C00627DA8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				2B83DDB21BFF34A400D156C6 /* Countdown_Animation */,
+				2B1D05021C04685000010B1B /* button_animation */,
+				2B08304C1C0352C40037E87D /* Countdown_Animation */,
 				470E36F91BFEF45F009EAA8C /* MessageButtonAnimation @2x */,
 				470E36361BFEEFA0009EAA8C /* MessageButtonAnimation @3x */,
 				470E371A1BFEF5CA009EAA8C /* Account_Locked_Animation @2x */,
@@ -2503,6 +2511,8 @@
 				470E69741BF4794100D6A091 /* TouchIDAuthentication.m */,
 				477499021BE7A2D900026C01 /* AppHelper.h */,
 				477499031BE7A2D900026C01 /* AppHelper.m */,
+				2B1D05061C04772400010B1B /* AnimationHelper.h */,
+				2B1D05071C04772400010B1B /* AnimationHelper.m */,
 			);
 			name = "Helper Classes";
 			sourceTree = "<group>";
@@ -2885,6 +2895,7 @@
 				47E0CEC71BFCB04400AC390B /* TOUCH_Icon_ON@3x.png in Resources */,
 				473698C31BF371EF00A0855B /* GTMUnitTestingWindow.tiff in Resources */,
 				470E36BA1BFEF386009EAA8C /* GREY PANEL_00012@2x.png in Resources */,
+				2B08304D1C0352C40037E87D /* Countdown_Animation in Resources */,
 				47119CF71BEA19B200876684 /* Ribbon@2x.png in Resources */,
 				478CD3821BFE0961008774E0 /* Locked Animation_0009@3x.png in Resources */,
 				473698711BF371EF00A0855B /* GTMFadeTruncatingLabelTest1.png in Resources */,
@@ -3076,6 +3087,7 @@
 				478CD37D1BFE0961008774E0 /* Locked Animation_0004@3x.png in Resources */,
 				4729E1431BF1F8D200627DA8 /* PIN_Anim_Negative013.png in Resources */,
 				4729E19F1BF1F8D200627DA8 /* PIN_Anim_Positive005.png in Resources */,
+				2B1D05051C04704600010B1B /* set pin.png in Resources */,
 				478CD3831BFE0961008774E0 /* Locked Animation_0010@3x.png in Resources */,
 				47E0CEB81BFCAC1E00AC390B /* TouchID_ON@2x.png in Resources */,
 				470E374A1BFEF5CA009EAA8C /* Locked Animation_0023@2x.png in Resources */,
@@ -3124,7 +3136,6 @@
 				473697301BF35CF500A0855B /* Authenticator_Logo_20.png in Resources */,
 				471C75E51BF0AE3900F9907E /* TOTP_Icon_ON@2x.png in Resources */,
 				4736972D1BF35CF500A0855B /* Authenticator_Logo_17.png in Resources */,
-				2B83DDB31BFF34A400D156C6 /* Countdown_Animation in Resources */,
 				4729E1B91BF1F8D200627DA8 /* PIN_Anim_Positive031.png in Resources */,
 				4729E16F1BF1F8D200627DA8 /* PIN_Anim_Negative057.png in Resources */,
 				4729E1401BF1F8D200627DA8 /* PIN_Anim_Negative010.png in Resources */,
@@ -3162,6 +3173,7 @@
 				4729E1BF1BF1F8D200627DA8 /* PIN_Anim_Positive037.png in Resources */,
 				4729E1981BF1F8D200627DA8 /* PIN_Anim_Negative098.png in Resources */,
 				4729E1461BF1F8D200627DA8 /* PIN_Anim_Negative016.png in Resources */,
+				2B1D050A1C04903100010B1B /* home screen.png in Resources */,
 				470E364F1BFEEFA0009EAA8C /* Message_0009@3x.png in Resources */,
 				4729E16E1BF1F8D200627DA8 /* PIN_Anim_Negative056.png in Resources */,
 				470E368F1BFEF2E8009EAA8C /* GREY PANEL_00008@3x.png in Resources */,
@@ -3251,6 +3263,7 @@
 				4729E2001BF21AD000627DA8 /* HelpPage1ViewController.m in Sources */,
 				2B92E3BF1BF62C51003CF4A1 /* SetPinViewController.m in Sources */,
 				4736984C1BF371EF00A0855B /* OTPTableView.m in Sources */,
+				2B1D05081C04772400010B1B /* AnimationHelper.m in Sources */,
 				473698661BF371EF00A0855B /* GTMUIFont+LineHeight.m in Sources */,
 				477499041BE7A2D900026C01 /* AppHelper.m in Sources */,
 				4729E0771BF1D0CB00627DA8 /* HistoryViewController.m in Sources */,

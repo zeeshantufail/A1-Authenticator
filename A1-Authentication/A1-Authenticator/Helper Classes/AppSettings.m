@@ -47,7 +47,6 @@ static AppSettings *appSettings;
 }
 
 - (BOOL)checkPin:(NSString*)pin {
-//    return true;//todo
     NSData *pinData = [pin dataUsingEncoding:NSASCIIStringEncoding];
     NSData *hashData = [pinData SHA1Hash];
     
@@ -496,7 +495,7 @@ static AppSettings *appSettings;
     return version;
 }
 
-- (NSBundle*)languageBundle {//todo zeeshan
+- (NSBundle*)languageBundle {
     //    NSString *bundlePath = nil;
     //    if ([[AppSettings sharedAppSettings] applicationLanguage] == 0) {
     //        bundlePath = [[NSBundle mainBundle] pathForResource:EN_LANGUAGE ofType:@"lproj"];

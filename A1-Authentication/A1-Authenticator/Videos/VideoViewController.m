@@ -88,7 +88,12 @@ static VideoPlayerViewController *portPlayer;
 //    {
 //        [self setVideoLayout];
 //        [self viewWillLayoutSubviews];
-//    }
+    //    }
+    [portPlayer.player play];
+    [landPlayer.player play];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
 }
 
 
@@ -279,15 +284,16 @@ static VideoPlayerViewController *portPlayer;
 -(void)applicationBecameActive
 {
     //player.currentPlaybackTime = playerTime;
-    //[player setCurrentPlaybackTime:playerTime];
-    //    [player play];
+//    [player setCurrentPlaybackTime:playerTime];
+        [portPlayer.player play];
+    [landPlayer.player play];
     //    NSLog(@"playback time on active %f, %f", player.currentPlaybackTime, playerTime);
 }
 
 -(void)applicationResignActive
 {
-    //playerTime = player.currentPlaybackTime;
-    //    [player pause];
+    playerTime = player.currentPlaybackTime;
+        [player pause];
     //    NSLog(@"playback time on resign %f player time %f", player.currentPlaybackTime, playerTime);
 }
 

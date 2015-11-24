@@ -11,7 +11,10 @@
 #import "AppSettings.h"
 
 @interface ResetAppViewController ()
-
+{
+    
+    NSMutableArray *images;
+}
 @end
 
 @implementation ResetAppViewController
@@ -20,11 +23,21 @@
 {
     [super viewDidLoad];
     
-   
+    images = [NSMutableArray new];
+    
+    for (int c = 1; c < 32; c++) {
+        [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"button_animation/%d", c]]];
+    }
     
     [self addTapGesture];
 }
 
+
+-(void)viewDidAppear:(BOOL)animated{
+    self.checkingBtnAnime.animationImages = images;
+    self.checkingBtnAnime.animationDuration = 1.2;
+    [self.checkingBtnAnime startAnimating];
+}
 
 
 - (void)didReceiveMemoryWarning

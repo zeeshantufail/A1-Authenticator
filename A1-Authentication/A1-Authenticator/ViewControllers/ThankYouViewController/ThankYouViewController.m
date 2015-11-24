@@ -10,6 +10,7 @@
 #import "KeyboardViewController.h"
 #import "PasscodeHelper.h"
 #import "AppHelper.h"
+#import "AnimationHelper.h"
 
 @interface ThankYouViewController ()
 
@@ -25,6 +26,12 @@
     
     [self performAnimations];
 }
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -180,6 +187,7 @@
     {
         self.profileImageView.layer.cornerRadius = 88.0;
         [self performSelector:@selector(animateProfileImage) withObject:self afterDelay:1.0 ];
+        
     }
     else if ([AppHelper isIphone6])
     {
@@ -190,7 +198,11 @@
     {
         [self performSelector:@selector(animateProfileImage) withObject:self afterDelay:0.6 ];
     }
+    
+    
 }
+
+
 
 -(void)animateUpperColorView
 {
@@ -236,7 +248,7 @@
      {
          dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0),
                         ^{
-                            [self animateNameShowText:@"Mei Andrews" characterDelay:0.01];
+                            [self animateNameShowText:@"John Doe" characterDelay:0.01];
                         });
      }];
 }
@@ -336,7 +348,7 @@
 
 - (IBAction)touchIDBtnPressed:(id)sender
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:[AppHelper getStoryboardName] bundle:nil];
     KeyboardViewController *authViewController = [storyboard instantiateViewControllerWithIdentifier:@"authenticationViewController"];
     
     PasscodeHelper *pc = [[PasscodeHelper alloc] init];
@@ -350,6 +362,8 @@
     [self addChildViewController:authViewController];
     [self.view addSubview:authViewController.view];
     authViewController.view.hidden = YES;
+    
+    [self.thankyouLowerContentView setHidden:YES];
 }
 
 //

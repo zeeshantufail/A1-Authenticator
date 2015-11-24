@@ -49,7 +49,6 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -164,7 +163,9 @@ AVCaptureDeviceInput *input;
     
     
     // Start video capture.
-    [_captureSession startRunning];
+//    [_captureSession startRunning];
+    
+    [_captureSession performSelector:@selector(startRunning) withObject:nil afterDelay:0.5];
     
     return YES;
 }
@@ -250,6 +251,7 @@ AVCaptureDeviceInput *input;
     
     
     [self.delegate didScanResult:self];
+    [[AppSettings sharedAppSettings] setAppTotp:self.isTotp];
     
 //    AuthenticateUser *au = [[AuthenticateUser alloc] init];
 //    au.delegate = self;

@@ -10,7 +10,9 @@
 #import <UIKit/UIKit.h>
 
 @interface TimerViewController : UIViewController
-@property (nonatomic) NSTimer * sTOTPTimer;
+{
+    NSTimer * sTOTPTimer;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *countDownImageView;
 
 -(void)showTimer;

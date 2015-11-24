@@ -43,9 +43,17 @@ int nextBufferLoadBeforeImagesRemaining = 50;
     [self showTimer];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+//    [sTOTPTimer invalidate];
+//    sTOTPTimer = nil;
+}
+
 -(void)showTimer{
     [self loadImages];
-    self.sTOTPTimer = [NSTimer scheduledTimerWithTimeInterval:(0.03)
+    sTOTPTimer = [NSTimer scheduledTimerWithTimeInterval:(0.03)
                                                   target:self
                                                 selector:@selector(totpTimer:)
                                                 userInfo:nil

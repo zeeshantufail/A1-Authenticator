@@ -9,6 +9,7 @@
 #import "WelcomeAppViewController.h"
 #import "BeginViewController.h"
 #import "VideoViewController.h"
+#import "AnimationHelper.h"
 
 
 @interface WelcomeAppViewController ()
@@ -327,7 +328,7 @@ int numberOfPages = 3;
 
 - (IBAction)beginBtnTapped:(id)sender
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:[AppHelper getStoryboardName] bundle:nil];
     BeginViewController *beginViewController = [storyboard instantiateViewControllerWithIdentifier:@"BeginViewController"];
     [self.navigationController pushViewController:beginViewController animated:YES];
     
