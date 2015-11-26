@@ -98,7 +98,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 
 -(void)setLockScreenTimerCount:(double)count;
 -(double)lockScreenTimerCount;
-
+- (void)setAppRegId:(NSString*)regId;
+- (NSString *)appRegId;
 
 
 @property (strong) id refrenceHolder;

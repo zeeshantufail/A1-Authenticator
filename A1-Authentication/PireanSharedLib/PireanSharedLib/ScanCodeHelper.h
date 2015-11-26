@@ -12,7 +12,7 @@
 @protocol ScanCodeHelperProtocol <NSObject>
 
 @optional
-- (void)scanCodeHelper:(ScanCodeHelper*)scanCodeHelper keyScannedWithRegisterationName:(NSString*)regName userName:(NSString*)userName applicationKey:(NSString*)key authenticationUrl:(NSString*)url pinRequired:(BOOL)pinRequired pinLength:(NSInteger)pinLength resetCount:(NSInteger)resetCount googleSecret:(NSString *) secret;
+- (void)scanCodeHelper:(ScanCodeHelper*)scanCodeHelper keyScannedWithRegisterationName:(NSString*)regName userName:(NSString*)userName applicationKey:(NSString*)key authenticationUrl:(NSString*)url pinRequired:(BOOL)pinRequired pinLength:(NSInteger)pinLength resetCount:(NSInteger)resetCount regID:(NSString *) regId;
 - (void)scanCodeHelper:(ScanCodeHelper*)scanCodeHelper passCode:(NSString*)passCode;
 
 @end

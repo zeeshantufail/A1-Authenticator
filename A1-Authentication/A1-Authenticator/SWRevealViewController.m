@@ -699,6 +699,7 @@ const int FrontViewPositionNone = 0xff;
 
 #pragma mark - View lifecycle
 
+int touchScreenNo = 0;
 - (void)loadView
 {
     // Do not call super, to prevent the apis from unfruitful looking for inexistent xibs!
@@ -747,7 +748,6 @@ const int FrontViewPositionNone = 0xff;
     [self _setFrontViewPosition:initialPosition withDuration:0.0];
 }
 KeyboardViewController *kbc;
-bool shouldChellangeAcuthentication;
 NSInteger count;
 -(void)wrongPasscodeEntered:(NSNotification *)notification{
     
@@ -760,19 +760,11 @@ NSInteger count;
         
         if (count %3 == 0 && count >= 3) {
             
-//            if ([[AppSettings sharedAppSettings] lockScreenTimerCount] - [[NSDate date] timeIntervalSince1970] <= 0) {
-//                [[AppSettings sharedAppSettings] setLockScreenTimerCount:[[NSDate date] timeIntervalSince1970] + [AppHelper lockScreenDuration]];
-//            }
-            
-            if (kbc.passcodeHelper.passcodeScreenState.screenType == 1) {
-                shouldChellangeAcuthentication = true;
-            }
             
             if ([[AppSettings sharedAppSettings] lockScreenTimerCount] - [[NSDate date] timeIntervalSince1970] <= 0) {
-                NSLog(@"current timer %f screentimer %f", [[NSDate date] timeIntervalSince1970], [[AppSettings sharedAppSettings] lockScreenTimerCount]);
                 [[AppSettings sharedAppSettings] setLockScreenTimerCount:[[NSDate date] timeIntervalSince1970] + 30];
-                NSLog(@"current timer %f screentimer %f rst %f", [[NSDate date] timeIntervalSince1970], [[AppSettings sharedAppSettings] lockScreenTimerCount], [[NSDate date] timeIntervalSince1970] + 30);
             }
+            touchScreenNo = 3;
             [self presentEnterPINScreen];
         }
     }
@@ -784,8 +776,8 @@ NSInteger count;
     
 }
 
-
 -(void)applicationWillResignActive{
+    touchScreenNo = 3;
     [self presentEnterPINScreen];
 }
 
@@ -859,10 +851,13 @@ NSInteger count;
     {
         //[[segue destinationViewController] setDelegate:self];
 //        UINavigationController * navC = (UINavigationController *)[segue destinationViewController];
-        KeyboardViewController *kbc = (KeyboardViewController *)[segue destinationViewController];
+//        KeyboardViewController *kbc = (KeyboardViewController *)[segue destinationViewController];
+        
+        UINavigationController * navC = (UINavigationController *)[segue destinationViewController];
+        KeyboardViewController *kbc = (KeyboardViewController *)[[navC viewControllers] objectAtIndex:0];
         PasscodeHelper *pc = [[PasscodeHelper alloc] init];
         [pc loadContent];
-        pc.passcodeScreenState.screenNumber = 3;
+        pc.passcodeScreenState.screenNumber = touchScreenNo;
         pc.passcodeScreenState.screenType = 5;
         pc.passcodeScreenState.error = false;
         

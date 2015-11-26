@@ -17,7 +17,7 @@
 
 @end
 
-@class PasscodeHelper;
+@class PasscodeHelper, VideoViewController;
 @interface KeyboardViewController : UIViewController
 {
     UIImageView *buttonBackgroundImageView;
@@ -38,6 +38,7 @@
 @property (retain, nonatomic) IBOutlet UIView *keypadAndCirclesContainer;
 - (IBAction)buttonCancelAction:(id)sender;
 @property (retain, nonatomic) IBOutlet UIButton *buttonCancel;
+@property (nonatomic) VideoViewController *videoViewController;
 - (IBAction)settingBtnPressed:(id)sender;
 
 - (IBAction)keyPressed:(id)sender;

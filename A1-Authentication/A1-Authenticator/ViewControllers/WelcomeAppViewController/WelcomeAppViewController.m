@@ -105,6 +105,8 @@ int numberOfPages = 3;
     self.logoImageView.animationDuration=1.5;
     self.logoImageView.animationRepeatCount = 1;
     [self.logoImageView startAnimating];
+    
+    [[AnimationHelper sharedInstance] performSelector:@selector(animateButton:) withObject:self.beginButtonContainer afterDelay:1.5];
 }
 
 #pragma Mark - HelperMethods

@@ -27,6 +27,8 @@
 
 @implementation TimerViewController
 
+bool allowTimer = true;
+
 NSMutableArray *imagesBuff1;
 NSMutableArray *imagesBuff2;
 NSMutableArray *images;
@@ -44,11 +46,13 @@ int nextBufferLoadBeforeImagesRemaining = 50;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    allowTimer = YES;
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
 //    [sTOTPTimer invalidate];
 //    sTOTPTimer = nil;
+    allowTimer = NO;
 }
 
 -(void)showTimer{
@@ -176,6 +180,11 @@ int nextBufferLoadBeforeImagesRemaining = 50;
 }
 
 - (void)totpTimer:(NSTimer *)timer {
+    
+    if (!allowTimer) {
+        return;
+    }
+    
     /*
     TOTPGenerator *generator = (TOTPGenerator *)[self generator];
     NSTimeInterval delta = [[NSDate date] timeIntervalSince1970];

@@ -13,7 +13,7 @@
 @interface ResetAppViewController ()
 {
     
-    NSMutableArray *images;
+//    NSMutableArray *images;
 }
 @end
 
@@ -23,20 +23,20 @@
 {
     [super viewDidLoad];
     
-    images = [NSMutableArray new];
-    
-    for (int c = 1; c < 32; c++) {
-        [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"button_animation/%d", c]]];
-    }
+//    images = [NSMutableArray new];
+//    
+//    for (int c = 1; c < 32; c++) {
+//        [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"button_animation/%d", c]]];
+//    }
     
     [self addTapGesture];
 }
 
 
 -(void)viewDidAppear:(BOOL)animated{
-    self.checkingBtnAnime.animationImages = images;
-    self.checkingBtnAnime.animationDuration = 1.2;
-    [self.checkingBtnAnime startAnimating];
+//    self.checkingBtnAnime.animationImages = images;
+//    self.checkingBtnAnime.animationDuration = 1.2;
+//    [self.checkingBtnAnime startAnimating];
 }
 
 

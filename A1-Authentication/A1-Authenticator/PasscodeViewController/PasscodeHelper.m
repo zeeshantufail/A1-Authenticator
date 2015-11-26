@@ -348,6 +348,7 @@
         if (self.passcodeScreenState.screenType != -1) {//unused object
             [self resetPinScreen];
         }
+        
         return;
     }
     

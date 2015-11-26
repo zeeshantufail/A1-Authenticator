@@ -328,7 +328,7 @@
                                         <rect key="frame" x="84" y="503" width="147" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="31.png" id="Mvc-kW-cYG">
+                                            <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Mvc-kW-cYG">
                                                 <rect key="frame" x="0.0" y="0.0" width="147" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -338,11 +338,10 @@
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button hidden="YES" opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v1O-pK-mQd">
+                                            <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v1O-pK-mQd">
                                                 <rect key="frame" x="0.0" y="0.0" width="147" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
-                                                <state key="normal" image="SetPin.png"/>
                                                 <state key="selected" image="SetPin_ON.png"/>
                                                 <state key="highlighted" image="SetPin_ON.png"/>
                                                 <connections>
@@ -729,7 +728,7 @@
                                 <rect key="frame" x="101" y="508" width="115" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="31.png" id="JQ9-3F-4F5">
+                                    <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="JQ9-3F-4F5">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="23"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
@@ -739,10 +738,12 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button hidden="YES" opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rsU-dC-6Cd">
+                                    <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rsU-dC-6Cd">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
+                                        <state key="selected" backgroundImage="begin_on.png"/>
+                                        <state key="highlighted" backgroundImage="begin_on.png"/>
                                         <connections>
                                             <segue destination="eqo-dF-zHj" kind="push" id="oJl-1L-VtT"/>
                                         </connections>
@@ -2085,7 +2086,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phC-n8-0iw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843" y="-1323"/>
+            <point key="canvasLocation" x="916" y="-1424"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="NMS-ZM-jS2">
@@ -2279,7 +2280,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4AX-bu-r6P">
-                                        <rect key="frame" x="77" y="56" width="166" height="30"/>
+                                        <rect key="frame" x="0.0" y="56" width="320" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
@@ -2287,7 +2288,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Confirm your 4 digit PIN" textAlignment="center" id="v1n-5c-bop">
-                                        <rect key="frame" x="65" y="83" width="189" height="30"/>
+                                        <rect key="frame" x="0.0" y="83" width="320" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -2836,19 +2837,12 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dz1-yF-QRC">
-                                        <rect key="frame" x="77" y="56" width="166" height="30"/>
+                                        <rect key="frame" x="0.0" y="56" width="320" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Confirm your 4 digit PIN" textAlignment="center" id="CoQ-iZ-XBc">
-                                        <rect key="frame" x="65" y="83" width="189" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <view contentMode="scaleToFill" id="Nk8-RN-eDv" userLabel="KeyPadView">
                                         <rect key="frame" x="0.0" y="121" width="320" height="380"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3074,6 +3068,13 @@
                                             <action selector="deletePressed:" destination="U55-ZF-Df4" eventType="touchUpInside" id="QAA-OJ-jn1"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Confirm your 4 digit PIN" textAlignment="center" id="CoQ-iZ-XBc">
+                                        <rect key="frame" x="0.0" y="83" width="320" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -3090,7 +3091,7 @@
                         <outlet property="mainContainerView" destination="pnd-w1-Hg9" id="TgI-8m-WVs"/>
                         <outlet property="subHeaderLabel" destination="CoQ-iZ-XBc" id="k47-3e-htm"/>
                         <outlet property="videoViewContainer" destination="vnf-vV-zb2" id="bRZ-d3-7Qc"/>
-                        <segue destination="0kt-Mi-hjT" kind="push" identifier="lockScreenSegue" id="K68-yR-yVf"/>
+                        <segue destination="0kt-Mi-hjT" kind="push" identifier="lockScreenSegue" animates="NO" id="K68-yR-yVf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00W-AC-wPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3099,7 +3100,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="31.png" width="566" height="127"/>
         <image name="A1.png" width="1242" height="2208"/>
         <image name="Authenticator_Help_Icon.png" width="45" height="45"/>
         <image name="Authenticator_Logo_0.png" width="750" height="1334"/>
@@ -3124,7 +3124,6 @@
         <image name="ScanANewQR_OFF.png" width="294" height="66"/>
         <image name="SecurePIN_OFF.png" width="135" height="51"/>
         <image name="SecurePIN_ON.png" width="135" height="51"/>
-        <image name="SetPin.png" width="294" height="66"/>
         <image name="SetPin_ON.png" width="147" height="33"/>
         <image name="Submit.png" width="230" height="49"/>
         <image name="TOTP_Help_Icon.png" width="36" height="36"/>
@@ -3135,6 +3134,7 @@
         <image name="X_OFF.png" width="33" height="33"/>
         <image name="X_ON.png" width="33" height="33"/>
         <image name="background.png" width="375" height="667"/>
+        <image name="begin_on.png" width="447" height="94"/>
         <image name="cameraOverlay 5.5.png" width="1242" height="2208"/>
         <image name="defaultProfileImage.png" width="84" height="84"/>
         <image name="deselect.png" width="36" height="36"/>
@@ -3144,11 +3144,11 @@
         <image name="startCircleImage.png" width="640" height="124"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="nXl-Ug-gK1"/>
         <segue reference="sQF-eJ-Oi3"/>
-        <segue reference="xHB-K5-9rZ"/>
         <segue reference="fLf-Xd-qGm"/>
-        <segue reference="cBF-YN-GC9"/>
         <segue reference="jd3-ZE-bCj"/>
         <segue reference="QF2-JF-4N9"/>
+        <segue reference="cBF-YN-GC9"/>
     </inferredMetricsTieBreakers>
 </document>

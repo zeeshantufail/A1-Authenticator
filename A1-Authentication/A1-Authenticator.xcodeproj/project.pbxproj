@@ -8,10 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		2B08304D1C0352C40037E87D /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B08304C1C0352C40037E87D /* Countdown_Animation */; settings = {ASSET_TAGS = (); }; };
-		2B1D05031C04685000010B1B /* button_animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05021C04685000010B1B /* button_animation */; settings = {ASSET_TAGS = (); }; };
 		2B1D05051C04704600010B1B /* set pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05041C04704600010B1B /* set pin.png */; settings = {ASSET_TAGS = (); }; };
 		2B1D05081C04772400010B1B /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D05071C04772400010B1B /* AnimationHelper.m */; settings = {ASSET_TAGS = (); }; };
 		2B1D050A1C04903100010B1B /* home screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05091C04903100010B1B /* home screen.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05321C04C17100010B1B /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05131C04C17100010B1B /* 1.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05331C04C17100010B1B /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05141C04C17100010B1B /* 10.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05341C04C17100010B1B /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05151C04C17100010B1B /* 11.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05351C04C17100010B1B /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05161C04C17100010B1B /* 12.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05361C04C17100010B1B /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05171C04C17100010B1B /* 13.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05371C04C17100010B1B /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05181C04C17100010B1B /* 14.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05381C04C17100010B1B /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05191C04C17100010B1B /* 15.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05391C04C17100010B1B /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D051A1C04C17100010B1B /* 16.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D053A1C04C17100010B1B /* 17.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D051B1C04C17100010B1B /* 17.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D053B1C04C17100010B1B /* 18.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D051C1C04C17100010B1B /* 18.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D053C1C04C17100010B1B /* 19.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D051D1C04C17100010B1B /* 19.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D053D1C04C17100010B1B /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D051E1C04C17100010B1B /* 2.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D053E1C04C17100010B1B /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D051F1C04C17100010B1B /* 20.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D053F1C04C17100010B1B /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05201C04C17100010B1B /* 21.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05401C04C17100010B1B /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05211C04C17100010B1B /* 22.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05411C04C17100010B1B /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05221C04C17100010B1B /* 23.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05421C04C17100010B1B /* 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05231C04C17100010B1B /* 24.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05431C04C17100010B1B /* 25.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05241C04C17100010B1B /* 25.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05441C04C17100010B1B /* 26.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05251C04C17100010B1B /* 26.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05451C04C17100010B1B /* 27.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05261C04C17100010B1B /* 27.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05461C04C17100010B1B /* 28.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05271C04C17100010B1B /* 28.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05471C04C17100010B1B /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05281C04C17100010B1B /* 29.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05481C04C17100010B1B /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05291C04C17100010B1B /* 3.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05491C04C17100010B1B /* 30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D052A1C04C17100010B1B /* 30.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D054A1C04C17100010B1B /* 31.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D052B1C04C17100010B1B /* 31.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D054B1C04C17100010B1B /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D052C1C04C17100010B1B /* 4.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D054C1C04C17100010B1B /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D052D1C04C17100010B1B /* 5.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D054D1C04C17100010B1B /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D052E1C04C17100010B1B /* 6.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D054E1C04C17100010B1B /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D052F1C04C17100010B1B /* 7.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D054F1C04C17100010B1B /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05301C04C17100010B1B /* 8.png */; settings = {ASSET_TAGS = (); }; };
+		2B1D05501C04C17100010B1B /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05311C04C17100010B1B /* 9.png */; settings = {ASSET_TAGS = (); }; };
 		2B92E3BC1BF62C51003CF4A1 /* AnimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */; };
 		2B92E3BD1BF62C51003CF4A1 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B71BF62C51003CF4A1 /* KeyboardViewController.m */; };
 		2B92E3BE1BF62C51003CF4A1 /* PasscodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B92E3B91BF62C51003CF4A1 /* PasscodeHelper.m */; };
@@ -22,6 +52,13 @@
 		2B92E3C71BF637AA003CF4A1 /* cameraOverlay 5.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */; };
 		2BC906EB1BFDC7BF009AF8E4 /* QRScanAtHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */; };
 		2BC906F41BFDDFA6009AF8E4 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC906F31BFDDFA6009AF8E4 /* TimerViewController.m */; };
+		2BDBA4B71C059A3C00BDE112 /* begin_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4B51C059A3C00BDE112 /* begin_off.png */; settings = {ASSET_TAGS = (); }; };
+		2BDBA4B81C059A3C00BDE112 /* begin_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4B61C059A3C00BDE112 /* begin_on.png */; settings = {ASSET_TAGS = (); }; };
+		2BDBA4C01C05A08700BDE112 /* beep-beep.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4BD1C05A08700BDE112 /* beep-beep.aiff */; settings = {ASSET_TAGS = (); }; };
+		2BDBA4C11C05A08700BDE112 /* Negative.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4BE1C05A08700BDE112 /* Negative.wav */; settings = {ASSET_TAGS = (); }; };
+		2BDBA4C21C05A08700BDE112 /* Positive.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4BF1C05A08700BDE112 /* Positive.wav */; settings = {ASSET_TAGS = (); }; };
+		2BDBA4C41C05CF0500BDE112 /* DarkAnimation in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4C31C05CF0500BDE112 /* DarkAnimation */; settings = {ASSET_TAGS = (); }; };
+		2BDBA4C61C05CF1300BDE112 /* WhiteAnimation in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4C51C05CF1300BDE112 /* WhiteAnimation */; settings = {ASSET_TAGS = (); }; };
 		2BF94A961BFC5EA600C8C0A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */; };
 		2BF94A991BFC5ED100C8C0A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */; };
 		2BF94A9C1BFC5F0C00C8C0A8 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */; };
@@ -164,188 +201,6 @@
 		471D008F1BEB761E003BC1C6 /* defaultProfileImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471D008E1BEB761E003BC1C6 /* defaultProfileImage@2x.png */; };
 		4729E0771BF1D0CB00627DA8 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4729E0761BF1D0CB00627DA8 /* HistoryViewController.m */; };
 		4729E07C1BF1D1DF00627DA8 /* HistoryCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4729E07B1BF1D1DF00627DA8 /* HistoryCustomCell.m */; };
-		4729E0801BF1F79F00627DA8 /* startCircleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E07F1BF1F79F00627DA8 /* startCircleImage.png */; };
-		4729E1361BF1F8D200627DA8 /* PIN_Anim_Negative000.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0821BF1F8D200627DA8 /* PIN_Anim_Negative000.png */; };
-		4729E1371BF1F8D200627DA8 /* PIN_Anim_Negative001.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0831BF1F8D200627DA8 /* PIN_Anim_Negative001.png */; };
-		4729E1381BF1F8D200627DA8 /* PIN_Anim_Negative002.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0841BF1F8D200627DA8 /* PIN_Anim_Negative002.png */; };
-		4729E1391BF1F8D200627DA8 /* PIN_Anim_Negative003.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0851BF1F8D200627DA8 /* PIN_Anim_Negative003.png */; };
-		4729E13A1BF1F8D200627DA8 /* PIN_Anim_Negative004.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0861BF1F8D200627DA8 /* PIN_Anim_Negative004.png */; };
-		4729E13B1BF1F8D200627DA8 /* PIN_Anim_Negative005.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0871BF1F8D200627DA8 /* PIN_Anim_Negative005.png */; };
-		4729E13C1BF1F8D200627DA8 /* PIN_Anim_Negative006.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0881BF1F8D200627DA8 /* PIN_Anim_Negative006.png */; };
-		4729E13D1BF1F8D200627DA8 /* PIN_Anim_Negative007.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0891BF1F8D200627DA8 /* PIN_Anim_Negative007.png */; };
-		4729E13E1BF1F8D200627DA8 /* PIN_Anim_Negative008.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E08A1BF1F8D200627DA8 /* PIN_Anim_Negative008.png */; };
-		4729E13F1BF1F8D200627DA8 /* PIN_Anim_Negative009.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E08B1BF1F8D200627DA8 /* PIN_Anim_Negative009.png */; };
-		4729E1401BF1F8D200627DA8 /* PIN_Anim_Negative010.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E08C1BF1F8D200627DA8 /* PIN_Anim_Negative010.png */; };
-		4729E1411BF1F8D200627DA8 /* PIN_Anim_Negative011.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E08D1BF1F8D200627DA8 /* PIN_Anim_Negative011.png */; };
-		4729E1421BF1F8D200627DA8 /* PIN_Anim_Negative012.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E08E1BF1F8D200627DA8 /* PIN_Anim_Negative012.png */; };
-		4729E1431BF1F8D200627DA8 /* PIN_Anim_Negative013.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E08F1BF1F8D200627DA8 /* PIN_Anim_Negative013.png */; };
-		4729E1441BF1F8D200627DA8 /* PIN_Anim_Negative014.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0901BF1F8D200627DA8 /* PIN_Anim_Negative014.png */; };
-		4729E1451BF1F8D200627DA8 /* PIN_Anim_Negative015.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0911BF1F8D200627DA8 /* PIN_Anim_Negative015.png */; };
-		4729E1461BF1F8D200627DA8 /* PIN_Anim_Negative016.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0921BF1F8D200627DA8 /* PIN_Anim_Negative016.png */; };
-		4729E1471BF1F8D200627DA8 /* PIN_Anim_Negative017.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0931BF1F8D200627DA8 /* PIN_Anim_Negative017.png */; };
-		4729E1481BF1F8D200627DA8 /* PIN_Anim_Negative018.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0941BF1F8D200627DA8 /* PIN_Anim_Negative018.png */; };
-		4729E1491BF1F8D200627DA8 /* PIN_Anim_Negative019.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0951BF1F8D200627DA8 /* PIN_Anim_Negative019.png */; };
-		4729E14A1BF1F8D200627DA8 /* PIN_Anim_Negative020.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0961BF1F8D200627DA8 /* PIN_Anim_Negative020.png */; };
-		4729E14B1BF1F8D200627DA8 /* PIN_Anim_Negative021.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0971BF1F8D200627DA8 /* PIN_Anim_Negative021.png */; };
-		4729E14C1BF1F8D200627DA8 /* PIN_Anim_Negative022.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0981BF1F8D200627DA8 /* PIN_Anim_Negative022.png */; };
-		4729E14D1BF1F8D200627DA8 /* PIN_Anim_Negative023.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0991BF1F8D200627DA8 /* PIN_Anim_Negative023.png */; };
-		4729E14E1BF1F8D200627DA8 /* PIN_Anim_Negative024.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E09A1BF1F8D200627DA8 /* PIN_Anim_Negative024.png */; };
-		4729E14F1BF1F8D200627DA8 /* PIN_Anim_Negative025.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E09B1BF1F8D200627DA8 /* PIN_Anim_Negative025.png */; };
-		4729E1501BF1F8D200627DA8 /* PIN_Anim_Negative026.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E09C1BF1F8D200627DA8 /* PIN_Anim_Negative026.png */; };
-		4729E1511BF1F8D200627DA8 /* PIN_Anim_Negative027.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E09D1BF1F8D200627DA8 /* PIN_Anim_Negative027.png */; };
-		4729E1521BF1F8D200627DA8 /* PIN_Anim_Negative028.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E09E1BF1F8D200627DA8 /* PIN_Anim_Negative028.png */; };
-		4729E1531BF1F8D200627DA8 /* PIN_Anim_Negative029.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E09F1BF1F8D200627DA8 /* PIN_Anim_Negative029.png */; };
-		4729E1541BF1F8D200627DA8 /* PIN_Anim_Negative030.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0A01BF1F8D200627DA8 /* PIN_Anim_Negative030.png */; };
-		4729E1551BF1F8D200627DA8 /* PIN_Anim_Negative031.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0A11BF1F8D200627DA8 /* PIN_Anim_Negative031.png */; };
-		4729E1561BF1F8D200627DA8 /* PIN_Anim_Negative032.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0A21BF1F8D200627DA8 /* PIN_Anim_Negative032.png */; };
-		4729E1571BF1F8D200627DA8 /* PIN_Anim_Negative033.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0A31BF1F8D200627DA8 /* PIN_Anim_Negative033.png */; };
-		4729E1581BF1F8D200627DA8 /* PIN_Anim_Negative034.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0A41BF1F8D200627DA8 /* PIN_Anim_Negative034.png */; };
-		4729E1591BF1F8D200627DA8 /* PIN_Anim_Negative035.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0A51BF1F8D200627DA8 /* PIN_Anim_Negative035.png */; };
-		4729E15A1BF1F8D200627DA8 /* PIN_Anim_Negative036.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0A61BF1F8D200627DA8 /* PIN_Anim_Negative036.png */; };
-		4729E15B1BF1F8D200627DA8 /* PIN_Anim_Negative037.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0A71BF1F8D200627DA8 /* PIN_Anim_Negative037.png */; };
-		4729E15C1BF1F8D200627DA8 /* PIN_Anim_Negative038.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0A81BF1F8D200627DA8 /* PIN_Anim_Negative038.png */; };
-		4729E15D1BF1F8D200627DA8 /* PIN_Anim_Negative039.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0A91BF1F8D200627DA8 /* PIN_Anim_Negative039.png */; };
-		4729E15E1BF1F8D200627DA8 /* PIN_Anim_Negative040.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0AA1BF1F8D200627DA8 /* PIN_Anim_Negative040.png */; };
-		4729E15F1BF1F8D200627DA8 /* PIN_Anim_Negative041.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0AB1BF1F8D200627DA8 /* PIN_Anim_Negative041.png */; };
-		4729E1601BF1F8D200627DA8 /* PIN_Anim_Negative042.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0AC1BF1F8D200627DA8 /* PIN_Anim_Negative042.png */; };
-		4729E1611BF1F8D200627DA8 /* PIN_Anim_Negative043.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0AD1BF1F8D200627DA8 /* PIN_Anim_Negative043.png */; };
-		4729E1621BF1F8D200627DA8 /* PIN_Anim_Negative044.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0AE1BF1F8D200627DA8 /* PIN_Anim_Negative044.png */; };
-		4729E1631BF1F8D200627DA8 /* PIN_Anim_Negative045.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0AF1BF1F8D200627DA8 /* PIN_Anim_Negative045.png */; };
-		4729E1641BF1F8D200627DA8 /* PIN_Anim_Negative046.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0B01BF1F8D200627DA8 /* PIN_Anim_Negative046.png */; };
-		4729E1651BF1F8D200627DA8 /* PIN_Anim_Negative047.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0B11BF1F8D200627DA8 /* PIN_Anim_Negative047.png */; };
-		4729E1661BF1F8D200627DA8 /* PIN_Anim_Negative048.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0B21BF1F8D200627DA8 /* PIN_Anim_Negative048.png */; };
-		4729E1671BF1F8D200627DA8 /* PIN_Anim_Negative049.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0B31BF1F8D200627DA8 /* PIN_Anim_Negative049.png */; };
-		4729E1681BF1F8D200627DA8 /* PIN_Anim_Negative050.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0B41BF1F8D200627DA8 /* PIN_Anim_Negative050.png */; };
-		4729E1691BF1F8D200627DA8 /* PIN_Anim_Negative051.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0B51BF1F8D200627DA8 /* PIN_Anim_Negative051.png */; };
-		4729E16A1BF1F8D200627DA8 /* PIN_Anim_Negative052.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0B61BF1F8D200627DA8 /* PIN_Anim_Negative052.png */; };
-		4729E16B1BF1F8D200627DA8 /* PIN_Anim_Negative053.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0B71BF1F8D200627DA8 /* PIN_Anim_Negative053.png */; };
-		4729E16C1BF1F8D200627DA8 /* PIN_Anim_Negative054.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0B81BF1F8D200627DA8 /* PIN_Anim_Negative054.png */; };
-		4729E16D1BF1F8D200627DA8 /* PIN_Anim_Negative055.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0B91BF1F8D200627DA8 /* PIN_Anim_Negative055.png */; };
-		4729E16E1BF1F8D200627DA8 /* PIN_Anim_Negative056.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0BA1BF1F8D200627DA8 /* PIN_Anim_Negative056.png */; };
-		4729E16F1BF1F8D200627DA8 /* PIN_Anim_Negative057.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0BB1BF1F8D200627DA8 /* PIN_Anim_Negative057.png */; };
-		4729E1701BF1F8D200627DA8 /* PIN_Anim_Negative058.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0BC1BF1F8D200627DA8 /* PIN_Anim_Negative058.png */; };
-		4729E1711BF1F8D200627DA8 /* PIN_Anim_Negative059.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0BD1BF1F8D200627DA8 /* PIN_Anim_Negative059.png */; };
-		4729E1721BF1F8D200627DA8 /* PIN_Anim_Negative060.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0BE1BF1F8D200627DA8 /* PIN_Anim_Negative060.png */; };
-		4729E1731BF1F8D200627DA8 /* PIN_Anim_Negative061.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0BF1BF1F8D200627DA8 /* PIN_Anim_Negative061.png */; };
-		4729E1741BF1F8D200627DA8 /* PIN_Anim_Negative062.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0C01BF1F8D200627DA8 /* PIN_Anim_Negative062.png */; };
-		4729E1751BF1F8D200627DA8 /* PIN_Anim_Negative063.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0C11BF1F8D200627DA8 /* PIN_Anim_Negative063.png */; };
-		4729E1761BF1F8D200627DA8 /* PIN_Anim_Negative064.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0C21BF1F8D200627DA8 /* PIN_Anim_Negative064.png */; };
-		4729E1771BF1F8D200627DA8 /* PIN_Anim_Negative065.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0C31BF1F8D200627DA8 /* PIN_Anim_Negative065.png */; };
-		4729E1781BF1F8D200627DA8 /* PIN_Anim_Negative066.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0C41BF1F8D200627DA8 /* PIN_Anim_Negative066.png */; };
-		4729E1791BF1F8D200627DA8 /* PIN_Anim_Negative067.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0C51BF1F8D200627DA8 /* PIN_Anim_Negative067.png */; };
-		4729E17A1BF1F8D200627DA8 /* PIN_Anim_Negative068.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0C61BF1F8D200627DA8 /* PIN_Anim_Negative068.png */; };
-		4729E17B1BF1F8D200627DA8 /* PIN_Anim_Negative069.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0C71BF1F8D200627DA8 /* PIN_Anim_Negative069.png */; };
-		4729E17C1BF1F8D200627DA8 /* PIN_Anim_Negative070.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0C81BF1F8D200627DA8 /* PIN_Anim_Negative070.png */; };
-		4729E17D1BF1F8D200627DA8 /* PIN_Anim_Negative071.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0C91BF1F8D200627DA8 /* PIN_Anim_Negative071.png */; };
-		4729E17E1BF1F8D200627DA8 /* PIN_Anim_Negative072.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0CA1BF1F8D200627DA8 /* PIN_Anim_Negative072.png */; };
-		4729E17F1BF1F8D200627DA8 /* PIN_Anim_Negative073.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0CB1BF1F8D200627DA8 /* PIN_Anim_Negative073.png */; };
-		4729E1801BF1F8D200627DA8 /* PIN_Anim_Negative074.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0CC1BF1F8D200627DA8 /* PIN_Anim_Negative074.png */; };
-		4729E1811BF1F8D200627DA8 /* PIN_Anim_Negative075.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0CD1BF1F8D200627DA8 /* PIN_Anim_Negative075.png */; };
-		4729E1821BF1F8D200627DA8 /* PIN_Anim_Negative076.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0CE1BF1F8D200627DA8 /* PIN_Anim_Negative076.png */; };
-		4729E1831BF1F8D200627DA8 /* PIN_Anim_Negative077.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0CF1BF1F8D200627DA8 /* PIN_Anim_Negative077.png */; };
-		4729E1841BF1F8D200627DA8 /* PIN_Anim_Negative078.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0D01BF1F8D200627DA8 /* PIN_Anim_Negative078.png */; };
-		4729E1851BF1F8D200627DA8 /* PIN_Anim_Negative079.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0D11BF1F8D200627DA8 /* PIN_Anim_Negative079.png */; };
-		4729E1861BF1F8D200627DA8 /* PIN_Anim_Negative080.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0D21BF1F8D200627DA8 /* PIN_Anim_Negative080.png */; };
-		4729E1871BF1F8D200627DA8 /* PIN_Anim_Negative081.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0D31BF1F8D200627DA8 /* PIN_Anim_Negative081.png */; };
-		4729E1881BF1F8D200627DA8 /* PIN_Anim_Negative082.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0D41BF1F8D200627DA8 /* PIN_Anim_Negative082.png */; };
-		4729E1891BF1F8D200627DA8 /* PIN_Anim_Negative083.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0D51BF1F8D200627DA8 /* PIN_Anim_Negative083.png */; };
-		4729E18A1BF1F8D200627DA8 /* PIN_Anim_Negative084.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0D61BF1F8D200627DA8 /* PIN_Anim_Negative084.png */; };
-		4729E18B1BF1F8D200627DA8 /* PIN_Anim_Negative085.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0D71BF1F8D200627DA8 /* PIN_Anim_Negative085.png */; };
-		4729E18C1BF1F8D200627DA8 /* PIN_Anim_Negative086.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0D81BF1F8D200627DA8 /* PIN_Anim_Negative086.png */; };
-		4729E18D1BF1F8D200627DA8 /* PIN_Anim_Negative087.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0D91BF1F8D200627DA8 /* PIN_Anim_Negative087.png */; };
-		4729E18E1BF1F8D200627DA8 /* PIN_Anim_Negative088.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0DA1BF1F8D200627DA8 /* PIN_Anim_Negative088.png */; };
-		4729E18F1BF1F8D200627DA8 /* PIN_Anim_Negative089.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0DB1BF1F8D200627DA8 /* PIN_Anim_Negative089.png */; };
-		4729E1901BF1F8D200627DA8 /* PIN_Anim_Negative090.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0DC1BF1F8D200627DA8 /* PIN_Anim_Negative090.png */; };
-		4729E1911BF1F8D200627DA8 /* PIN_Anim_Negative091.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0DD1BF1F8D200627DA8 /* PIN_Anim_Negative091.png */; };
-		4729E1921BF1F8D200627DA8 /* PIN_Anim_Negative092.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0DE1BF1F8D200627DA8 /* PIN_Anim_Negative092.png */; };
-		4729E1931BF1F8D200627DA8 /* PIN_Anim_Negative093.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0DF1BF1F8D200627DA8 /* PIN_Anim_Negative093.png */; };
-		4729E1941BF1F8D200627DA8 /* PIN_Anim_Negative094.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0E01BF1F8D200627DA8 /* PIN_Anim_Negative094.png */; };
-		4729E1951BF1F8D200627DA8 /* PIN_Anim_Negative095.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0E11BF1F8D200627DA8 /* PIN_Anim_Negative095.png */; };
-		4729E1961BF1F8D200627DA8 /* PIN_Anim_Negative096.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0E21BF1F8D200627DA8 /* PIN_Anim_Negative096.png */; };
-		4729E1971BF1F8D200627DA8 /* PIN_Anim_Negative097.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0E31BF1F8D200627DA8 /* PIN_Anim_Negative097.png */; };
-		4729E1981BF1F8D200627DA8 /* PIN_Anim_Negative098.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0E41BF1F8D200627DA8 /* PIN_Anim_Negative098.png */; };
-		4729E1991BF1F8D200627DA8 /* PIN_Anim_Negative099.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0E51BF1F8D200627DA8 /* PIN_Anim_Negative099.png */; };
-		4729E19A1BF1F8D200627DA8 /* PIN_Anim_Positive000.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0E61BF1F8D200627DA8 /* PIN_Anim_Positive000.png */; };
-		4729E19B1BF1F8D200627DA8 /* PIN_Anim_Positive001.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0E71BF1F8D200627DA8 /* PIN_Anim_Positive001.png */; };
-		4729E19C1BF1F8D200627DA8 /* PIN_Anim_Positive002.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0E81BF1F8D200627DA8 /* PIN_Anim_Positive002.png */; };
-		4729E19D1BF1F8D200627DA8 /* PIN_Anim_Positive003.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0E91BF1F8D200627DA8 /* PIN_Anim_Positive003.png */; };
-		4729E19E1BF1F8D200627DA8 /* PIN_Anim_Positive004.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0EA1BF1F8D200627DA8 /* PIN_Anim_Positive004.png */; };
-		4729E19F1BF1F8D200627DA8 /* PIN_Anim_Positive005.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0EB1BF1F8D200627DA8 /* PIN_Anim_Positive005.png */; };
-		4729E1A01BF1F8D200627DA8 /* PIN_Anim_Positive006.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0EC1BF1F8D200627DA8 /* PIN_Anim_Positive006.png */; };
-		4729E1A11BF1F8D200627DA8 /* PIN_Anim_Positive007.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0ED1BF1F8D200627DA8 /* PIN_Anim_Positive007.png */; };
-		4729E1A21BF1F8D200627DA8 /* PIN_Anim_Positive008.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0EE1BF1F8D200627DA8 /* PIN_Anim_Positive008.png */; };
-		4729E1A31BF1F8D200627DA8 /* PIN_Anim_Positive009.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0EF1BF1F8D200627DA8 /* PIN_Anim_Positive009.png */; };
-		4729E1A41BF1F8D200627DA8 /* PIN_Anim_Positive010.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0F01BF1F8D200627DA8 /* PIN_Anim_Positive010.png */; };
-		4729E1A51BF1F8D200627DA8 /* PIN_Anim_Positive011.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0F11BF1F8D200627DA8 /* PIN_Anim_Positive011.png */; };
-		4729E1A61BF1F8D200627DA8 /* PIN_Anim_Positive012.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0F21BF1F8D200627DA8 /* PIN_Anim_Positive012.png */; };
-		4729E1A71BF1F8D200627DA8 /* PIN_Anim_Positive013.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0F31BF1F8D200627DA8 /* PIN_Anim_Positive013.png */; };
-		4729E1A81BF1F8D200627DA8 /* PIN_Anim_Positive014.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0F41BF1F8D200627DA8 /* PIN_Anim_Positive014.png */; };
-		4729E1A91BF1F8D200627DA8 /* PIN_Anim_Positive015.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0F51BF1F8D200627DA8 /* PIN_Anim_Positive015.png */; };
-		4729E1AA1BF1F8D200627DA8 /* PIN_Anim_Positive016.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0F61BF1F8D200627DA8 /* PIN_Anim_Positive016.png */; };
-		4729E1AB1BF1F8D200627DA8 /* PIN_Anim_Positive017.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0F71BF1F8D200627DA8 /* PIN_Anim_Positive017.png */; };
-		4729E1AC1BF1F8D200627DA8 /* PIN_Anim_Positive018.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0F81BF1F8D200627DA8 /* PIN_Anim_Positive018.png */; };
-		4729E1AD1BF1F8D200627DA8 /* PIN_Anim_Positive019.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0F91BF1F8D200627DA8 /* PIN_Anim_Positive019.png */; };
-		4729E1AE1BF1F8D200627DA8 /* PIN_Anim_Positive020.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0FA1BF1F8D200627DA8 /* PIN_Anim_Positive020.png */; };
-		4729E1AF1BF1F8D200627DA8 /* PIN_Anim_Positive021.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0FB1BF1F8D200627DA8 /* PIN_Anim_Positive021.png */; };
-		4729E1B01BF1F8D200627DA8 /* PIN_Anim_Positive022.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0FC1BF1F8D200627DA8 /* PIN_Anim_Positive022.png */; };
-		4729E1B11BF1F8D200627DA8 /* PIN_Anim_Positive023.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0FD1BF1F8D200627DA8 /* PIN_Anim_Positive023.png */; };
-		4729E1B21BF1F8D200627DA8 /* PIN_Anim_Positive024.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0FE1BF1F8D200627DA8 /* PIN_Anim_Positive024.png */; };
-		4729E1B31BF1F8D200627DA8 /* PIN_Anim_Positive025.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E0FF1BF1F8D200627DA8 /* PIN_Anim_Positive025.png */; };
-		4729E1B41BF1F8D200627DA8 /* PIN_Anim_Positive026.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1001BF1F8D200627DA8 /* PIN_Anim_Positive026.png */; };
-		4729E1B51BF1F8D200627DA8 /* PIN_Anim_Positive027.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1011BF1F8D200627DA8 /* PIN_Anim_Positive027.png */; };
-		4729E1B61BF1F8D200627DA8 /* PIN_Anim_Positive028.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1021BF1F8D200627DA8 /* PIN_Anim_Positive028.png */; };
-		4729E1B71BF1F8D200627DA8 /* PIN_Anim_Positive029.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1031BF1F8D200627DA8 /* PIN_Anim_Positive029.png */; };
-		4729E1B81BF1F8D200627DA8 /* PIN_Anim_Positive030.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1041BF1F8D200627DA8 /* PIN_Anim_Positive030.png */; };
-		4729E1B91BF1F8D200627DA8 /* PIN_Anim_Positive031.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1051BF1F8D200627DA8 /* PIN_Anim_Positive031.png */; };
-		4729E1BA1BF1F8D200627DA8 /* PIN_Anim_Positive032.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1061BF1F8D200627DA8 /* PIN_Anim_Positive032.png */; };
-		4729E1BB1BF1F8D200627DA8 /* PIN_Anim_Positive033.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1071BF1F8D200627DA8 /* PIN_Anim_Positive033.png */; };
-		4729E1BC1BF1F8D200627DA8 /* PIN_Anim_Positive034.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1081BF1F8D200627DA8 /* PIN_Anim_Positive034.png */; };
-		4729E1BD1BF1F8D200627DA8 /* PIN_Anim_Positive035.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1091BF1F8D200627DA8 /* PIN_Anim_Positive035.png */; };
-		4729E1BE1BF1F8D200627DA8 /* PIN_Anim_Positive036.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E10A1BF1F8D200627DA8 /* PIN_Anim_Positive036.png */; };
-		4729E1BF1BF1F8D200627DA8 /* PIN_Anim_Positive037.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E10B1BF1F8D200627DA8 /* PIN_Anim_Positive037.png */; };
-		4729E1C01BF1F8D200627DA8 /* PIN_Anim_Positive038.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E10C1BF1F8D200627DA8 /* PIN_Anim_Positive038.png */; };
-		4729E1C11BF1F8D200627DA8 /* PIN_Anim_Positive039.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E10D1BF1F8D200627DA8 /* PIN_Anim_Positive039.png */; };
-		4729E1C21BF1F8D200627DA8 /* PIN_Anim_Positive040.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E10E1BF1F8D200627DA8 /* PIN_Anim_Positive040.png */; };
-		4729E1C31BF1F8D200627DA8 /* PIN_Anim_Positive041.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E10F1BF1F8D200627DA8 /* PIN_Anim_Positive041.png */; };
-		4729E1C41BF1F8D200627DA8 /* PIN_Anim_Positive042.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1101BF1F8D200627DA8 /* PIN_Anim_Positive042.png */; };
-		4729E1C51BF1F8D200627DA8 /* PIN_Anim_Positive043.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1111BF1F8D200627DA8 /* PIN_Anim_Positive043.png */; };
-		4729E1C61BF1F8D200627DA8 /* PIN_Anim_Positive044.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1121BF1F8D200627DA8 /* PIN_Anim_Positive044.png */; };
-		4729E1C71BF1F8D200627DA8 /* PIN_Anim_Positive045.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1131BF1F8D200627DA8 /* PIN_Anim_Positive045.png */; };
-		4729E1C81BF1F8D200627DA8 /* PIN_Anim_Positive046.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1141BF1F8D200627DA8 /* PIN_Anim_Positive046.png */; };
-		4729E1C91BF1F8D200627DA8 /* PIN_Anim_Positive047.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1151BF1F8D200627DA8 /* PIN_Anim_Positive047.png */; };
-		4729E1CA1BF1F8D200627DA8 /* PIN_Anim_Positive048.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1161BF1F8D200627DA8 /* PIN_Anim_Positive048.png */; };
-		4729E1CB1BF1F8D200627DA8 /* PIN_Anim_Positive049.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1171BF1F8D200627DA8 /* PIN_Anim_Positive049.png */; };
-		4729E1CC1BF1F8D200627DA8 /* PIN_Anim_Positive050.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1181BF1F8D200627DA8 /* PIN_Anim_Positive050.png */; };
-		4729E1CD1BF1F8D200627DA8 /* PIN_Anim_Positive051.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1191BF1F8D200627DA8 /* PIN_Anim_Positive051.png */; };
-		4729E1CE1BF1F8D200627DA8 /* PIN_Anim_Positive052.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E11A1BF1F8D200627DA8 /* PIN_Anim_Positive052.png */; };
-		4729E1CF1BF1F8D200627DA8 /* PIN_Anim_Positive053.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E11B1BF1F8D200627DA8 /* PIN_Anim_Positive053.png */; };
-		4729E1D01BF1F8D200627DA8 /* PIN_Anim_Positive054.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E11C1BF1F8D200627DA8 /* PIN_Anim_Positive054.png */; };
-		4729E1D11BF1F8D200627DA8 /* PIN_Anim_Positive055.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E11D1BF1F8D200627DA8 /* PIN_Anim_Positive055.png */; };
-		4729E1D21BF1F8D200627DA8 /* PIN_Anim_Positive056.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E11E1BF1F8D200627DA8 /* PIN_Anim_Positive056.png */; };
-		4729E1D31BF1F8D200627DA8 /* PIN_Anim_Positive057.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E11F1BF1F8D200627DA8 /* PIN_Anim_Positive057.png */; };
-		4729E1D41BF1F8D200627DA8 /* PIN_Anim_Positive058.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1201BF1F8D200627DA8 /* PIN_Anim_Positive058.png */; };
-		4729E1D51BF1F8D200627DA8 /* PIN_Anim_Positive059.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1211BF1F8D200627DA8 /* PIN_Anim_Positive059.png */; };
-		4729E1D61BF1F8D200627DA8 /* PIN_Anim_Positive060.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1221BF1F8D200627DA8 /* PIN_Anim_Positive060.png */; };
-		4729E1D71BF1F8D200627DA8 /* PIN_Anim_Positive061.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1231BF1F8D200627DA8 /* PIN_Anim_Positive061.png */; };
-		4729E1D81BF1F8D200627DA8 /* PIN_Anim_Positive062.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1241BF1F8D200627DA8 /* PIN_Anim_Positive062.png */; };
-		4729E1D91BF1F8D200627DA8 /* PIN_Anim_Positive063.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1251BF1F8D200627DA8 /* PIN_Anim_Positive063.png */; };
-		4729E1DA1BF1F8D200627DA8 /* PIN_Anim_Positive064.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1261BF1F8D200627DA8 /* PIN_Anim_Positive064.png */; };
-		4729E1DB1BF1F8D200627DA8 /* PIN_Anim_Positive065.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1271BF1F8D200627DA8 /* PIN_Anim_Positive065.png */; };
-		4729E1DC1BF1F8D200627DA8 /* PIN_Anim_Positive066.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1281BF1F8D200627DA8 /* PIN_Anim_Positive066.png */; };
-		4729E1DD1BF1F8D200627DA8 /* PIN_Anim_Positive067.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1291BF1F8D200627DA8 /* PIN_Anim_Positive067.png */; };
-		4729E1DE1BF1F8D200627DA8 /* PIN_Anim_Positive068.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E12A1BF1F8D200627DA8 /* PIN_Anim_Positive068.png */; };
-		4729E1DF1BF1F8D200627DA8 /* PIN_Anim_Positive069.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E12B1BF1F8D200627DA8 /* PIN_Anim_Positive069.png */; };
-		4729E1E01BF1F8D200627DA8 /* PIN_Anim_Positive070.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E12C1BF1F8D200627DA8 /* PIN_Anim_Positive070.png */; };
-		4729E1E11BF1F8D200627DA8 /* PIN_Anim_Positive071.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E12D1BF1F8D200627DA8 /* PIN_Anim_Positive071.png */; };
-		4729E1E21BF1F8D200627DA8 /* PIN_Anim_Positive072.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E12E1BF1F8D200627DA8 /* PIN_Anim_Positive072.png */; };
-		4729E1E31BF1F8D200627DA8 /* PIN_Anim_Positive073.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E12F1BF1F8D200627DA8 /* PIN_Anim_Positive073.png */; };
-		4729E1E41BF1F8D200627DA8 /* PIN_Anim_Positive074.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1301BF1F8D200627DA8 /* PIN_Anim_Positive074.png */; };
-		4729E1E51BF1F8D200627DA8 /* PIN_Anim_Positive075.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1311BF1F8D200627DA8 /* PIN_Anim_Positive075.png */; };
-		4729E1E61BF1F8D200627DA8 /* PIN_Anim_Positive076.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1321BF1F8D200627DA8 /* PIN_Anim_Positive076.png */; };
-		4729E1E71BF1F8D200627DA8 /* PIN_Anim_Positive077.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1331BF1F8D200627DA8 /* PIN_Anim_Positive077.png */; };
-		4729E1E81BF1F8D200627DA8 /* PIN_Anim_Positive078.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1341BF1F8D200627DA8 /* PIN_Anim_Positive078.png */; };
-		4729E1E91BF1F8D200627DA8 /* PIN_Anim_Positive079.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1351BF1F8D200627DA8 /* PIN_Anim_Positive079.png */; };
-		4729E1EF1BF2010200627DA8 /* PIN_Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1EE1BF2010200627DA8 /* PIN_Circle.png */; };
 		4729E1F21BF20A3600627DA8 /* Notification_Help_Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1F11BF20A3600627DA8 /* Notification_Help_Icon@2x.png */; };
 		4729E1F41BF20E6300627DA8 /* Authenticator_Help_Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1F31BF20E6300627DA8 /* Authenticator_Help_Icon@2x.png */; };
 		4729E1F61BF2113B00627DA8 /* QR_Help_Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4729E1F51BF2113B00627DA8 /* QR_Help_Icon@2x.png */; };
@@ -656,11 +511,41 @@
 
 /* Begin PBXFileReference section */
 		2B08304C1C0352C40037E87D /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = "../../../../../Documents/Pirean/A1-Authentication/Waqar/A1-Authentication Resources/13 nov 2015/@3x Animations/Countdown_Animation"; sourceTree = "<group>"; };
-		2B1D05021C04685000010B1B /* button_animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = button_animation; path = ../../../../../Downloads/button_animation; sourceTree = "<group>"; };
 		2B1D05041C04704600010B1B /* set pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "set pin.png"; sourceTree = "<group>"; };
 		2B1D05061C04772400010B1B /* AnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationHelper.h; path = "Helper Classes/AnimationHelper.h"; sourceTree = "<group>"; };
 		2B1D05071C04772400010B1B /* AnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationHelper.m; path = "Helper Classes/AnimationHelper.m"; sourceTree = "<group>"; };
 		2B1D05091C04903100010B1B /* home screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home screen.png"; sourceTree = "<group>"; };
+		2B1D05131C04C17100010B1B /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		2B1D05141C04C17100010B1B /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		2B1D05151C04C17100010B1B /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		2B1D05161C04C17100010B1B /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		2B1D05171C04C17100010B1B /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		2B1D05181C04C17100010B1B /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		2B1D05191C04C17100010B1B /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		2B1D051A1C04C17100010B1B /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		2B1D051B1C04C17100010B1B /* 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17.png; sourceTree = "<group>"; };
+		2B1D051C1C04C17100010B1B /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
+		2B1D051D1C04C17100010B1B /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 19.png; sourceTree = "<group>"; };
+		2B1D051E1C04C17100010B1B /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		2B1D051F1C04C17100010B1B /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		2B1D05201C04C17100010B1B /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
+		2B1D05211C04C17100010B1B /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
+		2B1D05221C04C17100010B1B /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
+		2B1D05231C04C17100010B1B /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		2B1D05241C04C17100010B1B /* 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25.png; sourceTree = "<group>"; };
+		2B1D05251C04C17100010B1B /* 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26.png; sourceTree = "<group>"; };
+		2B1D05261C04C17100010B1B /* 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 27.png; sourceTree = "<group>"; };
+		2B1D05271C04C17100010B1B /* 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 28.png; sourceTree = "<group>"; };
+		2B1D05281C04C17100010B1B /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
+		2B1D05291C04C17100010B1B /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		2B1D052A1C04C17100010B1B /* 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30.png; sourceTree = "<group>"; };
+		2B1D052B1C04C17100010B1B /* 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 31.png; sourceTree = "<group>"; };
+		2B1D052C1C04C17100010B1B /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		2B1D052D1C04C17100010B1B /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		2B1D052E1C04C17100010B1B /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		2B1D052F1C04C17100010B1B /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		2B1D05301C04C17100010B1B /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		2B1D05311C04C17100010B1B /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		2B92E3B41BF62C51003CF4A1 /* AnimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeHelper.h; sourceTree = "<group>"; };
 		2B92E3B51BF62C51003CF4A1 /* AnimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeHelper.m; sourceTree = "<group>"; };
 		2B92E3B61BF62C51003CF4A1 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
@@ -676,6 +561,13 @@
 		2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRScanAtHome.png; sourceTree = "<group>"; };
 		2BC906F21BFDDFA6009AF8E4 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimerViewController.h; path = ViewControllers/HomeViewController/TimerViewController.h; sourceTree = "<group>"; };
 		2BC906F31BFDDFA6009AF8E4 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimerViewController.m; path = ViewControllers/HomeViewController/TimerViewController.m; sourceTree = "<group>"; };
+		2BDBA4B51C059A3C00BDE112 /* begin_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = begin_off.png; sourceTree = "<group>"; };
+		2BDBA4B61C059A3C00BDE112 /* begin_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = begin_on.png; sourceTree = "<group>"; };
+		2BDBA4BD1C05A08700BDE112 /* beep-beep.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "beep-beep.aiff"; sourceTree = "<group>"; };
+		2BDBA4BE1C05A08700BDE112 /* Negative.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Negative.wav; sourceTree = "<group>"; };
+		2BDBA4BF1C05A08700BDE112 /* Positive.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Positive.wav; sourceTree = "<group>"; };
+		2BDBA4C31C05CF0500BDE112 /* DarkAnimation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DarkAnimation; sourceTree = "<group>"; };
+		2BDBA4C51C05CF1300BDE112 /* WhiteAnimation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WhiteAnimation; sourceTree = "<group>"; };
 		2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -834,188 +726,6 @@
 		4729E0761BF1D0CB00627DA8 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryViewController.m; path = ViewControllers/HistoryViewController/HistoryViewController.m; sourceTree = "<group>"; };
 		4729E07A1BF1D1DF00627DA8 /* HistoryCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryCustomCell.h; path = CustomCells/HistoryCustomCell/HistoryCustomCell.h; sourceTree = "<group>"; };
 		4729E07B1BF1D1DF00627DA8 /* HistoryCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryCustomCell.m; path = CustomCells/HistoryCustomCell/HistoryCustomCell.m; sourceTree = "<group>"; };
-		4729E07F1BF1F79F00627DA8 /* startCircleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startCircleImage.png; sourceTree = "<group>"; };
-		4729E0821BF1F8D200627DA8 /* PIN_Anim_Negative000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative000.png; sourceTree = "<group>"; };
-		4729E0831BF1F8D200627DA8 /* PIN_Anim_Negative001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative001.png; sourceTree = "<group>"; };
-		4729E0841BF1F8D200627DA8 /* PIN_Anim_Negative002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative002.png; sourceTree = "<group>"; };
-		4729E0851BF1F8D200627DA8 /* PIN_Anim_Negative003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative003.png; sourceTree = "<group>"; };
-		4729E0861BF1F8D200627DA8 /* PIN_Anim_Negative004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative004.png; sourceTree = "<group>"; };
-		4729E0871BF1F8D200627DA8 /* PIN_Anim_Negative005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative005.png; sourceTree = "<group>"; };
-		4729E0881BF1F8D200627DA8 /* PIN_Anim_Negative006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative006.png; sourceTree = "<group>"; };
-		4729E0891BF1F8D200627DA8 /* PIN_Anim_Negative007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative007.png; sourceTree = "<group>"; };
-		4729E08A1BF1F8D200627DA8 /* PIN_Anim_Negative008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative008.png; sourceTree = "<group>"; };
-		4729E08B1BF1F8D200627DA8 /* PIN_Anim_Negative009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative009.png; sourceTree = "<group>"; };
-		4729E08C1BF1F8D200627DA8 /* PIN_Anim_Negative010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative010.png; sourceTree = "<group>"; };
-		4729E08D1BF1F8D200627DA8 /* PIN_Anim_Negative011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative011.png; sourceTree = "<group>"; };
-		4729E08E1BF1F8D200627DA8 /* PIN_Anim_Negative012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative012.png; sourceTree = "<group>"; };
-		4729E08F1BF1F8D200627DA8 /* PIN_Anim_Negative013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative013.png; sourceTree = "<group>"; };
-		4729E0901BF1F8D200627DA8 /* PIN_Anim_Negative014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative014.png; sourceTree = "<group>"; };
-		4729E0911BF1F8D200627DA8 /* PIN_Anim_Negative015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative015.png; sourceTree = "<group>"; };
-		4729E0921BF1F8D200627DA8 /* PIN_Anim_Negative016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative016.png; sourceTree = "<group>"; };
-		4729E0931BF1F8D200627DA8 /* PIN_Anim_Negative017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative017.png; sourceTree = "<group>"; };
-		4729E0941BF1F8D200627DA8 /* PIN_Anim_Negative018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative018.png; sourceTree = "<group>"; };
-		4729E0951BF1F8D200627DA8 /* PIN_Anim_Negative019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative019.png; sourceTree = "<group>"; };
-		4729E0961BF1F8D200627DA8 /* PIN_Anim_Negative020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative020.png; sourceTree = "<group>"; };
-		4729E0971BF1F8D200627DA8 /* PIN_Anim_Negative021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative021.png; sourceTree = "<group>"; };
-		4729E0981BF1F8D200627DA8 /* PIN_Anim_Negative022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative022.png; sourceTree = "<group>"; };
-		4729E0991BF1F8D200627DA8 /* PIN_Anim_Negative023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative023.png; sourceTree = "<group>"; };
-		4729E09A1BF1F8D200627DA8 /* PIN_Anim_Negative024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative024.png; sourceTree = "<group>"; };
-		4729E09B1BF1F8D200627DA8 /* PIN_Anim_Negative025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative025.png; sourceTree = "<group>"; };
-		4729E09C1BF1F8D200627DA8 /* PIN_Anim_Negative026.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative026.png; sourceTree = "<group>"; };
-		4729E09D1BF1F8D200627DA8 /* PIN_Anim_Negative027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative027.png; sourceTree = "<group>"; };
-		4729E09E1BF1F8D200627DA8 /* PIN_Anim_Negative028.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative028.png; sourceTree = "<group>"; };
-		4729E09F1BF1F8D200627DA8 /* PIN_Anim_Negative029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative029.png; sourceTree = "<group>"; };
-		4729E0A01BF1F8D200627DA8 /* PIN_Anim_Negative030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative030.png; sourceTree = "<group>"; };
-		4729E0A11BF1F8D200627DA8 /* PIN_Anim_Negative031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative031.png; sourceTree = "<group>"; };
-		4729E0A21BF1F8D200627DA8 /* PIN_Anim_Negative032.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative032.png; sourceTree = "<group>"; };
-		4729E0A31BF1F8D200627DA8 /* PIN_Anim_Negative033.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative033.png; sourceTree = "<group>"; };
-		4729E0A41BF1F8D200627DA8 /* PIN_Anim_Negative034.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative034.png; sourceTree = "<group>"; };
-		4729E0A51BF1F8D200627DA8 /* PIN_Anim_Negative035.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative035.png; sourceTree = "<group>"; };
-		4729E0A61BF1F8D200627DA8 /* PIN_Anim_Negative036.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative036.png; sourceTree = "<group>"; };
-		4729E0A71BF1F8D200627DA8 /* PIN_Anim_Negative037.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative037.png; sourceTree = "<group>"; };
-		4729E0A81BF1F8D200627DA8 /* PIN_Anim_Negative038.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative038.png; sourceTree = "<group>"; };
-		4729E0A91BF1F8D200627DA8 /* PIN_Anim_Negative039.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative039.png; sourceTree = "<group>"; };
-		4729E0AA1BF1F8D200627DA8 /* PIN_Anim_Negative040.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative040.png; sourceTree = "<group>"; };
-		4729E0AB1BF1F8D200627DA8 /* PIN_Anim_Negative041.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative041.png; sourceTree = "<group>"; };
-		4729E0AC1BF1F8D200627DA8 /* PIN_Anim_Negative042.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative042.png; sourceTree = "<group>"; };
-		4729E0AD1BF1F8D200627DA8 /* PIN_Anim_Negative043.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative043.png; sourceTree = "<group>"; };
-		4729E0AE1BF1F8D200627DA8 /* PIN_Anim_Negative044.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative044.png; sourceTree = "<group>"; };
-		4729E0AF1BF1F8D200627DA8 /* PIN_Anim_Negative045.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative045.png; sourceTree = "<group>"; };
-		4729E0B01BF1F8D200627DA8 /* PIN_Anim_Negative046.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative046.png; sourceTree = "<group>"; };
-		4729E0B11BF1F8D200627DA8 /* PIN_Anim_Negative047.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative047.png; sourceTree = "<group>"; };
-		4729E0B21BF1F8D200627DA8 /* PIN_Anim_Negative048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative048.png; sourceTree = "<group>"; };
-		4729E0B31BF1F8D200627DA8 /* PIN_Anim_Negative049.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative049.png; sourceTree = "<group>"; };
-		4729E0B41BF1F8D200627DA8 /* PIN_Anim_Negative050.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative050.png; sourceTree = "<group>"; };
-		4729E0B51BF1F8D200627DA8 /* PIN_Anim_Negative051.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative051.png; sourceTree = "<group>"; };
-		4729E0B61BF1F8D200627DA8 /* PIN_Anim_Negative052.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative052.png; sourceTree = "<group>"; };
-		4729E0B71BF1F8D200627DA8 /* PIN_Anim_Negative053.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative053.png; sourceTree = "<group>"; };
-		4729E0B81BF1F8D200627DA8 /* PIN_Anim_Negative054.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative054.png; sourceTree = "<group>"; };
-		4729E0B91BF1F8D200627DA8 /* PIN_Anim_Negative055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative055.png; sourceTree = "<group>"; };
-		4729E0BA1BF1F8D200627DA8 /* PIN_Anim_Negative056.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative056.png; sourceTree = "<group>"; };
-		4729E0BB1BF1F8D200627DA8 /* PIN_Anim_Negative057.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative057.png; sourceTree = "<group>"; };
-		4729E0BC1BF1F8D200627DA8 /* PIN_Anim_Negative058.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative058.png; sourceTree = "<group>"; };
-		4729E0BD1BF1F8D200627DA8 /* PIN_Anim_Negative059.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative059.png; sourceTree = "<group>"; };
-		4729E0BE1BF1F8D200627DA8 /* PIN_Anim_Negative060.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative060.png; sourceTree = "<group>"; };
-		4729E0BF1BF1F8D200627DA8 /* PIN_Anim_Negative061.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative061.png; sourceTree = "<group>"; };
-		4729E0C01BF1F8D200627DA8 /* PIN_Anim_Negative062.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative062.png; sourceTree = "<group>"; };
-		4729E0C11BF1F8D200627DA8 /* PIN_Anim_Negative063.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative063.png; sourceTree = "<group>"; };
-		4729E0C21BF1F8D200627DA8 /* PIN_Anim_Negative064.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative064.png; sourceTree = "<group>"; };
-		4729E0C31BF1F8D200627DA8 /* PIN_Anim_Negative065.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative065.png; sourceTree = "<group>"; };
-		4729E0C41BF1F8D200627DA8 /* PIN_Anim_Negative066.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative066.png; sourceTree = "<group>"; };
-		4729E0C51BF1F8D200627DA8 /* PIN_Anim_Negative067.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative067.png; sourceTree = "<group>"; };
-		4729E0C61BF1F8D200627DA8 /* PIN_Anim_Negative068.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative068.png; sourceTree = "<group>"; };
-		4729E0C71BF1F8D200627DA8 /* PIN_Anim_Negative069.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative069.png; sourceTree = "<group>"; };
-		4729E0C81BF1F8D200627DA8 /* PIN_Anim_Negative070.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative070.png; sourceTree = "<group>"; };
-		4729E0C91BF1F8D200627DA8 /* PIN_Anim_Negative071.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative071.png; sourceTree = "<group>"; };
-		4729E0CA1BF1F8D200627DA8 /* PIN_Anim_Negative072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative072.png; sourceTree = "<group>"; };
-		4729E0CB1BF1F8D200627DA8 /* PIN_Anim_Negative073.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative073.png; sourceTree = "<group>"; };
-		4729E0CC1BF1F8D200627DA8 /* PIN_Anim_Negative074.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative074.png; sourceTree = "<group>"; };
-		4729E0CD1BF1F8D200627DA8 /* PIN_Anim_Negative075.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative075.png; sourceTree = "<group>"; };
-		4729E0CE1BF1F8D200627DA8 /* PIN_Anim_Negative076.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative076.png; sourceTree = "<group>"; };
-		4729E0CF1BF1F8D200627DA8 /* PIN_Anim_Negative077.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative077.png; sourceTree = "<group>"; };
-		4729E0D01BF1F8D200627DA8 /* PIN_Anim_Negative078.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative078.png; sourceTree = "<group>"; };
-		4729E0D11BF1F8D200627DA8 /* PIN_Anim_Negative079.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative079.png; sourceTree = "<group>"; };
-		4729E0D21BF1F8D200627DA8 /* PIN_Anim_Negative080.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative080.png; sourceTree = "<group>"; };
-		4729E0D31BF1F8D200627DA8 /* PIN_Anim_Negative081.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative081.png; sourceTree = "<group>"; };
-		4729E0D41BF1F8D200627DA8 /* PIN_Anim_Negative082.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative082.png; sourceTree = "<group>"; };
-		4729E0D51BF1F8D200627DA8 /* PIN_Anim_Negative083.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative083.png; sourceTree = "<group>"; };
-		4729E0D61BF1F8D200627DA8 /* PIN_Anim_Negative084.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative084.png; sourceTree = "<group>"; };
-		4729E0D71BF1F8D200627DA8 /* PIN_Anim_Negative085.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative085.png; sourceTree = "<group>"; };
-		4729E0D81BF1F8D200627DA8 /* PIN_Anim_Negative086.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative086.png; sourceTree = "<group>"; };
-		4729E0D91BF1F8D200627DA8 /* PIN_Anim_Negative087.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative087.png; sourceTree = "<group>"; };
-		4729E0DA1BF1F8D200627DA8 /* PIN_Anim_Negative088.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative088.png; sourceTree = "<group>"; };
-		4729E0DB1BF1F8D200627DA8 /* PIN_Anim_Negative089.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative089.png; sourceTree = "<group>"; };
-		4729E0DC1BF1F8D200627DA8 /* PIN_Anim_Negative090.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative090.png; sourceTree = "<group>"; };
-		4729E0DD1BF1F8D200627DA8 /* PIN_Anim_Negative091.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative091.png; sourceTree = "<group>"; };
-		4729E0DE1BF1F8D200627DA8 /* PIN_Anim_Negative092.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative092.png; sourceTree = "<group>"; };
-		4729E0DF1BF1F8D200627DA8 /* PIN_Anim_Negative093.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative093.png; sourceTree = "<group>"; };
-		4729E0E01BF1F8D200627DA8 /* PIN_Anim_Negative094.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative094.png; sourceTree = "<group>"; };
-		4729E0E11BF1F8D200627DA8 /* PIN_Anim_Negative095.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative095.png; sourceTree = "<group>"; };
-		4729E0E21BF1F8D200627DA8 /* PIN_Anim_Negative096.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative096.png; sourceTree = "<group>"; };
-		4729E0E31BF1F8D200627DA8 /* PIN_Anim_Negative097.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative097.png; sourceTree = "<group>"; };
-		4729E0E41BF1F8D200627DA8 /* PIN_Anim_Negative098.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative098.png; sourceTree = "<group>"; };
-		4729E0E51BF1F8D200627DA8 /* PIN_Anim_Negative099.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Negative099.png; sourceTree = "<group>"; };
-		4729E0E61BF1F8D200627DA8 /* PIN_Anim_Positive000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive000.png; sourceTree = "<group>"; };
-		4729E0E71BF1F8D200627DA8 /* PIN_Anim_Positive001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive001.png; sourceTree = "<group>"; };
-		4729E0E81BF1F8D200627DA8 /* PIN_Anim_Positive002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive002.png; sourceTree = "<group>"; };
-		4729E0E91BF1F8D200627DA8 /* PIN_Anim_Positive003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive003.png; sourceTree = "<group>"; };
-		4729E0EA1BF1F8D200627DA8 /* PIN_Anim_Positive004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive004.png; sourceTree = "<group>"; };
-		4729E0EB1BF1F8D200627DA8 /* PIN_Anim_Positive005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive005.png; sourceTree = "<group>"; };
-		4729E0EC1BF1F8D200627DA8 /* PIN_Anim_Positive006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive006.png; sourceTree = "<group>"; };
-		4729E0ED1BF1F8D200627DA8 /* PIN_Anim_Positive007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive007.png; sourceTree = "<group>"; };
-		4729E0EE1BF1F8D200627DA8 /* PIN_Anim_Positive008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive008.png; sourceTree = "<group>"; };
-		4729E0EF1BF1F8D200627DA8 /* PIN_Anim_Positive009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive009.png; sourceTree = "<group>"; };
-		4729E0F01BF1F8D200627DA8 /* PIN_Anim_Positive010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive010.png; sourceTree = "<group>"; };
-		4729E0F11BF1F8D200627DA8 /* PIN_Anim_Positive011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive011.png; sourceTree = "<group>"; };
-		4729E0F21BF1F8D200627DA8 /* PIN_Anim_Positive012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive012.png; sourceTree = "<group>"; };
-		4729E0F31BF1F8D200627DA8 /* PIN_Anim_Positive013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive013.png; sourceTree = "<group>"; };
-		4729E0F41BF1F8D200627DA8 /* PIN_Anim_Positive014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive014.png; sourceTree = "<group>"; };
-		4729E0F51BF1F8D200627DA8 /* PIN_Anim_Positive015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive015.png; sourceTree = "<group>"; };
-		4729E0F61BF1F8D200627DA8 /* PIN_Anim_Positive016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive016.png; sourceTree = "<group>"; };
-		4729E0F71BF1F8D200627DA8 /* PIN_Anim_Positive017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive017.png; sourceTree = "<group>"; };
-		4729E0F81BF1F8D200627DA8 /* PIN_Anim_Positive018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive018.png; sourceTree = "<group>"; };
-		4729E0F91BF1F8D200627DA8 /* PIN_Anim_Positive019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive019.png; sourceTree = "<group>"; };
-		4729E0FA1BF1F8D200627DA8 /* PIN_Anim_Positive020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive020.png; sourceTree = "<group>"; };
-		4729E0FB1BF1F8D200627DA8 /* PIN_Anim_Positive021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive021.png; sourceTree = "<group>"; };
-		4729E0FC1BF1F8D200627DA8 /* PIN_Anim_Positive022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive022.png; sourceTree = "<group>"; };
-		4729E0FD1BF1F8D200627DA8 /* PIN_Anim_Positive023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive023.png; sourceTree = "<group>"; };
-		4729E0FE1BF1F8D200627DA8 /* PIN_Anim_Positive024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive024.png; sourceTree = "<group>"; };
-		4729E0FF1BF1F8D200627DA8 /* PIN_Anim_Positive025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive025.png; sourceTree = "<group>"; };
-		4729E1001BF1F8D200627DA8 /* PIN_Anim_Positive026.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive026.png; sourceTree = "<group>"; };
-		4729E1011BF1F8D200627DA8 /* PIN_Anim_Positive027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive027.png; sourceTree = "<group>"; };
-		4729E1021BF1F8D200627DA8 /* PIN_Anim_Positive028.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive028.png; sourceTree = "<group>"; };
-		4729E1031BF1F8D200627DA8 /* PIN_Anim_Positive029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive029.png; sourceTree = "<group>"; };
-		4729E1041BF1F8D200627DA8 /* PIN_Anim_Positive030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive030.png; sourceTree = "<group>"; };
-		4729E1051BF1F8D200627DA8 /* PIN_Anim_Positive031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive031.png; sourceTree = "<group>"; };
-		4729E1061BF1F8D200627DA8 /* PIN_Anim_Positive032.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive032.png; sourceTree = "<group>"; };
-		4729E1071BF1F8D200627DA8 /* PIN_Anim_Positive033.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive033.png; sourceTree = "<group>"; };
-		4729E1081BF1F8D200627DA8 /* PIN_Anim_Positive034.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive034.png; sourceTree = "<group>"; };
-		4729E1091BF1F8D200627DA8 /* PIN_Anim_Positive035.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive035.png; sourceTree = "<group>"; };
-		4729E10A1BF1F8D200627DA8 /* PIN_Anim_Positive036.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive036.png; sourceTree = "<group>"; };
-		4729E10B1BF1F8D200627DA8 /* PIN_Anim_Positive037.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive037.png; sourceTree = "<group>"; };
-		4729E10C1BF1F8D200627DA8 /* PIN_Anim_Positive038.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive038.png; sourceTree = "<group>"; };
-		4729E10D1BF1F8D200627DA8 /* PIN_Anim_Positive039.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive039.png; sourceTree = "<group>"; };
-		4729E10E1BF1F8D200627DA8 /* PIN_Anim_Positive040.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive040.png; sourceTree = "<group>"; };
-		4729E10F1BF1F8D200627DA8 /* PIN_Anim_Positive041.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive041.png; sourceTree = "<group>"; };
-		4729E1101BF1F8D200627DA8 /* PIN_Anim_Positive042.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive042.png; sourceTree = "<group>"; };
-		4729E1111BF1F8D200627DA8 /* PIN_Anim_Positive043.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive043.png; sourceTree = "<group>"; };
-		4729E1121BF1F8D200627DA8 /* PIN_Anim_Positive044.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive044.png; sourceTree = "<group>"; };
-		4729E1131BF1F8D200627DA8 /* PIN_Anim_Positive045.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive045.png; sourceTree = "<group>"; };
-		4729E1141BF1F8D200627DA8 /* PIN_Anim_Positive046.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive046.png; sourceTree = "<group>"; };
-		4729E1151BF1F8D200627DA8 /* PIN_Anim_Positive047.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive047.png; sourceTree = "<group>"; };
-		4729E1161BF1F8D200627DA8 /* PIN_Anim_Positive048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive048.png; sourceTree = "<group>"; };
-		4729E1171BF1F8D200627DA8 /* PIN_Anim_Positive049.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive049.png; sourceTree = "<group>"; };
-		4729E1181BF1F8D200627DA8 /* PIN_Anim_Positive050.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive050.png; sourceTree = "<group>"; };
-		4729E1191BF1F8D200627DA8 /* PIN_Anim_Positive051.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive051.png; sourceTree = "<group>"; };
-		4729E11A1BF1F8D200627DA8 /* PIN_Anim_Positive052.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive052.png; sourceTree = "<group>"; };
-		4729E11B1BF1F8D200627DA8 /* PIN_Anim_Positive053.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive053.png; sourceTree = "<group>"; };
-		4729E11C1BF1F8D200627DA8 /* PIN_Anim_Positive054.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive054.png; sourceTree = "<group>"; };
-		4729E11D1BF1F8D200627DA8 /* PIN_Anim_Positive055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive055.png; sourceTree = "<group>"; };
-		4729E11E1BF1F8D200627DA8 /* PIN_Anim_Positive056.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive056.png; sourceTree = "<group>"; };
-		4729E11F1BF1F8D200627DA8 /* PIN_Anim_Positive057.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive057.png; sourceTree = "<group>"; };
-		4729E1201BF1F8D200627DA8 /* PIN_Anim_Positive058.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive058.png; sourceTree = "<group>"; };
-		4729E1211BF1F8D200627DA8 /* PIN_Anim_Positive059.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive059.png; sourceTree = "<group>"; };
-		4729E1221BF1F8D200627DA8 /* PIN_Anim_Positive060.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive060.png; sourceTree = "<group>"; };
-		4729E1231BF1F8D200627DA8 /* PIN_Anim_Positive061.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive061.png; sourceTree = "<group>"; };
-		4729E1241BF1F8D200627DA8 /* PIN_Anim_Positive062.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive062.png; sourceTree = "<group>"; };
-		4729E1251BF1F8D200627DA8 /* PIN_Anim_Positive063.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive063.png; sourceTree = "<group>"; };
-		4729E1261BF1F8D200627DA8 /* PIN_Anim_Positive064.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive064.png; sourceTree = "<group>"; };
-		4729E1271BF1F8D200627DA8 /* PIN_Anim_Positive065.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive065.png; sourceTree = "<group>"; };
-		4729E1281BF1F8D200627DA8 /* PIN_Anim_Positive066.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive066.png; sourceTree = "<group>"; };
-		4729E1291BF1F8D200627DA8 /* PIN_Anim_Positive067.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive067.png; sourceTree = "<group>"; };
-		4729E12A1BF1F8D200627DA8 /* PIN_Anim_Positive068.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive068.png; sourceTree = "<group>"; };
-		4729E12B1BF1F8D200627DA8 /* PIN_Anim_Positive069.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive069.png; sourceTree = "<group>"; };
-		4729E12C1BF1F8D200627DA8 /* PIN_Anim_Positive070.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive070.png; sourceTree = "<group>"; };
-		4729E12D1BF1F8D200627DA8 /* PIN_Anim_Positive071.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive071.png; sourceTree = "<group>"; };
-		4729E12E1BF1F8D200627DA8 /* PIN_Anim_Positive072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive072.png; sourceTree = "<group>"; };
-		4729E12F1BF1F8D200627DA8 /* PIN_Anim_Positive073.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive073.png; sourceTree = "<group>"; };
-		4729E1301BF1F8D200627DA8 /* PIN_Anim_Positive074.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive074.png; sourceTree = "<group>"; };
-		4729E1311BF1F8D200627DA8 /* PIN_Anim_Positive075.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive075.png; sourceTree = "<group>"; };
-		4729E1321BF1F8D200627DA8 /* PIN_Anim_Positive076.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive076.png; sourceTree = "<group>"; };
-		4729E1331BF1F8D200627DA8 /* PIN_Anim_Positive077.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive077.png; sourceTree = "<group>"; };
-		4729E1341BF1F8D200627DA8 /* PIN_Anim_Positive078.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive078.png; sourceTree = "<group>"; };
-		4729E1351BF1F8D200627DA8 /* PIN_Anim_Positive079.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Anim_Positive079.png; sourceTree = "<group>"; };
-		4729E1EE1BF2010200627DA8 /* PIN_Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIN_Circle.png; sourceTree = "<group>"; };
 		4729E1F11BF20A3600627DA8 /* Notification_Help_Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Notification_Help_Icon@2x.png"; sourceTree = "<group>"; };
 		4729E1F31BF20E6300627DA8 /* Authenticator_Help_Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Authenticator_Help_Icon@2x.png"; sourceTree = "<group>"; };
 		4729E1F51BF2113B00627DA8 /* QR_Help_Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR_Help_Icon@2x.png"; sourceTree = "<group>"; };
@@ -1356,6 +1066,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B1D05121C04C17100010B1B /* button_animation */ = {
+			isa = PBXGroup;
+			children = (
+				2B1D05131C04C17100010B1B /* 1.png */,
+				2B1D05141C04C17100010B1B /* 10.png */,
+				2B1D05151C04C17100010B1B /* 11.png */,
+				2B1D05161C04C17100010B1B /* 12.png */,
+				2B1D05171C04C17100010B1B /* 13.png */,
+				2B1D05181C04C17100010B1B /* 14.png */,
+				2B1D05191C04C17100010B1B /* 15.png */,
+				2B1D051A1C04C17100010B1B /* 16.png */,
+				2B1D051B1C04C17100010B1B /* 17.png */,
+				2B1D051C1C04C17100010B1B /* 18.png */,
+				2B1D051D1C04C17100010B1B /* 19.png */,
+				2B1D051E1C04C17100010B1B /* 2.png */,
+				2B1D051F1C04C17100010B1B /* 20.png */,
+				2B1D05201C04C17100010B1B /* 21.png */,
+				2B1D05211C04C17100010B1B /* 22.png */,
+				2B1D05221C04C17100010B1B /* 23.png */,
+				2B1D05231C04C17100010B1B /* 24.png */,
+				2B1D05241C04C17100010B1B /* 25.png */,
+				2B1D05251C04C17100010B1B /* 26.png */,
+				2B1D05261C04C17100010B1B /* 27.png */,
+				2B1D05271C04C17100010B1B /* 28.png */,
+				2B1D05281C04C17100010B1B /* 29.png */,
+				2B1D05291C04C17100010B1B /* 3.png */,
+				2B1D052A1C04C17100010B1B /* 30.png */,
+				2B1D052B1C04C17100010B1B /* 31.png */,
+				2B1D052C1C04C17100010B1B /* 4.png */,
+				2B1D052D1C04C17100010B1B /* 5.png */,
+				2B1D052E1C04C17100010B1B /* 6.png */,
+				2B1D052F1C04C17100010B1B /* 7.png */,
+				2B1D05301C04C17100010B1B /* 8.png */,
+				2B1D05311C04C17100010B1B /* 9.png */,
+			);
+			path = button_animation;
+			sourceTree = "<group>";
+		};
 		2B92E3B31BF62C51003CF4A1 /* PasscodeViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1574,8 +1322,6 @@
 				47E0CED61BFCBA9E00AC390B /* Ribbon_Hamburger.png */,
 				47E0CED71BFCBA9E00AC390B /* Ribbon_Hamburger@2x.png */,
 				47E0CED81BFCBA9E00AC390B /* Ribbon_Hamburger@3x.png */,
-				4729E07F1BF1F79F00627DA8 /* startCircleImage.png */,
-				4729E1EE1BF2010200627DA8 /* PIN_Circle.png */,
 				47D2CA1A1BFA094B00C1D89F /* ResetMyApp.png */,
 				47D2CA1C1BFA095100C1D89F /* ResetMyApp@2x.png */,
 				47D2CA1E1BFA095C00C1D89F /* ResetMyApp@3x.png */,
@@ -1791,7 +1537,7 @@
 		4729E07D1BF1F76C00627DA8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				2B1D05021C04685000010B1B /* button_animation */,
+				2B1D05121C04C17100010B1B /* button_animation */,
 				2B08304C1C0352C40037E87D /* Countdown_Animation */,
 				470E36F91BFEF45F009EAA8C /* MessageButtonAnimation @2x */,
 				470E36361BFEEFA0009EAA8C /* MessageButtonAnimation @3x */,
@@ -1808,186 +1554,8 @@
 		4729E0811BF1F8D200627DA8 /* Keypad Dot Animation */ = {
 			isa = PBXGroup;
 			children = (
-				4729E0821BF1F8D200627DA8 /* PIN_Anim_Negative000.png */,
-				4729E0831BF1F8D200627DA8 /* PIN_Anim_Negative001.png */,
-				4729E0841BF1F8D200627DA8 /* PIN_Anim_Negative002.png */,
-				4729E0851BF1F8D200627DA8 /* PIN_Anim_Negative003.png */,
-				4729E0861BF1F8D200627DA8 /* PIN_Anim_Negative004.png */,
-				4729E0871BF1F8D200627DA8 /* PIN_Anim_Negative005.png */,
-				4729E0881BF1F8D200627DA8 /* PIN_Anim_Negative006.png */,
-				4729E0891BF1F8D200627DA8 /* PIN_Anim_Negative007.png */,
-				4729E08A1BF1F8D200627DA8 /* PIN_Anim_Negative008.png */,
-				4729E08B1BF1F8D200627DA8 /* PIN_Anim_Negative009.png */,
-				4729E08C1BF1F8D200627DA8 /* PIN_Anim_Negative010.png */,
-				4729E08D1BF1F8D200627DA8 /* PIN_Anim_Negative011.png */,
-				4729E08E1BF1F8D200627DA8 /* PIN_Anim_Negative012.png */,
-				4729E08F1BF1F8D200627DA8 /* PIN_Anim_Negative013.png */,
-				4729E0901BF1F8D200627DA8 /* PIN_Anim_Negative014.png */,
-				4729E0911BF1F8D200627DA8 /* PIN_Anim_Negative015.png */,
-				4729E0921BF1F8D200627DA8 /* PIN_Anim_Negative016.png */,
-				4729E0931BF1F8D200627DA8 /* PIN_Anim_Negative017.png */,
-				4729E0941BF1F8D200627DA8 /* PIN_Anim_Negative018.png */,
-				4729E0951BF1F8D200627DA8 /* PIN_Anim_Negative019.png */,
-				4729E0961BF1F8D200627DA8 /* PIN_Anim_Negative020.png */,
-				4729E0971BF1F8D200627DA8 /* PIN_Anim_Negative021.png */,
-				4729E0981BF1F8D200627DA8 /* PIN_Anim_Negative022.png */,
-				4729E0991BF1F8D200627DA8 /* PIN_Anim_Negative023.png */,
-				4729E09A1BF1F8D200627DA8 /* PIN_Anim_Negative024.png */,
-				4729E09B1BF1F8D200627DA8 /* PIN_Anim_Negative025.png */,
-				4729E09C1BF1F8D200627DA8 /* PIN_Anim_Negative026.png */,
-				4729E09D1BF1F8D200627DA8 /* PIN_Anim_Negative027.png */,
-				4729E09E1BF1F8D200627DA8 /* PIN_Anim_Negative028.png */,
-				4729E09F1BF1F8D200627DA8 /* PIN_Anim_Negative029.png */,
-				4729E0A01BF1F8D200627DA8 /* PIN_Anim_Negative030.png */,
-				4729E0A11BF1F8D200627DA8 /* PIN_Anim_Negative031.png */,
-				4729E0A21BF1F8D200627DA8 /* PIN_Anim_Negative032.png */,
-				4729E0A31BF1F8D200627DA8 /* PIN_Anim_Negative033.png */,
-				4729E0A41BF1F8D200627DA8 /* PIN_Anim_Negative034.png */,
-				4729E0A51BF1F8D200627DA8 /* PIN_Anim_Negative035.png */,
-				4729E0A61BF1F8D200627DA8 /* PIN_Anim_Negative036.png */,
-				4729E0A71BF1F8D200627DA8 /* PIN_Anim_Negative037.png */,
-				4729E0A81BF1F8D200627DA8 /* PIN_Anim_Negative038.png */,
-				4729E0A91BF1F8D200627DA8 /* PIN_Anim_Negative039.png */,
-				4729E0AA1BF1F8D200627DA8 /* PIN_Anim_Negative040.png */,
-				4729E0AB1BF1F8D200627DA8 /* PIN_Anim_Negative041.png */,
-				4729E0AC1BF1F8D200627DA8 /* PIN_Anim_Negative042.png */,
-				4729E0AD1BF1F8D200627DA8 /* PIN_Anim_Negative043.png */,
-				4729E0AE1BF1F8D200627DA8 /* PIN_Anim_Negative044.png */,
-				4729E0AF1BF1F8D200627DA8 /* PIN_Anim_Negative045.png */,
-				4729E0B01BF1F8D200627DA8 /* PIN_Anim_Negative046.png */,
-				4729E0B11BF1F8D200627DA8 /* PIN_Anim_Negative047.png */,
-				4729E0B21BF1F8D200627DA8 /* PIN_Anim_Negative048.png */,
-				4729E0B31BF1F8D200627DA8 /* PIN_Anim_Negative049.png */,
-				4729E0B41BF1F8D200627DA8 /* PIN_Anim_Negative050.png */,
-				4729E0B51BF1F8D200627DA8 /* PIN_Anim_Negative051.png */,
-				4729E0B61BF1F8D200627DA8 /* PIN_Anim_Negative052.png */,
-				4729E0B71BF1F8D200627DA8 /* PIN_Anim_Negative053.png */,
-				4729E0B81BF1F8D200627DA8 /* PIN_Anim_Negative054.png */,
-				4729E0B91BF1F8D200627DA8 /* PIN_Anim_Negative055.png */,
-				4729E0BA1BF1F8D200627DA8 /* PIN_Anim_Negative056.png */,
-				4729E0BB1BF1F8D200627DA8 /* PIN_Anim_Negative057.png */,
-				4729E0BC1BF1F8D200627DA8 /* PIN_Anim_Negative058.png */,
-				4729E0BD1BF1F8D200627DA8 /* PIN_Anim_Negative059.png */,
-				4729E0BE1BF1F8D200627DA8 /* PIN_Anim_Negative060.png */,
-				4729E0BF1BF1F8D200627DA8 /* PIN_Anim_Negative061.png */,
-				4729E0C01BF1F8D200627DA8 /* PIN_Anim_Negative062.png */,
-				4729E0C11BF1F8D200627DA8 /* PIN_Anim_Negative063.png */,
-				4729E0C21BF1F8D200627DA8 /* PIN_Anim_Negative064.png */,
-				4729E0C31BF1F8D200627DA8 /* PIN_Anim_Negative065.png */,
-				4729E0C41BF1F8D200627DA8 /* PIN_Anim_Negative066.png */,
-				4729E0C51BF1F8D200627DA8 /* PIN_Anim_Negative067.png */,
-				4729E0C61BF1F8D200627DA8 /* PIN_Anim_Negative068.png */,
-				4729E0C71BF1F8D200627DA8 /* PIN_Anim_Negative069.png */,
-				4729E0C81BF1F8D200627DA8 /* PIN_Anim_Negative070.png */,
-				4729E0C91BF1F8D200627DA8 /* PIN_Anim_Negative071.png */,
-				4729E0CA1BF1F8D200627DA8 /* PIN_Anim_Negative072.png */,
-				4729E0CB1BF1F8D200627DA8 /* PIN_Anim_Negative073.png */,
-				4729E0CC1BF1F8D200627DA8 /* PIN_Anim_Negative074.png */,
-				4729E0CD1BF1F8D200627DA8 /* PIN_Anim_Negative075.png */,
-				4729E0CE1BF1F8D200627DA8 /* PIN_Anim_Negative076.png */,
-				4729E0CF1BF1F8D200627DA8 /* PIN_Anim_Negative077.png */,
-				4729E0D01BF1F8D200627DA8 /* PIN_Anim_Negative078.png */,
-				4729E0D11BF1F8D200627DA8 /* PIN_Anim_Negative079.png */,
-				4729E0D21BF1F8D200627DA8 /* PIN_Anim_Negative080.png */,
-				4729E0D31BF1F8D200627DA8 /* PIN_Anim_Negative081.png */,
-				4729E0D41BF1F8D200627DA8 /* PIN_Anim_Negative082.png */,
-				4729E0D51BF1F8D200627DA8 /* PIN_Anim_Negative083.png */,
-				4729E0D61BF1F8D200627DA8 /* PIN_Anim_Negative084.png */,
-				4729E0D71BF1F8D200627DA8 /* PIN_Anim_Negative085.png */,
-				4729E0D81BF1F8D200627DA8 /* PIN_Anim_Negative086.png */,
-				4729E0D91BF1F8D200627DA8 /* PIN_Anim_Negative087.png */,
-				4729E0DA1BF1F8D200627DA8 /* PIN_Anim_Negative088.png */,
-				4729E0DB1BF1F8D200627DA8 /* PIN_Anim_Negative089.png */,
-				4729E0DC1BF1F8D200627DA8 /* PIN_Anim_Negative090.png */,
-				4729E0DD1BF1F8D200627DA8 /* PIN_Anim_Negative091.png */,
-				4729E0DE1BF1F8D200627DA8 /* PIN_Anim_Negative092.png */,
-				4729E0DF1BF1F8D200627DA8 /* PIN_Anim_Negative093.png */,
-				4729E0E01BF1F8D200627DA8 /* PIN_Anim_Negative094.png */,
-				4729E0E11BF1F8D200627DA8 /* PIN_Anim_Negative095.png */,
-				4729E0E21BF1F8D200627DA8 /* PIN_Anim_Negative096.png */,
-				4729E0E31BF1F8D200627DA8 /* PIN_Anim_Negative097.png */,
-				4729E0E41BF1F8D200627DA8 /* PIN_Anim_Negative098.png */,
-				4729E0E51BF1F8D200627DA8 /* PIN_Anim_Negative099.png */,
-				4729E0E61BF1F8D200627DA8 /* PIN_Anim_Positive000.png */,
-				4729E0E71BF1F8D200627DA8 /* PIN_Anim_Positive001.png */,
-				4729E0E81BF1F8D200627DA8 /* PIN_Anim_Positive002.png */,
-				4729E0E91BF1F8D200627DA8 /* PIN_Anim_Positive003.png */,
-				4729E0EA1BF1F8D200627DA8 /* PIN_Anim_Positive004.png */,
-				4729E0EB1BF1F8D200627DA8 /* PIN_Anim_Positive005.png */,
-				4729E0EC1BF1F8D200627DA8 /* PIN_Anim_Positive006.png */,
-				4729E0ED1BF1F8D200627DA8 /* PIN_Anim_Positive007.png */,
-				4729E0EE1BF1F8D200627DA8 /* PIN_Anim_Positive008.png */,
-				4729E0EF1BF1F8D200627DA8 /* PIN_Anim_Positive009.png */,
-				4729E0F01BF1F8D200627DA8 /* PIN_Anim_Positive010.png */,
-				4729E0F11BF1F8D200627DA8 /* PIN_Anim_Positive011.png */,
-				4729E0F21BF1F8D200627DA8 /* PIN_Anim_Positive012.png */,
-				4729E0F31BF1F8D200627DA8 /* PIN_Anim_Positive013.png */,
-				4729E0F41BF1F8D200627DA8 /* PIN_Anim_Positive014.png */,
-				4729E0F51BF1F8D200627DA8 /* PIN_Anim_Positive015.png */,
-				4729E0F61BF1F8D200627DA8 /* PIN_Anim_Positive016.png */,
-				4729E0F71BF1F8D200627DA8 /* PIN_Anim_Positive017.png */,
-				4729E0F81BF1F8D200627DA8 /* PIN_Anim_Positive018.png */,
-				4729E0F91BF1F8D200627DA8 /* PIN_Anim_Positive019.png */,
-				4729E0FA1BF1F8D200627DA8 /* PIN_Anim_Positive020.png */,
-				4729E0FB1BF1F8D200627DA8 /* PIN_Anim_Positive021.png */,
-				4729E0FC1BF1F8D200627DA8 /* PIN_Anim_Positive022.png */,
-				4729E0FD1BF1F8D200627DA8 /* PIN_Anim_Positive023.png */,
-				4729E0FE1BF1F8D200627DA8 /* PIN_Anim_Positive024.png */,
-				4729E0FF1BF1F8D200627DA8 /* PIN_Anim_Positive025.png */,
-				4729E1001BF1F8D200627DA8 /* PIN_Anim_Positive026.png */,
-				4729E1011BF1F8D200627DA8 /* PIN_Anim_Positive027.png */,
-				4729E1021BF1F8D200627DA8 /* PIN_Anim_Positive028.png */,
-				4729E1031BF1F8D200627DA8 /* PIN_Anim_Positive029.png */,
-				4729E1041BF1F8D200627DA8 /* PIN_Anim_Positive030.png */,
-				4729E1051BF1F8D200627DA8 /* PIN_Anim_Positive031.png */,
-				4729E1061BF1F8D200627DA8 /* PIN_Anim_Positive032.png */,
-				4729E1071BF1F8D200627DA8 /* PIN_Anim_Positive033.png */,
-				4729E1081BF1F8D200627DA8 /* PIN_Anim_Positive034.png */,
-				4729E1091BF1F8D200627DA8 /* PIN_Anim_Positive035.png */,
-				4729E10A1BF1F8D200627DA8 /* PIN_Anim_Positive036.png */,
-				4729E10B1BF1F8D200627DA8 /* PIN_Anim_Positive037.png */,
-				4729E10C1BF1F8D200627DA8 /* PIN_Anim_Positive038.png */,
-				4729E10D1BF1F8D200627DA8 /* PIN_Anim_Positive039.png */,
-				4729E10E1BF1F8D200627DA8 /* PIN_Anim_Positive040.png */,
-				4729E10F1BF1F8D200627DA8 /* PIN_Anim_Positive041.png */,
-				4729E1101BF1F8D200627DA8 /* PIN_Anim_Positive042.png */,
-				4729E1111BF1F8D200627DA8 /* PIN_Anim_Positive043.png */,
-				4729E1121BF1F8D200627DA8 /* PIN_Anim_Positive044.png */,
-				4729E1131BF1F8D200627DA8 /* PIN_Anim_Positive045.png */,
-				4729E1141BF1F8D200627DA8 /* PIN_Anim_Positive046.png */,
-				4729E1151BF1F8D200627DA8 /* PIN_Anim_Positive047.png */,
-				4729E1161BF1F8D200627DA8 /* PIN_Anim_Positive048.png */,
-				4729E1171BF1F8D200627DA8 /* PIN_Anim_Positive049.png */,
-				4729E1181BF1F8D200627DA8 /* PIN_Anim_Positive050.png */,
-				4729E1191BF1F8D200627DA8 /* PIN_Anim_Positive051.png */,
-				4729E11A1BF1F8D200627DA8 /* PIN_Anim_Positive052.png */,
-				4729E11B1BF1F8D200627DA8 /* PIN_Anim_Positive053.png */,
-				4729E11C1BF1F8D200627DA8 /* PIN_Anim_Positive054.png */,
-				4729E11D1BF1F8D200627DA8 /* PIN_Anim_Positive055.png */,
-				4729E11E1BF1F8D200627DA8 /* PIN_Anim_Positive056.png */,
-				4729E11F1BF1F8D200627DA8 /* PIN_Anim_Positive057.png */,
-				4729E1201BF1F8D200627DA8 /* PIN_Anim_Positive058.png */,
-				4729E1211BF1F8D200627DA8 /* PIN_Anim_Positive059.png */,
-				4729E1221BF1F8D200627DA8 /* PIN_Anim_Positive060.png */,
-				4729E1231BF1F8D200627DA8 /* PIN_Anim_Positive061.png */,
-				4729E1241BF1F8D200627DA8 /* PIN_Anim_Positive062.png */,
-				4729E1251BF1F8D200627DA8 /* PIN_Anim_Positive063.png */,
-				4729E1261BF1F8D200627DA8 /* PIN_Anim_Positive064.png */,
-				4729E1271BF1F8D200627DA8 /* PIN_Anim_Positive065.png */,
-				4729E1281BF1F8D200627DA8 /* PIN_Anim_Positive066.png */,
-				4729E1291BF1F8D200627DA8 /* PIN_Anim_Positive067.png */,
-				4729E12A1BF1F8D200627DA8 /* PIN_Anim_Positive068.png */,
-				4729E12B1BF1F8D200627DA8 /* PIN_Anim_Positive069.png */,
-				4729E12C1BF1F8D200627DA8 /* PIN_Anim_Positive070.png */,
-				4729E12D1BF1F8D200627DA8 /* PIN_Anim_Positive071.png */,
-				4729E12E1BF1F8D200627DA8 /* PIN_Anim_Positive072.png */,
-				4729E12F1BF1F8D200627DA8 /* PIN_Anim_Positive073.png */,
-				4729E1301BF1F8D200627DA8 /* PIN_Anim_Positive074.png */,
-				4729E1311BF1F8D200627DA8 /* PIN_Anim_Positive075.png */,
-				4729E1321BF1F8D200627DA8 /* PIN_Anim_Positive076.png */,
-				4729E1331BF1F8D200627DA8 /* PIN_Anim_Positive077.png */,
-				4729E1341BF1F8D200627DA8 /* PIN_Anim_Positive078.png */,
-				4729E1351BF1F8D200627DA8 /* PIN_Anim_Positive079.png */,
+				2BDBA4C51C05CF1300BDE112 /* WhiteAnimation */,
+				2BDBA4C31C05CF0500BDE112 /* DarkAnimation */,
 			);
 			name = "Keypad Dot Animation";
 			path = "Images/Animations/Keypad Dot Animation";
@@ -2472,6 +2040,9 @@
 		477498F21BE78E5300026C01 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2BDBA4BD1C05A08700BDE112 /* beep-beep.aiff */,
+				2BDBA4BE1C05A08700BDE112 /* Negative.wav */,
+				2BDBA4BF1C05A08700BDE112 /* Positive.wav */,
 				471D007E1BEB5BE3003BC1C6 /* Splash */,
 				47D4AC8E1C04A06F003C279E /* Icons */,
 				4729E07D1BF1F76C00627DA8 /* Animations */,
@@ -2498,6 +2069,8 @@
 		477498F41BE78EC300026C01 /* WelcomeAppViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2BDBA4B51C059A3C00BDE112 /* begin_off.png */,
+				2BDBA4B61C059A3C00BDE112 /* begin_on.png */,
 				477498FD1BE7949800026C01 /* begin1.png */,
 				477498FE1BE7949800026C01 /* begin1@2x.png */,
 			);
@@ -2745,51 +2318,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4729E1AB1BF1F8D200627DA8 /* PIN_Anim_Positive017.png in Resources */,
 				470E36931BFEF2E8009EAA8C /* GREY PANEL_00012@3x.png in Resources */,
-				4729E1501BF1F8D200627DA8 /* PIN_Anim_Negative026.png in Resources */,
-				4729E1901BF1F8D200627DA8 /* PIN_Anim_Negative090.png in Resources */,
 				473697261BF35CF500A0855B /* Authenticator_Logo_10.png in Resources */,
 				470E37481BFEF5CA009EAA8C /* Locked Animation_0021@2x.png in Resources */,
 				473697341BF35CF500A0855B /* Authenticator_Logo_24.png in Resources */,
 				478CD3911BFE0961008774E0 /* Locked Animation_0024@3x.png in Resources */,
 				47E90E351BEC969000402A5B /* Back_Arrow_ON@2x.png in Resources */,
+				2B1D05501C04C17100010B1B /* 9.png in Resources */,
 				470E37471BFEF5CA009EAA8C /* Locked Animation_0020@2x.png in Resources */,
-				4729E1661BF1F8D200627DA8 /* PIN_Anim_Negative048.png in Resources */,
+				2B1D05361C04C17100010B1B /* 13.png in Resources */,
 				47D4AC8A1C0497A0003C279E /* Splash Screen_Iphone_6plus.png in Resources */,
 				470E36C11BFEF386009EAA8C /* GREY PANEL_00019@2x.png in Resources */,
 				47E90E491BECE79B00402A5B /* deselect.png in Resources */,
-				4729E1C61BF1F8D200627DA8 /* PIN_Anim_Positive044.png in Resources */,
-				4729E1941BF1F8D200627DA8 /* PIN_Anim_Negative094.png in Resources */,
 				4736988A1BF371EF00A0855B /* GTMUIImage+Resize_50x100.png in Resources */,
 				473698851BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_40x60_noclip.png in Resources */,
-				4729E1701BF1F8D200627DA8 /* PIN_Anim_Negative058.png in Resources */,
 				4736987B1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.5.png in Resources */,
+				2B1D05381C04C17100010B1B /* 15.png in Resources */,
 				470E36911BFEF2E8009EAA8C /* GREY PANEL_00010@3x.png in Resources */,
 				473698831BF371EF00A0855B /* GTMUIImage+Resize_100x50_flipped.png in Resources */,
 				47D4AC901C04A07E003C279E /* iTunesArtwork in Resources */,
 				477499001BE7949800026C01 /* begin1@2x.png in Resources */,
 				470E370C1BFEF45F009EAA8C /* Message_0003@2x.png in Resources */,
 				470E36C41BFEF386009EAA8C /* GREY PANEL_00022@2x.png in Resources */,
-				4729E1931BF1F8D200627DA8 /* PIN_Anim_Negative093.png in Resources */,
-				4729E19A1BF1F8D200627DA8 /* PIN_Anim_Positive000.png in Resources */,
-				4729E17D1BF1F8D200627DA8 /* PIN_Anim_Negative071.png in Resources */,
 				2BC906EB1BFDC7BF009AF8E4 /* QRScanAtHome.png in Resources */,
 				470E36B91BFEF386009EAA8C /* GREY PANEL_00011@2x.png in Resources */,
-				4729E1591BF1F8D200627DA8 /* PIN_Anim_Negative035.png in Resources */,
 				470E36B41BFEF386009EAA8C /* GREY PANEL_00006@2x.png in Resources */,
-				4729E1761BF1F8D200627DA8 /* PIN_Anim_Negative064.png in Resources */,
-				4729E18D1BF1F8D200627DA8 /* PIN_Anim_Negative087.png in Resources */,
 				478CD37A1BFE0961008774E0 /* Locked Animation_0001@3x.png in Resources */,
-				4729E1A51BF1F8D200627DA8 /* PIN_Anim_Positive011.png in Resources */,
 				4736972E1BF35CF500A0855B /* Authenticator_Logo_18.png in Resources */,
 				470E364E1BFEEFA0009EAA8C /* Message_0008@3x.png in Resources */,
-				4729E18A1BF1F8D200627DA8 /* PIN_Anim_Negative084.png in Resources */,
 				473698541BF371EF00A0855B /* GTMABAddressBook.strings in Resources */,
-				4729E1391BF1F8D200627DA8 /* PIN_Anim_Negative003.png in Resources */,
 				47D4AC981C04A367003C279E /* icon_40pt@3x.png in Resources */,
 				470E37381BFEF5CA009EAA8C /* Locked Animation_0005@2x.png in Resources */,
-				4729E1C21BF1F8D200627DA8 /* PIN_Anim_Positive040.png in Resources */,
 				4736987C1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.6.png in Resources */,
 				470E37371BFEF5CA009EAA8C /* Locked Animation_0004@2x.png in Resources */,
 				478CD37C1BFE0961008774E0 /* Locked Animation_0003@3x.png in Resources */,
@@ -2797,8 +2356,6 @@
 				470E37361BFEF5CA009EAA8C /* Locked Animation_0003@2x.png in Resources */,
 				471C75EA1BF0AE5200F9907E /* PIN_Icon_OFF@2x.png in Resources */,
 				473698C01BF371EF00A0855B /* GTMUnitTestingWindow.10.6.gtmUTState in Resources */,
-				4729E1A31BF1F8D200627DA8 /* PIN_Anim_Positive009.png in Resources */,
-				4729E1A81BF1F8D200627DA8 /* PIN_Anim_Positive014.png in Resources */,
 				47E0CECD1BFCB0B700AC390B /* Pirean_Settings_Logo@3x.png in Resources */,
 				470E36951BFEF2E8009EAA8C /* GREY PANEL_00014@3x.png in Resources */,
 				47119D111BEA3EC400876684 /* CameraOverlayViewController.xib in Resources */,
@@ -2808,38 +2365,26 @@
 				47E0CED91BFCBA9E00AC390B /* Ribbon_Hamburger.png in Resources */,
 				474F1BF01BFB64F600D5B569 /* SetPin.png in Resources */,
 				470E36561BFEEFA0009EAA8C /* Message_0016@3x.png in Resources */,
-				4729E1C81BF1F8D200627DA8 /* PIN_Anim_Positive046.png in Resources */,
 				4736971D1BF35CF500A0855B /* Authenticator_Logo_1.png in Resources */,
 				471D00801BEB5BF6003BC1C6 /* LoadingScreen_iphone6.png in Resources */,
-				4729E1971BF1F8D200627DA8 /* PIN_Anim_Negative097.png in Resources */,
 				470E36541BFEEFA0009EAA8C /* Message_0014@3x.png in Resources */,
-				4729E1A91BF1F8D200627DA8 /* PIN_Anim_Positive015.png in Resources */,
-				4729E1C11BF1F8D200627DA8 /* PIN_Anim_Positive039.png in Resources */,
-				4729E1BD1BF1F8D200627DA8 /* PIN_Anim_Positive035.png in Resources */,
-				4729E1DB1BF1F8D200627DA8 /* PIN_Anim_Positive065.png in Resources */,
-				4729E1C51BF1F8D200627DA8 /* PIN_Anim_Positive043.png in Resources */,
 				47E0CE981BFC5A2A00AC390B /* Submit.png in Resources */,
 				47E0CEB91BFCAC1E00AC390B /* TouchID_ON@3x.png in Resources */,
-				4729E1D01BF1F8D200627DA8 /* PIN_Anim_Positive054.png in Resources */,
 				47D4AC9B1C04A412003C279E /* icon_29pt@2x.png in Resources */,
-				4729E1BC1BF1F8D200627DA8 /* PIN_Anim_Positive034.png in Resources */,
+				2B1D054F1C04C17100010B1B /* 8.png in Resources */,
 				470E36971BFEF2E8009EAA8C /* GREY PANEL_00016@3x.png in Resources */,
 				473697211BF35CF500A0855B /* Authenticator_Logo_5.png in Resources */,
-				4729E1D61BF1F8D200627DA8 /* PIN_Anim_Positive060.png in Resources */,
 				470E36501BFEEFA0009EAA8C /* Message_0010@3x.png in Resources */,
 				473698B31BF371EF00A0855B /* GTMUIViewUnitTestingTest.gtmUTState in Resources */,
 				471C75ED1BF0AE7200F9907E /* Pirean_Settings_Logo@2x.png in Resources */,
 				473698791BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.6.png in Resources */,
-				4729E1DD1BF1F8D200627DA8 /* PIN_Anim_Positive067.png in Resources */,
 				47E0CECA1BFCB08200AC390B /* PIN_Icon_OFF@3x.png in Resources */,
 				474F1BE01BFB5CF100D5B569 /* QRDoesn’tScan.png in Resources */,
 				473698C71BF371EF00A0855B /* OTPTableViewCell.xib in Resources */,
 				473698751BF371EF00A0855B /* GTMFadeTruncatingLabelTest3.5.png in Resources */,
 				47B8A7E21C032F5700CF14AD /* X_OFF@3x.png in Resources */,
 				470E37121BFEF45F009EAA8C /* Message_0009@2x.png in Resources */,
-				4729E1CA1BF1F8D200627DA8 /* PIN_Anim_Positive048.png in Resources */,
 				473698901BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_60x40_clip.png in Resources */,
-				4729E1631BF1F8D200627DA8 /* PIN_Anim_Negative045.png in Resources */,
 				470E373A1BFEF5CA009EAA8C /* Locked Animation_0007@2x.png in Resources */,
 				470E36BE1BFEF386009EAA8C /* GREY PANEL_00016@2x.png in Resources */,
 				470E36BC1BFEF386009EAA8C /* GREY PANEL_00014@2x.png in Resources */,
@@ -2848,54 +2393,35 @@
 				470E37391BFEF5CA009EAA8C /* Locked Animation_0006@2x.png in Resources */,
 				473698C81BF371EF00A0855B /* OTPWelcomeViewController.xib in Resources */,
 				473698781BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.5.png in Resources */,
-				4729E18E1BF1F8D200627DA8 /* PIN_Anim_Negative088.png in Resources */,
-				4729E1D71BF1F8D200627DA8 /* PIN_Anim_Positive061.png in Resources */,
-				4729E1381BF1F8D200627DA8 /* PIN_Anim_Negative002.png in Resources */,
+				2B1D05481C04C17100010B1B /* 3.png in Resources */,
 				470E36521BFEEFA0009EAA8C /* Message_0012@3x.png in Resources */,
-				4729E16B1BF1F8D200627DA8 /* PIN_Anim_Negative053.png in Resources */,
+				2B1D053D1C04C17100010B1B /* 2.png in Resources */,
 				473698821BF371EF00A0855B /* GTMUIImage+Resize_100x50.png in Resources */,
 				474313A21BE78A3A0021CF58 /* Main.storyboard in Resources */,
-				4729E1E61BF1F8D200627DA8 /* PIN_Anim_Positive076.png in Resources */,
-				4729E15F1BF1F8D200627DA8 /* PIN_Anim_Negative041.png in Resources */,
-				4729E1771BF1F8D200627DA8 /* PIN_Anim_Negative065.png in Resources */,
-				4729E1DC1BF1F8D200627DA8 /* PIN_Anim_Positive066.png in Resources */,
 				473698BF1BF371EF00A0855B /* GTMUnitTestingWindow.10.5.8.tiff in Resources */,
-				4729E1741BF1F8D200627DA8 /* PIN_Anim_Negative062.png in Resources */,
-				4729E1891BF1F8D200627DA8 /* PIN_Anim_Negative083.png in Resources */,
-				4729E1621BF1F8D200627DA8 /* PIN_Anim_Negative044.png in Resources */,
+				2BDBA4B81C059A3C00BDE112 /* begin_on.png in Resources */,
 				2B92E3C61BF637AA003CF4A1 /* cameraOverlay 4.png in Resources */,
 				47D2CA1B1BFA094B00C1D89F /* ResetMyApp.png in Resources */,
 				478CD38B1BFE0961008774E0 /* Locked Animation_0018@3x.png in Resources */,
 				473698C91BF371EF00A0855B /* RootViewController.xib in Resources */,
 				47E90E461BECB1BC00402A5B /* ImageNotification@2x.png in Resources */,
 				476B0F5C1BFF5ECE0070891C /* FTU_TOTP_Icon_ON@2x.png in Resources */,
-				4729E1B51BF1F8D200627DA8 /* PIN_Anim_Positive027.png in Resources */,
 				47D2CA211BFA168B00C1D89F /* begin@2x.png in Resources */,
 				47D2CA1D1BFA095100C1D89F /* ResetMyApp@2x.png in Resources */,
 				473697251BF35CF500A0855B /* Authenticator_Logo_9.png in Resources */,
 				473697201BF35CF500A0855B /* Authenticator_Logo_4.png in Resources */,
+				2B1D05461C04C17100010B1B /* 28.png in Resources */,
 				47E0CECF1BFCB10100AC390B /* Ribbon@3x.png in Resources */,
-				4729E13A1BF1F8D200627DA8 /* PIN_Anim_Negative004.png in Resources */,
-				4729E1911BF1F8D200627DA8 /* PIN_Anim_Negative091.png in Resources */,
 				471C75E31BF0AE3900F9907E /* QR_Icon_ON@2x.png in Resources */,
 				470E37401BFEF5CA009EAA8C /* Locked Animation_0013@2x.png in Resources */,
-				4729E1CB1BF1F8D200627DA8 /* PIN_Anim_Positive049.png in Resources */,
 				47D2CA1F1BFA095C00C1D89F /* ResetMyApp@3x.png in Resources */,
 				47E0CEAE1BFCAC1100AC390B /* SecurePIN_OFF@2x.png in Resources */,
-				4729E1AF1BF1F8D200627DA8 /* PIN_Anim_Positive021.png in Resources */,
 				473698921BF371EF00A0855B /* phone.png in Resources */,
 				470E36531BFEEFA0009EAA8C /* Message_0013@3x.png in Resources */,
 				47E0CEE31BFCBE9C00AC390B /* ScanANewQR_ON@2x.png in Resources */,
 				470E36B51BFEF386009EAA8C /* GREY PANEL_00007@2x.png in Resources */,
-				4729E1B41BF1F8D200627DA8 /* PIN_Anim_Positive026.png in Resources */,
-				4729E1E11BF1F8D200627DA8 /* PIN_Anim_Positive071.png in Resources */,
 				470E37341BFEF5CA009EAA8C /* Locked Animation_0001@2x.png in Resources */,
-				4729E1E81BF1F8D200627DA8 /* PIN_Anim_Positive078.png in Resources */,
-				4729E1571BF1F8D200627DA8 /* PIN_Anim_Negative033.png in Resources */,
-				4729E1851BF1F8D200627DA8 /* PIN_Anim_Negative079.png in Resources */,
 				47D4AC8D1C0497A0003C279E /* Splash_Screen_Iphone_5S.png in Resources */,
-				4729E1611BF1F8D200627DA8 /* PIN_Anim_Negative043.png in Resources */,
-				4729E1D11BF1F8D200627DA8 /* PIN_Anim_Positive055.png in Resources */,
 				47E0CEC71BFCB04400AC390B /* TOUCH_Icon_ON@3x.png in Resources */,
 				473698C31BF371EF00A0855B /* GTMUnitTestingWindow.tiff in Resources */,
 				470E36BA1BFEF386009EAA8C /* GREY PANEL_00012@2x.png in Resources */,
@@ -2903,136 +2429,95 @@
 				47119CF71BEA19B200876684 /* Ribbon@2x.png in Resources */,
 				478CD3821BFE0961008774E0 /* Locked Animation_0009@3x.png in Resources */,
 				473698711BF371EF00A0855B /* GTMFadeTruncatingLabelTest1.png in Resources */,
-				4729E1D41BF1F8D200627DA8 /* PIN_Anim_Positive058.png in Resources */,
-				4729E1D81BF1F8D200627DA8 /* PIN_Anim_Positive062.png in Resources */,
 				470E364C1BFEEFA0009EAA8C /* Message_0006@3x.png in Resources */,
 				470E36551BFEEFA0009EAA8C /* Message_0015@3x.png in Resources */,
-				4729E1C41BF1F8D200627DA8 /* PIN_Anim_Positive042.png in Resources */,
-				4729E1C71BF1F8D200627DA8 /* PIN_Anim_Positive045.png in Resources */,
 				473698A71BF371EF00A0855B /* Localizable.strings in Resources */,
-				4729E16D1BF1F8D200627DA8 /* PIN_Anim_Negative055.png in Resources */,
 				47AAF8171BE8DE3400B7DD86 /* BKG_320x568.m4v in Resources */,
 				4736987E1BF371EF00A0855B /* GTMUIImage+Resize_100x100.png in Resources */,
-				4729E1731BF1F8D200627DA8 /* PIN_Anim_Negative061.png in Resources */,
 				47E0CEB61BFCAC1E00AC390B /* TouchID_OFF@2x.png in Resources */,
 				470E364A1BFEEFA0009EAA8C /* Message_0004@3x.png in Resources */,
 				473698771BF371EF00A0855B /* GTMFadeTruncatingLabelTest3.png in Resources */,
-				4729E1A11BF1F8D200627DA8 /* PIN_Anim_Positive007.png in Resources */,
-				4729E1E41BF1F8D200627DA8 /* PIN_Anim_Positive074.png in Resources */,
+				2B1D05421C04C17100010B1B /* 24.png in Resources */,
+				2B1D05371C04C17100010B1B /* 14.png in Resources */,
 				471C75E71BF0AE3900F9907E /* TOUCH_Icon_ON@2x.png in Resources */,
 				470E368C1BFEF2E8009EAA8C /* GREY PANEL_00005@3x.png in Resources */,
 				470E36B31BFEF386009EAA8C /* GREY PANEL_00005@2x.png in Resources */,
-				4729E19D1BF1F8D200627DA8 /* PIN_Anim_Positive003.png in Resources */,
-				4729E1801BF1F8D200627DA8 /* PIN_Anim_Negative074.png in Resources */,
 				473698BE1BF371EF00A0855B /* GTMUnitTestingWindow.10.5.7.tiff in Resources */,
-				4729E1551BF1F8D200627DA8 /* PIN_Anim_Negative031.png in Resources */,
 				470E373C1BFEF5CA009EAA8C /* Locked Animation_0009@2x.png in Resources */,
 				473697241BF35CF500A0855B /* Authenticator_Logo_8.png in Resources */,
 				473698B41BF371EF00A0855B /* GTMUIViewUnitTestingTest.png in Resources */,
 				478CD3861BFE0961008774E0 /* Locked Animation_0013@3x.png in Resources */,
 				473698B71BF371EF00A0855B /* GTMUnitTestingImage.tiff in Resources */,
-				4729E1811BF1F8D200627DA8 /* PIN_Anim_Negative075.png in Resources */,
 				470E374C1BFEF5CA009EAA8C /* Locked Animation_0025@2x.png in Resources */,
 				470E368D1BFEF2E8009EAA8C /* GREY PANEL_00006@3x.png in Resources */,
 				478CD3921BFE0961008774E0 /* Locked Animation_0025@3x.png in Resources */,
 				470E36C01BFEF386009EAA8C /* GREY PANEL_00018@2x.png in Resources */,
 				473697221BF35CF500A0855B /* Authenticator_Logo_6.png in Resources */,
-				4729E14C1BF1F8D200627DA8 /* PIN_Anim_Negative022.png in Resources */,
-				4729E1C31BF1F8D200627DA8 /* PIN_Anim_Positive041.png in Resources */,
-				4729E1A61BF1F8D200627DA8 /* PIN_Anim_Positive012.png in Resources */,
 				473697321BF35CF500A0855B /* Authenticator_Logo_22.png in Resources */,
+				2B1D053F1C04C17100010B1B /* 21.png in Resources */,
 				470E36C31BFEF386009EAA8C /* GREY PANEL_00021@2x.png in Resources */,
-				4729E1B01BF1F8D200627DA8 /* PIN_Anim_Positive022.png in Resources */,
 				47D4AC971C04A367003C279E /* icon_40pt@2x.png in Resources */,
 				470E37451BFEF5CA009EAA8C /* Locked Animation_0018@2x.png in Resources */,
-				4729E13D1BF1F8D200627DA8 /* PIN_Anim_Negative007.png in Resources */,
-				4729E1E51BF1F8D200627DA8 /* PIN_Anim_Positive075.png in Resources */,
 				471C75E41BF0AE3900F9907E /* TOTP_Icon_OFF@2x.png in Resources */,
 				470E36981BFEF2E8009EAA8C /* GREY PANEL_00017@3x.png in Resources */,
-				4729E1AC1BF1F8D200627DA8 /* PIN_Anim_Positive018.png in Resources */,
-				4729E1561BF1F8D200627DA8 /* PIN_Anim_Negative032.png in Resources */,
 				476B0F371BFF37960070891C /* StoryBoard_iphone6Plus.storyboard in Resources */,
 				470E36B81BFEF386009EAA8C /* GREY PANEL_00010@2x.png in Resources */,
 				4736972A1BF35CF500A0855B /* Authenticator_Logo_14.png in Resources */,
-				4729E1531BF1F8D200627DA8 /* PIN_Anim_Negative029.png in Resources */,
-				4729E1601BF1F8D200627DA8 /* PIN_Anim_Negative042.png in Resources */,
 				4729E1F81BF2129E00627DA8 /* TOTP_Help_Icon@2x.png in Resources */,
 				470E370E1BFEF45F009EAA8C /* Message_0005@2x.png in Resources */,
-				4729E1E71BF1F8D200627DA8 /* PIN_Anim_Positive077.png in Resources */,
-				4729E1691BF1F8D200627DA8 /* PIN_Anim_Negative051.png in Resources */,
 				473698C51BF371EF00A0855B /* OTPAuthAboutController.xib in Resources */,
 				470E36BD1BFEF386009EAA8C /* GREY PANEL_00015@2x.png in Resources */,
-				4729E1D31BF1F8D200627DA8 /* PIN_Anim_Positive057.png in Resources */,
-				4729E13B1BF1F8D200627DA8 /* PIN_Anim_Negative005.png in Resources */,
-				4729E1451BF1F8D200627DA8 /* PIN_Anim_Negative015.png in Resources */,
-				4729E1921BF1F8D200627DA8 /* PIN_Anim_Negative092.png in Resources */,
+				2B1D053E1C04C17100010B1B /* 20.png in Resources */,
 				470E37411BFEF5CA009EAA8C /* Locked Animation_0014@2x.png in Resources */,
 				478CD3901BFE0961008774E0 /* Locked Animation_0023@3x.png in Resources */,
 				470E36B71BFEF386009EAA8C /* GREY PANEL_00009@2x.png in Resources */,
-				4729E1681BF1F8D200627DA8 /* PIN_Anim_Negative050.png in Resources */,
-				4729E1881BF1F8D200627DA8 /* PIN_Anim_Negative082.png in Resources */,
 				47E0CEB71BFCAC1E00AC390B /* TouchID_OFF@3x.png in Resources */,
 				473698811BF371EF00A0855B /* GTMUIImage+Resize_100x100_to_60x40.png in Resources */,
-				4729E13C1BF1F8D200627DA8 /* PIN_Anim_Negative006.png in Resources */,
 				473698891BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_60x40_noclip.png in Resources */,
-				4729E17C1BF1F8D200627DA8 /* PIN_Anim_Negative070.png in Resources */,
-				4729E1991BF1F8D200627DA8 /* PIN_Anim_Negative099.png in Resources */,
 				473698BA1BF371EF00A0855B /* GTMUnitTestingTestApp.gtmUTState in Resources */,
 				4729E1F41BF20E6300627DA8 /* Authenticator_Help_Icon@2x.png in Resources */,
-				4729E1471BF1F8D200627DA8 /* PIN_Anim_Negative017.png in Resources */,
 				47D4AC941C04A273003C279E /* icon_60pt@2x.png in Resources */,
 				470E37171BFEF45F009EAA8C /* Message_0014@2x.png in Resources */,
 				473698C11BF371EF00A0855B /* GTMUnitTestingWindow.10.6.tiff in Resources */,
-				4729E1641BF1F8D200627DA8 /* PIN_Anim_Negative046.png in Resources */,
 				47E0CEC31BFCAFFC00AC390B /* QR_Icon_ON@3x.png in Resources */,
 				470E37441BFEF5CA009EAA8C /* Locked Animation_0017@2x.png in Resources */,
-				4729E1361BF1F8D200627DA8 /* PIN_Anim_Negative000.png in Resources */,
-				4729E1AD1BF1F8D200627DA8 /* PIN_Anim_Positive019.png in Resources */,
+				2B1D054B1C04C17100010B1B /* 4.png in Resources */,
 				47D4AC8C1C0497A0003C279E /* Splash_Screen_Iphone_4S.png in Resources */,
+				2B1D054D1C04C17100010B1B /* 6.png in Resources */,
 				473698B51BF371EF00A0855B /* GTMUnitTestingImage.10.6.tiff in Resources */,
 				4736987A1BF371EF00A0855B /* GTMFadeTruncatingLabelTest4.png in Resources */,
 				473698C21BF371EF00A0855B /* GTMUnitTestingWindow.gtmUTState in Resources */,
 				2B92E3C41BF637AA003CF4A1 /* cameraOverlay 3.5.png in Resources */,
 				473697331BF35CF500A0855B /* Authenticator_Logo_23.png in Resources */,
+				2BDBA4C41C05CF0500BDE112 /* DarkAnimation in Resources */,
 				470E36471BFEEFA0009EAA8C /* Message_0001@3x.png in Resources */,
 				47E0CEDB1BFCBA9E00AC390B /* Ribbon_Hamburger@3x.png in Resources */,
-				4729E1871BF1F8D200627DA8 /* PIN_Anim_Negative081.png in Resources */,
-				4729E1791BF1F8D200627DA8 /* PIN_Anim_Negative067.png in Resources */,
+				2B1D05491C04C17100010B1B /* 30.png in Resources */,
 				470E37191BFEF45F009EAA8C /* Message_0016@2x.png in Resources */,
 				2B92E3C71BF637AA003CF4A1 /* cameraOverlay 5.5.png in Resources */,
 				470E37101BFEF45F009EAA8C /* Message_0007@2x.png in Resources */,
 				470E37461BFEF5CA009EAA8C /* Locked Animation_0019@2x.png in Resources */,
 				47119D161BEA436200876684 /* X_ON@2x.png in Resources */,
 				470E37111BFEF45F009EAA8C /* Message_0008@2x.png in Resources */,
-				4729E15B1BF1F8D200627DA8 /* PIN_Anim_Negative037.png in Resources */,
 				47E0CEC61BFCB04400AC390B /* TOUCH_Icon_OFF@3x.png in Resources */,
-				4729E15A1BF1F8D200627DA8 /* PIN_Anim_Negative036.png in Resources */,
+				2BDBA4C11C05A08700BDE112 /* Negative.wav in Resources */,
 				47D4AC921C04A23B003C279E /* icon_60pt@3x.png in Resources */,
-				4729E1CE1BF1F8D200627DA8 /* PIN_Anim_Positive052.png in Resources */,
+				2B1D05431C04C17100010B1B /* 25.png in Resources */,
 				470E373E1BFEF5CA009EAA8C /* Locked Animation_0011@2x.png in Resources */,
 				4736988E1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_50x50_clip.png in Resources */,
-				4729E17F1BF1F8D200627DA8 /* PIN_Anim_Negative073.png in Resources */,
-				4729E1AA1BF1F8D200627DA8 /* PIN_Anim_Positive016.png in Resources */,
+				2B1D05401C04C17100010B1B /* 22.png in Resources */,
 				470E37161BFEF45F009EAA8C /* Message_0013@2x.png in Resources */,
-				4729E1541BF1F8D200627DA8 /* PIN_Anim_Negative030.png in Resources */,
-				4729E1B21BF1F8D200627DA8 /* PIN_Anim_Positive024.png in Resources */,
 				478CD3851BFE0961008774E0 /* Locked Animation_0012@3x.png in Resources */,
-				4729E14A1BF1F8D200627DA8 /* PIN_Anim_Negative020.png in Resources */,
 				471C75E21BF0AE3900F9907E /* QR_Icon_OFF@2x.png in Resources */,
 				47E0CECB1BFCB08200AC390B /* PIN_Icon_ON@3x.png in Resources */,
 				473698C61BF371EF00A0855B /* OTPAuthURLEntryController.xib in Resources */,
 				470E36511BFEEFA0009EAA8C /* Message_0011@3x.png in Resources */,
-				4729E1CC1BF1F8D200627DA8 /* PIN_Anim_Positive050.png in Resources */,
 				474313A71BE78A3A0021CF58 /* LaunchScreen.xib in Resources */,
-				4729E1951BF1F8D200627DA8 /* PIN_Anim_Negative095.png in Resources */,
-				4729E18B1BF1F8D200627DA8 /* PIN_Anim_Negative085.png in Resources */,
 				470E36941BFEF2E8009EAA8C /* GREY PANEL_00013@3x.png in Resources */,
-				4729E1BE1BF1F8D200627DA8 /* PIN_Anim_Positive036.png in Resources */,
 				470E37421BFEF5CA009EAA8C /* Locked Animation_0015@2x.png in Resources */,
 				470E37181BFEF45F009EAA8C /* Message_0015@2x.png in Resources */,
 				476B0F591BFF5ECE0070891C /* FTU_QR_Icon_OFF@2x.png in Resources */,
 				470E369A1BFEF2E8009EAA8C /* GREY PANEL_00019@3x.png in Resources */,
-				4729E1711BF1F8D200627DA8 /* PIN_Anim_Negative059.png in Resources */,
 				473698BB1BF371EF00A0855B /* GTMUnitTestingView.10.6.tiff in Resources */,
 				4736971F1BF35CF500A0855B /* Authenticator_Logo_3.png in Resources */,
 				478CD37F1BFE0961008774E0 /* Locked Animation_0006@3x.png in Resources */,
@@ -3043,195 +2528,140 @@
 				470E36C51BFEF386009EAA8C /* GREY PANEL_00023@2x.png in Resources */,
 				478CD38E1BFE0961008774E0 /* Locked Animation_0021@3x.png in Resources */,
 				470E370F1BFEF45F009EAA8C /* Message_0006@2x.png in Resources */,
-				4729E1A71BF1F8D200627DA8 /* PIN_Anim_Positive013.png in Resources */,
 				473698871BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_50x50_noclip.png in Resources */,
 				4736971C1BF35CF500A0855B /* Authenticator_Logo_0.png in Resources */,
 				47B8A7DC1C03256200CF14AD /* X_ON@3x.png in Resources */,
 				47E0CEE71BFCBEA700AC390B /* ScanANewQR_ON@3x.png in Resources */,
 				470E36491BFEEFA0009EAA8C /* Message_0003@3x.png in Resources */,
-				4729E1BB1BF1F8D200627DA8 /* PIN_Anim_Positive033.png in Resources */,
-				4729E1831BF1F8D200627DA8 /* PIN_Anim_Negative077.png in Resources */,
-				4729E1441BF1F8D200627DA8 /* PIN_Anim_Negative014.png in Resources */,
+				2B1D05321C04C17100010B1B /* 1.png in Resources */,
 				471C75EB1BF0AE5200F9907E /* PIN_Icon_ON@2x.png in Resources */,
 				478CD3801BFE0961008774E0 /* Locked Animation_0007@3x.png in Resources */,
-				4729E1E21BF1F8D200627DA8 /* PIN_Anim_Positive072.png in Resources */,
 				478CD3871BFE0961008774E0 /* Locked Animation_0014@3x.png in Resources */,
 				473697311BF35CF500A0855B /* Authenticator_Logo_21.png in Resources */,
-				4729E1CD1BF1F8D200627DA8 /* PIN_Anim_Positive051.png in Resources */,
 				470E369E1BFEF2E8009EAA8C /* GREY PANEL_00023@3x.png in Resources */,
 				470E369D1BFEF2E8009EAA8C /* GREY PANEL_00022@3x.png in Resources */,
 				470E37431BFEF5CA009EAA8C /* Locked Animation_0016@2x.png in Resources */,
-				4729E19B1BF1F8D200627DA8 /* PIN_Anim_Positive001.png in Resources */,
 				478CD3881BFE0961008774E0 /* Locked Animation_0015@3x.png in Resources */,
 				47E90E4A1BECE79B00402A5B /* select.png in Resources */,
-				4729E17E1BF1F8D200627DA8 /* PIN_Anim_Negative072.png in Resources */,
-				4729E14E1BF1F8D200627DA8 /* PIN_Anim_Negative024.png in Resources */,
-				4729E1841BF1F8D200627DA8 /* PIN_Anim_Negative078.png in Resources */,
 				470E37351BFEF5CA009EAA8C /* Locked Animation_0002@2x.png in Resources */,
 				470E36481BFEEFA0009EAA8C /* Message_0002@3x.png in Resources */,
-				4729E18C1BF1F8D200627DA8 /* PIN_Anim_Negative086.png in Resources */,
 				47E0CEAF1BFCAC1100AC390B /* SecurePIN_OFF@3x.png in Resources */,
 				4736987F1BF371EF00A0855B /* GTMUIImage+Resize_100x100_to_40x60.png in Resources */,
 				470E37131BFEF45F009EAA8C /* Message_0010@2x.png in Resources */,
-				4729E0801BF1F79F00627DA8 /* startCircleImage.png in Resources */,
+				2B1D05341C04C17100010B1B /* 11.png in Resources */,
 				477498FF1BE7949800026C01 /* begin1.png in Resources */,
-				4729E1C01BF1F8D200627DA8 /* PIN_Anim_Positive038.png in Resources */,
-				4729E1581BF1F8D200627DA8 /* PIN_Anim_Negative034.png in Resources */,
 				478CD3841BFE0961008774E0 /* Locked Animation_0011@3x.png in Resources */,
 				47E0CEDF1BFCBE9200AC390B /* ScanANewQR_ON.png in Resources */,
 				2B92E3C51BF637AA003CF4A1 /* cameraOverlay 4.7.png in Resources */,
-				4729E1781BF1F8D200627DA8 /* PIN_Anim_Negative066.png in Resources */,
 				4736972F1BF35CF500A0855B /* Authenticator_Logo_19.png in Resources */,
 				47E0CEBE1BFCAFE800AC390B /* TOTP_Icon_OFF@3x.png in Resources */,
+				2BDBA4C01C05A08700BDE112 /* beep-beep.aiff in Resources */,
 				473697281BF35CF500A0855B /* Authenticator_Logo_12.png in Resources */,
-				4729E17A1BF1F8D200627DA8 /* PIN_Anim_Negative068.png in Resources */,
 				4729E1F21BF20A3600627DA8 /* Notification_Help_Icon@2x.png in Resources */,
+				2B1D05411C04C17100010B1B /* 23.png in Resources */,
 				478CD37E1BFE0961008774E0 /* Locked Animation_0005@3x.png in Resources */,
-				4729E1E91BF1F8D200627DA8 /* PIN_Anim_Positive079.png in Resources */,
 				478CD37D1BFE0961008774E0 /* Locked Animation_0004@3x.png in Resources */,
-				4729E1431BF1F8D200627DA8 /* PIN_Anim_Negative013.png in Resources */,
-				4729E19F1BF1F8D200627DA8 /* PIN_Anim_Positive005.png in Resources */,
 				2B1D05051C04704600010B1B /* set pin.png in Resources */,
 				478CD3831BFE0961008774E0 /* Locked Animation_0010@3x.png in Resources */,
 				47E0CEB81BFCAC1E00AC390B /* TouchID_ON@2x.png in Resources */,
 				470E374A1BFEF5CA009EAA8C /* Locked Animation_0023@2x.png in Resources */,
-				4729E1AE1BF1F8D200627DA8 /* PIN_Anim_Positive020.png in Resources */,
-				4729E1DE1BF1F8D200627DA8 /* PIN_Anim_Positive068.png in Resources */,
-				4729E1371BF1F8D200627DA8 /* PIN_Anim_Negative001.png in Resources */,
-				4729E15D1BF1F8D200627DA8 /* PIN_Anim_Negative039.png in Resources */,
 				47E0CE941BFC5A1700AC390B /* Submit@3x.png in Resources */,
 				474313A41BE78A3A0021CF58 /* Images.xcassets in Resources */,
 				47E0CEDE1BFCBE9200AC390B /* ScanANewQR_OFF.png in Resources */,
 				474F1BE61BFB5CFB00D5B569 /* QRDoesn’tScan@2x.png in Resources */,
 				473698B91BF371EF00A0855B /* GTMUnitTestingTestApp.10.6.gtmUTState in Resources */,
 				470E36BF1BFEF386009EAA8C /* GREY PANEL_00017@2x.png in Resources */,
-				4729E1481BF1F8D200627DA8 /* PIN_Anim_Negative018.png in Resources */,
+				2B1D053A1C04C17100010B1B /* 17.png in Resources */,
+				2B1D05451C04C17100010B1B /* 27.png in Resources */,
 				4736987D1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.png in Resources */,
 				470E37151BFEF45F009EAA8C /* Message_0012@2x.png in Resources */,
-				4729E17B1BF1F8D200627DA8 /* PIN_Anim_Negative069.png in Resources */,
+				2B1D05391C04C17100010B1B /* 16.png in Resources */,
 				470E364B1BFEEFA0009EAA8C /* Message_0005@3x.png in Resources */,
 				470E36901BFEF2E8009EAA8C /* GREY PANEL_00009@3x.png in Resources */,
 				470E36991BFEF2E8009EAA8C /* GREY PANEL_00018@3x.png in Resources */,
 				47E0CEE21BFCBE9C00AC390B /* ScanANewQR_OFF@2x.png in Resources */,
 				47E0CE961BFC5A2000AC390B /* Submit@2x.png in Resources */,
 				470E36C21BFEF386009EAA8C /* GREY PANEL_00020@2x.png in Resources */,
+				2B1D053C1C04C17100010B1B /* 19.png in Resources */,
 				473698AF1BF371EF00A0855B /* ReadMe_iossim.txt in Resources */,
 				478CD38D1BFE0961008774E0 /* Locked Animation_0020@3x.png in Resources */,
-				4729E18F1BF1F8D200627DA8 /* PIN_Anim_Negative089.png in Resources */,
 				473698741BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.png in Resources */,
 				474F1BF41BFB651400D5B569 /* SetPin@3x.png in Resources */,
-				4729E16A1BF1F8D200627DA8 /* PIN_Anim_Negative052.png in Resources */,
 				473698B61BF371EF00A0855B /* GTMUnitTestingImage.gtmUTState in Resources */,
-				4729E1CF1BF1F8D200627DA8 /* PIN_Anim_Positive053.png in Resources */,
+				2B1D05351C04C17100010B1B /* 12.png in Resources */,
 				47E90E341BEC969000402A5B /* Back_Arrow_OFF@2x.png in Resources */,
-				4729E1961BF1F8D200627DA8 /* PIN_Anim_Negative096.png in Resources */,
+				2B1D054E1C04C17100010B1B /* 7.png in Resources */,
 				470E370A1BFEF45F009EAA8C /* Message_0001@2x.png in Resources */,
-				4729E14B1BF1F8D200627DA8 /* PIN_Anim_Negative021.png in Resources */,
-				4729E1B71BF1F8D200627DA8 /* PIN_Anim_Positive029.png in Resources */,
+				2B1D05471C04C17100010B1B /* 29.png in Resources */,
 				47D4AC5F1C043E5B003C279E /* StoryBoard_iPhone6.storyboard in Resources */,
-				4729E14F1BF1F8D200627DA8 /* PIN_Anim_Negative025.png in Resources */,
 				470E374B1BFEF5CA009EAA8C /* Locked Animation_0024@2x.png in Resources */,
-				4729E19C1BF1F8D200627DA8 /* PIN_Anim_Positive002.png in Resources */,
-				4729E1861BF1F8D200627DA8 /* PIN_Anim_Negative080.png in Resources */,
 				47B8A7CE1C02F1BA00CF14AD /* SetPin_ON@3x.png in Resources */,
-				4729E13E1BF1F8D200627DA8 /* PIN_Anim_Negative008.png in Resources */,
-				4729E1521BF1F8D200627DA8 /* PIN_Anim_Negative028.png in Resources */,
+				2B1D05331C04C17100010B1B /* 10.png in Resources */,
 				47AAF8281BE8EB9F00B7DD86 /* VideoViewController.xib in Resources */,
 				473697301BF35CF500A0855B /* Authenticator_Logo_20.png in Resources */,
 				471C75E51BF0AE3900F9907E /* TOTP_Icon_ON@2x.png in Resources */,
 				4736972D1BF35CF500A0855B /* Authenticator_Logo_17.png in Resources */,
-				4729E1B91BF1F8D200627DA8 /* PIN_Anim_Positive031.png in Resources */,
-				4729E16F1BF1F8D200627DA8 /* PIN_Anim_Negative057.png in Resources */,
-				4729E1401BF1F8D200627DA8 /* PIN_Anim_Negative010.png in Resources */,
-				4729E1BA1BF1F8D200627DA8 /* PIN_Anim_Positive032.png in Resources */,
+				2BDBA4C21C05A08700BDE112 /* Positive.wav in Resources */,
 				4729E20C1BF2239E00627DA8 /* background@2x.png in Resources */,
 				473698841BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_40x60_clip.png in Resources */,
 				4736971E1BF35CF500A0855B /* Authenticator_Logo_2.png in Resources */,
 				476B0F5A1BFF5ECE0070891C /* FTU_QR_Icon_ON@2x.png in Resources */,
-				4729E14D1BF1F8D200627DA8 /* PIN_Anim_Negative023.png in Resources */,
 				478CD38A1BFE0961008774E0 /* Locked Animation_0017@3x.png in Resources */,
-				4729E1C91BF1F8D200627DA8 /* PIN_Anim_Positive047.png in Resources */,
 				470E37141BFEF45F009EAA8C /* Message_0011@2x.png in Resources */,
 				470E368E1BFEF2E8009EAA8C /* GREY PANEL_00007@3x.png in Resources */,
 				473698721BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.5.png in Resources */,
-				4729E19E1BF1F8D200627DA8 /* PIN_Anim_Positive004.png in Resources */,
 				4736988D1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_40x60_noclip.png in Resources */,
 				470E370B1BFEF45F009EAA8C /* Message_0002@2x.png in Resources */,
-				4729E1B11BF1F8D200627DA8 /* PIN_Anim_Positive023.png in Resources */,
 				47D2CA231BFA169400C1D89F /* begin@3x.png in Resources */,
 				471D008F1BEB761E003BC1C6 /* defaultProfileImage@2x.png in Resources */,
 				4736988B1BF371EF00A0855B /* GTMUIImage+Resize_50x100_flipped.png in Resources */,
-				4729E1E01BF1F8D200627DA8 /* PIN_Anim_Positive070.png in Resources */,
-				4729E16C1BF1F8D200627DA8 /* PIN_Anim_Negative054.png in Resources */,
 				476B0F5B1BFF5ECE0070891C /* FTU_TOTP_Icon_OFF@2x.png in Resources */,
 				470E36961BFEF2E8009EAA8C /* GREY PANEL_00015@3x.png in Resources */,
-				4729E1751BF1F8D200627DA8 /* PIN_Anim_Negative063.png in Resources */,
-				4729E1511BF1F8D200627DA8 /* PIN_Anim_Negative027.png in Resources */,
+				2B1D053B1C04C17100010B1B /* 18.png in Resources */,
 				473698BD1BF371EF00A0855B /* GTMUnitTestingWindow.10.5.6.tiff in Resources */,
 				471D007D1BEB37C1003BC1C6 /* scanBox.png in Resources */,
-				4729E15E1BF1F8D200627DA8 /* PIN_Anim_Negative040.png in Resources */,
 				47B8A7CD1C02F1BA00CF14AD /* SetPin_ON@2x.png in Resources */,
 				47E0CEB01BFCAC1100AC390B /* SecurePIN_ON@2x.png in Resources */,
-				4729E1B81BF1F8D200627DA8 /* PIN_Anim_Positive030.png in Resources */,
 				473698761BF371EF00A0855B /* GTMFadeTruncatingLabelTest3.6.png in Resources */,
-				4729E1BF1BF1F8D200627DA8 /* PIN_Anim_Positive037.png in Resources */,
-				4729E1981BF1F8D200627DA8 /* PIN_Anim_Negative098.png in Resources */,
-				4729E1461BF1F8D200627DA8 /* PIN_Anim_Negative016.png in Resources */,
 				2B1D050A1C04903100010B1B /* home screen.png in Resources */,
 				470E364F1BFEEFA0009EAA8C /* Message_0009@3x.png in Resources */,
-				4729E16E1BF1F8D200627DA8 /* PIN_Anim_Negative056.png in Resources */,
 				470E368F1BFEF2E8009EAA8C /* GREY PANEL_00008@3x.png in Resources */,
 				47E0CEBF1BFCAFE800AC390B /* TOTP_Icon_ON@3x.png in Resources */,
 				470E373F1BFEF5CA009EAA8C /* Locked Animation_0012@2x.png in Resources */,
+				2B1D054A1C04C17100010B1B /* 31.png in Resources */,
 				4736972B1BF35CF500A0855B /* Authenticator_Logo_15.png in Resources */,
+				2BDBA4C61C05CF1300BDE112 /* WhiteAnimation in Resources */,
 				47119D151BEA436200876684 /* X_OFF@2x.png in Resources */,
-				4729E1E31BF1F8D200627DA8 /* PIN_Anim_Positive073.png in Resources */,
 				473698731BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.6.png in Resources */,
 				478CD3811BFE0961008774E0 /* Locked Animation_0008@3x.png in Resources */,
-				4729E1B61BF1F8D200627DA8 /* PIN_Anim_Positive028.png in Resources */,
-				4729E1421BF1F8D200627DA8 /* PIN_Anim_Negative012.png in Resources */,
 				473697231BF35CF500A0855B /* Authenticator_Logo_7.png in Resources */,
 				473698A91BF371EF00A0855B /* Info.plist in Resources */,
 				471C75E61BF0AE3900F9907E /* TOUCH_Icon_OFF@2x.png in Resources */,
-				4729E1671BF1F8D200627DA8 /* PIN_Anim_Negative049.png in Resources */,
 				473698AE1BF371EF00A0855B /* iossim in Resources */,
 				470E36BB1BFEF386009EAA8C /* GREY PANEL_00013@2x.png in Resources */,
-				4729E1DA1BF1F8D200627DA8 /* PIN_Anim_Positive064.png in Resources */,
 				47E0CEDA1BFCBA9E00AC390B /* Ribbon_Hamburger@2x.png in Resources */,
 				47E0CEE61BFCBEA700AC390B /* ScanANewQR_OFF@3x.png in Resources */,
 				470E36B61BFEF386009EAA8C /* GREY PANEL_00008@2x.png in Resources */,
 				470E370D1BFEF45F009EAA8C /* Message_0004@2x.png in Resources */,
-				4729E1A21BF1F8D200627DA8 /* PIN_Anim_Positive008.png in Resources */,
 				473698881BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_60x40_clip.png in Resources */,
-				4729E1721BF1F8D200627DA8 /* PIN_Anim_Negative060.png in Resources */,
 				47D2CA251BFA16A100C1D89F /* begin.png in Resources */,
-				4729E1651BF1F8D200627DA8 /* PIN_Anim_Negative047.png in Resources */,
 				47D4AC9C1C04A412003C279E /* icon_29pt@3x.png in Resources */,
-				4729E1D51BF1F8D200627DA8 /* PIN_Anim_Positive059.png in Resources */,
 				470E364D1BFEEFA0009EAA8C /* Message_0007@3x.png in Resources */,
 				473698931BF371EF00A0855B /* BuildUsingXCodeBuild.sh in Resources */,
-				4729E1A41BF1F8D200627DA8 /* PIN_Anim_Positive010.png in Resources */,
-				4729E1D91BF1F8D200627DA8 /* PIN_Anim_Positive063.png in Resources */,
 				473698911BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_60x40_noclip.png in Resources */,
-				4729E1DF1BF1F8D200627DA8 /* PIN_Anim_Positive069.png in Resources */,
 				47E0CEC21BFCAFFC00AC390B /* QR_Icon_OFF@3x.png in Resources */,
 				474F1BE81BFB5D0400D5B569 /* QRDoesn’tScan@3x.png in Resources */,
 				47D4AC8B1C0497A0003C279E /* Splash_Screen_Iphone_3.png in Resources */,
 				478CD37B1BFE0961008774E0 /* Locked Animation_0002@3x.png in Resources */,
-				4729E13F1BF1F8D200627DA8 /* PIN_Anim_Negative009.png in Resources */,
 				473697271BF35CF500A0855B /* Authenticator_Logo_11.png in Resources */,
-				4729E1411BF1F8D200627DA8 /* PIN_Anim_Negative011.png in Resources */,
-				4729E1491BF1F8D200627DA8 /* PIN_Anim_Negative019.png in Resources */,
-				4729E1B31BF1F8D200627DA8 /* PIN_Anim_Positive025.png in Resources */,
+				2B1D054C1C04C17100010B1B /* 5.png in Resources */,
+				2B1D05441C04C17100010B1B /* 26.png in Resources */,
 				474F1BF21BFB650300D5B569 /* SetPin@2x.png in Resources */,
-				4729E15C1BF1F8D200627DA8 /* PIN_Anim_Negative038.png in Resources */,
+				2BDBA4B71C059A3C00BDE112 /* begin_off.png in Resources */,
 				470E373B1BFEF5CA009EAA8C /* Locked Animation_0008@2x.png in Resources */,
-				4729E1D21BF1F8D200627DA8 /* PIN_Anim_Positive056.png in Resources */,
-				4729E1A01BF1F8D200627DA8 /* PIN_Anim_Positive006.png in Resources */,
 				473698801BF371EF00A0855B /* GTMUIImage+Resize_100x100_to_50x50.png in Resources */,
 				473698861BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_50x50_clip.png in Resources */,
 				470E373D1BFEF5CA009EAA8C /* Locked Animation_0010@2x.png in Resources */,
-				4729E1821BF1F8D200627DA8 /* PIN_Anim_Negative076.png in Resources */,
 				473698561BF371EF00A0855B /* phone.png in Resources */,
 				47E0CEB11BFCAC1100AC390B /* SecurePIN_ON@3x.png in Resources */,
 				478CD38C1BFE0961008774E0 /* Locked Animation_0019@3x.png in Resources */,
@@ -3240,7 +2670,6 @@
 				4736988C1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_40x60_clip.png in Resources */,
 				473698B81BF371EF00A0855B /* GTMUnitTestingTest.nib in Resources */,
 				4736988F1BF371EF00A0855B /* GTMUIImage+Resize_50x100_to_50x50_noclip.png in Resources */,
-				4729E1EF1BF2010200627DA8 /* PIN_Circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3513,7 +2942,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "03fd6344-8558-4dae-bbc3-647fe8011d35";
 				USER_HEADER_SEARCH_PATHS = "./PireanSharedLib/**";
 			};
 			name = Debug;
@@ -3545,7 +2974,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "03fd6344-8558-4dae-bbc3-647fe8011d35";
 				USER_HEADER_SEARCH_PATHS = "./PireanSharedLib/**";
 			};
 			name = Release;

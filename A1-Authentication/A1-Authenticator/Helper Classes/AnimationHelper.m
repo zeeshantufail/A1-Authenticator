@@ -25,7 +25,7 @@ static AnimationHelper *ah;
     if (buttonBorder) {
         NSMutableArray *images = [NSMutableArray new];
         for (int c = 1; c < 32; c++) {
-            [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"button_animation/%d.png", c]]];
+            [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", c]]];
         }
         buttonBorder.image = [images objectAtIndex:30];
         buttonBorder.animationImages = images;

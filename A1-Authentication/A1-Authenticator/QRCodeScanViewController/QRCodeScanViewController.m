@@ -10,6 +10,8 @@
 #import "AppSettings.h"
 #import "QRStorage.h"
 #import "SWRevealViewController.h"
+#import "TargetConditionals.h"
+#import "SettingsViewController.h"
 //#import "OTPAuthURLEntryController.h"
 
 @interface QRCodeScanViewController ()
@@ -42,8 +44,11 @@
     
     if(!_isReading)
     {
-        _isReading = YES;
-        [self startReading];
+        if (!TARGET_IPHONE_SIMULATOR)
+        {
+            _isReading = YES;
+            [self startReading];
+        }
     }
     
 }
@@ -52,7 +57,14 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
- 
+    if (TARGET_IPHONE_SIMULATOR) {
+        if (![self.delegate isKindOfClass:[SettingsViewController class]]) {
+            //[self.delegate didScanResult:self];
+            NSString *dummyQR = @"";
+            [self QRScanned:dummyQR];
+            [[AppSettings sharedAppSettings] setAppTotp:self.isTotp];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -108,7 +120,6 @@ AVCaptureDeviceInput *input;
     if (!input) {
         // If any error occurs, simply log the description of it and don't continue any more.
         NSLog(@"%@", [error localizedDescription]);
-         [self.delegate didScanResult:nil];
         return NO;
     }
     
@@ -231,7 +242,7 @@ AVCaptureDeviceInput *input;
 }
 
 
-- (void)scanCodeHelper:(ScanCodeHelper*)scanCodeHelper keyScannedWithRegisterationName:(NSString*)regName userName:(NSString*)userName applicationKey:(NSString*)key authenticationUrl:(NSString*)url pinRequired:(BOOL)pinRequired pinLength:(NSInteger)pinLength resetCount:(NSInteger)resetCount googleSecret:(NSString *) secret{
+- (void)scanCodeHelper:(ScanCodeHelper*)scanCodeHelper keyScannedWithRegisterationName:(NSString*)regName userName:(NSString*)userName applicationKey:(NSString*)key authenticationUrl:(NSString*)url pinRequired:(BOOL)pinRequired pinLength:(NSInteger)pinLength resetCount:(NSInteger)resetCount regID:(NSString *) regId{
     
 //    OTPAuthURLEntryController *otp = [[OTPAuthURLEntryController alloc] init];
 //    [otp getPasscodeFromSecret:secret];
@@ -243,7 +254,7 @@ AVCaptureDeviceInput *input;
     [[AppSettings sharedAppSettings] setAppPinState:NO];
     [[AppSettings sharedAppSettings] setPinLength:pinLength];
     [[AppSettings sharedAppSettings] setApplicationAuthenticationUrl:url];
-    [[AppSettings sharedAppSettings] setGoogleSecret:secret];
+    [[AppSettings sharedAppSettings] setAppRegId:regId];
     if (resetCount > 0) {
         [[AppSettings sharedAppSettings] setResetAppNum:resetCount];
         [[AppSettings sharedAppSettings] enableResetAppCount:NO];
