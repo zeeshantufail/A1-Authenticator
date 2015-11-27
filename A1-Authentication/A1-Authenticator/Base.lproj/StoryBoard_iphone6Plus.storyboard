@@ -3098,19 +3098,19 @@
         <image name="QR_Help_Icon.png" width="36" height="36"/>
         <image name="QR_Icon_ON.png" width="40" height="40"/>
         <image name="ResetMyApp.png" width="291" height="65"/>
-        <image name="Ribbon.png" width="51" height="51"/>
+        <image name="Ribbon.png" width="58" height="58"/>
         <image name="Ribbon_Hamburger.png" width="90" height="124"/>
         <image name="ScanANewQR_OFF.png" width="294" height="66"/>
         <image name="ScanANewQR_ON.png" width="294" height="66"/>
-        <image name="SecurePIN_OFF.png" width="135" height="51"/>
+        <image name="SecurePIN_OFF.png" width="143" height="54"/>
         <image name="SecurePIN_ON.png" width="135" height="51"/>
-        <image name="SetPin_ON.png" width="147" height="33"/>
+        <image name="SetPin_ON.png" width="188" height="42"/>
         <image name="Submit.png" width="230" height="49"/>
         <image name="TOTP_Help_Icon.png" width="36" height="36"/>
         <image name="TOTP_Icon_OFF.png" width="40" height="40"/>
         <image name="TOUCH_Icon_OFF.png" width="40" height="40"/>
         <image name="TouchID_OFF.png" width="119" height="51"/>
-        <image name="TouchID_ON.png" width="119" height="51"/>
+        <image name="TouchID_ON.png" width="126" height="54"/>
         <image name="X_OFF.png" width="33" height="33"/>
         <image name="X_ON.png" width="33" height="33"/>
         <image name="background.png" width="375" height="667"/>

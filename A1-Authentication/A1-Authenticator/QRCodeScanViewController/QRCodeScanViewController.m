@@ -219,7 +219,8 @@ AVCaptureDeviceInput *input;
     
     ScanCodeHelper *sch = [[ScanCodeHelper alloc] init];
     sch.delegate = self;
-    [sch scanKeyWithResultingString:result];
+    NSString *dummyQR = @"UserKey:a1test:asim:y:4:9:602a19ddd02cba1f2aab69c495b34fab:http%3A%2F%2F116.58.50.114%3A9632%2FLogin%2Frest%2Fworkflow%2Fqrauthtest:12345"; //todo zeeshan
+    [sch scanKeyWithResultingString:dummyQR];
     
 }
 #pragma mark - scanCodeHelper

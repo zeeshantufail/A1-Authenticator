@@ -199,6 +199,10 @@ static AppSettings *appSettings;
     [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"appActivationState"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self appActivationState];
+    
+    
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
 }
 
 - (NSInteger)resetAppNum {

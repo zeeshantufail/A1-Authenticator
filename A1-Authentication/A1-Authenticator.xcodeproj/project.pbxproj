@@ -59,6 +59,8 @@
 		2BDBA4C21C05A08700BDE112 /* Positive.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4BF1C05A08700BDE112 /* Positive.wav */; settings = {ASSET_TAGS = (); }; };
 		2BDBA4C41C05CF0500BDE112 /* DarkAnimation in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4C31C05CF0500BDE112 /* DarkAnimation */; settings = {ASSET_TAGS = (); }; };
 		2BDBA4C61C05CF1300BDE112 /* WhiteAnimation in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4C51C05CF1300BDE112 /* WhiteAnimation */; settings = {ASSET_TAGS = (); }; };
+		2BEE9EC81C070ED1000C13B4 /* Notifications+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE9EC51C070ED1000C13B4 /* Notifications+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		2BEE9EC91C070ED1000C13B4 /* Notifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE9EC71C070ED1000C13B4 /* Notifications.m */; settings = {ASSET_TAGS = (); }; };
 		2BF94A961BFC5EA600C8C0A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */; };
 		2BF94A991BFC5ED100C8C0A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */; };
 		2BF94A9C1BFC5F0C00C8C0A8 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */; };
@@ -568,6 +570,10 @@
 		2BDBA4BF1C05A08700BDE112 /* Positive.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Positive.wav; sourceTree = "<group>"; };
 		2BDBA4C31C05CF0500BDE112 /* DarkAnimation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DarkAnimation; sourceTree = "<group>"; };
 		2BDBA4C51C05CF1300BDE112 /* WhiteAnimation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WhiteAnimation; sourceTree = "<group>"; };
+		2BEE9EC41C070ED1000C13B4 /* Notifications+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Notifications+CoreDataProperties.h"; path = "CoreData/Notifications+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2BEE9EC51C070ED1000C13B4 /* Notifications+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Notifications+CoreDataProperties.m"; path = "CoreData/Notifications+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2BEE9EC61C070ED1000C13B4 /* Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notifications.h; path = CoreData/Notifications.h; sourceTree = "<group>"; };
+		2BEE9EC71C070ED1000C13B4 /* Notifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notifications.m; path = CoreData/Notifications.m; sourceTree = "<group>"; };
 		2BF94A951BFC5EA600C8C0A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2BF94A981BFC5ED100C8C0A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BF94A9A1BFC5F0C00C8C0A8 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -2062,6 +2068,10 @@
 			isa = PBXGroup;
 			children = (
 				4743139A1BE78A3A0021CF58 /* A1_Authenticator.xcdatamodeld */,
+				2BEE9EC41C070ED1000C13B4 /* Notifications+CoreDataProperties.h */,
+				2BEE9EC51C070ED1000C13B4 /* Notifications+CoreDataProperties.m */,
+				2BEE9EC61C070ED1000C13B4 /* Notifications.h */,
+				2BEE9EC71C070ED1000C13B4 /* Notifications.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -2721,6 +2731,7 @@
 				471C75F61BF0C50200F9907E /* HomeViewController.m in Sources */,
 				473698631BF371EF00A0855B /* GTMFadeTruncatingLabel.m in Sources */,
 				2B92E3BE1BF62C51003CF4A1 /* PasscodeHelper.m in Sources */,
+				2BEE9EC81C070ED1000C13B4 /* Notifications+CoreDataProperties.m in Sources */,
 				4736985E1BF371EF00A0855B /* GTMObjC2Runtime.m in Sources */,
 				47064A331BF47027004B2E42 /* QRCodeScanViewController.m in Sources */,
 				47AAF82C1BE8F61D00B7DD86 /* BeginViewController.m in Sources */,
@@ -2749,6 +2760,7 @@
 				470E69811BF479B900D6A091 /* A1AuthenticationHelper.m in Sources */,
 				2B92E3BD1BF62C51003CF4A1 /* KeyboardViewController.m in Sources */,
 				4736984A1BF371EF00A0855B /* OTPGenerator.m in Sources */,
+				2BEE9EC91C070ED1000C13B4 /* Notifications.m in Sources */,
 				47E90E3F1BEC9B0900402A5B /* NotificationCustomCell.m in Sources */,
 				473698481BF371EF00A0855B /* OTPAuthURLEntryController.m in Sources */,
 				4736984F1BF371EF00A0855B /* RootViewController.m in Sources */,
@@ -2942,7 +2954,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "03fd6344-8558-4dae-bbc3-647fe8011d35";
+				PROVISIONING_PROFILE = "ebd29f6b-d36a-4976-aa75-f886da6afaed";
 				USER_HEADER_SEARCH_PATHS = "./PireanSharedLib/**";
 			};
 			name = Debug;
@@ -2974,7 +2986,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "03fd6344-8558-4dae-bbc3-647fe8011d35";
+				PROVISIONING_PROFILE = "ebd29f6b-d36a-4976-aa75-f886da6afaed";
 				USER_HEADER_SEARCH_PATHS = "./PireanSharedLib/**";
 			};
 			name = Release;

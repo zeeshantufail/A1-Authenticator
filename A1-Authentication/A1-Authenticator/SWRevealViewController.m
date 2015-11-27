@@ -704,7 +704,7 @@ int touchScreenNo = 0;
 {
     // Do not call super, to prevent the apis from unfruitful looking for inexistent xibs!
     //[super loadView];
-    
+//    touchScreenNo = 3;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive) name:@"applicationWillResignActive" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(wrongPasscodeEntered:) name:@"wrongPasscodeEntered" object:nil];
     
@@ -795,12 +795,12 @@ NSInteger count;
     
     UIViewController * vc = (UIViewController *)[self presentedViewController];
     if (!vc) {
-        if ([[AppSettings sharedAppSettings] appTouchID]) {
-            [self performSegueWithIdentifier:@"enterTouchIdSegue" sender:self];
-        }
-        else{
-            [self performSegueWithIdentifier:@"enterPasscodeSegue" sender:self];
-        }
+//        if ([[AppSettings sharedAppSettings] appTouchID]) {
+            [self performSegueWithIdentifier:@"authenticationSegue" sender:self];
+//        }
+//        else{
+//            [self performSegueWithIdentifier:@"enterPasscodeSegue" sender:self];
+//        }
     }
     else
     {
@@ -816,17 +816,13 @@ NSInteger count;
         else if([vc isKindOfClass:[UINavigationController class]])
         {
             UINavigationController *nc = (UINavigationController *)vc;
-            kbc = (KeyboardViewController *)[[nc viewControllers] objectAtIndex:0];
-            
-        }
+            kbc = (KeyboardViewController *)[[nc viewControllers] objectAtIndex:0];        }
         if (kbc.passcodeHelper.passcodeScreenState.screenType == 5) {
-            kbc.passcodeHelper.passcodeScreenState.screenNumber = 3;
+            kbc.passcodeHelper.passcodeScreenState.screenNumber = touchScreenNo;
         }
         else{
             [kbc.passcodeHelper resetPinScreen];
         }
-        
-        
     }
     
 }
@@ -834,31 +830,23 @@ NSInteger count;
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    if ([[segue identifier] isEqualToString:@"enterPasscodeSegue"])
+    if ([[segue identifier] isEqualToString:@"authenticationSegue"])
     {
         //[[segue destinationViewController] setDelegate:self];
         UINavigationController * navC = (UINavigationController *)[segue destinationViewController];
         KeyboardViewController *kbc = (KeyboardViewController *)[[navC viewControllers] objectAtIndex:0];
         PasscodeHelper *pc = [[PasscodeHelper alloc] init];
         [pc loadContent];
-        pc.passcodeScreenState.screenNumber = 0;
-        pc.passcodeScreenState.screenType = 1;
-        pc.passcodeScreenState.error = false;
         
-        kbc.passcodeHelper = pc;
-    }
-    else if ([[segue identifier] isEqualToString:@"enterTouchIdSegue"])
-    {
-        //[[segue destinationViewController] setDelegate:self];
-//        UINavigationController * navC = (UINavigationController *)[segue destinationViewController];
-//        KeyboardViewController *kbc = (KeyboardViewController *)[segue destinationViewController];
-        
-        UINavigationController * navC = (UINavigationController *)[segue destinationViewController];
-        KeyboardViewController *kbc = (KeyboardViewController *)[[navC viewControllers] objectAtIndex:0];
-        PasscodeHelper *pc = [[PasscodeHelper alloc] init];
-        [pc loadContent];
-        pc.passcodeScreenState.screenNumber = touchScreenNo;
-        pc.passcodeScreenState.screenType = 5;
+        if ([[AppSettings sharedAppSettings] appTouchID]) {
+            pc.passcodeScreenState.screenNumber = touchScreenNo;
+            pc.passcodeScreenState.screenType = 5;
+        }
+        else{
+            
+            pc.passcodeScreenState.screenNumber = 0;
+            pc.passcodeScreenState.screenType = 1;
+        }
         pc.passcodeScreenState.error = false;
         
         kbc.passcodeHelper = pc;

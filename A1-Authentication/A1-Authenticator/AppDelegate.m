@@ -10,6 +10,8 @@
 #import "AppSettings.h"
 #import "AppHelper.h"
 
+#import "Notifications.h"
+
 @interface AppDelegate ()
 
 @end
@@ -19,9 +21,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [AppHelper setShouldChellangeAuthentication:true];
-    [application setStatusBarHidden:YES];
     
+    [application setStatusBarHidden:YES];
+//
     [self saveApplicationLaunchedAction];
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
@@ -29,6 +31,23 @@
     UINavigationController *nc;
     if ([[AppSettings sharedAppSettings] appActivationState])
     {
+        
+        //-- Set Notification
+        if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
+        {
+            // iOS 8 Notifications
+            [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+            
+            [application registerForRemoteNotifications];
+        }
+        else
+        {
+            // iOS < 8 Notifications
+            [application registerForRemoteNotificationTypes:
+             (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound)];
+        }
+//        [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+        [AppHelper setShouldChellangeAuthentication:true];
         nc = (UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"RTUNavigation"];
     }
     else
@@ -41,6 +60,20 @@
     
     [application setStatusBarHidden:YES];
     return YES;
+}
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+    NSString * deviceTokenString = [[[[deviceToken description]
+                                      stringByReplacingOccurrencesOfString: @"<" withString: @""]
+                                     stringByReplacingOccurrencesOfString: @">" withString: @""]
+                                    stringByReplacingOccurrencesOfString: @" " withString: @""];
+    NSLog(@"My token is: %@", deviceTokenString);
+}
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+    NSLog(@"Failed to get token, error: %@", error);
 }
 
 -(void) saveApplicationLaunchedAction
