@@ -204,7 +204,7 @@ static OTPAuthURL * authUrl;
         }
     }
     if (authUrl) {
-        return authUrl.checkCode;
+        return authUrl.otpCode;
     }
     else{
         return nil;
@@ -229,6 +229,12 @@ static bool shouldChellangeAuthentication = true;
 +(void)setShouldChellangeAuthentication:(BOOL)flag{
     shouldChellangeAuthentication = flag;
 }
+
+static UIImage *gravatarImage;
+
+
+
+
 
 @end
 

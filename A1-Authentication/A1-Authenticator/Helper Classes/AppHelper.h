@@ -11,6 +11,8 @@
 
 @interface AppHelper : NSObject
 
+
+
 + (BOOL)isIPad;
 + (BOOL)isIphone4;
 + (BOOL)isIphone5;
@@ -38,4 +40,5 @@
 
 +(BOOL)shouldChellangeAuthentication;
 +(void)setShouldChellangeAuthentication:(BOOL)flag;
+
 @end

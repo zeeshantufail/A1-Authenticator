@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "GravatarViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

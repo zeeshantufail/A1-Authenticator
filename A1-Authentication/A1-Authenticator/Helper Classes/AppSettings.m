@@ -658,4 +658,23 @@ static AppSettings *appSettings;
 }
 
 
+- (NSString*)appUserEmail {
+    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"AppUserEmail"];
+    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+    NSString *appUserEmail = [unarchiver decodeObjectForKey:PinKey];
+    [unarchiver finishDecoding];
+    return appUserEmail;
+}
+
+
+-(void)setAppUserEmail:(NSString *)appUserEmail{
+    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+    [archiver encodeObject:appUserEmail forKey:PinKey];
+    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"AppUserEmail"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
 @end

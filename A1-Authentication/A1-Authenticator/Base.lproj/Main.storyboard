@@ -2139,15 +2139,15 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <animations/>
                                             </imageView>
+                                            <view contentMode="scaleToFill" id="vM0-AH-50w">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="vM0-AH-50w">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <animations/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="JHI-e6-vLy">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
@@ -2621,7 +2621,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CKp-3S-ke8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="411" y="-431"/>
+            <point key="canvasLocation" x="531" y="-431"/>
         </scene>
         <!--Code Scan View Controller-->
         <scene sceneID="Y13-SO-3l3">
@@ -2752,6 +2752,7 @@
                     </view>
                     <connections>
                         <outlet property="countDownImageView" destination="B7b-Sh-uJj" id="bqK-xn-4cx"/>
+                        <outlet property="otpPasscode" destination="fWq-77-JdX" id="89p-C4-fad"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEi-ZN-9Fx" userLabel="First Responder" sceneMemberID="firstResponder"/>

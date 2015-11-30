@@ -61,6 +61,19 @@
     self.revealViewController.toggleAnimationDuration = 0.3;
     self.revealViewController.toggleAnimationType = SWRevealToggleAnimationTypeEaseOut;
     self.revealViewController.frontViewShadowRadius = 5;
+    
+    if ([GravatarLoader gravatarImage]) {
+        [self imageLoaded:[GravatarLoader gravatarImage]];
+    }
+    else{
+        [[GravatarLoader sharedInstance] loadGravatarWithEmail:[[AppSettings sharedAppSettings] appUserEmail] andSender:self];
+    }
+}
+
+-(void)imageLoaded:(UIImage *)img{
+    
+    if(img)
+    self.profileImageView.image = img;
 }
 
 - (void)didReceiveMemoryWarning
@@ -130,28 +143,31 @@
 {
     if (indexPath.row == 1 || indexPath.row == 2)
     {
-        if ([AppHelper isIphone5])
-        {
-            return 80.0f;
-        }
         if ([AppHelper isIphone6])
         {
             return 85.0f;
         }
-        if ([AppHelper isIphone6p])
+        else if ([AppHelper isIphone6p])
         {
             return 100.0f;
         }
+        else
+        {
+            return 80.0f;
+        }
     }
-    if ([AppHelper isIphone5])
-    {
-        return 34.0f;
-    }
-    if ([AppHelper isIphone6])
+    else if ([AppHelper isIphone6])
     {
         return 38.0f;
     }
-    return 44.0f;
+    else if ([AppHelper isIphone6p])
+    {
+        return 44.0f;
+    }
+    else
+    {
+        return 34.0f;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

@@ -377,6 +377,7 @@
                         <outlet property="nameLbl" destination="Rc2-2i-FhK" id="jNU-af-0PC"/>
                         <outlet property="pinButtonContainer" destination="KVw-Ai-cvP" id="o7e-Oj-z9T"/>
                         <outlet property="profileImageView" destination="jrW-bZ-7jp" id="4kP-3b-gIN"/>
+                        <outlet property="textsContainerView" destination="1Wm-he-LdE" id="2mP-jQ-c8o"/>
                         <outlet property="upperColorImageView" destination="hug-rq-wvL" id="h0T-Lg-6Qt"/>
                     </connections>
                 </viewController>
@@ -398,13 +399,12 @@
                     <connections>
                         <segue destination="qU4-Th-eo7" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="YuP-6C-cMH"/>
                         <segue destination="4JE-9E-Y7c" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="fLf-Xd-qGm"/>
-                        <segue destination="VEH-Os-g86" kind="modal" identifier="enterPasscodeSegue" animates="NO" id="RAz-cl-gjX"/>
-                        <segue destination="I4P-fj-Dfw" kind="modal" identifier="enterTouchIdSegue" animates="NO" id="Qyp-nj-jtr"/>
+                        <segue destination="VEH-Os-g86" kind="modal" identifier="authenticationSegue" animates="NO" id="RAz-cl-gjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRn-sj-7vK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-75" y="-293"/>
+            <point key="canvasLocation" x="-2" y="-213"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="sOO-TJ-mP7">
@@ -3098,19 +3098,19 @@
         <image name="QR_Help_Icon.png" width="36" height="36"/>
         <image name="QR_Icon_ON.png" width="40" height="40"/>
         <image name="ResetMyApp.png" width="291" height="65"/>
-        <image name="Ribbon.png" width="58" height="58"/>
+        <image name="Ribbon.png" width="51" height="51"/>
         <image name="Ribbon_Hamburger.png" width="90" height="124"/>
         <image name="ScanANewQR_OFF.png" width="294" height="66"/>
         <image name="ScanANewQR_ON.png" width="294" height="66"/>
-        <image name="SecurePIN_OFF.png" width="143" height="54"/>
+        <image name="SecurePIN_OFF.png" width="135" height="51"/>
         <image name="SecurePIN_ON.png" width="135" height="51"/>
-        <image name="SetPin_ON.png" width="188" height="42"/>
+        <image name="SetPin_ON.png" width="147" height="33"/>
         <image name="Submit.png" width="230" height="49"/>
         <image name="TOTP_Help_Icon.png" width="36" height="36"/>
         <image name="TOTP_Icon_OFF.png" width="40" height="40"/>
         <image name="TOUCH_Icon_OFF.png" width="40" height="40"/>
         <image name="TouchID_OFF.png" width="119" height="51"/>
-        <image name="TouchID_ON.png" width="126" height="54"/>
+        <image name="TouchID_ON.png" width="119" height="51"/>
         <image name="X_OFF.png" width="33" height="33"/>
         <image name="X_ON.png" width="33" height="33"/>
         <image name="background.png" width="375" height="667"/>
@@ -3123,11 +3123,10 @@
         <image name="startCircleImage.png" width="640" height="124"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="fLf-Xd-qGm"/>
+        <segue reference="sQF-eJ-Oi3"/>
+        <segue reference="nXl-Ug-gK1"/>
         <segue reference="mgA-yJ-SAb"/>
         <segue reference="51R-Up-cIw"/>
-        <segue reference="wUj-aB-UiP"/>
-        <segue reference="iOO-yA-B45"/>
-        <segue reference="5Oe-zj-vbE"/>
-        <segue reference="xHB-K5-9rZ"/>
     </inferredMetricsTieBreakers>
 </document>

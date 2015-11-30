@@ -101,6 +101,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 - (void)setAppRegId:(NSString*)regId;
 - (NSString *)appRegId;
 
+- (void)setAppUserEmail:(NSString*)appUserEmail;
+- (NSString*)appUserEmail;
 
 @property (strong) id refrenceHolder;
 @property (strong) id rootController;

@@ -245,9 +245,6 @@ AVCaptureDeviceInput *input;
 
 - (void)scanCodeHelper:(ScanCodeHelper*)scanCodeHelper keyScannedWithRegisterationName:(NSString*)regName userName:(NSString*)userName applicationKey:(NSString*)key authenticationUrl:(NSString*)url pinRequired:(BOOL)pinRequired pinLength:(NSInteger)pinLength resetCount:(NSInteger)resetCount regID:(NSString *) regId{
     
-//    OTPAuthURLEntryController *otp = [[OTPAuthURLEntryController alloc] init];
-//    [otp getPasscodeFromSecret:secret];
-    
     [self setKey:key];
     
     [[AppSettings sharedAppSettings] setAppRegName:regName];

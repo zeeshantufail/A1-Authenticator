@@ -11,9 +11,11 @@
 
 @interface TimerViewController : UIViewController
 {
-    NSTimer * sTOTPTimer;
+    NSTimer * sTOTPTimer;    
+    bool allowTimer;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *countDownImageView;
+@property (weak, nonatomic) IBOutlet UILabel *otpPasscode;
 
 -(void)showTimer;
 @end

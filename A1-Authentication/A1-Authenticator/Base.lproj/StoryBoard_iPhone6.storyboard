@@ -383,7 +383,7 @@
             <objects>
                 <viewController id="84n-5y-bZZ" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YfZ-mC-rMn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -392,8 +392,7 @@
                     <connections>
                         <segue destination="qU4-Th-eo7" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="YuP-6C-cMH"/>
                         <segue destination="4JE-9E-Y7c" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="fLf-Xd-qGm"/>
-                        <segue destination="VEH-Os-g86" kind="modal" identifier="enterPasscodeSegue" animates="NO" id="RAz-cl-gjX"/>
-                        <segue destination="8gi-yl-Lt8" kind="modal" id="UiS-2i-YPx"/>
+                        <segue destination="VEH-Os-g86" kind="modal" identifier="authenticationSegue" animates="NO" id="RAz-cl-gjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRn-sj-7vK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3109,11 +3108,10 @@
         <image name="startCircleImage.png" width="640" height="124"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nWP-bp-cO7"/>
+        <segue reference="5Oe-zj-vbE"/>
         <segue reference="sQF-eJ-Oi3"/>
         <segue reference="xHB-K5-9rZ"/>
-        <segue reference="UiS-2i-YPx"/>
+        <segue reference="nWP-bp-cO7"/>
         <segue reference="cI1-y9-8pm"/>
-        <segue reference="5Oe-zj-vbE"/>
     </inferredMetricsTieBreakers>
 </document>

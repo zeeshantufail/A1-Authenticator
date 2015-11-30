@@ -7,6 +7,9 @@
 //
 
 #import "TimerViewController.h"
+#import "OTPAuthURLEntryController.h"
+#import "AppHelper.h"
+#import "AppSettings.h"
 
 @interface ImageClass : NSObject
 @property (nonatomic) UIImage * image;
@@ -25,9 +28,9 @@
 
 @end
 
+
 @implementation TimerViewController
 
-bool allowTimer = true;
 
 NSMutableArray *imagesBuff1;
 NSMutableArray *imagesBuff2;
@@ -42,7 +45,12 @@ int currentBuffer = 0;
 int nextBufferLoadBeforeImagesRemaining = 50;
 
 -(void)viewDidLoad{
+    [[AppSettings sharedAppSettings] setGoogleSecret:@"fxxx xxxx xxxx xxxx"];
     [self showTimer];
+    allowTimer = true;
+}
+
+-(void)updatePassCode{
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -105,6 +113,9 @@ int nextBufferLoadBeforeImagesRemaining = 50;
     if (currentBuffer + 1 < totalImages / imagesLoadInMemory ) {
         
         si = (currentBuffer + 1 ) * imagesLoadInMemory;
+    }
+    else{
+        [self updatePassCode];
     }
         int li = si + imagesLoadInMemory;
         for (int c = si; c < li; c++) {
@@ -209,6 +220,8 @@ int nextBufferLoadBeforeImagesRemaining = 50;
     }
      */
     
+    
+    
     double time = [[NSDate date] timeIntervalSince1970];
     int seconds = (int)time;
     
@@ -230,6 +243,9 @@ int nextBufferLoadBeforeImagesRemaining = 50;
     else if (progress > period - 15 ) {
         
     }
+    
+    
+    self.otpPasscode.text = [AppHelper getGooglePasscode];
 }
 
 

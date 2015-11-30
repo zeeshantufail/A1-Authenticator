@@ -55,10 +55,16 @@
 - (void)load {
     if (self.placeholder) {
         [self sd_setImageWithURL:[self gravatarURL:_email] placeholderImage:self.placeholder completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-            
+            if ([self.delegate respondsToSelector:@selector(imageLoaded:)]) {
+                [self.delegate performSelector:@selector(imageLoaded:) withObject:image];
+            }
         }];
     } else {
         [self sd_setImageWithURL:[self gravatarURL:_email] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            
+            if ([self.delegate respondsToSelector:@selector(imageLoaded:)]) {
+                [self.delegate performSelector:@selector(imageLoaded:) withObject:image];
+            }
         }];
     }
 

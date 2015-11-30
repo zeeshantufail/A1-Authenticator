@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "RFGravatarImageView.h"
 
-@interface ViewController : UIViewController
+@interface GravatarViewController : UIViewController
 
 @end
