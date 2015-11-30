@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2B12D45F1C0862E00093234A /* GravatarLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B12D45E1C0862E00093234A /* GravatarLoader.m */; settings = {ASSET_TAGS = (); }; };
-		2B1D05051C04704600010B1B /* set pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05041C04704600010B1B /* set pin.png */; settings = {ASSET_TAGS = (); }; };
 		2B1D05081C04772400010B1B /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D05071C04772400010B1B /* AnimationHelper.m */; settings = {ASSET_TAGS = (); }; };
 		2B1D050A1C04903100010B1B /* home screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05091C04903100010B1B /* home screen.png */; settings = {ASSET_TAGS = (); }; };
 		2B1D05321C04C17100010B1B /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05131C04C17100010B1B /* 1.png */; settings = {ASSET_TAGS = (); }; };
@@ -529,7 +528,6 @@
 		2B12D44F1C082E450093234A /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Gravatar/GravatarImageDemo/Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
 		2B12D45D1C0862E00093234A /* GravatarLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravatarLoader.h; path = "Helper Classes/GravatarLoader.h"; sourceTree = "<group>"; };
 		2B12D45E1C0862E00093234A /* GravatarLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GravatarLoader.m; path = "Helper Classes/GravatarLoader.m"; sourceTree = "<group>"; };
-		2B1D05041C04704600010B1B /* set pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "set pin.png"; sourceTree = "<group>"; };
 		2B1D05061C04772400010B1B /* AnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationHelper.h; path = "Helper Classes/AnimationHelper.h"; sourceTree = "<group>"; };
 		2B1D05071C04772400010B1B /* AnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationHelper.m; path = "Helper Classes/AnimationHelper.m"; sourceTree = "<group>"; };
 		2B1D05091C04903100010B1B /* home screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home screen.png"; sourceTree = "<group>"; };
@@ -2414,7 +2412,6 @@
 				4736988A1BF371EF00A0855B /* GTMUIImage+Resize_50x100.png in Resources */,
 				473698851BF371EF00A0855B /* GTMUIImage+Resize_100x50_to_40x60_noclip.png in Resources */,
 				47C13FA91C07301D0020CAF5 /* popup@3x.png in Resources */,
-				4729E1701BF1F8D200627DA8 /* PIN_Anim_Negative058.png in Resources */,
 				4736987B1BF371EF00A0855B /* GTMFadeTruncatingLabelTest5.5.png in Resources */,
 				2B1D05381C04C17100010B1B /* 15.png in Resources */,
 				470E36911BFEF2E8009EAA8C /* GREY PANEL_00010@3x.png in Resources */,
@@ -2441,8 +2438,6 @@
 				471C75EA1BF0AE5200F9907E /* PIN_Icon_OFF@2x.png in Resources */,
 				473698C01BF371EF00A0855B /* GTMUnitTestingWindow.10.6.gtmUTState in Resources */,
 				47C13FA71C07301D0020CAF5 /* popup.png in Resources */,
-				4729E1A31BF1F8D200627DA8 /* PIN_Anim_Positive009.png in Resources */,
-				4729E1A81BF1F8D200627DA8 /* PIN_Anim_Positive014.png in Resources */,
 				47E0CECD1BFCB0B700AC390B /* Pirean_Settings_Logo@3x.png in Resources */,
 				470E36951BFEF2E8009EAA8C /* GREY PANEL_00014@3x.png in Resources */,
 				47119D111BEA3EC400876684 /* CameraOverlayViewController.xib in Resources */,
@@ -2648,17 +2643,10 @@
 				2B1D05411C04C17100010B1B /* 23.png in Resources */,
 				478CD37E1BFE0961008774E0 /* Locked Animation_0005@3x.png in Resources */,
 				478CD37D1BFE0961008774E0 /* Locked Animation_0004@3x.png in Resources */,
-				4729E1431BF1F8D200627DA8 /* PIN_Anim_Negative013.png in Resources */,
-				4729E19F1BF1F8D200627DA8 /* PIN_Anim_Positive005.png in Resources */,
-				2B1D05051C04704600010B1B /* set pin.png in Resources */,
 				478CD3831BFE0961008774E0 /* Locked Animation_0010@3x.png in Resources */,
 				47E0CEB81BFCAC1E00AC390B /* TouchID_ON@2x.png in Resources */,
 				470E374A1BFEF5CA009EAA8C /* Locked Animation_0023@2x.png in Resources */,
-				4729E1AE1BF1F8D200627DA8 /* PIN_Anim_Positive020.png in Resources */,
-				4729E1DE1BF1F8D200627DA8 /* PIN_Anim_Positive068.png in Resources */,
 				47C13FA21C072EF40020CAF5 /* ActionView_iphone5Device.png in Resources */,
-				4729E1371BF1F8D200627DA8 /* PIN_Anim_Negative001.png in Resources */,
-				4729E15D1BF1F8D200627DA8 /* PIN_Anim_Negative039.png in Resources */,
 				47E0CE941BFC5A1700AC390B /* Submit@3x.png in Resources */,
 				474313A41BE78A3A0021CF58 /* Images.xcassets in Resources */,
 				47E0CEDE1BFCBE9200AC390B /* ScanANewQR_OFF.png in Resources */,
@@ -2683,7 +2671,6 @@
 				474F1BF41BFB651400D5B569 /* SetPin@3x.png in Resources */,
 				473698B61BF371EF00A0855B /* GTMUnitTestingImage.gtmUTState in Resources */,
 				47E886EA1C0C23FA0087A7D3 /* Button_ON@3x.png in Resources */,
-				4729E1CF1BF1F8D200627DA8 /* PIN_Anim_Positive053.png in Resources */,
 				2B1D05351C04C17100010B1B /* 12.png in Resources */,
 				47E90E341BEC969000402A5B /* Back_Arrow_OFF@2x.png in Resources */,
 				2B1D054E1C04C17100010B1B /* 7.png in Resources */,
@@ -2720,9 +2707,6 @@
 				47E0CEB01BFCAC1100AC390B /* SecurePIN_ON@2x.png in Resources */,
 				473698761BF371EF00A0855B /* GTMFadeTruncatingLabelTest3.6.png in Resources */,
 				47E886E91C0C23FA0087A7D3 /* Button_ON@2x.png in Resources */,
-				4729E1BF1BF1F8D200627DA8 /* PIN_Anim_Positive037.png in Resources */,
-				4729E1981BF1F8D200627DA8 /* PIN_Anim_Negative098.png in Resources */,
-				4729E1461BF1F8D200627DA8 /* PIN_Anim_Negative016.png in Resources */,
 				2B1D050A1C04903100010B1B /* home screen.png in Resources */,
 				470E364F1BFEEFA0009EAA8C /* Message_0009@3x.png in Resources */,
 				470E368F1BFEF2E8009EAA8C /* GREY PANEL_00008@3x.png in Resources */,
@@ -2755,9 +2739,6 @@
 				478CD37B1BFE0961008774E0 /* Locked Animation_0002@3x.png in Resources */,
 				473697271BF35CF500A0855B /* Authenticator_Logo_11.png in Resources */,
 				47E886E81C0C23FA0087A7D3 /* Button_ON.png in Resources */,
-				4729E1411BF1F8D200627DA8 /* PIN_Anim_Negative011.png in Resources */,
-				4729E1491BF1F8D200627DA8 /* PIN_Anim_Negative019.png in Resources */,
-				4729E1B31BF1F8D200627DA8 /* PIN_Anim_Positive025.png in Resources */,
 				2B1D054C1C04C17100010B1B /* 5.png in Resources */,
 				2B1D05441C04C17100010B1B /* 26.png in Resources */,
 				474F1BF21BFB650300D5B569 /* SetPin@2x.png in Resources */,
@@ -2768,7 +2749,6 @@
 				470E373D1BFEF5CA009EAA8C /* Locked Animation_0010@2x.png in Resources */,
 				47C13FA81C07301D0020CAF5 /* popup@2x.png in Resources */,
 				47B3A1821C0862E1006CF7DE /* ActionView_iphone6Device.png in Resources */,
-				4729E1821BF1F8D200627DA8 /* PIN_Anim_Negative076.png in Resources */,
 				473698561BF371EF00A0855B /* phone.png in Resources */,
 				47E0CEB11BFCAC1100AC390B /* SecurePIN_ON@3x.png in Resources */,
 				478CD38C1BFE0961008774E0 /* Locked Animation_0019@3x.png in Resources */,
