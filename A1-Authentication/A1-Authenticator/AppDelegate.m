@@ -22,6 +22,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    [application setStatusBarHidden:YES];
+    
     [AppHelper saveAction:@"Application Launched"];
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
@@ -58,6 +60,44 @@
     
     [application setStatusBarHidden:YES];
     return YES;
+}
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+    NSString * deviceTokenString = [[[[deviceToken description]
+                                      stringByReplacingOccurrencesOfString: @"<" withString: @""]
+                                     stringByReplacingOccurrencesOfString: @">" withString: @""]
+                                    stringByReplacingOccurrencesOfString: @" " withString: @""];
+    NSLog(@"My token is: %@", deviceTokenString);
+}
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+    NSLog(@"Failed to get token, error: %@", error);
+}
+
+-(void) saveApplicationLaunchedAction
+{
+    NSMutableArray *tempArray;
+    
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"AuditHistory"])
+    {
+        tempArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"AuditHistory"] mutableCopy];
+    }
+    else
+    {
+        tempArray = [[NSMutableArray alloc] init];
+    }
+    
+    NSDictionary * dict = [[NSDictionary alloc] initWithObjectsAndKeys:
+                           [AppHelper getCurrentDateAndTime],@"datetime",
+                           @"Application Launched",@"action",
+                           nil];
+        
+    [tempArray addObject:dict];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:tempArray forKey:@"AuditHistory"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 -(UIStoryboard *)getStoryboard

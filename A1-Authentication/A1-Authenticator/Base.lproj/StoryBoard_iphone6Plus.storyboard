@@ -761,7 +761,8 @@
                                     <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="clD-h7-7vg">
                                         <rect key="frame" x="0.0" y="0.0" width="189" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
+                                        <state key="selected" backgroundImage="begin_on.png"/>
+                                        <state key="highlighted" backgroundImage="begin_on.png"/>
                                         <connections>
                                             <action selector="beginBtnTapped:" destination="vf6-71-ckC" eventType="touchUpInside" id="oWW-gQ-9vi"/>
                                         </connections>
