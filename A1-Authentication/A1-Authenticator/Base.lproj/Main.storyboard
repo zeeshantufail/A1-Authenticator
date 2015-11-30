@@ -329,7 +329,7 @@
                                         <rect key="frame" x="84" y="503" width="147" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="31.png" id="Mvc-kW-cYG">
+                                            <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Mvc-kW-cYG">
                                                 <rect key="frame" x="0.0" y="0.0" width="147" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
@@ -345,7 +345,6 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="147" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
-                                                <state key="normal" image="SetPin.png"/>
                                                 <state key="selected" image="SetPin_ON.png"/>
                                                 <state key="highlighted" image="SetPin_ON.png"/>
                                                 <connections>
@@ -3210,7 +3209,6 @@
         <image name="ScanANewQR_OFF.png" width="294" height="66"/>
         <image name="SecurePIN_OFF.png" width="135" height="51"/>
         <image name="SecurePIN_ON.png" width="135" height="51"/>
-        <image name="SetPin.png" width="294" height="66"/>
         <image name="SetPin_ON.png" width="147" height="33"/>
         <image name="Submit.png" width="230" height="49"/>
         <image name="TOTP_Help_Icon.png" width="36" height="36"/>
