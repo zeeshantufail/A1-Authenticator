@@ -20,6 +20,7 @@
 +(BOOL)isDeviceTouchIDSetup;
 
 +(NSString *)getStoryboardName;
++(void)saveAction:(NSString *)action;
 +(NSString *)getCurrentDateAndTime;
 +(NSString *)getStringFromDate:(NSDate *)date;
 

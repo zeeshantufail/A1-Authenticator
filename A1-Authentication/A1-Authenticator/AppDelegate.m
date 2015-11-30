@@ -22,7 +22,7 @@
     [AppHelper setShouldChellangeAuthentication:true];
     [application setStatusBarHidden:YES];
     
-    [self saveApplicationLaunchedAction];
+    [AppHelper saveAction:@"Application Launched"];
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     UIStoryboard *storyboard = [self getStoryboard];
@@ -35,36 +35,12 @@
     {
         nc = [storyboard instantiateViewControllerWithIdentifier:@"FTUNavigation"];
     }
-    
+
     self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
     
     [application setStatusBarHidden:YES];
     return YES;
-}
-
--(void) saveApplicationLaunchedAction
-{
-    NSMutableArray *tempArray;
-    
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"AuditHistory"])
-    {
-        tempArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"AuditHistory"] mutableCopy];
-    }
-    else
-    {
-        tempArray = [[NSMutableArray alloc] init];
-    }
-    
-    NSDictionary * dict = [[NSDictionary alloc] initWithObjectsAndKeys:
-                           [AppHelper getCurrentDateAndTime],@"datetime",
-                           @"Application Launched",@"action",
-                           nil];
-        
-    [tempArray addObject:dict];
-    
-    [[NSUserDefaults standardUserDefaults] setObject:tempArray forKey:@"AuditHistory"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 -(UIStoryboard *)getStoryboard

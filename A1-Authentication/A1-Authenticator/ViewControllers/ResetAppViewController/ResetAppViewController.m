@@ -61,6 +61,10 @@
 - (IBAction)resetButtonAction:(id)sender
 {
     [[AppSettings sharedAppSettings] resetApplication];
+    
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    [[NSUserDefaults standardUserDefaults] setObject:array forKey:@"AuditHistory"];
+    
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self performSelector:@selector(exitApp) withObject:nil afterDelay:0.5];
 }

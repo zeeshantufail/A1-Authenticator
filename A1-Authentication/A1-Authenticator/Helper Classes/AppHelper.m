@@ -74,6 +74,30 @@ static CGFloat timerCount = 0;
     return storyboard;
 }
 
++(void)saveAction:(NSString *)action
+{
+    NSMutableArray *tempArray;
+    
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"AuditHistory"])
+    {
+        tempArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"AuditHistory"] mutableCopy];
+    }
+    else
+    {
+        tempArray = [[NSMutableArray alloc] init];
+    }
+    
+    NSDictionary * dict = [[NSDictionary alloc] initWithObjectsAndKeys:
+                           [self getCurrentDateAndTime],@"datetime",
+                           action,@"action",
+                           nil];
+    
+    [tempArray addObject:dict];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:tempArray forKey:@"AuditHistory"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 +(NSString *) getCurrentDateAndTime
 {
     NSDate   * crntDate;

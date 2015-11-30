@@ -1179,7 +1179,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" id="GFh-e2-Igf">
-                                                            <rect key="frame" x="-36" y="0.0" width="441" height="59"/>
+                                                            <rect key="frame" x="-36" y="0.0" width="411" height="59"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LL4-JU-bM7">
@@ -1194,7 +1194,7 @@
                                                                     <animations/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access: One" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J9o-kj-4re">
-                                                                    <rect key="frame" x="102" y="10" width="109" height="13"/>
+                                                                    <rect key="frame" x="102" y="10" width="225" height="13"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <animations/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
@@ -1210,33 +1210,15 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A one-time passcode has been provided" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DLj-QE-3oA">
-                                                                    <rect key="frame" x="102" y="36" width="241" height="10"/>
+                                                                    <rect key="frame" x="102" y="36" width="263" height="10"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <animations/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="9"/>
                                                                     <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I91-sc-hBy">
-                                                                    <rect key="frame" x="358" y="0.0" width="81" height="59"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <animations/>
-                                                                    <color key="backgroundColor" red="0.97254901960784312" green="0.57647058823529407" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
-                                                                    <state key="normal" title="Delete"/>
-                                                                </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r3j-Gx-Vr1">
-                                                                    <rect key="frame" x="277" y="0.0" width="81" height="59"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <animations/>
-                                                                    <color key="backgroundColor" red="0.28627450980392155" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
-                                                                    <state key="normal" title="Mark as Read">
-                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    </state>
-                                                                </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yesterday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cSr-5u-dQH">
-                                                                    <rect key="frame" x="203" y="8" width="66" height="13"/>
+                                                                    <rect key="frame" x="337" y="5" width="66" height="13"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <animations/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
@@ -1254,9 +1236,7 @@
                                                 <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <outlet property="cellMainView" destination="GFh-e2-Igf" id="0F2-vo-Fae"/>
-                                                    <outlet property="deleteBtn" destination="I91-sc-hBy" id="2xm-FW-CDs"/>
                                                     <outlet property="image_View" destination="rKM-b1-KU8" id="oFW-mr-0MX"/>
-                                                    <outlet property="markAsReadBtn" destination="r3j-Gx-Vr1" id="VP0-H4-UNo"/>
                                                     <outlet property="selectionBtn" destination="LL4-JU-bM7" id="x7F-at-8eO"/>
                                                 </connections>
                                             </tableViewCell>
@@ -1270,6 +1250,16 @@
                                         <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fuw-z0-5Oh">
+                                                <rect key="frame" x="8" y="10" width="50" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Home"/>
+                                                <connections>
+                                                    <action selector="homeBtnPressed:" destination="k8t-4m-HHi" eventType="touchUpInside" id="eKp-S0-1Zu"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="met-jU-EoQ">
                                                 <rect key="frame" x="0.0" y="6" width="45" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1282,7 +1272,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0fC-96-QS0">
-                                                <rect key="frame" x="148" y="12" width="79" height="27"/>
+                                                <rect key="frame" x="148" y="11" width="79" height="28"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -1294,6 +1284,61 @@
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" red="0.62352941176470589" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="7a9-BL-kZf">
+                                        <rect key="frame" x="70" y="481" width="235" height="149"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup.png" id="ODo-H6-4mc">
+                                                <rect key="frame" x="4" y="0.0" width="227" height="148"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BOZ-er-iCF">
+                                                <rect key="frame" x="8" y="15" width="219" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Mark As Read">
+                                                    <color key="titleColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" backgroundImage="Button_ON.png"/>
+                                                <state key="highlighted" backgroundImage="Button_ON.png"/>
+                                                <connections>
+                                                    <action selector="markAsReadUnreadBtnPressed:" destination="k8t-4m-HHi" eventType="touchUpInside" id="JY8-Vs-9zi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wAT-Np-xKB">
+                                                <rect key="frame" x="8" y="50" width="219" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Delete">
+                                                    <color key="titleColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" backgroundImage="Button_ON.png"/>
+                                                <state key="highlighted" backgroundImage="Button_ON.png"/>
+                                                <connections>
+                                                    <action selector="deleteBtnPressed:" destination="k8t-4m-HHi" eventType="touchUpInside" id="EG9-aL-4zU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uL0-PF-uR2">
+                                                <rect key="frame" x="8" y="85" width="219" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" backgroundImage="Button_ON.png"/>
+                                                <state key="highlighted" backgroundImage="Button_ON.png"/>
+                                                <connections>
+                                                    <action selector="cancelBtnPressed:" destination="k8t-4m-HHi" eventType="touchUpInside" id="Rgs-a9-Ql9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <animations/>
@@ -1307,7 +1352,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="backBtn" destination="met-jU-EoQ" id="rnW-8g-stF"/>
+                        <outlet property="cancelBtn" destination="uL0-PF-uR2" id="ifR-1N-Wth"/>
+                        <outlet property="deleteBtn" destination="wAT-Np-xKB" id="UbI-Kt-9bV"/>
                         <outlet property="editBtn" destination="0fC-96-QS0" id="Erh-NM-C0z"/>
+                        <outlet property="homeBtn" destination="fuw-z0-5Oh" id="NZX-z0-zpc"/>
+                        <outlet property="markAsReadUnreadBtn" destination="BOZ-er-iCF" id="rK8-YK-aPx"/>
+                        <outlet property="popOverView" destination="7a9-BL-kZf" id="4nF-2r-KOc"/>
                         <outlet property="tableView" destination="tkD-ya-fiU" id="hjl-Nf-15y"/>
                     </connections>
                 </viewController>
@@ -2766,12 +2816,27 @@
             </objects>
             <point key="canvasLocation" x="1917.5" y="303.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xBd-2j-gjm">
+            <objects>
+                <viewController id="5Q5-jD-qEa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gIC-Le-HEy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDx-QP-BOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="Authenticator_Help_Icon.png" width="45" height="45"/>
         <image name="Authenticator_Logo_0.png" width="750" height="1334"/>
         <image name="Back_Arrow_OFF.png" width="45" height="45"/>
         <image name="Back_Arrow_ON.png" width="45" height="45"/>
+        <image name="Button_ON.png" width="383" height="46"/>
         <image name="Countdown_Animation_00000.png" width="357" height="102"/>
         <image name="FTU_QR_Icon_OFF.png" width="178" height="51"/>
         <image name="FTU_QR_Icon_ON.png" width="178" height="51"/>
@@ -2807,6 +2872,7 @@
         <image name="defaultProfileImage.png" width="84" height="84"/>
         <image name="deselect.png" width="36" height="36"/>
         <image name="iPad_Stop_ON.png" width="51" height="51"/>
+        <image name="popup.png" width="393" height="257"/>
         <image name="scanBox.png" width="366" height="367"/>
         <image name="startCircleImage.png" width="640" height="124"/>
     </resources>

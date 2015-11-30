@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MGSwipeTableCell.h"
 
-@interface NotificationCustomCell : UITableViewCell
+@interface NotificationCustomCell : MGSwipeTableCell
 
 @property (weak, nonatomic) IBOutlet UIView      * cellMainView;
 @property (weak, nonatomic) IBOutlet UIButton    * selectionBtn;
