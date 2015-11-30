@@ -17,6 +17,7 @@
 @synthesize delegate;
 
 //UserKey:a1test:asim:y:4:9:602a19ddd02cba1f2aab69c495b34fab:http%3A%2F%2F116.58.50.114%3A9632%2FLogin%2Frest%2Fworkflow%2Fqrauthtest
+//UserKey:a1test:asim:y:4:9:602a19ddd02cba1f2aab69c495b34fab:http%3A%2F%2F116.58.50.114%3A9632%2FLogin%2Frest%2Fworkflow%2Fqrauthtest:12345
 
 - (BOOL)scanKeyWithResultingString:(NSString *)result {
     NSString *qrResult = result;
@@ -50,11 +51,11 @@
     NSString *QRUserNameString = @"";
     NSString *QRKeyString = @"";
     NSString *authenticationUrl = @"";
-    
+    NSString *regId =@"";
     
     //Get the message strings into an array
     NSArray *QRArray = [qrResult componentsSeparatedByString:@":"];
-    if ([QRArray count] == 8) {
+    if ([QRArray count] == 9) {
         isKey = true;
         QRAppNameString = [QRArray objectAtIndex:1];
         QRUserNameString = [QRArray objectAtIndex:2];
@@ -63,6 +64,7 @@
         NSString *pinState = [QRArray objectAtIndex:3];
         NSString *pinLength = [QRArray objectAtIndex:4];
         NSString *pinRetriesCount = [QRArray objectAtIndex:5];
+        regId = [QRArray objectAtIndex:8];
         pinRequired = ([pinState caseInsensitiveCompare:@"y"] == NSOrderedSame) ? YES : NO;
         pinLengthInt = [pinLength integerValue];
         if (!((pinLengthInt == 4) || (pinLengthInt == 6) || (pinLengthInt == 8))) {
@@ -86,8 +88,8 @@
         
         applicationKey = QRKeyString;
         
-        if ([self.delegate respondsToSelector:@selector(scanCodeHelper:keyScannedWithRegisterationName:userName:applicationKey:authenticationUrl:pinRequired:pinLength:resetCount:googleSecret:)]) {
-            [self.delegate scanCodeHelper:self keyScannedWithRegisterationName:registrationName userName:QRUserNameString applicationKey:applicationKey authenticationUrl:authenticationUrl pinRequired:pinRequired pinLength:pinLengthInt resetCount:resetCount  googleSecret:@"Not configured"];
+        if ([self.delegate respondsToSelector:@selector(scanCodeHelper:keyScannedWithRegisterationName:userName:applicationKey:authenticationUrl:pinRequired:pinLength:resetCount:regID:)]) {
+            [self.delegate scanCodeHelper:self keyScannedWithRegisterationName:registrationName userName:QRUserNameString applicationKey:applicationKey authenticationUrl:authenticationUrl pinRequired:pinRequired pinLength:pinLengthInt resetCount:resetCount  regID:regId];
             
             
         }

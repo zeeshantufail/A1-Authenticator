@@ -14,7 +14,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    ViewController *viewController = [[ViewController alloc] init];
+    GravatarViewController *viewController = [[GravatarViewController alloc] init];
     viewController.view.backgroundColor = [UIColor whiteColor];
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];

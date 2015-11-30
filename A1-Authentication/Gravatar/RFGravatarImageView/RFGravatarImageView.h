@@ -22,8 +22,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CommonCrypto/CommonDigest.h>
-#import <SDWebImage/UIImageView+WebCache.h>
 #import <AvailabilityMacros.h>
+#import "UIImageView+WebCache.h"
 
 /**
  *  The rating for the gravatar.
@@ -89,6 +89,7 @@ typedef NS_ENUM(NSUInteger, RFDefaultGravatar) {
 
 @interface RFGravatarImageView : UIImageView
 
+@property id delegate;
 /**
  *  User email - you must set this!
  */

@@ -199,6 +199,10 @@ static AppSettings *appSettings;
     [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"appActivationState"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self appActivationState];
+    
+    
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
 }
 
 - (NSInteger)resetAppNum {
@@ -255,7 +259,9 @@ static AppSettings *appSettings;
     [self setAppUserFirstName:@""];
     [self setAppUserLastName:@""];
     [self setAppPin:@"****"];
-    
+    [self setPassCodeFailCount:0];
+    [self setLockScreenTimerCount:0];
+    [self setAppTotp:NO];
     
     NSString *filePath = [self dataFilePath];
     if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
@@ -400,7 +406,6 @@ static AppSettings *appSettings;
     [unarchiver finishDecoding];
     return appName;
 }
-
 
 
 - (NSString*)appUserFirstName {
@@ -631,6 +636,44 @@ static AppSettings *appSettings;
     }
     else
         return count;//[count floatValue];
+}
+
+
+- (NSString*)appRegId {
+    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"AppRegId"];
+    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+    NSString *regId = [unarchiver decodeObjectForKey:PinKey];
+    [unarchiver finishDecoding];
+    return regId;
+}
+
+
+- (void)setAppRegId:(NSString*)regId {
+    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+    [archiver encodeObject:regId forKey:PinKey];
+    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"AppRegId"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
+- (NSString*)appUserEmail {
+    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"AppUserEmail"];
+    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+    NSString *appUserEmail = [unarchiver decodeObjectForKey:PinKey];
+    [unarchiver finishDecoding];
+    return appUserEmail;
+}
+
+
+-(void)setAppUserEmail:(NSString *)appUserEmail{
+    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+    [archiver encodeObject:appUserEmail forKey:PinKey];
+    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"AppUserEmail"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 

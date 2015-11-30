@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B048EAA1C082B5E0095A3DD /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBBE0F31B945A0A006A4B17 /* libSDWebImage.a */; };
 		2B0BC4F61BF0A6250029CA86 /* GravatarImageIOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B0BC4F51BF0A6250029CA86 /* GravatarImageIOS.h */; };
 		2B0BC4F81BF0A6250029CA86 /* GravatarImageIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BC4F71BF0A6250029CA86 /* GravatarImageIOS.m */; };
 		2B0BC5001BF0A6410029CA86 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBBE0F11B945A0A006A4B17 /* libPods.a */; };
 		2B0BC5011BF0A6490029CA86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13718575AEB0043592B /* UIKit.framework */; };
 		2B0BC5021BF0A64F0029CA86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13518575AEB0043592B /* CoreGraphics.framework */; };
 		2B0BC5031BF0A6560029CA86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13318575AEB0043592B /* Foundation.framework */; };
-		CE458F8A193011C300CE013A /* RFGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE458F89193011C300CE013A /* RFGravatarImageView.m */; };
+		2B12D4581C08322E0093234A /* GravatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF14918575AEB0043592B /* GravatarViewController.m */; };
+		2B12D4591C08322E0093234A /* RFGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE458F89193011C300CE013A /* RFGravatarImageView.m */; };
+		2B12D45B1C08322E0093234A /* GravatarImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BC4D51BF0A5240029CA86 /* GravatarImage.m */; };
 		CE9FF13418575AEB0043592B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13318575AEB0043592B /* Foundation.framework */; };
 		CE9FF13618575AEB0043592B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13518575AEB0043592B /* CoreGraphics.framework */; };
 		CE9FF13818575AEB0043592B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13718575AEB0043592B /* UIKit.framework */; };
 		CE9FF13E18575AEB0043592B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9FF13C18575AEB0043592B /* InfoPlist.strings */; };
-		CE9FF14018575AEB0043592B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF13F18575AEB0043592B /* main.m */; };
-		CE9FF14418575AEB0043592B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF14318575AEB0043592B /* AppDelegate.m */; };
-		CE9FF14A18575AEB0043592B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF14918575AEB0043592B /* ViewController.m */; };
 		CE9FF14C18575AEB0043592B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9FF14B18575AEB0043592B /* Images.xcassets */; };
 		CE9FF15318575AEB0043592B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF15218575AEB0043592B /* XCTest.framework */; };
 		CE9FF15418575AEB0043592B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13318575AEB0043592B /* Foundation.framework */; };
@@ -101,6 +101,7 @@
 		2B0BC4F31BF0A6250029CA86 /* libGravatarImageIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGravatarImageIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0BC4F51BF0A6250029CA86 /* GravatarImageIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GravatarImageIOS.h; sourceTree = "<group>"; };
 		2B0BC4F71BF0A6250029CA86 /* GravatarImageIOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravatarImageIOS.m; sourceTree = "<group>"; };
+		2B12D45C1C0834520093234A /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		2BBBE0EB1B945A09006A4B17 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		A064302163AE4161A670DAB9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2831B16E4ADFA977F021A84 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,12 +113,9 @@
 		CE9FF13718575AEB0043592B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE9FF13B18575AEB0043592B /* GravatarImageDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GravatarImageDemo-Info.plist"; sourceTree = "<group>"; };
 		CE9FF13D18575AEB0043592B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE9FF13F18575AEB0043592B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE9FF14118575AEB0043592B /* GravatarImageDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GravatarImageDemo-Prefix.pch"; sourceTree = "<group>"; };
-		CE9FF14218575AEB0043592B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE9FF14318575AEB0043592B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE9FF14818575AEB0043592B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE9FF14918575AEB0043592B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE9FF14818575AEB0043592B /* GravatarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GravatarViewController.h; sourceTree = "<group>"; };
+		CE9FF14918575AEB0043592B /* GravatarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravatarViewController.m; sourceTree = "<group>"; };
 		CE9FF14B18575AEB0043592B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE9FF15118575AEB0043592B /* GravatarImageDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GravatarImageDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9FF15218575AEB0043592B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -141,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B048EAA1C082B5E0095A3DD /* libSDWebImage.a in Frameworks */,
 				CE9FF13618575AEB0043592B /* CoreGraphics.framework in Frameworks */,
 				CE9FF13818575AEB0043592B /* UIKit.framework in Frameworks */,
 				CE9FF13418575AEB0043592B /* Foundation.framework in Frameworks */,
@@ -246,10 +245,9 @@
 		CE9FF13918575AEB0043592B /* GravatarImageDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CE9FF14218575AEB0043592B /* AppDelegate.h */,
-				CE9FF14318575AEB0043592B /* AppDelegate.m */,
-				CE9FF14818575AEB0043592B /* ViewController.h */,
-				CE9FF14918575AEB0043592B /* ViewController.m */,
+				2B12D45C1C0834520093234A /* UIImageView+WebCache.h */,
+				CE9FF14818575AEB0043592B /* GravatarViewController.h */,
+				CE9FF14918575AEB0043592B /* GravatarViewController.m */,
 				CE9FF14B18575AEB0043592B /* Images.xcassets */,
 				CE458F87193011C300CE013A /* RFGravatarImageView */,
 				CE9FF13A18575AEB0043592B /* Supporting Files */,
@@ -262,7 +260,6 @@
 			children = (
 				CE9FF13B18575AEB0043592B /* GravatarImageDemo-Info.plist */,
 				CE9FF13C18575AEB0043592B /* InfoPlist.strings */,
-				CE9FF13F18575AEB0043592B /* main.m */,
 				CE9FF14118575AEB0043592B /* GravatarImageDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -464,6 +461,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B12D4581C08322E0093234A /* GravatarViewController.m in Sources */,
+				2B12D4591C08322E0093234A /* RFGravatarImageView.m in Sources */,
+				2B12D45B1C08322E0093234A /* GravatarImage.m in Sources */,
 				2B0BC4F81BF0A6250029CA86 /* GravatarImageIOS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,10 +472,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE458F8A193011C300CE013A /* RFGravatarImageView.m in Sources */,
-				CE9FF14A18575AEB0043592B /* ViewController.m in Sources */,
-				CE9FF14418575AEB0043592B /* AppDelegate.m in Sources */,
-				CE9FF14018575AEB0043592B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,34 +535,50 @@
 		2B0BC4FA1BF0A6250029CA86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "./Pods/SDWebImage/SDWebImage/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"ImageIO\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "./Pods/SDWebImage/SDWebImage/**";
 			};
 			name = Debug;
 		};
 		2B0BC4FB1BF0A6250029CA86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "./Pods/SDWebImage/SDWebImage/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"ImageIO\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "./Pods/SDWebImage/SDWebImage/**";
 			};
 			name = Release;
 		};
@@ -652,6 +664,7 @@
 				GCC_PREFIX_HEADER = "GravatarImageDemo/GravatarImageDemo-Prefix.pch";
 				INFOPLIST_FILE = "GravatarImageDemo/GravatarImageDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = ./Pods/SDWebImage/SDWebImage;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -666,6 +679,7 @@
 				GCC_PREFIX_HEADER = "GravatarImageDemo/GravatarImageDemo-Prefix.pch";
 				INFOPLIST_FILE = "GravatarImageDemo/GravatarImageDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = ./Pods/SDWebImage/SDWebImage;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

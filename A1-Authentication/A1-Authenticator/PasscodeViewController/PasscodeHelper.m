@@ -11,6 +11,7 @@
 #import "AppSettings.h"
 #import "AppHelper.h"
 #import "ThankYouViewController.h"
+#import "CountDownTimerViewController.h"
 
 @implementation MessageContent
 
@@ -348,6 +349,7 @@
         if (self.passcodeScreenState.screenType != -1) {//unused object
             [self resetPinScreen];
         }
+        
         return;
     }
     
@@ -375,7 +377,7 @@
         tia.delegate = self;
         
     }
-    else if (self.passcodeScreenState.screenType == 5 && self.passcodeScreenState.screenNumber == 0) {
+    else if (self.passcodeScreenState.screenType == 5 && self.passcodeScreenState.screenNumber == 0 && _keyboardViewController.navigationController.viewControllers.count == 1) {
         self.passcodeScreenState.screenNumber = 1;
         TouchIDAuthentication * tia = [[TouchIDAuthentication alloc] init];
         [tia setUpAuthenticationWithMessageString:@"Place your finger on home button to authenticate for Touch ID" andFallbackTitle:@""];
@@ -445,7 +447,7 @@
             if (self.passcodeScreenState.screenNumber == 2) {
                 [self authenticationCanceled];
             }
-            else{
+            else if(self.passcodeScreenState.screenNumber == 3){
                 self.passcodeScreenState.screenNumber = 0;
                 [self updatePINScreen:_keyboardViewController];
             }

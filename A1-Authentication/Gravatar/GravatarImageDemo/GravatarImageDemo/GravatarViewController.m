@@ -6,15 +6,16 @@
 //  Copyright (c) 2013 Rudd Fawcett. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "GravatarViewController.h"
+#import "RFGravatarImageView.h"
 
-@interface ViewController ()
+@interface GravatarViewController ()
 
 @property (strong,nonatomic) RFGravatarImageView *imageView;
 
 @end
 
-@implementation ViewController
+@implementation GravatarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

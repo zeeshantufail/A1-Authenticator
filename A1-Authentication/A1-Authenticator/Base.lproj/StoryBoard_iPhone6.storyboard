@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Begin View Controller-->
@@ -326,17 +326,33 @@
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v1O-pK-mQd">
-                                        <rect key="frame" x="103" y="594" width="168" height="37"/>
+                                    <view contentMode="scaleToFill" id="g7Z-LA-hfX">
+                                        <rect key="frame" x="103" y="594" width="168" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <state key="normal" image="SetPin.png"/>
-                                        <state key="selected" image="SetPin_ON.png"/>
-                                        <state key="highlighted" image="SetPin_ON.png"/>
-                                        <connections>
-                                            <segue destination="QzI-oG-Irs" kind="push" identifier="setPinSegue" id="nXl-Ug-gK1"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="KIC-aL-EAC">
+                                                <rect key="frame" x="1" y="0.0" width="167" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3yH-4L-Pbd">
+                                                <rect key="frame" x="1" y="9" width="167" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v1O-pK-mQd">
+                                                <rect key="frame" x="0.0" y="0.0" width="168" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <state key="selected" backgroundImage="SetPin_ON.png"/>
+                                                <state key="highlighted" backgroundImage="SetPin_ON.png"/>
+                                                <connections>
+                                                    <segue destination="QzI-oG-Irs" kind="push" identifier="setPinSegue" id="nXl-Ug-gK1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -352,6 +368,7 @@
                         <outlet property="detail1TextView" destination="1B1-Sl-ZgG" id="Lpw-92-rVP"/>
                         <outlet property="detail2TextView" destination="Bsh-vg-8NA" id="7aI-75-AEl"/>
                         <outlet property="nameLbl" destination="Rc2-2i-FhK" id="jNU-af-0PC"/>
+                        <outlet property="pinButtonContainer" destination="g7Z-LA-hfX" id="6CH-0d-Z4Q"/>
                         <outlet property="profileImageView" destination="jrW-bZ-7jp" id="4kP-3b-gIN"/>
                         <outlet property="textsContainerView" destination="QZl-rf-lPb" id="Scr-ol-5il"/>
                         <outlet property="upperColorImageView" destination="hug-rq-wvL" id="h0T-Lg-6Qt"/>
@@ -366,7 +383,7 @@
             <objects>
                 <viewController id="84n-5y-bZZ" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YfZ-mC-rMn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -375,8 +392,7 @@
                     <connections>
                         <segue destination="qU4-Th-eo7" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="YuP-6C-cMH"/>
                         <segue destination="4JE-9E-Y7c" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="fLf-Xd-qGm"/>
-                        <segue destination="VEH-Os-g86" kind="modal" identifier="enterPasscodeSegue" animates="NO" id="RAz-cl-gjX"/>
-                        <segue destination="QzI-oG-Irs" kind="modal" identifier="enterTouchIdSegue" animates="NO" id="1vK-jv-YHd"/>
+                        <segue destination="VEH-Os-g86" kind="modal" identifier="authenticationSegue" animates="NO" id="RAz-cl-gjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRn-sj-7vK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -396,15 +412,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F9g-AF-ZdH">
-                                <rect key="frame" x="113" y="42" width="252" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dxS-VC-XCY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consultant, Pirean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dxS-VC-XCY">
                                 <rect key="frame" x="113" y="64" width="252" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -464,7 +472,7 @@
                                                     <animations/>
                                                     <state key="normal" backgroundImage="QR_Icon_ON.png"/>
                                                     <connections>
-                                                        <segue destination="jfs-Un-Yt1" kind="custom" identifier="qrScanViewSegue" customClass="SWRevealViewControllerSeguePushController" id="QF2-JF-4N9"/>
+                                                        <segue destination="jfs-Un-Yt1" kind="custom" identifier="qrScanViewSegue" customClass="SWRevealViewControllerSeguePushController" id="cI1-y9-8pm"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5iX-OD-Dzo">
@@ -473,7 +481,7 @@
                                                     <animations/>
                                                     <state key="normal" backgroundImage="TOTP_Icon_OFF.png"/>
                                                     <connections>
-                                                        <segue destination="3ks-UC-zvU" kind="custom" identifier="totpScanViewSegue" customClass="SWRevealViewControllerSeguePushController" id="jd3-ZE-bCj"/>
+                                                        <segue destination="3ks-UC-zvU" kind="custom" identifier="totpScanViewSegue" customClass="SWRevealViewControllerSeguePushController" id="nWP-bp-cO7"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -660,6 +668,14 @@
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F9g-AF-ZdH">
+                                <rect key="frame" x="113" y="42" width="252" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
@@ -674,7 +690,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6P-DL-kZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2099.5" y="-1499.5"/>
+            <point key="canvasLocation" x="-2611.5" y="-291.5"/>
         </scene>
         <!--Welcome App View Controller-->
         <scene sceneID="zbi-v1-QEU">
@@ -717,15 +733,32 @@
                                 <color key="pageIndicatorTintColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="0.20257073479729729" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rsU-dC-6Cd">
-                                <rect key="frame" x="104" y="593" width="167" height="38"/>
+                            <view contentMode="scaleToFill" id="MN1-GL-7mP">
+                                <rect key="frame" x="104" y="593" width="167" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="begin.png"/>
-                                <connections>
-                                    <segue destination="eqo-dF-zHj" kind="push" id="oJl-1L-VtT"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="QwZ-ub-s9L">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" tag="32" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DQI-Gc-jGI">
+                                        <rect key="frame" x="0.0" y="2" width="167" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pg0-aX-ulj">
+                                        <rect key="frame" x="0.0" y="2" width="167" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="selected" backgroundImage="begin_on.png"/>
+                                        <state key="highlighted" backgroundImage="begin_on.png"/>
+                                        <connections>
+                                            <segue destination="eqo-dF-zHj" kind="push" id="BpQ-KO-sBV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -733,7 +766,7 @@
                     <navigationItem key="navigationItem" id="x0L-yF-kUh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="beginButton" destination="rsU-dC-6Cd" id="7ce-pt-eHK"/>
+                        <outlet property="beginButtonContainer" destination="MN1-GL-7mP" id="BlA-zc-0M3"/>
                         <outlet property="logoImageView" destination="R72-Zt-fJf" id="WNl-FF-Fml"/>
                         <outlet property="pageControl" destination="SZN-tx-miV" id="bl6-4M-KoS"/>
                         <outlet property="scrollView" destination="md0-25-FPg" id="2uj-gR-dxe"/>
@@ -918,14 +951,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passcode Set-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0zj-kT-lzy">
-                                        <rect key="frame" x="72" y="100" width="231" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
-                                        <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Please scan your                          A:1 Account Code" textAlignment="center" id="nRm-Wg-G0f">
                                         <rect key="frame" x="97" y="139" width="181" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -956,6 +981,14 @@
                                             <action selector="crossButtonAction:" destination="3ks-UC-zvU" eventType="touchUpInside" id="Rkd-a9-0BR"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passcode Set-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0zj-kT-lzy">
+                                        <rect key="frame" x="0.0" y="99" width="375" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                        <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -2081,7 +2114,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="KfG-Jr-8v8">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="KfG-Jr-8v8">
                                         <rect key="frame" x="0.0" y="152" width="375" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
@@ -2141,38 +2174,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="nSa-bz-R5H">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home to be implemented" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zOR-KG-21Z">
-                                                <rect key="frame" x="25" y="219" width="326" height="24"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press logo button for setting view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GB1-UE-sxW">
-                                                <rect key="frame" x="25" y="240" width="326" height="22"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gN1-Wq-Kc5">
-                                                <rect key="frame" x="115" y="581" width="146" height="32"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                <animations/>
-                                                <state key="normal" title="btn" image="ScanANewQR_OFF.png">
-                                                    <color key="titleColor" red="1" green="0.71764705880000002" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                        <animations/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
                                     <view contentMode="scaleToFill" id="vM0-AH-50w">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2234,11 +2235,9 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="designationLabel" destination="GB1-UE-sxW" id="P7W-W5-pix"/>
                         <outlet property="homeContentView" destination="vM0-AH-50w" id="yEQ-tD-Bn5"/>
                         <outlet property="messageBtn" destination="JcY-9h-hxN" id="udC-es-UD6"/>
                         <outlet property="messageImageView" destination="DNE-kt-N54" id="zIH-hu-8eB"/>
-                        <outlet property="nameLbl" destination="zOR-KG-21Z" id="kYO-np-tmr"/>
                         <outlet property="profileImageView" destination="MEf-os-Otg" id="yre-tP-a8a"/>
                         <outlet property="settingsBtn" destination="JjB-93-NAw" id="WI5-Js-Bdg"/>
                         <outlet property="upperColorImageView" destination="DDU-VA-N44" id="Hef-vc-Sbj"/>
@@ -2266,7 +2265,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHI-J4-jPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2524.5" y="-692.5"/>
+            <point key="canvasLocation" x="-2517.5" y="-830.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OPi-78-h1d">
@@ -2300,25 +2299,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0QA-dO-Tdd">
-                                        <rect key="frame" x="16" y="0.0" width="52" height="52"/>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0QA-dO-Tdd">
+                                        <rect key="frame" x="20" y="0.0" width="47" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <state key="normal" backgroundImage="Ribbon.png"/>
-                                        <connections>
-                                            <action selector="settingBtnPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="Qqk-aq-UFP"/>
-                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4AX-bu-r6P">
-                                        <rect key="frame" x="99" y="64" width="177" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Confirm your 4 digit PIN" textAlignment="center" id="v1n-5c-bop">
-                                        <rect key="frame" x="79" y="95" width="217" height="30"/>
+                                        <rect key="frame" x="0.0" y="95" width="375" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -2334,14 +2322,6 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <animations/>
                                             </imageView>
-                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="PINs don't match, please try again." textAlignment="center" id="gks-h7-xLW">
-                                                <rect key="frame" x="8" y="65" width="359" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <animations/>
-                                                <color key="textColor" red="1" green="0.71764705882352942" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9dB-I9-vSP">
                                                 <rect key="frame" x="66" y="105" width="52" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2482,6 +2462,14 @@
                                                     <action selector="keyPressed:" destination="QzI-oG-Irs" eventType="touchUpOutside" id="Z1a-4C-2hh"/>
                                                 </connections>
                                             </button>
+                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="PINs don't match, please try again." textAlignment="center" id="gks-h7-xLW">
+                                                <rect key="frame" x="8" y="67" width="359" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <color key="textColor" red="1" green="0.71764705882352942" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -2509,10 +2497,26 @@
                                             <action selector="buttonCancelAction:" destination="QzI-oG-Irs" eventType="touchUpInside" id="ljg-h9-fgC"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4AX-bu-r6P">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MD6-e5-V1k">
+                                <rect key="frame" x="20" y="0.0" width="48" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Ribbon_Hamburger.png"/>
+                                <connections>
+                                    <action selector="settingBtnPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="edk-jJ-XJK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -2526,10 +2530,9 @@
                         <outlet property="errorLabel" destination="gks-h7-xLW" id="hdh-b5-N5u"/>
                         <outlet property="headerLabel" destination="4AX-bu-r6P" id="Zwo-nR-q9o"/>
                         <outlet property="keyPadView" destination="lb0-dj-adH" id="nrR-Ms-dpf"/>
-                        <outlet property="settingsBtnOutlet" destination="0QA-dO-Tdd" id="TTC-T5-lW3"/>
+                        <outlet property="settingsBtnOutlet" destination="MD6-e5-V1k" id="dAe-Zm-wFw"/>
                         <outlet property="subHeaderLabel" destination="v1n-5c-bop" id="L8A-dS-9LT"/>
                         <segue destination="84n-5y-bZZ" kind="push" identifier="homeViewSegue" id="sQF-eJ-Oi3"/>
-                        <segue destination="0kt-Mi-hjT" kind="push" identifier="lockScreenSegue" animates="NO" id="VqU-sC-ceE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMv-0S-awp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2565,7 +2568,7 @@
                                         <animations/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QRyptoLogin Set-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b5H-0h-yqN">
-                                        <rect key="frame" x="64" y="100" width="247" height="32"/>
+                                        <rect key="frame" x="0.0" y="100" width="375" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
@@ -2632,7 +2635,7 @@
                         <animations/>
                     </toolbar>
                     <connections>
-                        <segue destination="QzI-oG-Irs" kind="relationship" relationship="rootViewController" id="iU0-fi-eqn"/>
+                        <segue destination="8gi-yl-Lt8" kind="relationship" relationship="rootViewController" id="dzv-q4-OnO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CKp-3S-ke8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2739,6 +2742,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="141256" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vQa-l8-oga">
+                                <rect key="frame" x="99" y="380" width="171" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2856,7 +2866,6 @@
         <image name="ScanANewQR_OFF.png" width="294" height="66"/>
         <image name="SecurePIN_OFF.png" width="135" height="51"/>
         <image name="SecurePIN_ON.png" width="135" height="51"/>
-        <image name="SetPin.png" width="294" height="66"/>
         <image name="SetPin_ON.png" width="147" height="33"/>
         <image name="Submit.png" width="230" height="49"/>
         <image name="TOTP_Help_Icon.png" width="36" height="36"/>
@@ -2867,7 +2876,7 @@
         <image name="X_OFF.png" width="33" height="33"/>
         <image name="X_ON.png" width="33" height="33"/>
         <image name="background.png" width="375" height="667"/>
-        <image name="begin.png" width="230" height="48"/>
+        <image name="begin_on.png" width="447" height="94"/>
         <image name="cameraOverlay 5.5.png" width="1242" height="2208"/>
         <image name="defaultProfileImage.png" width="84" height="84"/>
         <image name="deselect.png" width="36" height="36"/>
@@ -2877,10 +2886,10 @@
         <image name="startCircleImage.png" width="640" height="124"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GNQ-mN-q4G"/>
-        <segue reference="sQF-eJ-Oi3"/>
-        <segue reference="QF2-JF-4N9"/>
         <segue reference="5Oe-zj-vbE"/>
-        <segue reference="jd3-ZE-bCj"/>
+        <segue reference="sQF-eJ-Oi3"/>
+        <segue reference="xHB-K5-9rZ"/>
+        <segue reference="nWP-bp-cO7"/>
+        <segue reference="cI1-y9-8pm"/>
     </inferredMetricsTieBreakers>
 </document>

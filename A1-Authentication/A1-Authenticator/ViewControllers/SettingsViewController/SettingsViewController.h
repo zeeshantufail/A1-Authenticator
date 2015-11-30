@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "QRCodeScanViewController.h"
+#import "GravatarLoader.h"
 
-@interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, QRCodeScanDelegate>
+@interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, QRCodeScanDelegate, GravatarLoaderDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView * profileImageView;
 @property (weak, nonatomic) IBOutlet UILabel     * nameLabel;

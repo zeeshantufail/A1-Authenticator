@@ -15,7 +15,9 @@
 #import "AppHelper.h"
 
 @interface HelpViewController ()
-
+{
+    VideoViewController *videoViewController;
+}
 @end
 
 int numberOf_Pages = 3;
@@ -26,11 +28,20 @@ int numberOf_Pages = 3;
 {
     [super viewDidLoad];
     
-    VideoViewController *videoViewController = [[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:nil];
-    [self addChildViewController:videoViewController];
-    [self.videoView addSubview:videoViewController.view];
     
     [self.view bringSubviewToFront:self.settingsBtn];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    videoViewController = [[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:nil];
+    [self addChildViewController:videoViewController];
+    [self.videoView addSubview:videoViewController.view];
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    [videoViewController removeFromParentViewController];
+    [videoViewController.view removeFromSuperview];
 }
 
 - (void)viewDidAppear:(BOOL)animated

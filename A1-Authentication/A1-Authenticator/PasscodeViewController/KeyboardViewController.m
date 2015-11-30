@@ -22,6 +22,7 @@
     SetPinViewController *passCodeViewController;
     UIDeviceOrientation orientation;
     NSMutableString *passCode;
+    NSString *animeRef;
 }
 @end
 
@@ -33,17 +34,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib
     
-    
+    animeRef = @"WhiteAnimation";
     passCode = [[NSMutableString alloc] init];
     //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
     buttonBackgroundImageView = [[UIImageView alloc] init];
     [self.keyPadView addSubview:buttonBackgroundImageView];
-    if([AppHelper isIPad])
-        buttonBackgroundImageView.image = [UIImage imageNamed:@"PIN_Circle-ipad.png"];
-    else
-        buttonBackgroundImageView.image = [UIImage imageNamed:@"PIN_Circle.png"];
-    
-    [dotsView setImage:[UIImage imageNamed:@"startCircleImage.png"]];
+
      //(//)(1)(2)(3)(4)(5)
     [self.view setBackgroundColor:[UIColor clearColor]];
     
@@ -57,9 +53,9 @@
 
 -(BOOL)showLockScreen{
     int count = (int)[[AppSettings sharedAppSettings] passCodeFailCount];
-    return (count %3 == 0 && count >= 3 && self.passcodeHelper.passcodeScreenState.screenType == 1 && self.navigationController.viewControllers.count == 1 && [[AppSettings sharedAppSettings] lockScreenTimerCount] - [[NSDate date] timeIntervalSince1970] > 0);
+    return (count %3 == 0 && count >= 3 && (self.passcodeHelper.passcodeScreenState.screenType == 1 || self.passcodeHelper.passcodeScreenState.screenType == 5 )&& self.navigationController.viewControllers.count == 1 && [[AppSettings sharedAppSettings] lockScreenTimerCount] - [[NSDate date] timeIntervalSince1970] > 0);
 }
-VideoViewController *videoViewController;
+
 -(void)viewWillAppear:(BOOL)animated{
 //    [self viewWillLayoutSubviews];
 //    passCodeViewController = (PassCodeViewController*)self.parentViewController;
@@ -68,15 +64,34 @@ VideoViewController *videoViewController;
 //    {
 //        [self.view setHidden:YES];
 //    }
-   
+    
+    
     
     [self.passcodeHelper updatePINScreen:self];
-    if (!videoViewController && (self.passcodeHelper.passcodeScreenState.screenType == 1 || self.passcodeHelper.passcodeScreenState.screenType == 5) && ![self showLockScreen]) {
-        videoViewController = [[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:nil];
-        [self addChildViewController:videoViewController];
-        [self.videoViewContainer addSubview:videoViewController.view];
+    
+    int screenType = self.passcodeHelper.passcodeScreenState.screenType;
+    int screenNumber = self.passcodeHelper.passcodeScreenState.screenNumber;
+    
+    if (!self.videoViewController && (screenType == 1 || screenType == 5) && ![self showLockScreen]) {
+        self.videoViewController = [[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:nil];
+        [self addChildViewController:self.videoViewController];
+        [self.videoViewContainer addSubview:self.videoViewController.view];
         [self.mainContainerView setBackgroundColor:[UIColor clearColor]];
     }
+    
+    if (screenType == 1) {
+        animeRef = @"DarkAnimation";
+    }
+    else{
+        animeRef = @"WhiteAnimation";
+    }
+    
+    if([AppHelper isIPad])
+        buttonBackgroundImageView.image = [UIImage imageNamed:@"PIN_Circle-ipad.png"];
+    else
+        buttonBackgroundImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@/PIN_Circle.png", animeRef]];
+    UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"%@/startCircleImage.png", animeRef]];
+    [dotsView setImage:img];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -165,16 +180,16 @@ VideoViewController *videoViewController;
     buttonBackgroundImageView.frame = b.frame;
     
     CGFloat backgroundDelta = 7;
-    buttonBackgroundImageView.frame = CGRectMake(buttonBackgroundImageView.frame.origin.x, buttonBackgroundImageView.frame.origin.y, buttonBackgroundImageView.frame.size.width-backgroundDelta, buttonBackgroundImageView.frame.size.height-backgroundDelta);
+    buttonBackgroundImageView.frame = CGRectMake(buttonBackgroundImageView.frame.origin.x, buttonBackgroundImageView.frame.origin.y, buttonBackgroundImageView.frame.size.height-backgroundDelta, buttonBackgroundImageView.frame.size.height-backgroundDelta);
 //    buttonBackgroundImageView.frame = b.frame;
     buttonBackgroundImageView.center = b.center;
     //[self.keyPadView bringSubviewToFront:b];
     [self.keyPadView sendSubviewToBack:buttonBackgroundImageView];
-    [UIView animateWithDuration:0.2
+    [UIView animateWithDuration:0.4
                           delay:0
                         options: UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         buttonBackgroundImageView.alpha = 0.3;
+                         buttonBackgroundImageView.alpha = 1;
                      }
                      completion:^(BOOL finished){
                          
@@ -266,7 +281,7 @@ VideoViewController *videoViewController;
     [deleteButtonOutlet setEnabled:YES];
     if(!dotsView.image)
     {
-        [dotsView setImage:[UIImage imageNamed:@"startCircleImage.png"] ];
+        [dotsView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@/startCircleImage.png", animeRef]] ];
         dotsView.alpha = 0;
         [UIView animateWithDuration:0.5 animations:^(void){
             dotsView.alpha = 1;
@@ -274,7 +289,7 @@ VideoViewController *videoViewController;
     }
     else{
         
-        [dotsView setImage:[UIImage imageNamed:@"startCircleImage.png"] ];
+        [dotsView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@/startCircleImage.png", animeRef]] ];
     }
     [self.keyPadView setUserInteractionEnabled:YES];
     //[self testAnime];
@@ -283,7 +298,7 @@ VideoViewController *videoViewController;
 -(void)runPositiveAnime{
     NSMutableArray *positiveImages = [[NSMutableArray alloc] init];
     for(int i = 61; i <= 79; i++){
-        [positiveImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"PIN_Anim_Positive%.3d.png",i]]];
+        [positiveImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%@/PIN_Anim_Positive%.3d.png",animeRef, i]]];
     }
     dotsView.animationImages = positiveImages;
     dotsView.animationDuration = 0.7;
@@ -297,7 +312,7 @@ VideoViewController *videoViewController;
 -(void)runNegativeAnime{
     NSMutableArray *negativeImages = [[NSMutableArray alloc] init];
     for(int i = 61; i <= 99; i++){
-        [negativeImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"PIN_Anim_Negative%.3d.png",i]]];
+        [negativeImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%@/PIN_Anim_Negative%.3d.png",animeRef, i]]];
     }
     dotsView.animationImages = negativeImages;
     dotsView.animationDuration = 1;
@@ -316,7 +331,7 @@ VideoViewController *videoViewController;
     NSString * imageName = @"";
     for(int i = animeGap.startPoint; i <= animeGap.endPoint; i++)
     {
-        imageName = [NSString stringWithFormat:@"PIN_Anim_Negative%.3d.png", i];
+        imageName = [NSString stringWithFormat:@"%@/PIN_Anim_Negative%.3d.png",animeRef, i];
         [animeImages addObject:[UIImage imageNamed:imageName]];
     }
     dotsView.animationDuration = 0.6;
@@ -336,11 +351,11 @@ VideoViewController *videoViewController;
     int i;
     for( i = animeGap.endPoint; i >= animeGap.startPoint; i--)
     {
-        imageName = [NSString stringWithFormat:@"PIN_Anim_Negative%.3d.png", i];
+        imageName = [NSString stringWithFormat:@"%@/PIN_Anim_Negative%.3d.png",animeRef, i];
         [animeImages addObject:[UIImage imageNamed:imageName]];
     }
     if (i == -1 ) {
-        imageName = @"startCircleImage.png";
+        imageName = [NSString stringWithFormat:@"%@/startCircleImage.png", animeRef];
     }
     dotsView.animationDuration = 0.6;
     dotsView.animationRepeatCount = 1;

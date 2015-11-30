@@ -15,6 +15,8 @@
 {
     BOOL isTotpView;
 }
+
+@property (strong,nonatomic) RFGravatarImageView *imageView;
 @end
 
 @implementation HomeViewController
@@ -24,11 +26,26 @@
     [super viewDidLoad];
     
     [self loadHomeViewContent];
-    
+    [self loadGravatar];
     [self addTapGesture];
     [self performAnimations];
+    
 }
 
+-(void)loadGravatar{
+    [[AppSettings sharedAppSettings] setAppUserEmail:@"zeeshantufail86@yahoo.com"];
+    if (![GravatarLoader gravatarImage]) {
+        [[GravatarLoader sharedInstance] loadGravatarWithEmail:[[AppSettings sharedAppSettings] appUserEmail] andSender:self];
+    }
+    else{
+        [self imageLoaded:[GravatarLoader gravatarImage]];
+    }
+}
+
+-(void)imageLoaded:(UIImage *)img{
+    if(img)
+    self.profileImageView.image = img;
+}
 
 -(void)viewDidDisappear:(BOOL)animated{
 }

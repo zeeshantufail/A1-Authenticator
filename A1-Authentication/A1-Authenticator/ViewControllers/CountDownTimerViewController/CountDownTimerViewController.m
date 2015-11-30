@@ -10,6 +10,7 @@
 #import "PasscodeHelper.h"
 #import "AppSettings.h"
 #import "AppHelper.h"
+#import "ResetAppViewController.h"
 
 @interface CountDownTimerViewController ()
 {
@@ -91,12 +92,30 @@ double timerCount = -1;
 }
 
 -(void)dismissLockScreen{
+    
+    if ([[AppSettings sharedAppSettings] passCodeFailCount] >= 9) {
+        [self resetApp];
+        return;
+    }
+    
     if ([AppHelper shouldChellangeAuthentication]) {
         [self.navigationController popViewControllerAnimated:YES];
     }
     else{
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }
+}
+
+-(void)resetApp
+{
+    [[AppSettings sharedAppSettings] resetApplication];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [self performSelector:@selector(exitApp) withObject:nil afterDelay:0.5];
+}
+
+-(void)exitApp
+{
+    exit(0);
 }
 
 @end
