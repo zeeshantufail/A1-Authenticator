@@ -30,7 +30,7 @@
     
     
     not.data = [notification JSONRepresentation];
-    
+    not.read = false;
 //    str jsonValue; for readback
     
     NSError *error;

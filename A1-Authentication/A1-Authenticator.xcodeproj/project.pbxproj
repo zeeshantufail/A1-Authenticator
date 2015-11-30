@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B08304D1C0352C40037E87D /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B08304C1C0352C40037E87D /* Countdown_Animation */; settings = {ASSET_TAGS = (); }; };
 		2B12D45F1C0862E00093234A /* GravatarLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B12D45E1C0862E00093234A /* GravatarLoader.m */; settings = {ASSET_TAGS = (); }; };
 		2B1D05051C04704600010B1B /* set pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05041C04704600010B1B /* set pin.png */; settings = {ASSET_TAGS = (); }; };
 		2B1D05081C04772400010B1B /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D05071C04772400010B1B /* AnimationHelper.m */; settings = {ASSET_TAGS = (); }; };
@@ -51,6 +50,7 @@
 		2B92E3C51BF637AA003CF4A1 /* cameraOverlay 4.7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C11BF637AA003CF4A1 /* cameraOverlay 4.7.png */; };
 		2B92E3C61BF637AA003CF4A1 /* cameraOverlay 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C21BF637AA003CF4A1 /* cameraOverlay 4.png */; };
 		2B92E3C71BF637AA003CF4A1 /* cameraOverlay 5.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */; };
+		2B9CC9C21C0C2268000B94A2 /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B9CC9C11C0C2268000B94A2 /* Countdown_Animation */; settings = {ASSET_TAGS = (); }; };
 		2BC906EB1BFDC7BF009AF8E4 /* QRScanAtHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */; };
 		2BC906F41BFDDFA6009AF8E4 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC906F31BFDDFA6009AF8E4 /* TimerViewController.m */; };
 		2BDBA4B71C059A3C00BDE112 /* begin_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4B51C059A3C00BDE112 /* begin_off.png */; settings = {ASSET_TAGS = (); }; };
@@ -515,7 +515,6 @@
 /* Begin PBXFileReference section */
 		2B048EA71C0827960095A3DD /* GravatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravatarViewController.h; path = Gravatar/GravatarImageDemo/GravatarImageDemo/GravatarViewController.h; sourceTree = SOURCE_ROOT; };
 		2B048EA81C082B3D0095A3DD /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Gravatar/GravatarImageDemo/Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
-		2B08304C1C0352C40037E87D /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = "../../../../../Documents/Pirean/A1-Authentication/Waqar/A1-Authentication Resources/13 nov 2015/@3x Animations/Countdown_Animation"; sourceTree = "<group>"; };
 		2B12D44F1C082E450093234A /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Gravatar/GravatarImageDemo/Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
 		2B12D45D1C0862E00093234A /* GravatarLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravatarLoader.h; path = "Helper Classes/GravatarLoader.h"; sourceTree = "<group>"; };
 		2B12D45E1C0862E00093234A /* GravatarLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GravatarLoader.m; path = "Helper Classes/GravatarLoader.m"; sourceTree = "<group>"; };
@@ -566,6 +565,7 @@
 		2B92E3C11BF637AA003CF4A1 /* cameraOverlay 4.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 4.7.png"; sourceTree = "<group>"; };
 		2B92E3C21BF637AA003CF4A1 /* cameraOverlay 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 4.png"; sourceTree = "<group>"; };
 		2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 5.5.png"; sourceTree = "<group>"; };
+		2B9CC9C11C0C2268000B94A2 /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = Images/Animations/Countdown_Animation; sourceTree = "<group>"; };
 		2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRScanAtHome.png; sourceTree = "<group>"; };
 		2BC906F21BFDDFA6009AF8E4 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimerViewController.h; path = ViewControllers/HomeViewController/TimerViewController.h; sourceTree = "<group>"; };
 		2BC906F31BFDDFA6009AF8E4 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimerViewController.m; path = ViewControllers/HomeViewController/TimerViewController.m; sourceTree = "<group>"; };
@@ -1560,8 +1560,8 @@
 		4729E07D1BF1F76C00627DA8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				2B9CC9C11C0C2268000B94A2 /* Countdown_Animation */,
 				2B1D05121C04C17100010B1B /* button_animation */,
-				2B08304C1C0352C40037E87D /* Countdown_Animation */,
 				470E36F91BFEF45F009EAA8C /* MessageButtonAnimation @2x */,
 				470E36361BFEEFA0009EAA8C /* MessageButtonAnimation @3x */,
 				470E371A1BFEF5CA009EAA8C /* Account_Locked_Animation @2x */,
@@ -2366,6 +2366,7 @@
 				470E36911BFEF2E8009EAA8C /* GREY PANEL_00010@3x.png in Resources */,
 				473698831BF371EF00A0855B /* GTMUIImage+Resize_100x50_flipped.png in Resources */,
 				47D4AC901C04A07E003C279E /* iTunesArtwork in Resources */,
+				2B9CC9C21C0C2268000B94A2 /* Countdown_Animation in Resources */,
 				477499001BE7949800026C01 /* begin1@2x.png in Resources */,
 				470E370C1BFEF45F009EAA8C /* Message_0003@2x.png in Resources */,
 				470E36C41BFEF386009EAA8C /* GREY PANEL_00022@2x.png in Resources */,
@@ -2454,7 +2455,6 @@
 				47E0CEC71BFCB04400AC390B /* TOUCH_Icon_ON@3x.png in Resources */,
 				473698C31BF371EF00A0855B /* GTMUnitTestingWindow.tiff in Resources */,
 				470E36BA1BFEF386009EAA8C /* GREY PANEL_00012@2x.png in Resources */,
-				2B08304D1C0352C40037E87D /* Countdown_Animation in Resources */,
 				47119CF71BEA19B200876684 /* Ribbon@2x.png in Resources */,
 				478CD3821BFE0961008774E0 /* Locked Animation_0009@3x.png in Resources */,
 				473698711BF371EF00A0855B /* GTMFadeTruncatingLabelTest1.png in Resources */,

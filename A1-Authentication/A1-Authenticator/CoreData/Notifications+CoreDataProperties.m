@@ -15,5 +15,6 @@
 
 @dynamic date;
 @dynamic data;
+@dynamic read;
 
 @end
