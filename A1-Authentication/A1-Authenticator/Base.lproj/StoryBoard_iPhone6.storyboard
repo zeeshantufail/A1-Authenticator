@@ -1193,7 +1193,7 @@
                                         <color key="backgroundColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="tkD-ya-fiU">
-                                        <rect key="frame" x="0.0" y="90" width="375" height="527"/>
+                                        <rect key="frame" x="0.0" y="88" width="375" height="529"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1213,7 +1213,7 @@
                                                                     <rect key="frame" x="16" y="19" width="20" height="20"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <animations/>
-                                                                    <state key="normal" backgroundImage="deselect.png"/>
+                                                                    <state key="normal" image="deselect.png"/>
                                                                 </button>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageNotification.png" id="rKM-b1-KU8">
                                                                     <rect key="frame" x="52" y="8" width="40" height="42"/>
@@ -1263,8 +1263,12 @@
                                                 <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <outlet property="cellMainView" destination="GFh-e2-Igf" id="0F2-vo-Fae"/>
+                                                    <outlet property="dayLabel" destination="cSr-5u-dQH" id="FnY-AZ-Zvq"/>
                                                     <outlet property="image_View" destination="rKM-b1-KU8" id="oFW-mr-0MX"/>
                                                     <outlet property="selectionBtn" destination="LL4-JU-bM7" id="x7F-at-8eO"/>
+                                                    <outlet property="subtitle1" destination="MWl-dn-bWV" id="h2x-He-HTf"/>
+                                                    <outlet property="subtitle2" destination="DLj-QE-3oA" id="ISr-yq-tgb"/>
+                                                    <outlet property="title" destination="J9o-kj-4re" id="Jpt-I6-UiV"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -1472,7 +1476,7 @@
                                                                     <animations/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03/11/15 11:22:22" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XIJ-GN-eu6">
-                                                                    <rect key="frame" x="58" y="9" width="117" height="24"/>
+                                                                    <rect key="frame" x="58" y="9" width="123" height="24"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <animations/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
@@ -1480,7 +1484,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authentication Scan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1WR-8k-rzj">
-                                                                    <rect key="frame" x="177" y="9" width="186" height="24"/>
+                                                                    <rect key="frame" x="181" y="9" width="186" height="24"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <animations/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
@@ -2036,9 +2040,23 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="aM5-4L-wCh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="Ijs-P5-Ryc">
+                                        <rect key="frame" x="0.0" y="615" width="375" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
+                            <view contentMode="scaleToFill" id="FPS-pr-te9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="279"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c5S-Yd-jCv">
                                 <rect key="frame" x="16" y="0.0" width="52" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2072,7 +2090,7 @@
                                 <color key="textColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Z39-me-DjC">
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Z39-me-DjC">
                                 <rect key="frame" x="167" y="592" width="40" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -2506,6 +2524,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MD6-e5-V1k">
                                 <rect key="frame" x="20" y="0.0" width="48" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal" backgroundImage="Ribbon_Hamburger.png"/>
                                 <connections>
                                     <action selector="settingBtnPressed:" destination="QzI-oG-Irs" eventType="touchUpInside" id="edk-jJ-XJK"/>

@@ -1192,7 +1192,7 @@
                                         <color key="backgroundColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="tkD-ya-fiU">
-                                        <rect key="frame" x="0.0" y="79" width="320" height="455"/>
+                                        <rect key="frame" x="0.0" y="78" width="320" height="456"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1262,8 +1262,12 @@
                                                 <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <outlet property="cellMainView" destination="GFh-e2-Igf" id="0F2-vo-Fae"/>
+                                                    <outlet property="dayLabel" destination="cSr-5u-dQH" id="ndk-sj-qF0"/>
                                                     <outlet property="image_View" destination="rKM-b1-KU8" id="oFW-mr-0MX"/>
                                                     <outlet property="selectionBtn" destination="LL4-JU-bM7" id="x7F-at-8eO"/>
+                                                    <outlet property="subtitle1" destination="MWl-dn-bWV" id="rs2-3b-sfs"/>
+                                                    <outlet property="subtitle2" destination="DLj-QE-3oA" id="0bf-zQ-rbH"/>
+                                                    <outlet property="title" destination="J9o-kj-4re" id="0fc-uu-jex"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -2032,6 +2036,18 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
+                            <view contentMode="scaleToFill" id="nI5-q9-fad">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Xud-WQ-uyC">
+                                <rect key="frame" x="0.0" y="525" width="320" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c5S-Yd-jCv">
                                 <rect key="frame" x="11" y="0.0" width="47" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2065,7 +2081,7 @@
                                 <color key="textColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Z39-me-DjC">
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Z39-me-DjC">
                                 <rect key="frame" x="140" y="502" width="40" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <animations/>
@@ -2145,7 +2161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phC-n8-0iw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916" y="-1424"/>
+            <point key="canvasLocation" x="1032" y="-1330"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="NMS-ZM-jS2">
