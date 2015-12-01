@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GravatarLoader.h"
 
-@interface ThankYouViewController : UIViewController
+@interface ThankYouViewController : UIViewController<GravatarLoaderDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView * upperColorImageView;
 @property (weak, nonatomic) IBOutlet UIImageView * profileImageView;

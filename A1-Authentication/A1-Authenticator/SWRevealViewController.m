@@ -982,6 +982,7 @@ NSInteger count;
 
 - (void)setFrontViewPosition:(FrontViewPosition)frontViewPosition animated:(BOOL)animated
 {
+
     if ( ![self isViewLoaded] )
     {
         _frontViewPosition = frontViewPosition;

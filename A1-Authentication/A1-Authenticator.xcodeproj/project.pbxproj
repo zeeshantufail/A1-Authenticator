@@ -76,6 +76,7 @@
 		2BF94AAF1BFC5F7400C8C0A8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AAE1BFC5F7400C8C0A8 /* AVFoundation.framework */; };
 		2BF94AB11BFC5F7F00C8C0A8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AB01BFC5F7F00C8C0A8 /* CoreVideo.framework */; };
 		2BF94AB31BFC5F8400C8C0A8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF94AB21BFC5F8400C8C0A8 /* CoreMedia.framework */; };
+		2BFF13431C0C65000031F441 /* NotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF13421C0C65000031F441 /* NotificationHelper.m */; settings = {ASSET_TAGS = (); }; };
 		47064A331BF47027004B2E42 /* QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47064A321BF47027004B2E42 /* QRCodeScanViewController.m */; };
 		470E36471BFEEFA0009EAA8C /* Message_0001@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36371BFEEFA0009EAA8C /* Message_0001@3x.png */; };
 		470E36481BFEEFA0009EAA8C /* Message_0002@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470E36381BFEEFA0009EAA8C /* Message_0002@3x.png */; };
@@ -746,6 +747,8 @@
 		2BF94AAE1BFC5F7400C8C0A8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2BF94AB01BFC5F7F00C8C0A8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		2BF94AB21BFC5F8400C8C0A8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2BFF13411C0C65000031F441 /* NotificationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationHelper.h; path = "Helper Classes/NotificationHelper.h"; sourceTree = "<group>"; };
+		2BFF13421C0C65000031F441 /* NotificationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationHelper.m; path = "Helper Classes/NotificationHelper.m"; sourceTree = "<group>"; };
 		47064A311BF47027004B2E42 /* QRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScanViewController.h; sourceTree = "<group>"; };
 		47064A321BF47027004B2E42 /* QRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanViewController.m; sourceTree = "<group>"; };
 		470E36371BFEEFA0009EAA8C /* Message_0001@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message_0001@3x.png"; sourceTree = "<group>"; };
@@ -2423,6 +2426,8 @@
 				2B1D05071C04772400010B1B /* AnimationHelper.m */,
 				2B12D45D1C0862E00093234A /* GravatarLoader.h */,
 				2B12D45E1C0862E00093234A /* GravatarLoader.m */,
+				2BFF13411C0C65000031F441 /* NotificationHelper.h */,
+				2BFF13421C0C65000031F441 /* NotificationHelper.m */,
 			);
 			name = "Helper Classes";
 			sourceTree = "<group>";
@@ -3397,6 +3402,7 @@
 				2BEE9EC81C070ED1000C13B4 /* Notifications+CoreDataProperties.m in Sources */,
 				4736985E1BF371EF00A0855B /* GTMObjC2Runtime.m in Sources */,
 				47064A331BF47027004B2E42 /* QRCodeScanViewController.m in Sources */,
+				2BFF13431C0C65000031F441 /* NotificationHelper.m in Sources */,
 				47AAF82C1BE8F61D00B7DD86 /* BeginViewController.m in Sources */,
 				470E69771BF4794100D6A091 /* TouchIDAuthentication.m in Sources */,
 				471C75FA1BF0C52A00F9907E /* SettingsViewController.m in Sources */,
@@ -3598,8 +3604,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
@@ -3628,8 +3634,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;

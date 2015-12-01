@@ -60,7 +60,7 @@
     
     mc = [[MessageContent alloc] init];
     //Enter your pin
-    mc.headerText = @"Hi Jhon";
+    mc.headerText = [NSString stringWithFormat:@"Hi %@", [[AppSettings sharedAppSettings] appUserFirstName]];
     mc.subHeaderText = @"Please enter your PIN";
     mc.errorText = @"Pin not recognized, please try again";
     
@@ -115,7 +115,7 @@
     
     mc = [[MessageContent alloc] init];
     //Authenticate with Touch ID
-    mc.headerText = @"Hi John";
+    mc.headerText = [NSString stringWithFormat:@"Hi %@", [[AppSettings sharedAppSettings] appUserFirstName]];
     mc.subHeaderText = @"Please authenticate your Touch ID";
     mc.errorText = @"";
     

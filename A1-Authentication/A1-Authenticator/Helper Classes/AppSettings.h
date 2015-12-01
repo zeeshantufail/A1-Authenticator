@@ -98,11 +98,27 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 
 -(void)setLockScreenTimerCount:(double)count;
 -(double)lockScreenTimerCount;
+
 - (void)setAppRegId:(NSString*)regId;
 - (NSString *)appRegId;
 
 - (void)setAppUserEmail:(NSString*)appUserEmail;
 - (NSString*)appUserEmail;
+
+-(void)setAppNotificationToken:(NSString *)token;
+-(NSString *)appNotificationToken;
+
+-(void)setAppJWTToken:(NSString *)token;
+-(NSString *)appJWTToken;
+
+-(void)setAppFinalLinks:(NSArray *)links;
+-(NSArray *)appFinalLinks;
+
+-(void)setAppUserDesignation:(NSString *)designation;
+-(NSString *)appUserDesignation;
+
+-(void)setAppGravatarImage:(UIImage *)image;
+-(UIImage *)appGravatarImage;
 
 @property (strong) id refrenceHolder;
 @property (strong) id rootController;

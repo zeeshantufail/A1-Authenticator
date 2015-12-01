@@ -14,12 +14,7 @@
 - (void)authenticateUser {
     if(!self.httpService)
         self.httpService = [[A1HTTPService alloc] initWithDelegate:self];
-   // if([self.httpService respondsToSelector:@selector(authenticateUser)])
         [self.httpService authenticateUser];
-   // else{
-      //  [self.httpService release];
-      //  self.httpService = nil;
-    //}
 }
 
 - (void)generatePasscodeWithChallangeCode:(NSString*)challanegCode {

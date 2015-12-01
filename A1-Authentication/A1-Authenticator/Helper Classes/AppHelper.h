@@ -42,4 +42,7 @@
 +(BOOL)shouldChellangeAuthentication;
 +(void)setShouldChellangeAuthentication:(BOOL)flag;
 
++(NSTimeInterval)totpTimePeriod;
++(NSString *)deviceID;
+
 @end

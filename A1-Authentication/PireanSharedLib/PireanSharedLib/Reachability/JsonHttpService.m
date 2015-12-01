@@ -11,6 +11,7 @@
 #import "Reachability.h"
 #import "AppSettings.h"
 #import "SVProgressHUD.h"
+#import "AppHelper.h"
 
 //#import "ProgressView.h"
 //#import "iGreetingDAO.h"
@@ -106,8 +107,11 @@ static NSString *HostUrlSecure;
                                                                   (CFStringRef)url,
                                                                   CFSTR(""),
                                                                   kCFStringEncodingUTF8);
+    NSString *regID = [[AppSettings sharedAppSettings] appRegId];
+    NSString *deviceID = [AppHelper deviceID];
+
     
-    NSDictionary *arg = [NSDictionary dictionaryWithObjectsAndKeys:userName, @"username", nil];
+    NSDictionary *arg = [NSDictionary dictionaryWithObjectsAndKeys:userName, @"username", regID, @"registrationid", deviceID, @"deviceid", nil];
 
     NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:arg, @"attributes", nil];
     
@@ -117,7 +121,7 @@ static NSString *HostUrlSecure;
     //NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
     NSData *data = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
     
-    [self doRequest:str postdata:data doStartProgress:NO doRetryConnection:NO doUseSecureChannel:NO];
+    [self doRequest:str postdata:data doStartProgress:YES doRetryConnection:NO doUseSecureChannel:NO];
 }
 
 - (void)sendRequestEmailWithSubject:(NSString*)subject body:(NSString*)body {
@@ -173,23 +177,36 @@ static NSString *HostUrlSecure;
 }
 
 - (void)verifyPasscode:(NSString*)passcode {
+//    NSString *url = [[AppSettings sharedAppSettings] applicationAuthenticationUrl];
+//    NSString *userName = [[AppSettings sharedAppSettings] appUserName];
+//    NSString *deviceName = [[AppSettings sharedAppSettings] getDeviceName];
+//    NSString *deviceVersion = [[AppSettings sharedAppSettings] getDeviceVersion];
+//    NSString *deviceId = [[AppSettings sharedAppSettings] getDeviceId];
+//    NSString *deviceResolution = [[AppSettings sharedAppSettings] getDeviceResolution];
+//    NSString *deviceColorDepth = [[AppSettings sharedAppSettings] getDeviceColorDepth];
+//    NSString *deviceType = [[AppSettings sharedAppSettings] getDeviceType];
+//    NSString *deviceOS = [[AppSettings sharedAppSettings] getDeviceOS];
+//    NSString *deviceBrowser = [[AppSettings sharedAppSettings] getDeviceBrowser];
+//    
+//    NSString *str = (NSString*)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
+//                                                                   (CFStringRef)url,
+//                                                                   CFSTR(""),
+//                                                                   kCFStringEncodingUTF8);
+//    
+//    NSDictionary *arg = [NSDictionary dictionaryWithObjectsAndKeys:userName, @"username", passcode, @"passcode", deviceName, @"devicename", deviceVersion, @"deviceversion", deviceId, @"deviceid", deviceResolution, @"deviceresolution", deviceColorDepth, @"devicecolordepth", deviceType, @"devicetype", deviceOS, @"deviceos", deviceBrowser, @"devicebrowser", nil];
+    
     NSString *url = [[AppSettings sharedAppSettings] applicationAuthenticationUrl];
     NSString *userName = [[AppSettings sharedAppSettings] appUserName];
-    NSString *deviceName = [[AppSettings sharedAppSettings] getDeviceName];
-    NSString *deviceVersion = [[AppSettings sharedAppSettings] getDeviceVersion];
-    NSString *deviceId = [[AppSettings sharedAppSettings] getDeviceId];
-    NSString *deviceResolution = [[AppSettings sharedAppSettings] getDeviceResolution];
-    NSString *deviceColorDepth = [[AppSettings sharedAppSettings] getDeviceColorDepth];
-    NSString *deviceType = [[AppSettings sharedAppSettings] getDeviceType];
-    NSString *deviceOS = [[AppSettings sharedAppSettings] getDeviceOS];
-    NSString *deviceBrowser = [[AppSettings sharedAppSettings] getDeviceBrowser];
+    NSString *deviceId = [AppHelper deviceID];
+    NSString *challengeCode = [[AppSettings sharedAppSettings] qrChanllangeCode];
+    NSString *registrationId = [[AppSettings sharedAppSettings] appRegId];
     
     NSString *str = (NSString*)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
-                                                                   (CFStringRef)url,
-                                                                   CFSTR(""),
-                                                                   kCFStringEncodingUTF8);
+                                                                                       (CFStringRef)url,
+                                                                                       CFSTR(""),
+                                                                                       kCFStringEncodingUTF8);
     
-    NSDictionary *arg = [NSDictionary dictionaryWithObjectsAndKeys:userName, @"username", passcode, @"passcode", deviceName, @"devicename", deviceVersion, @"deviceversion", deviceId, @"deviceid", deviceResolution, @"deviceresolution", deviceColorDepth, @"devicecolordepth", deviceType, @"devicetype", deviceOS, @"deviceos", deviceBrowser, @"devicebrowser", nil];
+    NSDictionary *arg = [NSDictionary dictionaryWithObjectsAndKeys:userName, @"username",registrationId, @"registrationid", passcode, @"passcode", deviceId, @"deviceid", challengeCode, @"qrchallengecode", nil];
     
     NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:arg, @"attributes", nil];
     
@@ -197,6 +214,103 @@ static NSString *HostUrlSecure;
     
     NSLog(@"String secondCall: %@", jsonStr);
     //NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
+    NSData *data = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+    
+    [self doRequest:str postdata:data doStartProgress:NO doRetryConnection:NO doUseSecureChannel:NO];
+}
+
+- (void)updateNotificationToken {
+    
+    NSArray *links = [[AppSettings sharedAppSettings] appFinalLinks];
+    NSLog(@"the links %@", links);
+//    NSString *url = @"https://localhost:9443/Login/rest/appl/sainsburry/wflow/savedevicetoken";//[[AppSettings sharedAppSettings] applicationAuthenticationUrl];
+    
+    NSString *url = @"";
+    
+    for (NSDictionary *link in links) {
+        if ([[link objectForKey:@"rel"] isEqualToString:@"devicetoken"]) {
+            url = [link objectForKey:@"href"];
+            break;
+        }
+    }
+    
+    NSString *userName = [[AppSettings sharedAppSettings] appUserName];
+    NSString *token = [[AppSettings sharedAppSettings] appNotificationToken];
+    
+    NSString *str = (NSString*)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
+                                                                                       (CFStringRef)url,
+                                                                                       CFSTR(""),
+                                                                                       kCFStringEncodingUTF8);
+    
+    NSDictionary *arg = [NSDictionary dictionaryWithObjectsAndKeys:userName, @"username",token, @"devicetoken", nil];
+    
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:arg, @"attributes", nil];
+    
+    NSString *jsonStr = [dic JSONRepresentation];
+    
+    NSLog(@"String secondCall: %@", jsonStr);
+    //NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
+    NSData *data = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+    
+    [self doRequest:str postdata:data doStartProgress:NO doRetryConnection:NO doUseSecureChannel:NO];
+}
+
+
+- (void)fetchNotificationsRequest{
+    
+    NSArray * links = [[AppSettings sharedAppSettings] appFinalLinks];
+    
+    NSString *url = @"";
+    
+    for (NSDictionary *link in links) {
+        if ([[link objectForKey:@"rel"] isEqualToString:@"getnotifications"]) {
+            url = [link objectForKey:@"href"];
+            break;
+        }
+    }
+    
+    
+//    NSString *url = @"https://localhost:9443/Login/rest/appl/sainsburry/wflow/getnotification";//[[AppSettings sharedAppSettings] applicationAuthenticationUrl];
+    NSString *userName = [[AppSettings sharedAppSettings] appUserName];
+    NSString *token = [[AppSettings sharedAppSettings] appNotificationToken];
+    
+    NSString *str = (NSString*)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
+                                                                                       (CFStringRef)url,
+                                                                                       CFSTR(""),
+                                                                                       kCFStringEncodingUTF8);
+    
+    NSDictionary *arg = [NSDictionary dictionaryWithObjectsAndKeys:userName, @"username",token, @"devicetoken", nil];
+    
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:arg, @"attributes", nil];
+    
+    NSString *jsonStr = [dic JSONRepresentation];
+    
+    NSLog(@"String secondCall: %@", jsonStr);
+    //NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
+    NSData *data = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+    
+    [self doRequest:str postdata:data doStartProgress:NO doRetryConnection:NO doUseSecureChannel:NO];
+}
+
+
+- (void)requestFinalLink:(NSString *)url{
+    
+//    NSString *url = @"https://localhost:9443/Login/rest/appl/sainsburry/wflow/getnotification";//[[AppSettings sharedAppSettings] applicationAuthenticationUrl];
+    NSString *userName = [[AppSettings sharedAppSettings] appUserName];
+    
+    NSString *str = (NSString*)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
+                                                                                       (CFStringRef)url,
+                                                                                       CFSTR(""),
+                                                                                       kCFStringEncodingUTF8);
+    
+    NSDictionary *arg = [NSDictionary dictionaryWithObjectsAndKeys:userName, @"username", nil];
+//
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:arg, @"attributes", nil];
+    
+    NSString *jsonStr = [dic JSONRepresentation];
+    
+    NSLog(@"String secondCall: %@", jsonStr);
+//    NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
     NSData *data = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
     
     [self doRequest:str postdata:data doStartProgress:NO doRetryConnection:NO doUseSecureChannel:NO];
@@ -239,13 +353,21 @@ static NSString *HostUrlSecure;
         if (!self.request) {
             self.request = [[NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]] autorelease];
         }
+        else{
+            self.request.URL = [NSURL URLWithString:url];
+        }
         
+
+        NSString *jwtToken = [[AppSettings sharedAppSettings] appJWTToken];
         if (postData) {
             [self.request setHTTPMethod:@"POST"];
-            [self.request setValue:[NSString stringWithFormat:@"%d", postData.length] forHTTPHeaderField:@"Content-Length"];
+            [self.request setValue:[NSString stringWithFormat:@"%lu", (unsigned long)postData.length] forHTTPHeaderField:@"Content-Length"];
             [self.request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
             [self.request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
             [self.request setValue:[self getUserAgentString] forHTTPHeaderField:@"User-Agent"];
+            if (jwtToken) {
+                [self.request setValue:[NSString stringWithFormat:@"Bearer %@", jwtToken] forHTTPHeaderField:@"Authorization"];
+            }
             [self.request setHTTPBody:postData];
         }
 		self.tempConnection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self];
@@ -350,6 +472,16 @@ static NSString *HostUrlSecure;
 	if(!errorOccurred) {
 		NSMutableDictionary *response = [responseString JSONValue] ;
 		NSLog(@"response completed for: %@", responseString);
+        
+        NSString *linksStr = [response objectForKey:@"links"];
+        
+        if (linksStr) {
+            NSArray * links = [linksStr JSONValue];
+            [response setObject:links forKey:@"links"];
+            NSLog(@"decoded response is: %@", [response JSONRepresentation]);
+        }
+        
+        
 		[responseString release];
         
         [SVProgressHUD dismiss];

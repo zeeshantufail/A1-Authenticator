@@ -11,9 +11,13 @@
 #import "PasscodeHelper.h"
 #import "AppHelper.h"
 #import "AnimationHelper.h"
+#import "AppSettings.h"
 
 @interface ThankYouViewController ()
-
+{
+    NSString * name;
+    NSString * designation;
+}
 @end
 
 @implementation ThankYouViewController
@@ -24,13 +28,42 @@
     
     //[self drawCircle];
     
+    name = [NSString stringWithFormat:@"%@ %@", [[AppSettings sharedAppSettings] appUserFirstName], [[AppSettings sharedAppSettings]  appUserLastName]];
+    designation = [NSString stringWithFormat:@"%@, %@", [[AppSettings sharedAppSettings] appUserDesignation], [[AppSettings sharedAppSettings] appRegName]];
+    self.designationLbl.text = designation;
+    UIImage *gravatarImage = [[AppSettings sharedAppSettings] appGravatarImage];
+    if (gravatarImage) {
+        [[AppSettings sharedAppSettings] setAppGravatarImage:gravatarImage];
+    }
+    
     [self performAnimations];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self loadGravatar];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     
 }
 
+-(void)loadGravatar{
+    [[AppSettings sharedAppSettings] setAppUserEmail:[[AppSettings sharedAppSettings] appUserEmail]];
+    if (![GravatarLoader gravatarImage]) {
+        [[GravatarLoader sharedInstance] loadGravatarWithEmail:[[AppSettings sharedAppSettings] appUserEmail] andSender:self];
+    }
+    else{
+        [self imageLoaded:[GravatarLoader gravatarImage]];
+    }
+}
+
+-(void)imageLoaded:(UIImage *)img{
+    if(img)
+    {
+        self.profileImageView.image = img;
+        [[AppSettings sharedAppSettings] setAppGravatarImage:img];
+    }
+}
 
 
 - (void)didReceiveMemoryWarning
@@ -248,7 +281,7 @@
      {
          dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0),
                         ^{
-                            [self animateNameShowText:@"John Doe" characterDelay:0.01];
+                            [self animateNameShowText:name characterDelay:0.01];
                         });
      }];
 }

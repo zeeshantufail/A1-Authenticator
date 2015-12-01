@@ -63,7 +63,9 @@
 @property (nonatomic, retain) NSURLConnection *tempConnection;
 @property (nonatomic, retain) NSMutableURLRequest *request;
 
-@property (nonatomic, weak) id <JsonHttpServiceProtocol> delegate;
+@property (nonatomic, retain) NSString * requestType;
+
+@property (nonatomic, retain) id <JsonHttpServiceProtocol> delegate;
 
 - (id)initWithDelegate:(id <JsonHttpServiceProtocol>) delegateIn;
 
@@ -76,4 +78,9 @@
 - (void)sendRequestEmailWithSubject:(NSString*)subject body:(NSString*)body;
 
 + (void)setServerUrl:(NSString *)hostUrl secureUrl:(NSString *) secureHostUrl;
+
+- (void)updateNotificationToken ;
+- (void)fetchNotificationsRequest;
+- (void)requestFinalLink:(NSString *)url;
+
 @end

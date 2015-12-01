@@ -45,7 +45,9 @@ int currentBuffer = 0;
 int nextBufferLoadBeforeImagesRemaining = 50;
 
 -(void)viewDidLoad{
-    [[AppSettings sharedAppSettings] setGoogleSecret:@"fxxx xxxx xxxx xxxx"];
+//    [[AppSettings sharedAppSettings] setGoogleSecret:@"fxxx xxxx xxxx xxxx"];
+    period = [AppHelper totpTimePeriod];
+    
     [self showTimer];
     allowTimer = true;
 }
@@ -86,7 +88,7 @@ int nextBufferLoadBeforeImagesRemaining = 50;
     int imageNumber = round(currentDelta/period * totalImages)-1;
     currentBuffer = imageNumber / imagesLoadInMemory;
     
-    NSLog(@"%d %d %f", imageNumber, currentBuffer, currentDelta);
+//    NSLog(@"%d %d %f", imageNumber, currentBuffer, currentDelta);
     
     imagesBuff1 = [[NSMutableArray alloc] init];
     imagesBuff2 = [[NSMutableArray alloc] init];
@@ -173,7 +175,7 @@ int nextBufferLoadBeforeImagesRemaining = 50;
 //    
     int arrayImageNumber = imageNumber % imagesLoadInMemory;
     if ([self shouldSwap]) {
-        NSLog(@"%d %d %f", imageNumber, currentBuffer, currentDelta);
+//        NSLog(@"%d %d %f", imageNumber, currentBuffer, currentDelta);
         [self swapBuffers];
     }
     
@@ -233,7 +235,7 @@ int nextBufferLoadBeforeImagesRemaining = 50;
     float currentDelta = progress + fraction;
     
     ImageClass *img = [self getImageForDelta:currentDelta];
-    NSLog(@"%f %@", currentDelta, img.imageName);
+//    NSLog(@"%f %@", currentDelta, img.imageName);
     
     self.countDownImageView.image = img.image;
     

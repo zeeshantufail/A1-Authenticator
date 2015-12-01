@@ -37,10 +37,25 @@
 - (void)jsonHttpService:(JsonHttpService *)jsonHttpService responseCompleted:(NSMutableDictionary *)response {
     NSLog(@"json response completed");
     NSString *challangeCode = [response objectForKey:@"qrchallengecode"];
+    
+//    if ([challangeCode isKindOfClass:[NSArray class]]) { //todo zeeshan
+//        NSArray *code = (NSArray *)challangeCode;
+//        challangeCode = [code objectAtIndex:0];
+//    }
+    
     NSLog(@"ChallangeCode: %@", challangeCode);
     
     NSString *initialUrl = [response objectForKey:@"initialurl"];
     NSLog(@"initialUrl = %@",initialUrl);
+    
+    NSArray *links = [response objectForKey:@"links"];
+    NSString *jwtToken = [response objectForKey:@"token"];
+    
+    NSString *secretKey = [response objectForKey:@"secretkey"];
+    NSString *userEmail = [response objectForKey:@"useremail"];
+    
+    NSString * designation = [response objectForKey:@"designation"];
+    NSString * company = [response objectForKey:@"company"];
     
     NSString * userFirstName = [response objectForKey:@"firstname"];
     NSString *userLastName = [response objectForKey:@"surname"];
@@ -74,10 +89,47 @@
             [[[[UIAlertView alloc] initWithTitle:@"" message:@"Passcode authentication Failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] autorelease] show];
         }
     }
+    else if( links && jwtToken){
+        
+        [[AppSettings sharedAppSettings] setAppJWTToken:jwtToken];
+        [[AppSettings sharedAppSettings] setAppFinalLinks:links];
+        for (NSDictionary * link in links) {
+            NSString *rel = [link objectForKey:@"rel"];
+            NSString *href = [link objectForKey:@"href"];
+            
+            if ([rel isEqualToString:@"googleauth"] && href) {
+                [self.httpService requestFinalLink:href];
+            }
+            else if ( [rel isEqualToString:@"getuserdetails"] && href ) {
+                [self.httpService requestFinalLink:href];
+            }
+        }
+    }
+    else if(secretKey){
+        [[AppSettings sharedAppSettings] setGoogleSecret:secretKey];
+        
+        if ([[AppSettings sharedAppSettings] appUserEmail]) {
+            [self.delegate authenticationWasSuccessfull:self];
+        }
+    }
+    else if(userEmail){
+        [[AppSettings sharedAppSettings] setAppUserEmail:userEmail];
+        [[AppSettings sharedAppSettings] setAppUserFirstName:userFirstName];
+        [[AppSettings sharedAppSettings] setAppUserLastName:userLastName];
+        [[AppSettings sharedAppSettings] setAppUserDesignation:designation];
+        [[AppSettings sharedAppSettings] setAppRegName:company];
+        
+        if ([[AppSettings sharedAppSettings] googleSecret]) {
+            [self.delegate authenticationWasSuccessfull:self];
+        }
+//        [AppSettings sharedAppSettings] 
+    }
     else {
         [[[[UIAlertView alloc] initWithTitle:@"" message:@"Authentication Failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] autorelease] show];
     }
 }
+
+
 
 -(void)dealloc{
     //[super dealloc];

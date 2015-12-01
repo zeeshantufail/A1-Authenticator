@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "NotificationHelper.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, NotificationHelperProtocol>
 
 @property (strong, nonatomic) UIWindow *window;
 
@@ -19,7 +20,8 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
-
+-(void)registerForNotification;
+-(void)updateNotificationDB;
 
 @end
 

@@ -36,11 +36,17 @@
     // Initially make the captureSession object nil.
     _captureSession = nil;
     
-    // Set the initial value of the flag to NO.
-    _isReading = NO;
     
     // Begin loading the sound effect so to have it ready for playback when it's needed.
     [self loadBeepSound];
+    
+    
+    // Set the initial value of the flag to NO.
+    _isReading = NO;
+    [self readQRCode];
+}
+
+-(void)readQRCode{
     
     if(!_isReading)
     {
@@ -50,10 +56,11 @@
             [self startReading];
         }
     }
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    [[AppSettings sharedAppSettings] setAppTotp:self.isTotp];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -214,13 +221,18 @@ AVCaptureDeviceInput *input;
 
 -(void)QRScanned:(NSString *)result{
     
-    UILabel * waitLabel = (UILabel *)[self.view viewWithTag:2];
-    [waitLabel setHidden:NO];
+//    UILabel * waitLabel = (UILabel *)[self.view viewWithTag:2];
+//    [waitLabel setHidden:NO];
+    
+    if ([[AppSettings sharedAppSettings] appActivationState] && ![[AppSettings sharedAppSettings] appTotp]) {
+        [self.delegate didScanResult:result];
+        return;
+    }
     
     ScanCodeHelper *sch = [[ScanCodeHelper alloc] init];
     sch.delegate = self;
-    NSString *dummyQR = @"UserKey:a1test:asim:y:4:9:602a19ddd02cba1f2aab69c495b34fab:http%3A%2F%2F116.58.50.114%3A9632%2FLogin%2Frest%2Fworkflow%2Fqrauthtest:12345"; //todo zeeshan
-    [sch scanKeyWithResultingString:dummyQR];
+//    NSString *dummyQR = @"UserKey:a1test:asim:y:4:9:602a19ddd02cba1f2aab69c495b34fab:http%3A%2F%2F116.58.50.114%3A9632%2FLogin%2Frest%2Fworkflow%2Fqrauthtest:12345";
+    [sch scanKeyWithResultingString:result];
     
 }
 #pragma mark - scanCodeHelper
@@ -259,12 +271,13 @@ AVCaptureDeviceInput *input;
     }
     
     
-    [self.delegate didScanResult:self];
-    [[AppSettings sharedAppSettings] setAppTotp:self.isTotp];
+//    [self.delegate didScanResult:self];
+//    [[AppSettings sharedAppSettings] setAppTotp:self.isTotp];
     
-//    AuthenticateUser *au = [[AuthenticateUser alloc] init];
-//    au.delegate = self;
-//    [au authenticateUser];
+    AuthenticateUser *au = [[AuthenticateUser alloc] init];
+    au.delegate = self;
+    [au authenticateUser];
+    
 
 }
 
@@ -272,15 +285,16 @@ AVCaptureDeviceInput *input;
 
 -(void)userAuthenticatedSuccessfully:(AuthenticateUser *)authenticateUser{
     
-    UILabel * waitLabel = (UILabel *)[self.view viewWithTag:2];
-    [waitLabel setHidden:YES];
-    
+//    UILabel * waitLabel = (UILabel *)[self.view viewWithTag:2];
+//    [waitLabel setHidden:YES];
+//    [self.delegate didScanResult:self];
     [self.delegate authenticationCompleted:self];
 }
 
 -(void)userAuthenticationFailed:(AuthenticateUser *)authenticateUser{
     [self.delegate authenticationFailed:self];
 }
+
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate method implementation
 
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
