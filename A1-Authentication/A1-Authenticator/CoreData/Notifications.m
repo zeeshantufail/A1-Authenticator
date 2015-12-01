@@ -37,7 +37,7 @@
 }
 
 
-+(NSArray *)readNotifications{
++(NSMutableArray *)readNotifications{
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     // Test listing all FailedBankInfos from the store
@@ -47,11 +47,16 @@
     [fetchRequest setEntity:entity];
     NSError *error;
     NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    
+    NSMutableArray *ary = [[NSMutableArray alloc] init];
     for (Notifications *not in fetchedObjects) {
         NSLog(@"Notification data: %@", not.data);
+        if (not.data) {
+            [ary addObject:[not.data JSONValue]];
+        }
         
     }
-    return  fetchedObjects;
+    return  ary;
 }
 
 +(int)numberOfUnreadNotifications{

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B08D8E41C0D5ED800DD9A5B /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B08D8E31C0D5ED800DD9A5B /* Countdown_Animation */; settings = {ASSET_TAGS = (); }; };
 		2B12D45F1C0862E00093234A /* GravatarLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B12D45E1C0862E00093234A /* GravatarLoader.m */; };
 		2B1D05081C04772400010B1B /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D05071C04772400010B1B /* AnimationHelper.m */; };
 		2B1D050A1C04903100010B1B /* home screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1D05091C04903100010B1B /* home screen.png */; };
@@ -49,7 +50,6 @@
 		2B92E3C51BF637AA003CF4A1 /* cameraOverlay 4.7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C11BF637AA003CF4A1 /* cameraOverlay 4.7.png */; };
 		2B92E3C61BF637AA003CF4A1 /* cameraOverlay 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C21BF637AA003CF4A1 /* cameraOverlay 4.png */; };
 		2B92E3C71BF637AA003CF4A1 /* cameraOverlay 5.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */; };
-		2B9CC9C21C0C2268000B94A2 /* Countdown_Animation in Resources */ = {isa = PBXBuildFile; fileRef = 2B9CC9C11C0C2268000B94A2 /* Countdown_Animation */; };
 		2BC906EB1BFDC7BF009AF8E4 /* QRScanAtHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */; };
 		2BC906F41BFDDFA6009AF8E4 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC906F31BFDDFA6009AF8E4 /* TimerViewController.m */; };
 		2BDBA4B71C059A3C00BDE112 /* begin_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBA4B51C059A3C00BDE112 /* begin_off.png */; };
@@ -668,6 +668,7 @@
 /* Begin PBXFileReference section */
 		2B048EA71C0827960095A3DD /* GravatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravatarViewController.h; path = Gravatar/GravatarImageDemo/GravatarImageDemo/GravatarViewController.h; sourceTree = SOURCE_ROOT; };
 		2B048EA81C082B3D0095A3DD /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Gravatar/GravatarImageDemo/Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
+		2B08D8E31C0D5ED800DD9A5B /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = ../../../../../Downloads/Countdown_Animation; sourceTree = "<group>"; };
 		2B12D44F1C082E450093234A /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Gravatar/GravatarImageDemo/Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
 		2B12D45D1C0862E00093234A /* GravatarLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravatarLoader.h; path = "Helper Classes/GravatarLoader.h"; sourceTree = "<group>"; };
 		2B12D45E1C0862E00093234A /* GravatarLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GravatarLoader.m; path = "Helper Classes/GravatarLoader.m"; sourceTree = "<group>"; };
@@ -717,7 +718,6 @@
 		2B92E3C11BF637AA003CF4A1 /* cameraOverlay 4.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 4.7.png"; sourceTree = "<group>"; };
 		2B92E3C21BF637AA003CF4A1 /* cameraOverlay 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 4.png"; sourceTree = "<group>"; };
 		2B92E3C31BF637AA003CF4A1 /* cameraOverlay 5.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraOverlay 5.5.png"; sourceTree = "<group>"; };
-		2B9CC9C11C0C2268000B94A2 /* Countdown_Animation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Countdown_Animation; path = Images/Animations/Countdown_Animation; sourceTree = "<group>"; };
 		2BC906EA1BFDC7BF009AF8E4 /* QRScanAtHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRScanAtHome.png; sourceTree = "<group>"; };
 		2BC906F21BFDDFA6009AF8E4 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimerViewController.h; path = ViewControllers/HomeViewController/TimerViewController.h; sourceTree = "<group>"; };
 		2BC906F31BFDDFA6009AF8E4 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimerViewController.m; path = ViewControllers/HomeViewController/TimerViewController.m; sourceTree = "<group>"; };
@@ -1864,9 +1864,9 @@
 		4729E07D1BF1F76C00627DA8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				2B08D8E31C0D5ED800DD9A5B /* Countdown_Animation */,
 				479A0E491C0C596A00850F9C /* New_Message_Animation @3x */,
 				479A0E481C0C596100850F9C /* New_Message_Animation @2x */,
-				2B9CC9C11C0C2268000B94A2 /* Countdown_Animation */,
 				2B1D05121C04C17100010B1B /* button_animation */,
 				470E36F91BFEF45F009EAA8C /* MessageButtonAnimation @2x */,
 				470E36361BFEEFA0009EAA8C /* MessageButtonAnimation @3x */,
@@ -2873,7 +2873,6 @@
 				470E36911BFEF2E8009EAA8C /* GREY PANEL_00010@3x.png in Resources */,
 				473698831BF371EF00A0855B /* GTMUIImage+Resize_100x50_flipped.png in Resources */,
 				47D4AC901C04A07E003C279E /* iTunesArtwork in Resources */,
-				2B9CC9C21C0C2268000B94A2 /* Countdown_Animation in Resources */,
 				479A0F411C0C599700850F9C /* New_Message_0026@3x.png in Resources */,
 				479A0EB71C0C598600850F9C /* New_Message_0036@2x.png in Resources */,
 				477499001BE7949800026C01 /* begin1@2x.png in Resources */,
@@ -3222,6 +3221,7 @@
 				473698AF1BF371EF00A0855B /* ReadMe_iossim.txt in Resources */,
 				479A0EA81C0C598600850F9C /* New_Message_0021@2x.png in Resources */,
 				478CD38D1BFE0961008774E0 /* Locked Animation_0020@3x.png in Resources */,
+				2B08D8E41C0D5ED800DD9A5B /* Countdown_Animation in Resources */,
 				473698741BF371EF00A0855B /* GTMFadeTruncatingLabelTest2.png in Resources */,
 				479A0F3B1C0C599700850F9C /* New_Message_0020@3x.png in Resources */,
 				479A0E991C0C598600850F9C /* New_Message_0006@2x.png in Resources */,
@@ -3622,7 +3622,7 @@
 					"\"ImageIO\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ebd29f6b-d36a-4976-aa75-f886da6afaed";
 				USER_HEADER_SEARCH_PATHS = "./PireanSharedLib/** ./Gravatar/**";
 			};
 			name = Debug;
@@ -3652,7 +3652,7 @@
 					"\"ImageIO\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ebd29f6b-d36a-4976-aa75-f886da6afaed";
 				USER_HEADER_SEARCH_PATHS = "./PireanSharedLib/** ./Gravatar/**";
 			};
 			name = Release;

@@ -53,14 +53,14 @@
 
 + (void)deleteAllObjects:(NSManagedObjectContext *)moc{
     
-  /*  NSFetchRequest * fetch = [[[NSFetchRequest alloc] init] autorelease];
-    [fetch setEntity:[NSEntityDescription entityForName:@"AppInfo" inManagedObjectContext:moc]];
+    NSFetchRequest * fetch = [[NSFetchRequest alloc] init] ;
+    [fetch setEntity:[NSEntityDescription entityForName:@"Notifications" inManagedObjectContext:moc]];
     NSArray * result = [moc executeFetchRequest:fetch error:nil];
     for (id info1 in result)
         [moc deleteObject:info1];
     
     NSError *tmpErro;
-    [moc save:&tmpErro];*/
+    [moc save:&tmpErro];
 }
 
 @end

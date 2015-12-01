@@ -11,6 +11,7 @@
 #import "AppInfo.h"
 //#import "MOCHelper.h"
 #import <AVFoundation/AVFoundation.h>
+#import "AppDelegate.h"
 
 static AppSettings *appSettings;
 
@@ -264,11 +265,13 @@ static AppSettings *appSettings;
     [self setAppTotp:NO];
     
     NSString *filePath = [self dataFilePath];
+    
     if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
         [[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];
     }
     
-    //[AppInfo deleteAllObjects:[[MOCHelper sharedMOCHelper] getMOC]];
+    AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [AppInfo deleteAllObjects:appDelegate.managedObjectContext];
 }
 
 - (NSString*)getDeviceName {

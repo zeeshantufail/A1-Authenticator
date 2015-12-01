@@ -13,6 +13,7 @@
 #import "AppHelper.h"
 #import "NSObject+SBJSON.h"
 #import "NSString+SBJSON.h"
+#import "Notifications.h"
 
 @interface NotificationViewController ()
 {
@@ -33,26 +34,28 @@
     [super viewDidLoad];
     [self initialization];
     
-    NSString *str1 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":false,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho! ---- Welcome to A1 Authenticator application. Your OPT is ION280tho! ---- Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
-    NSString *str2 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":true,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
-    NSString *str3 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":false,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
-    NSString *str4 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":true,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
-    NSString *str5 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":false,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
-    NSString *str6 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":true,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
+//    NSString *str1 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":false,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho! ---- Welcome to A1 Authenticator application. Your OPT is ION280tho! ---- Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
+//    NSString *str2 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":true,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
+//    NSString *str3 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":false,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
+//    NSString *str4 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":true,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
+//    NSString *str5 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":false,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
+//    NSString *str6 = @"{\"status\":\"success\",\"messages\":{\"badge\":1,\"readMessage\":true,\"date\":\"2015/12/01 00:32:12\",\"header\":\"Access: One OTP\",\"title\":\"Your otp passcode is updated\",\"message\":\"Welcome to A1 Authenticator application. Your OPT is ION280tho!\"}}";
+//    
+//    NSDictionary *dic1 = [[NSDictionary alloc] initWithDictionary:[str1 JSONValue] copyItems:YES];
+//    NSDictionary *dic2 = [[NSDictionary alloc] initWithDictionary:[str2 JSONValue] copyItems:YES];
+//    NSDictionary *dic3 = [[NSDictionary alloc] initWithDictionary:[str3 JSONValue] copyItems:YES];
+//    NSDictionary *dic4 = [[NSDictionary alloc] initWithDictionary:[str4 JSONValue] copyItems:YES];
+//    NSDictionary *dic5 = [[NSDictionary alloc] initWithDictionary:[str5 JSONValue] copyItems:YES];
+//    NSDictionary *dic6 = [[NSDictionary alloc] initWithDictionary:[str6 JSONValue] copyItems:YES];
+//    
+//    [notificationsArray addObject:dic1];
+//    [notificationsArray addObject:dic2];
+//    [notificationsArray addObject:dic3];
+//    [notificationsArray addObject:dic4];
+//    [notificationsArray addObject:dic5];
+//    [notificationsArray addObject:dic6];
     
-    NSDictionary *dic1 = [[NSDictionary alloc] initWithDictionary:[str1 JSONValue] copyItems:YES];
-    NSDictionary *dic2 = [[NSDictionary alloc] initWithDictionary:[str2 JSONValue] copyItems:YES];
-    NSDictionary *dic3 = [[NSDictionary alloc] initWithDictionary:[str3 JSONValue] copyItems:YES];
-    NSDictionary *dic4 = [[NSDictionary alloc] initWithDictionary:[str4 JSONValue] copyItems:YES];
-    NSDictionary *dic5 = [[NSDictionary alloc] initWithDictionary:[str5 JSONValue] copyItems:YES];
-    NSDictionary *dic6 = [[NSDictionary alloc] initWithDictionary:[str6 JSONValue] copyItems:YES];
-    
-    [notificationsArray addObject:dic1];
-    [notificationsArray addObject:dic2];
-    [notificationsArray addObject:dic3];
-    [notificationsArray addObject:dic4];
-    [notificationsArray addObject:dic5];
-    [notificationsArray addObject:dic6];
+    notificationsArray = [Notifications readNotifications];
     
 }
 
@@ -163,15 +166,15 @@
     
     NSDictionary *dict = [notificationsArray objectAtIndex:indexPath.row];
     
-    cell.dayLabel.text = [[dict objectForKey:@"messages"] objectForKey:@"date"];
-    cell.title.text = [[dict objectForKey:@"messages"] objectForKey:@"header"];
-    cell.subtitle1.text = [[dict objectForKey:@"messages"] objectForKey:@"title"];
-    cell.subtitle2.text = [[dict objectForKey:@"messages"] objectForKey:@"message"];
+    cell.dayLabel.text = [dict objectForKey:@"date"];
+    cell.title.text = [dict objectForKey:@"header"];
+    cell.subtitle1.text = [dict objectForKey:@"title"];
+    cell.subtitle2.text = [dict objectForKey:@"message"];
     
     UIView *dataView = [self notificationDataForRowAtIndexPath:indexPath forCell:cell];
     [cell.cellMainView addSubview:dataView];
     
-    BOOL read = [[[dict objectForKey:@"messages"] objectForKey:@"readMessage"] integerValue];
+    BOOL read = [[dict objectForKey:@"readMessage"] integerValue];
     if (read)
     {
         cell.cellMainView.backgroundColor = [UIColor colorWithRed:0.94 green:0.94 blue:0.94 alpha:1.0];
@@ -309,7 +312,7 @@
     [tv setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:11]];
     
     NSDictionary *notification_dict = [notificationsArray objectAtIndex:indexPath.row];
-    tv.text = [[notification_dict objectForKey:@"messages"] objectForKey:@"message"];
+    tv.text = [notification_dict  objectForKey:@"message"];
     
     CGRect frame = tv.frame;
     frame.size.height = tv.contentSize.height;
@@ -421,7 +424,7 @@ int i = 2;
         
         NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
         NSDictionary *dict = [notificationsArray objectAtIndex:indexPath.row];
-        BOOL read = [[[dict objectForKey:@"messages"] objectForKey:@"readMessage"] integerValue];
+        BOOL read = [[dict objectForKey:@"readMessage"] integerValue];
         
         if (read)
         {
@@ -756,7 +759,7 @@ bool goBackCells = false;
     {
         NSIndexPath *indexPath = [selectedRowsArray objectAtIndex:i];
         dict = [notificationsArray objectAtIndex:indexPath.row];
-        if( ![[[dict objectForKey:@"messages"] objectForKey:@"readMessage"] integerValue] )
+        if( ![[dict objectForKey:@"readMessage"] integerValue] )
         {
             unreadFound = TRUE;
             break;
