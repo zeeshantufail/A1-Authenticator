@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HelpPage2ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *contentView;
 
 @end

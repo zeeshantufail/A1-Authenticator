@@ -12,15 +12,6 @@
             symbolName = "UIViewAlertForUnsatisfiableConstraints"
             moduleName = "">
             <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UIViewAlertForUnsatisfiableConstraints"
-                  moduleName = "UIKit"
-                  usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "0">
-               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -63,12 +54,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "A1-Authenticator/ViewControllers/NotificationVIewController/NotificationViewController.m"
-            timestampString = "470315185.51396"
+            timestampString = "470624968.107591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "-tableView:heightForRowAtIndexPath:"
+            startingLineNumber = "426"
+            endingLineNumber = "426"
+            landmarkName = "-swipeTableCell:swipeButtonsForDirection:swipeSettings:expansionSettings:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -79,12 +70,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "A1-Authenticator/ViewControllers/NotificationVIewController/NotificationViewController.m"
-            timestampString = "470318939.650119"
+            timestampString = "470624968.107591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
-            landmarkName = "-checkBoxBtnClick:"
+            startingLineNumber = "458"
+            endingLineNumber = "458"
+            landmarkName = "-swipeTableCell:swipeButtonsForDirection:swipeSettings:expansionSettings:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "A1-Authenticator/ViewControllers/NotificationVIewController/NotificationViewController.m"
+            timestampString = "470633589.527202"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "705"
+            endingLineNumber = "705"
+            landmarkName = "-deleteAllSelectedMessages"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "A1-Authenticator/ViewControllers/NotificationVIewController/NotificationViewController.m"
+            timestampString = "470633534.075456"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "716"
+            endingLineNumber = "716"
+            landmarkName = "-deleteAllSelectedMessages"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

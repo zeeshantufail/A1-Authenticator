@@ -10,4 +10,6 @@
 
 @interface HelpPage3ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+
 @end

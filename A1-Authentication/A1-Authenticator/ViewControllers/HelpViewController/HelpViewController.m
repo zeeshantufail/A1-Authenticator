@@ -27,8 +27,7 @@ int numberOf_Pages = 3;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
+
     [self.view bringSubviewToFront:self.settingsBtn];
 }
 
@@ -39,7 +38,8 @@ int numberOf_Pages = 3;
     [self.videoView addSubview:videoViewController.view];
 }
 
--(void)viewDidDisappear:(BOOL)animated{
+-(void)viewDidDisappear:(BOOL)animated
+{
     [videoViewController removeFromParentViewController];
     [videoViewController.view removeFromSuperview];
 }
@@ -49,7 +49,7 @@ int numberOf_Pages = 3;
     [super viewDidAppear:animated];
     
     [self setPagesInScrollView];
-    [self addTapGesture];
+    //[self addTapGesture];
     
     [self.videoView bringSubviewToFront:self.scrollView];
     [self.videoView bringSubviewToFront:self.pageControl];

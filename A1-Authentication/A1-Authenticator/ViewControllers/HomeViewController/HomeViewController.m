@@ -98,6 +98,8 @@
     [self performSelector:@selector(animateMessageBtn) withObject:self afterDelay:1.2 ];
     
     [self performSelector:@selector(showMessageBtn) withObject:self afterDelay:1.3 ];
+    
+    [self performSelector:@selector(startNewMessageAnimation) withObject:self afterDelay:6.1 ];
 }
 
 -(void)animateUpperColorView
@@ -205,6 +207,56 @@
         [self.designationLabel setHidden:NO];
         
     } completion:nil];
+}
+
+-(void)startNewMessageAnimation
+{
+    self.messageImageView.image = [UIImage imageNamed:@"New_Message_0074.png"];
+    
+    NSMutableArray *animationArray = [[NSMutableArray alloc] init];
+    
+    for (int i=1 ; i<=74 ; i++)
+    {
+        [animationArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"New_Message_%.4d.png",i]]];
+    }
+    
+    self.messageImageView.animationImages=animationArray;
+    self.messageImageView.animationDuration= 2.5;
+    self.messageImageView.animationRepeatCount = 1;
+    [self.messageImageView startAnimating];
+    
+    [self performSelector:@selector(animateButtonTitle) withObject:self afterDelay:2.6 ];
+    animation_count = 0;
+}
+
+int animation_count = 0;
+
+-(void)animateButtonTitle
+{
+    animation_count++;
+    
+    [UIView animateWithDuration:0.8f animations:^{
+        
+        self.messageBtn.transform = CGAffineTransformMakeScale(2.5,2.5);
+        
+    } completion:^(BOOL finished) {
+        
+        [UIView animateWithDuration:0.8f animations:^{
+            
+            self.messageBtn.transform = CGAffineTransformMakeScale(2.0,2.0);
+            
+        } completion:^(BOOL finished) {
+        
+            if (animation_count < 5)
+            {
+                [self animateButtonTitle];
+            }
+            
+        }];
+        
+    }];
+    
+    
 }
 
 - (IBAction)messageBtnPressed:(id)sender {

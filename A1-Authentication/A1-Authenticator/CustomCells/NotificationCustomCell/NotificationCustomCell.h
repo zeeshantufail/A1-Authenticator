@@ -15,7 +15,9 @@
 @property (weak, nonatomic) IBOutlet UIButton    * selectionBtn;
 @property (weak, nonatomic) IBOutlet UIImageView * image_View;
 
-@property (weak, nonatomic) IBOutlet UIButton    * markAsReadBtn;
-@property (weak, nonatomic) IBOutlet UIButton    * deleteBtn;
+@property (weak, nonatomic) IBOutlet UILabel     * title;
+@property (weak, nonatomic) IBOutlet UILabel     * subtitle1;
+@property (weak, nonatomic) IBOutlet UILabel     * subtitle2;
+@property (weak, nonatomic) IBOutlet UILabel     * dayLabel;
 
 @end

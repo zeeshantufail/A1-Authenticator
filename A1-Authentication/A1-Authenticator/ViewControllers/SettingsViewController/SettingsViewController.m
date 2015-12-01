@@ -40,22 +40,19 @@
     self.profileImageView.layer.cornerRadius = 35.0;
     self.profileImageView.layer.masksToBounds = YES  ;
     
+    if ([AppHelper isIphone6p])
+    {
+        self.revealViewController.rearViewRevealWidth = 325;
+        self.profileImageView.layer.cornerRadius = 45.0;
+    }
     if ([AppHelper isIphone6])
     {
+        self.revealViewController.rearViewRevealWidth = 295;
         self.profileImageView.layer.cornerRadius = 40.0;
     }
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor clearColor];
-    
-    if ([AppHelper isIphone6p])
-    {
-        self.revealViewController.rearViewRevealWidth = 325;
-    }
-    if ([AppHelper isIphone6])
-    {
-        self.revealViewController.rearViewRevealWidth = 295;
-    }
     
     self.revealViewController.rearViewRevealOverdraw = 0;
     self.revealViewController.toggleAnimationDuration = 0.3;

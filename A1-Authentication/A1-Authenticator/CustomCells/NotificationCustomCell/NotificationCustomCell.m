@@ -21,24 +21,20 @@
     
     if (selected)
     {
-        //float rowHeight ;
-        
-        if ([AppHelper isIphone5])
+        if (self.dayLabel.hidden)
         {
-            //rowHeight = 150;
-        }
-        else if ([AppHelper isIphone6])
-        {
-            //rowHeight = 179;
+            NSString *dayLabel = self.subtitle2.text;
+            self.subtitle2.text = self.dayLabel.text;
+            self.dayLabel.text = dayLabel;
+            [self.dayLabel setHidden:NO];
         }
         else
         {
-            //rowHeight = 199;
+            NSString *dayLabel = self.dayLabel.text;
+            self.dayLabel.text = self.subtitle2.text;
+            self.subtitle2.text = dayLabel;
+            [self.dayLabel setHidden:YES];
         }
-        
-//        self.cellMainView.frame = CGRectMake(self.cellMainView.frame.origin.x,
-//                                             self.cellMainView.frame.origin.y,
-//                                             self.cellMainView.frame.size.width, rowHeight);
     }
 }
 

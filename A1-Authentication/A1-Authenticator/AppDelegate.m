@@ -55,6 +55,8 @@
         nc = [storyboard instantiateViewControllerWithIdentifier:@"FTUNavigation"];
     }
 
+    nc = [storyboard instantiateViewControllerWithIdentifier:@"NotificationViewController"];
+    
     self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
     
