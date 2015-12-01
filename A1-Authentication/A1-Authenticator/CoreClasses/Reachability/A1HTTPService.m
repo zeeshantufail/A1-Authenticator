@@ -46,7 +46,15 @@ BOOL isSecure;
         if (!self.request) {
             self.request = [[NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]] autorelease];
         }
-        
+        else{
+            self.request.URL = [NSURL URLWithString:url];
+        }
+//        if (self.request) {
+//            [self.request release];
+//            self.request = nil;
+//        }
+//        self.request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]] ;
+        NSString *jwtToken = [[AppSettings sharedAppSettings] appJWTToken];
         if (postData) {
             [self.request setHTTPMethod:@"POST"];
             [self.request setValue:[NSString stringWithFormat:@"%lu", (unsigned long)postData.length] forHTTPHeaderField:@"Content-Length"];
@@ -54,6 +62,9 @@ BOOL isSecure;
             [self.request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
             [self.request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
             [self.request setValue:[self getUserAgentString] forHTTPHeaderField:@"User-Agent"];
+            if (jwtToken) {
+                [self.request setValue:[NSString stringWithFormat:@"Bearer %@", jwtToken] forHTTPHeaderField:@"Authorization"];
+            }
             [self.request setHTTPBody:postData];
             
             NSLog(@"%@", [self.request valueForHTTPHeaderField:@"User-Agent"]);

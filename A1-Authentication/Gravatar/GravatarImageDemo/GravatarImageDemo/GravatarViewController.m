@@ -38,9 +38,8 @@
 }
 
 - (void)tapToLoad {
-//    _imageView.email = @"rudd.fawcett@gmail.com";
+    _imageView.email = @"rudd.fawcett@gmail.com";
     
-    _imageView.email = @"zeeshantufail86@yahoo.com";
     _imageView.forceDefault = NO;
     [_imageView refresh];
 }

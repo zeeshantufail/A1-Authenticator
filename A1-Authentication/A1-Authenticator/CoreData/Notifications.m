@@ -17,12 +17,7 @@
 
 +(void)saveNotification:(NSDictionary *)notification{
     
-    //testing
-//    notification = [[NSDictionary alloc] initWithObjectsAndKeys:@"title",@"test notification", nil];
-
-    
-    
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     Notifications *not = [NSEntityDescription
                                       insertNewObjectForEntityForName:@"Notifications"
@@ -43,7 +38,7 @@
 
 
 +(NSArray *)readNotifications{
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     // Test listing all FailedBankInfos from the store
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -57,5 +52,29 @@
         
     }
     return  fetchedObjects;
+}
+
++(int)numberOfUnreadNotifications{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    // Test listing all FailedBankInfos from the store
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Notifications"
+                                              inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    
+    int count = 0;
+    for (Notifications *not in fetchedObjects) {
+        NSDictionary *dict = [not.data JSONValue];
+        bool isread = [[dict objectForKey:@"readMessage"] intValue];
+        
+        if (!isread) {
+            count++;
+        }
+        
+    }
+    return  count;
 }
 @end

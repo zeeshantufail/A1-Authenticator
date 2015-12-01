@@ -18,5 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)touchIdAction:(id)sender;
+- (IBAction)activateOtp:(id)sender;
+- (IBAction)activateQR:(id)sender;
 
 @end

@@ -104,7 +104,8 @@
 		2BF184E61AE50FFB0073F4BB /* QRStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRStorage.m; sourceTree = "<group>"; };
 		2BF184E71AE50FFB0073F4BB /* ScanCodeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanCodeHelper.h; sourceTree = "<group>"; };
 		2BF184E81AE50FFB0073F4BB /* ScanCodeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanCodeHelper.m; sourceTree = "<group>"; };
-		2BF184EF1AE5116A0073F4BB /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
+		2BFF13401C0C4F770031F441 /* AppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppHelper.h; path = "../../../A1-Authenticator/Helper Classes/AppHelper.h"; sourceTree = "<group>"; };
+		2BFF13441C0C67800031F441 /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppSettings.h; path = "../../A1-Authenticator/Helper Classes/AppSettings.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				2B5DA8721AE90BA100C59DFE /* JSON */,
+				2BFF13401C0C4F770031F441 /* AppHelper.h */,
 				2B5DA87E1AE90BA100C59DFE /* JsonHttpService.h */,
 				2B5DA87F1AE90BA100C59DFE /* JsonHttpService.m */,
 				2B5DA8801AE90BA100C59DFE /* Reachability.h */,
@@ -191,8 +193,8 @@
 			children = (
 				2B5DA8961AE90C5900C59DFE /* SVProgress */,
 				2B5DA8711AE90BA000C59DFE /* Reachability */,
-				2BF184EF1AE5116A0073F4BB /* AppSettings.h */,
 				2BF184DF1AE50FFB0073F4BB /* NSData+CommonCrypto.h */,
+				2BFF13441C0C67800031F441 /* AppSettings.h */,
 				2BF184E01AE50FFB0073F4BB /* NSData+CommonCrypto.m */,
 				2BF184E11AE50FFB0073F4BB /* NSData+hexReturn.h */,
 				2BF184E21AE50FFB0073F4BB /* NSData+hexReturn.m */,

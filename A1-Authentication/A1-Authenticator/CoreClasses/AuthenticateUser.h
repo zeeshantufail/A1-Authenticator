@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "A1AuthenticationHelper.h"
+#import "GravatarLoader.h"
 
 @class AuthenticateUser;
 @protocol AuthenticateUserDelegate <NSObject>
@@ -17,7 +18,7 @@
 
 @end
 
-@interface AuthenticateUser : NSObject<AuthenticationHelperProtocol>
+@interface AuthenticateUser : NSObject<AuthenticationHelperProtocol, GravatarLoaderDelegate>
 
 @property (nonatomic) A1AuthenticationHelper * authenticationHelper;
 @property (nonatomic) id<AuthenticateUserDelegate> delegate;

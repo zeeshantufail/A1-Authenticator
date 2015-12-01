@@ -8,6 +8,7 @@
 
 #import "AuthenticateUser.h"
 #import "Reachability.h"
+#import "AppSettings.h"
 
 @implementation AuthenticateUser
 
@@ -28,6 +29,12 @@
         self.authenticationHelper = [[A1AuthenticationHelper alloc] init];
     self.authenticationHelper.delegate = self;
     //[self.authenticationHelper authenticateUser];
+    
+    [[AppSettings sharedAppSettings] setAppJWTToken:nil];
+    [[AppSettings sharedAppSettings]  setAppUserEmail:nil];
+    [[AppSettings sharedAppSettings] setGoogleSecret:nil];
+    [[AppSettings sharedAppSettings] setAppGravatarImage:nil];
+    
     [self.authenticationHelper performSelector:@selector(authenticateUser) withObject:nil afterDelay:0.5];
 }
 
@@ -50,4 +57,31 @@
 -(void)passCodeAuthenticationFailed{
     [self.delegate userAuthenticationFailed:self];
 }
+
+-(void)authenticationWasSuccessfull:(AuthenticationHelper *)authenticationHelper{
+    [self loadGravatar];
+}
+
+-(void)authenticationFailed:(AuthenticationHelper *)authenticationHelper{
+    [self.delegate userAuthenticationFailed:self];
+}
+
+-(void)loadGravatar{
+    [[AppSettings sharedAppSettings] setAppUserEmail:[[AppSettings sharedAppSettings] appUserEmail]];
+    if (![GravatarLoader gravatarImage]) {
+        [[GravatarLoader sharedInstance] loadGravatarWithEmail:[[AppSettings sharedAppSettings] appUserEmail] andSender:self];
+    }
+    else{
+        [self imageLoaded:[GravatarLoader gravatarImage]];
+    }
+}
+
+-(void)imageLoaded:(UIImage *)img{
+    if(img)
+    {
+        [[AppSettings sharedAppSettings] setAppGravatarImage:img];
+    }
+    [self.delegate userAuthenticatedSuccessfully:self];
+}
+
 @end

@@ -10,8 +10,10 @@
 #import "QRCodeScanViewController.h"
 #import "TimerViewController.h"
 #import "GravatarLoader.h"
+#import "ScanCodeHelper.h"
+#import "NotificationHelper.h"
 
-@interface HomeViewController : UIViewController<QRCodeScanDelegate, GravatarLoaderDelegate>
+@interface HomeViewController : UIViewController<QRCodeScanDelegate, GravatarLoaderDelegate, ScanCodeHelperProtocol, NotificationHelperProtocol>
 
 @property (weak, nonatomic) IBOutlet UIImageView * upperColorImageView;
 @property (weak, nonatomic) IBOutlet UIImageView * profileImageView;

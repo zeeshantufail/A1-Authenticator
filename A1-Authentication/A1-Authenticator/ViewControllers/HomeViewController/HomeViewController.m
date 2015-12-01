@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "SWRevealViewController.h"
 #import "AppSettings.h"
+#import "AppDelegate.h"
 
 
 @interface HomeViewController ()
@@ -25,6 +26,8 @@
 {
     [super viewDidLoad];
     
+    [self registerForNotificationServices];
+    
     [self loadHomeViewContent];
     [self loadGravatar];
     [self addTapGesture];
@@ -33,7 +36,6 @@
 }
 
 -(void)loadGravatar{
-    [[AppSettings sharedAppSettings] setAppUserEmail:@"zeeshantufail86@yahoo.com"];
     if (![GravatarLoader gravatarImage]) {
         [[GravatarLoader sharedInstance] loadGravatarWithEmail:[[AppSettings sharedAppSettings] appUserEmail] andSender:self];
     }
@@ -276,11 +278,41 @@
     }
 }
 
--(void)didScanResult:(QRCodeScanViewController *)qrCodeScanViewController{
-    
+-(void)didScanResult:(NSString *)result{
+    ScanCodeHelper *sch = [[ScanCodeHelper alloc] init];
+    sch.delegate = self;
+    [sch scanChallengeCodeScanResult:result];
 }
 
 -(void)didDismissQrScan:(QRCodeScanViewController *)qrCodeScanViewController{
+    
+}
+
+-(void)scanCodeHelper:(ScanCodeHelper *)scanCodeHelper passCode:(NSString *)passCode{
+    
+    QRCodeScanViewController *codeScanView =  (QRCodeScanViewController *)[self.childViewControllers objectAtIndex:0];
+    codeScanView.passcodeLabel.text = passCode;
+    [UIView animateWithDuration:1 animations:^(void){
+        codeScanView.oneTimePasscodeLabel.alpha = 1;
+        codeScanView.passcodeLabel.alpha = 1;
+    }];
+    [codeScanView performSelector:@selector(readQRCode) withObject:nil afterDelay:4];
+}
+
+#pragma mark - notifications
+
+-(void)registerForNotificationServices{
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    if ([[AppSettings sharedAppSettings] appNotificationToken]) {
+        [appDelegate updateNotificationDB];
+    }
+    else{
+        [appDelegate registerForNotification];
+    }
+    
+    
     
 }
 

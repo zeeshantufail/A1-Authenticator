@@ -412,7 +412,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consultant, Pirean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dxS-VC-XCY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dxS-VC-XCY">
                                 <rect key="frame" x="113" y="64" width="252" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -448,7 +448,7 @@
                                         <animations/>
                                         <color key="backgroundColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="4JE-9E-Y7c" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="5Oe-zj-vbE"/>
+                                            <segue destination="4JE-9E-Y7c" kind="custom" identifier="homeViewSegue" customClass="SWRevealViewControllerSeguePushController" id="5Oe-zj-vbE"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AuthenticationTypeCell" rowHeight="85" id="yrB-eG-kUi">
@@ -471,18 +471,12 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <state key="normal" backgroundImage="QR_Icon_ON.png"/>
-                                                    <connections>
-                                                        <segue destination="jfs-Un-Yt1" kind="custom" identifier="qrScanViewSegue" customClass="SWRevealViewControllerSeguePushController" id="cI1-y9-8pm"/>
-                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5iX-OD-Dzo">
                                                     <rect key="frame" x="100" y="30" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <state key="normal" backgroundImage="TOTP_Icon_OFF.png"/>
-                                                    <connections>
-                                                        <segue destination="3ks-UC-zvU" kind="custom" identifier="totpScanViewSegue" customClass="SWRevealViewControllerSeguePushController" id="nWP-bp-cO7"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <animations/>
@@ -668,8 +662,8 @@
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F9g-AF-ZdH">
-                                <rect key="frame" x="113" y="42" width="252" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F9g-AF-ZdH">
+                                <rect key="frame" x="113" y="42" width="252" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
@@ -2660,8 +2654,12 @@
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cameraOverlay 5.5.png" id="kha-LT-JMX">
+                                        <rect key="frame" x="0.0" y="54" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please scan your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qsR-8K-HY3">
-                                        <rect key="frame" x="25" y="219" width="326" height="25"/>
+                                        <rect key="frame" x="0.0" y="219" width="375" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
@@ -2669,21 +2667,35 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A:1 QR code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="czy-Mf-AK4">
-                                        <rect key="frame" x="25" y="240" width="326" height="25"/>
+                                        <rect key="frame" x="0.0" y="240" width="375" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
                                         <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanBox.png" id="rav-qs-Zyg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your One Time passcode is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E7t-0U-ktL">
+                                        <rect key="frame" x="-1" y="523" width="375" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BEQ-bv-I9m">
+                                        <rect key="frame" x="0.0" y="560" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanBox.png" id="rav-qs-Zyg">
                                         <rect key="frame" x="99" y="310" width="174" height="178"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                     </imageView>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <animations/>
@@ -2691,6 +2703,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="oneTimePasscodeLabel" destination="E7t-0U-ktL" id="HjG-XK-eIx"/>
+                        <outlet property="passcodeLabel" destination="BEQ-bv-I9m" id="bYz-QZ-cHd"/>
                         <outlet property="scanView" destination="rav-qs-Zyg" id="tX3-Fo-E3G"/>
                         <outlet property="viewPreview" destination="FcL-EW-iUw" id="tjl-hj-Ony"/>
                     </connections>
@@ -2742,7 +2756,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="141256" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vQa-l8-oga">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vQa-l8-oga">
                                 <rect key="frame" x="99" y="380" width="171" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
@@ -2756,6 +2770,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="countDownImageView" destination="B7b-Sh-uJj" id="bqK-xn-4cx"/>
+                        <outlet property="otpPasscode" destination="vQa-l8-oga" id="3Nx-26-245"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEi-ZN-9Fx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3121,7 +3136,7 @@
         <image name="Back_Arrow_OFF.png" width="45" height="45"/>
         <image name="Back_Arrow_ON.png" width="45" height="45"/>
         <image name="Button_ON.png" width="383" height="46"/>
-        <image name="Countdown_Animation_00000.png" width="357" height="102"/>
+        <image name="Countdown_Animation_00000.png" width="588" height="588"/>
         <image name="FTU_QR_Icon_OFF.png" width="178" height="51"/>
         <image name="FTU_QR_Icon_ON.png" width="178" height="51"/>
         <image name="FTU_TOTP_Icon_OFF.png" width="243" height="51"/>
@@ -3160,10 +3175,8 @@
         <image name="startCircleImage.png" width="640" height="124"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5Oe-zj-vbE"/>
         <segue reference="sQF-eJ-Oi3"/>
         <segue reference="xHB-K5-9rZ"/>
-        <segue reference="nWP-bp-cO7"/>
-        <segue reference="cI1-y9-8pm"/>
+        <segue reference="5Oe-zj-vbE"/>
     </inferredMetricsTieBreakers>
 </document>

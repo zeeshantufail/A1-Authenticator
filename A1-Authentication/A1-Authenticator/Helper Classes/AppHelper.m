@@ -199,6 +199,7 @@ static CGFloat timerCount = 0;
     
 }
 
+
 +(void)connectionFailedNotification{
     //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(bottomBarStopAnimating) name:@"connectionFailedNotification" object:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"connectionFailedNotification" object:nil];
@@ -256,9 +257,19 @@ static bool shouldChellangeAuthentication = true;
 
 static UIImage *gravatarImage;
 
++(NSString *)deviceID{
+    NSUUID *deviceId;
+#if TARGET_IPHONE_SIMULATOR
+    deviceId = [NSUUID initWithUUIDString:@"UUID-STRING-VALUE"];
+#else
+    deviceId = [UIDevice currentDevice].identifierForVendor;
+#endif
+    return deviceId.UUIDString;
+}
 
-
-
++(NSTimeInterval)totpTimePeriod{
+    return 60;
+}
 
 @end
 

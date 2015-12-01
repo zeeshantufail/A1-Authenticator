@@ -639,7 +639,7 @@ static AppSettings *appSettings;
 }
 
 
-- (NSString*)appRegId {
+- (NSString * )appRegId {
     NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"AppRegId"];
     NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
     NSString *regId = [unarchiver decodeObjectForKey:PinKey];
@@ -676,5 +676,89 @@ static AppSettings *appSettings;
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+-(NSString *)appNotificationToken {
+    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"AppNotificationToken"];
+    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+    NSString *token = [unarchiver decodeObjectForKey:PinKey];
+    [unarchiver finishDecoding];
+    return token;
+}
+
+
+-(void)setAppNotificationToken:(NSString *)token{
+    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+    [archiver encodeObject:token forKey:PinKey];
+    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"AppNotificationToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+-(NSString *)appJWTToken {
+    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"AppJWTToken"];
+    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+    NSString *token = [unarchiver decodeObjectForKey:PinKey];
+    [unarchiver finishDecoding];
+    return token;
+}
+
+
+-(void)setAppJWTToken:(NSString *)token{
+    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+    [archiver encodeObject:token forKey:PinKey];
+    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"AppJWTToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+-(void)setAppFinalLinks:(NSArray *)links{
+    
+    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+    [archiver encodeObject:links forKey:PinKey];
+    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"links"];
+}
+
+-(NSArray *)appFinalLinks{
+    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"links"];
+    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+    NSArray *links = [unarchiver decodeObjectForKey:PinKey];
+    [unarchiver finishDecoding];
+    return links;
+}
+
+-(void)setAppUserDesignation:(NSString *)designation{
+    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+    [archiver encodeObject:designation forKey:PinKey];
+    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"designation"];
+}
+
+-(NSString *)appUserDesignation{
+    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"designation"];
+    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+    NSString *designation = [unarchiver decodeObjectForKey:PinKey];
+    [unarchiver finishDecoding];
+    return designation;
+}
+
+-(void)setAppGravatarImage:(UIImage *)image{
+    NSMutableData *data = [[[NSMutableData alloc] init] autorelease];
+    NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+    [archiver encodeObject:image forKey:PinKey];
+    [archiver finishEncoding];
+    [[NSUserDefaults standardUserDefaults] setValue:data forKey:@"gravatarImage"];
+}
+
+-(UIImage *)appGravatarImage{
+    
+    NSMutableData *data = [[NSUserDefaults standardUserDefaults] valueForKey:@"gravatarImage"];
+    NSKeyedUnarchiver *unarchiver = [[[NSKeyedUnarchiver alloc] initForReadingWithData:data] autorelease];
+    UIImage *image = [unarchiver decodeObjectForKey:PinKey];
+    [unarchiver finishDecoding];
+    return image;
+}
 
 @end

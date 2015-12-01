@@ -17,17 +17,17 @@
 - (void)authenticationHelperPassCodeVerified:(AuthenticationHelper*)authenticationHelper;
 -(void)passCodeAuthenticationFailed;
 -(void)qrAuthenticationFailed;
+-(void)authenticationWasSuccessfull:(AuthenticationHelper *)authenticationHelper;
+-(void)authenticationFailed:(AuthenticationHelper *)authenticationHelper;
 
 @end
 
 @interface AuthenticationHelper : NSObject <JsonHttpServiceProtocol, ScanCodeHelperProtocol>
 {
-    JsonHttpService *httpService;
-    id <AuthenticationHelperProtocol> delegate;
 }
 
 @property (nonatomic, retain) JsonHttpService *httpService;
-@property (nonatomic, assign) id <AuthenticationHelperProtocol> delegate;
+@property (nonatomic, retain) id <AuthenticationHelperProtocol> delegate;
 
 - (void)authenticateUser;
 

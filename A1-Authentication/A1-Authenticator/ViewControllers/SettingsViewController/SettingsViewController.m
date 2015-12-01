@@ -68,6 +68,9 @@
     else{
         [[GravatarLoader sharedInstance] loadGravatarWithEmail:[[AppSettings sharedAppSettings] appUserEmail] andSender:self];
     }
+    
+    self.nameLabel.text = [NSString stringWithFormat:@"%@ %@", [[AppSettings sharedAppSettings] appUserFirstName], [[AppSettings sharedAppSettings] appUserLastName]];
+    self.designationLabel.text = [NSString stringWithFormat:@"%@, %@", [[AppSettings sharedAppSettings] appUserDesignation], [[AppSettings sharedAppSettings] appRegName]];
 }
 
 -(void)imageLoaded:(UIImage *)img{
@@ -350,5 +353,20 @@
     [[AppSettings sharedAppSettings] setAppPinState:NO];
     
     [self reloadTableView];
+}
+
+- (IBAction)activateOtp:(id)sender {
+    [[AppSettings sharedAppSettings] setAppTotp:YES];
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES scrollPosition:UITableViewScrollPositionTop];
+    [self reloadTableView];
+    
+    [self performSegueWithIdentifier:@"homeViewSegue" sender:self];
+}
+
+- (IBAction)activateQR:(id)sender {
+    [[AppSettings sharedAppSettings] setAppTotp:NO];
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES scrollPosition:UITableViewScrollPositionTop];
+    [self reloadTableView];
+    [self performSegueWithIdentifier:@"homeViewSegue" sender:self];
 }
 @end

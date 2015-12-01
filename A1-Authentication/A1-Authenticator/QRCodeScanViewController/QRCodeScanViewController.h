@@ -19,7 +19,7 @@
 
 @optional
 
--(void)didScanResult:(QRCodeScanViewController *)qrCodeScanViewController;
+-(void)didScanResult:(NSString *)result;
 -(void)didDismissQrScan:(QRCodeScanViewController *)qrCodeScanViewController;
 
 @end
@@ -32,11 +32,14 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *scanView;
 @property (nonatomic) id<QRCodeScanDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UILabel *oneTimePasscodeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *passcodeLabel;
 
 @property BOOL isTotp;
 
 - (IBAction)startStopReading:(id)sender;
 - (IBAction)crossButtonAction:(id)sender;
+-(void)readQRCode;
 
 
 @end

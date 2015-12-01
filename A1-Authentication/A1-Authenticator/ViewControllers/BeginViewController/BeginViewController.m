@@ -158,9 +158,24 @@
 }
 
 
+
 -(void)didScanResult:(QRCodeScanViewController *)result
 {
-    NSLog(@"Qr result : %@", result);
+    
+}
+
+-(void)didDismissQrScan:(QRCodeScanViewController *)qrCodeScanViewController{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)authenticationFailed:(QRCodeScanViewController *)qrCodeScanViewController
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"Authentication failed !");
+}
+
+
+-(void)authenticationCompleted:(QRCodeScanViewController *)qrCodeScanViewController{
     
     if ([AppHelper isDeviceTouchIDSetup])
     {
@@ -172,14 +187,4 @@
     }
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
-
--(void)didDismissQrScan:(QRCodeScanViewController *)qrCodeScanViewController{
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-}
-
--(void)authenticationFailed:(QRCodeScanViewController *)qrCodeScanViewController
-{
-    NSLog(@"Authentication failed !");
-}
-
 @end

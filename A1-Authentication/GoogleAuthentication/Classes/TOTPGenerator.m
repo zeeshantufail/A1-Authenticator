@@ -18,6 +18,7 @@
 
 #import "TOTPGenerator.h"
 #import "GTMDefines.h"
+#import "AppHelper.h"
 
 @interface TOTPGenerator ()
 @property(assign, nonatomic, readwrite) NSTimeInterval period;
@@ -27,7 +28,7 @@
 @synthesize period = period_;
 
 + (NSTimeInterval)defaultPeriod {
-  return 60;
+  return [AppHelper totpTimePeriod];
 }
 
 - (id)initWithSecret:(NSData *)secret
@@ -61,6 +62,8 @@
 
   NSTimeInterval seconds = [date timeIntervalSince1970];
   uint64_t counter = (uint64_t)(seconds / self.period);
+    
+    NSLog(@"counter for totp %llu", counter);
   return [super generateOTPForCounter:counter];
 }
 

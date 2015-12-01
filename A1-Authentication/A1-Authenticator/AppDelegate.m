@@ -21,6 +21,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    [[AppSettings sharedAppSettings] setAppActivationState:YES];
+//    [[AppSettings sharedAppSettings] setAppPin:@"2222"];
+//    [self registerForNotification];
     
     [application setStatusBarHidden:YES];
     
@@ -31,22 +34,7 @@
     UINavigationController *nc;
     if ([[AppSettings sharedAppSettings] appActivationState])
     {
-        
-        //-- Set Notification
-        if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
-        {
-            // iOS 8 Notifications
-            [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
-            
-            [application registerForRemoteNotifications];
-        }
-        else
-        {
-            // iOS < 8 Notifications
-            [application registerForRemoteNotificationTypes:
-             (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound)];
-        }
-//        [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+//        [self updateNotificationDB];
         [AppHelper setShouldChellangeAuthentication:true];
         nc = (UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"RTUNavigation"];
     }
@@ -62,19 +50,56 @@
     return YES;
 }
 
+-(void)updateNotificationDB{
+    NotificationHelper * nh = [[NotificationHelper alloc] init];
+    nh.delegate = self;
+    
+    [nh fetchNotificationRequest];
+}
+
+
+-(void)registerForNotification{
+    //-- Set Notification
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
+    {
+        // iOS 8 Notifications
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+        
+        [application registerForRemoteNotifications];
+    }
+    else
+    {
+        // iOS < 8 Notifications
+        [application registerForRemoteNotificationTypes:
+         (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound)];
+    }
+}
+
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
 {
     NSString * deviceTokenString = [[[[deviceToken description]
                                       stringByReplacingOccurrencesOfString: @"<" withString: @""]
                                      stringByReplacingOccurrencesOfString: @">" withString: @""]
                                     stringByReplacingOccurrencesOfString: @" " withString: @""];
+    
+    [[AppSettings sharedAppSettings] setAppNotificationToken:deviceTokenString];
+    
     NSLog(@"My token is: %@", deviceTokenString);
+    
+    [self registerForNotificationServices];
 }
 
 - (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
 {
     NSLog(@"Failed to get token, error: %@", error);
 }
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+    [self updateNotificationDB];
+}
+
 
 -(void) saveApplicationLaunchedAction
 {
@@ -216,6 +241,30 @@
             abort();
         }
     }
+}
+
+#pragma mark - notifications
+
+-(void)registerForNotificationServices{
+    
+    NotificationHelper *nh = [[NotificationHelper alloc] init];
+    nh.delegate = self;
+    
+    [nh updateNotificationToken];
+    
+    
+}
+
+-(void)notificationAppTokenUpdated{
+    
+}
+
+-(void)notificationReceived:(NSArray *)notifications{
+    
+}
+
+-(void)notificationRequestFailed:(NSString *)error{
+    
 }
 
 @end
